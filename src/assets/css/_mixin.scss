@@ -1,0 +1,39 @@
+/* mixin */
+
+@use "sass:math";
+
+$primary : #133592;
+$secondary : #25b0f5;
+
+
+$tablet : 1299px;
+$mobile : 767px;
+$mobile_small : 359px;
+$mobile_xsmall : 319px;
+
+$warn : #e84854;
+
+
+@function rem($value) {
+    $remValue: math.div($value, 16) + rem;	
+    @return $remValue;
+}
+
+
+
+
+@mixin fontTransform {
+    transform: skew(.5deg);
+}
+
+@mixin dataImage {
+    display:block; width:100%;height:100%;position:absolute;top:0;left:0; object-fit: contain; object-position: 50% 50%;
+}
+
+@mixin dataImage2 {
+    display:block; width:100%;height:100%;position:absolute;top:0;left:0; object-fit: cover; object-position: 50% 50%;
+}
+
+@mixin clamp ($count) {
+    word-break:break-all;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp:$count;overflow: hidden;
+}
