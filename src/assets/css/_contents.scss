@@ -55,8 +55,10 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 
 
 @media (max-width:$tablet){
+    .mv_zone{padding:0 30px;}
 }
 @media (max-width:$mobile){
+    .mv_zone{padding:0;}
     img.pc_mv{display:none;}
     img.mb_mv{display:block;}
 

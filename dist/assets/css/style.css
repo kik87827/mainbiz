@@ -1920,7 +1920,15 @@ input.input_global_search::input-placeholder {
   font-weight: 500;
 }
 
+@media (max-width: 1299px) {
+  .mv_zone {
+    padding: 0 30px;
+  }
+}
 @media (max-width: 767px) {
+  .mv_zone {
+    padding: 0;
+  }
   img.pc_mv {
     display: none;
   }
