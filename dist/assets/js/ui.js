@@ -281,3 +281,18 @@ DesignPopup.prototype.bindEvent = function() {
     });
   }
 };
+
+
+function swiperFunc(option) {
+  let swiper_obj = null;
+  const option_target_parent = document.querySelector(option.parent);
+  const option_swiper_container = document.querySelector(option.target);
+  const option_swiper_slide = !!option_target_parent ? option_target_parent.querySelectorAll(".swiper-slide") : null;
+  if (!!option_swiper_slide) {
+    if (swiper_obj !== null) {
+      swiper_obj.update();
+    } else {
+      swiper_obj = new Swiper(option.target, option.swiper_option);
+    }
+  }
+}

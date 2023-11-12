@@ -3,7 +3,91 @@
     @@include('./include/_head.html')
 <body class="front_body">
     <div class="page_wrap">
-        
+        @@include('./include/_header.html')
+        <section class="middle_wrap main_contents">
+            <div class="mv_zone">
+                <div class="swiper-container mv_container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mv_item">
+                                <img src="./assets/images/main/mv_pc_01.jpg" class="pc_mv" alt="">
+                                <img src="./assets/images/main/mv_mb_01.jpg" class="mb_mv" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mv_item">
+                                <img src="./assets/images/main/mv_pc_02.jpg" class="pc_mv" alt="">
+                                <img src="./assets/images/main/mv_mb_02.jpg" class="mb_mv" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mv_item">
+                                <img src="./assets/images/main/mv_pc_03.jpg" class="pc_mv" alt="">
+                                <img src="./assets/images/main/mv_mb_03.jpg" class="mb_mv" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="global_search_field_zone">
+                <div class="global_search_field_wrap">
+                    <div class="global_search_field">
+                        <div class="global_search_input"><input type="text" class="input_global_search" placeholder="사업자등록번호(-없이) 또는 기업명"></div>
+                        <a href="javascript:;" class="btn_global_search_submit">인증여부 조회</a>
+                    </div>
+                </div>
+                <div class="global_keyword_wrap">
+                    <ul class="global_keyword_list">
+                        <li>
+                            <a href="#" class="global_keyword_item">
+                                <i class="ico_global_keyword"></i>
+                                <span class="global_keyword_text">인증 절차</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="global_keyword_item">
+                                <i class="ico_global_keyword ico_02"></i>
+                                <span class="global_keyword_text">인증 신청</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="global_keyword_item">
+                                <i class="ico_global_keyword ico_03"></i>
+                                <span class="global_keyword_text">확인서 발급</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="global_keyword_item">
+                                <i class="ico_global_keyword ico_04"></i>
+                                <span class="global_keyword_text">인증 혜택</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        @@include('./include/_footer.html')
+        <script>
+            window.addEventListener("load",()=>{
+                swiperFunc({
+                    parent : ".mv_zone",
+                    target : ".mv_container",
+                    swiper_option : {
+                        loop: true,
+                        speed : 800,
+                        autoplay: {
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".mv_container .swiper-pagination",
+                            clickable: true
+                        },
+                    }
+                })
+            });
+        </script>
     </div>
 </body>
 </html>
