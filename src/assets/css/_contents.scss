@@ -53,6 +53,112 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 }
 .global_keyword_text{font-size:20px; font-weight:500; color:#333333; line-height:1; display:inline-block; font-weight:500;}
 
+.mc_grid_zone{
+    &.type2{
+        &:before{}
+        > *{}
+    }
+}
+.mc_grid_row{}
+.mc_grid_cols{}
+.mc_grid_title{
+    &.type2{}
+}
+.mc_grid_content{}
+.mc_linkage_both{}
+.mc_linkage_menu_cols{}
+.mc_linkage_menu_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.mc_linkage_menu{}
+.mc_linkage_dot_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.mc_linkage_dot{
+    &.active{}
+}
+.mc_linkage_contents_cols{}
+.mc_linkage_contents{
+    &.active{}
+}
+.linkage_data_list_wrap{}
+.linkage_data_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.linkage_data{
+    &.emp{}
+}
+.linkage_priamry_row{}
+.linkage_keyword{}
+.linkage_title{}
+.linkage_secondary_row{}
+.linkage_subcopy{}
+.btn_mc_more{}
+
+.mc_card_swiper_zone{}
+.swiper-container{
+    &.swiper_banner_container{
+        .swiper-pagination{
+            text-align: left; bottom:60px; z-index:5;
+            .swiper-pagination-bullet{opacity:.2;width:12px;height:12px;margin:0 4px;border-radius:100%;background:#000;}
+            .swiper-pagination-bullet.swiper-pagination-bullet-active{opacity:1;background:#1454FF;width:60px;border-radius:100px;}
+        }
+    }
+    .swiper_banner{
+        img{}
+    }
+}
+.swiper_banner{
+    img{}
+}
+.mc_quick_menu_list_wrap{}
+.mc_quick_menu_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.mc_quick_menu{}
+.ico_mc_quick{}
+.mc_quick_menu_text{}
+
+
+.mc_flexbox_list_wrap{}
+.mc_flexbox_list{
+    > li{}
+}
+.mc_flexbox{}
+.mc_flexbox_ico_row{}
+.ico_mc_count{}
+.ico_mc_count_caption{}
+.mc_flexbox_value_row{}
+.mc_count_item{}
+.mc_count_main{}
+.mc_count_unit{}
+
+
+.bottom_guide_list_wrap{}
+.bottom_guide_swiper_wrap{}
+.btn_flow_control{
+    &:after{}
+    &.prev{
+        &:after{}
+    }
+    &.next{
+        &:after{}
+    }
+}
+.swiper-container{
+    &.swiper-partner{}
+}
+.swiper_partner_box{
+    img{}
+}
 
 @media (max-width:$tablet){
     .mv_zone{padding:0 30px;}
