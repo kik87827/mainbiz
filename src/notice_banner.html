@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    @@include('./include/_head.html')
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_header.html')
+        
+        <section class="middle_wrap main_contents">
+            <div class="mv_zone">
+                <div class="swiper-container mv_container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="mv_item">
+                                <img src="./assets/images/main/mv_pc_01.jpg" class="pc_mv" alt="">
+                                <img src="./assets/images/main/mv_mb_01.jpg" class="mb_mv" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mv_item">
+                                <img src="./assets/images/main/mv_pc_02.jpg" class="pc_mv" alt="">
+                                <img src="./assets/images/main/mv_mb_02.jpg" class="mb_mv" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="mv_item">
+                                <img src="./assets/images/main/mv_pc_03.jpg" class="pc_mv" alt="">
+                                <img src="./assets/images/main/mv_mb_03.jpg" class="mb_mv" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="mc_grid_zone">
+                <div class="mc_grid_row">
+                    <div class="mc_grid_cols">
+                        <p class="mc_grid_title">알림배너</p>
+                        <div class="mc_grid_content">
+                            <div class="mc_card_swiper_zone">
+                                <div class="swiper-container swiper_banner_container">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide"><a href="#" class="swiper_banner"><img src="./assets/images/main/notice_banner_01.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="#" class="swiper_banner"><img src="./assets/images/main/notice_banner_02.jpg" alt=""></a></div>
+                                        <div class="swiper-slide"><a href="#" class="swiper_banner"><img src="./assets/images/main/notice_banner_03.jpg" alt=""></a></div>
+                                    </div>
+                                    <div class="swiper-pagination">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bottom_guide_list_wrap">
+            <div class="bottom_guide_swiper_wrap">
+                <a href="#" class="btn_flow_control prev"><span class="hdtext">이전</span></a>
+                <div class="swiper-container swiper-partner">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_01.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_02.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_03.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_04.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_05.png" alt=""></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_06.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn_flow_control next"><span class="hdtext">다음</span></a>
+            </div>
+        </section>
+        @@include('./include/_footer.html')
+        <script>
+
+            window.addEventListener("load",()=>{
+                swiperFunc({
+                    parent : ".mv_zone",
+                    target : ".mv_container",
+                    swiper_option : {
+                        loop: true,
+                        speed : 800,
+                        autoplay: {
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".mv_container .swiper-pagination",
+                            clickable: true
+                        },
+                    }
+                })
+                // 알림 배너
+                swiperFunc({
+                    parent : ".mc_card_swiper_zone",
+                    target : ".swiper_banner_container",
+                    swiper_option : {
+                        loop: true,
+                        speed : 800,
+                        autoplay: {
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".mc_card_swiper_zone .swiper-pagination",
+                            clickable: true
+                        },
+                    }
+                })
+                // 로고 배너
+                swiperFunc({
+                    parent : ".bottom_guide_swiper_wrap",
+                    target : ".swiper-partner",
+                    swiper_option : {
+                        loop: true,
+                        speed : 800,
+                        slidesPerView: 7,
+                        autoplay: {
+                            delay: 3500,
+                            disableOnInteraction: false,
+                        },
+                        pagination: {
+                            el: ".mc_card_swiper_zone .swiper-pagination",
+                            clickable: true
+                        },
+                        navigation: {
+                            nextEl: ".bottom_guide_swiper_wrap .btn_flow_control.prev",
+                            prevEl: ".bottom_guide_swiper_wrap .btn_flow_control.next",
+                        },
+                        breakpoints : {
+                            1024 : {
+                                slidesPerView: 4,
+                            },
+                            767 : {
+                                slidesPerView: 2,
+                            }
+                        }
+                    }
+                })
+            });
+        </script>
+    </div>
+</body>
+</html>
