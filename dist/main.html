@@ -18,10 +18,21 @@
 
 <body class="front_body">
 	<div class="page_wrap">
+		<!-- skip menu -->
+		<ul class="skiplist">
+			<li class="skip pc_skip"><a href="#pc_gnb">주메뉴 바로가기</a></li>
+			<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+			<li class="skip"><a href="#content">본문내용으로 바로가기</a></li>
+		</ul>
+		<!-- //skip menu -->
 		<header class="header_wrap">
 			<div class="header_util_wrap">
-				<h1 class="header_toplogo"><a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.png" alt="중소벤처기업부 MAin Biz"></a></h1>
-				<h1 class="header_toplogo_mb"><a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.svg" alt="MAin Biz"></a></h1>
+				<h1 class="header_toplogo">
+					<a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.png" alt="중소벤처기업부 MAin Biz"></a>
+				</h1>
+				<h1 class="header_toplogo_mb">
+					<a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.svg" alt="MAin Biz"></a>
+				</h1>
 				<div class="header_util_item_list_wrap">
 					<ul class="header_util_item_list">
 						<li><a href="#" class="header_util_menu">로그인</a></li>
@@ -32,18 +43,69 @@
 			</div>
 			<div class="header_nav_wrap">
 				<nav class="header_nav_list_wrap">
-					<ul class="header_nav_list">
-						<li><a href="#" class="header_nav_menu">MAINBiz 안내</a></li>
-						<li><a href="#" class="header_nav_menu">인증 신청</a></li>
-						<li><a href="#" class="header_nav_menu">확인서 발급</a></li>
-						<li><a href="#" class="header_nav_menu">정보 마당</a></li>
-						<li><a href="#" class="header_nav_menu">고객 지원</a></li>
+					<ul class="header_nav_list" id="pc_gnb">
+						<li>
+							<a href="#" class="header_nav_menu">MAINBiz 안내</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">제도 개요</a></li>
+									<li><a href="#" class="nav_depth_menu">인증 절차</a></li>
+									<li><a href="#" class="nav_depth_menu">인증 혜택</a></li>
+									<li><a href="#" class="nav_depth_menu">CI 소개</a></li>
+									<li><a href="#" class="nav_depth_menu">홍보 자료</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">인증 신청</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">신규 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">연장 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">진행 현황</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">확인서 발급</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">온라인 발급</a></li>
+									<li><a href="#" class="nav_depth_menu">확인서 재발급</a></li>
+									<li><a href="#" class="nav_depth_menu">사본 발급</a></li>
+									<li><a href="#" class="nav_depth_menu">영문 · 중문 발급</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">정보 마당</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">인증 현황</a></li>
+									<li><a href="#" class="nav_depth_menu">인증선정 취소 공고</a></li>
+									<li><a href="#" class="nav_depth_menu">자료실</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">고객 지원</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">공지사항</a></li>
+									<li><a href="#" class="nav_depth_menu">FAQ</a></li>
+									<li><a href="#" class="nav_depth_menu">문의하기</a></li>
+									<li><a href="#" class="nav_depth_menu">인증교육 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">맞춤코칭 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">위치 및 연락처</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</nav>
 			</div>
 			<a href="javascript:;" class="btn_panel_menu"><i class="btn_panel_menu_ico"></i><span class="hdtext">메인메뉴 열기</span></a>
 			<!-- mobile -->
-			<div class="mobile_mainmenu_zone">
+			<div class="mobile_mainmenu_zone" id="mobile_gnb">
 				<div class="mainmenu_dim"></div>
 				<div class="mobile_mainmenu_wrap">
 					<div class="mbutil_row">
@@ -78,7 +140,7 @@
 			</div>
 			<!-- // mobile -->
 		</header>
-		<section class="middle_wrap main_contents">
+		<section class="middle_wrap main_contents" id="content">
 			<h2 class="hdtext">메인 컨텐츠</h2>
 			<div class="mv_zone">
 				<h3 class="hdtext">메인 비쥬얼</h3>
@@ -377,7 +439,7 @@
 				<div class="mc_grid_row">
 					<div class="mc_grid_cols">
 						<div class="mc_grid_title_row">
-							<p class="mc_grid_title">숫자로 보는 메인비즈</p>
+							<h3 class="mc_grid_title">숫자로 보는 메인비즈</h3>
 							<p class="mc_grid_title_else">2023년 10월 25일 현재 기준</p>
 						</div>
 						<div class="mc_grid_content">
@@ -447,27 +509,31 @@
 			</div>
 		</section>
 		<section class="bottom_guide_list_wrap">
+			<h3 class="hdtext">협력사 리스트</h3>
 			<div class="bottom_guide_swiper_wrap">
 				<a href="#" class="btn_flow_control prev"><span class="hdtext">이전</span></a>
 				<div class="swiper-container swiper-partner">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_01.png" alt=""></a>
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_01.png" alt="중소베너기업부 Ministry of SMEs and Startups"></a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_02.png" alt=""></a>
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_02.png" alt="KODIT 신용보증기금 KOREA CREDIT GUARANTEE FUND"></a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_03.png" alt=""></a>
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_03.png" alt="kpc 한국생산성본부 KOREA PRODUCTIVITY CENTER"></a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_04.png" alt=""></a>
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_04.png" alt="KIBO 기술보증기금"></a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_05.png" alt=""></a>
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_05.png" alt="Your Best Credit Partner SGI서울보증"></a>
 						</div>
 						<div class="swiper-slide">
-							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_06.png" alt=""></a>
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_06.png" alt="NH농협은행"></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_07.png" alt="KSURE 한국무역보험공사 KOREA TRADE INSURANCE CORPORATION"></a>
 						</div>
 					</div>
 				</div>

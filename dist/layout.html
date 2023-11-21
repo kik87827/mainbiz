@@ -18,10 +18,21 @@
 
 <body class="front_body">
 	<div class="page_wrap">
+		<!-- skip menu -->
+		<ul class="skiplist">
+			<li class="skip pc_skip"><a href="#pc_gnb">주메뉴 바로가기</a></li>
+			<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+			<li class="skip"><a href="#content">본문내용으로 바로가기</a></li>
+		</ul>
+		<!-- //skip menu -->
 		<header class="header_wrap">
 			<div class="header_util_wrap">
-				<h1 class="header_toplogo"><a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.png" alt="중소벤처기업부 MAin Biz"></a></h1>
-				<h1 class="header_toplogo_mb"><a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.svg" alt="MAin Biz"></a></h1>
+				<h1 class="header_toplogo">
+					<a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.png" alt="중소벤처기업부 MAin Biz"></a>
+				</h1>
+				<h1 class="header_toplogo_mb">
+					<a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.svg" alt="MAin Biz"></a>
+				</h1>
 				<div class="header_util_item_list_wrap">
 					<ul class="header_util_item_list">
 						<li><a href="#" class="header_util_menu">로그인</a></li>
@@ -32,18 +43,69 @@
 			</div>
 			<div class="header_nav_wrap">
 				<nav class="header_nav_list_wrap">
-					<ul class="header_nav_list">
-						<li><a href="#" class="header_nav_menu">MAINBiz 안내</a></li>
-						<li><a href="#" class="header_nav_menu">인증 신청</a></li>
-						<li><a href="#" class="header_nav_menu">확인서 발급</a></li>
-						<li><a href="#" class="header_nav_menu">정보 마당</a></li>
-						<li><a href="#" class="header_nav_menu">고객 지원</a></li>
+					<ul class="header_nav_list" id="pc_gnb">
+						<li>
+							<a href="#" class="header_nav_menu">MAINBiz 안내</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">제도 개요</a></li>
+									<li><a href="#" class="nav_depth_menu">인증 절차</a></li>
+									<li><a href="#" class="nav_depth_menu">인증 혜택</a></li>
+									<li><a href="#" class="nav_depth_menu">CI 소개</a></li>
+									<li><a href="#" class="nav_depth_menu">홍보 자료</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">인증 신청</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">신규 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">연장 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">진행 현황</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">확인서 발급</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">온라인 발급</a></li>
+									<li><a href="#" class="nav_depth_menu">확인서 재발급</a></li>
+									<li><a href="#" class="nav_depth_menu">사본 발급</a></li>
+									<li><a href="#" class="nav_depth_menu">영문 · 중문 발급</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">정보 마당</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">인증 현황</a></li>
+									<li><a href="#" class="nav_depth_menu">인증선정 취소 공고</a></li>
+									<li><a href="#" class="nav_depth_menu">자료실</a></li>
+								</ul>
+							</div>
+						</li>
+						<li>
+							<a href="#" class="header_nav_menu">고객 지원</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">공지사항</a></li>
+									<li><a href="#" class="nav_depth_menu">FAQ</a></li>
+									<li><a href="#" class="nav_depth_menu">문의하기</a></li>
+									<li><a href="#" class="nav_depth_menu">인증교육 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">맞춤코칭 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">위치 및 연락처</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
 				</nav>
 			</div>
 			<a href="javascript:;" class="btn_panel_menu"><i class="btn_panel_menu_ico"></i><span class="hdtext">메인메뉴 열기</span></a>
 			<!-- mobile -->
-			<div class="mobile_mainmenu_zone">
+			<div class="mobile_mainmenu_zone" id="mobile_gnb">
 				<div class="mainmenu_dim"></div>
 				<div class="mobile_mainmenu_wrap">
 					<div class="mbutil_row">
@@ -78,7 +140,7 @@
 			</div>
 			<!-- // mobile -->
 		</header>
-		<section class="middle_wrap">
+		<section class="middle_wrap" id="content">
 			내용이 들어갑니다.
 		</section>
 		<footer class="footer_wrap">

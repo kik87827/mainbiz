@@ -56,6 +56,124 @@ function resizeAction(callback) {
  * 레이아웃
  */
 function layoutFunc() {
+
+  function skipMenu() {
+    const skiplist_link = document.querySelectorAll(".skiplist a");
+    if (!!skiplist_link) {
+      skiplist_link.forEach((item) => {
+        item.addEventListener("click", (e) => {
+          const thisEventTarget = e.currentTarget;
+          const thisEventContents = document.querySelector(thisEventTarget.getAttribute("href"));
+          if (!!thisEventContents) {
+            thisEventContents.setAttribute("tabindex", "0");
+            thisEventContents.focus();
+          }
+        });
+      });
+      /* $('.skiplist a').blur(function(){
+        setTimeout(function(){
+          var $focused = $(':focus');
+          if( !$('.skiplist a').is(':focus') ) {
+            $('body').removeClass('skip');
+          }
+        },10);			
+      }).click(function(ev){
+        var target = $( $(this).attr('href') );
+        target.attr('tabindex', 0).focus();
+      }); */
+    }
+  }
+
+  function pcGnb() {
+    const header_nav_list_wrap = document.querySelector(".header_nav_list_wrap");
+    const header_nav_list = document.querySelector(".header_nav_list");
+    const header_nav_li = document.querySelectorAll(".header_nav_list > li");
+    const nav_depth_menu_list_wrap = document.querySelectorAll(".nav_depth_menu_list_wrap");
+    const nav_depth_menu_list = document.querySelectorAll(".nav_depth_menu_list");
+    const header_nav_menu = document.querySelectorAll(".header_nav_menu");
+    const middle_wrap = document.querySelector(".page_wrap > .middle_wrap");
+    const middle_focusItem = middle_wrap.querySelectorAll("a,button,input,textarea,select")[0];
+    // let twodep_ani_is = false;
+    let bg_depth = null;
+    let max_height = 0;
+
+    let timeout_value = 0;
+    // init
+    initMenu();
+
+
+    header_nav_menu.forEach((item) => {
+      item.addEventListener("mouseenter", () => {
+        menuOpen();
+      });
+      item.addEventListener("focusin", () => {
+        menuOpen();
+      });
+    });
+    header_nav_list_wrap.addEventListener("mouseleave", () => {
+      menuReset();
+    });
+    if (!!middle_focusItem) {
+      middle_focusItem.addEventListener("focusin", () => {
+        menuReset();
+      });
+    }
+
+
+    function initMenu() {
+      if (!!header_nav_list_wrap) {
+        let depth_bg_html = document.createElement("div");
+        depth_bg_html.classList.add("bg_depth");
+        header_nav_list_wrap.appendChild(depth_bg_html);
+        bg_depth = document.querySelector(".bg_depth");
+      }
+    }
+
+    function menuOpen() {
+      /* console.log(timeout_value);
+      if(timeout_value){
+        clearTimeout(timeout_value);
+      } */
+      //if(twodep_ani_is){return;}
+      if (!!nav_depth_menu_list_wrap) {
+        let motionObj = [bg_depth, ...nav_depth_menu_list_wrap];
+        header_nav_list_wrap.classList.add("ready");
+        getHeight();
+        motionObj.forEach((item) => {
+          item.style.height = max_height + "px";
+        });
+      }
+    }
+
+    function menuReset() {
+      if (!!nav_depth_menu_list_wrap) {
+        // twodep_ani_is = true;
+        let motionObj = [bg_depth, ...nav_depth_menu_list_wrap];
+        /* if(timeout_value){
+          clearTimeout(timeout_value);
+        } */
+        getHeight();
+        motionObj.forEach((item) => {
+          item.style.height = "0px";
+        });
+        /* timeout_value = setTimeout(()=>{
+          header_nav_list_wrap.classList.remove("ready");
+          // twodep_ani_is = false;
+        },500); */
+      }
+    }
+
+    function getHeight() {
+
+      let twodepArray = [];
+      nav_depth_menu_list.forEach((item) => {
+        twodepArray.push(item.getBoundingClientRect().height);
+      });
+      max_height = Math.max.apply(null, twodepArray);
+    }
+
+  }
+
   function mbTotal() {
     var touchstart = "ontouchstart" in window;
     var btn_panel_menu = document.querySelector(".btn_panel_menu"),
@@ -109,6 +227,8 @@ function layoutFunc() {
       }, 500);
     }
   }
+  skipMenu();
+  pcGnb();
   mbTotal();
 }
 
