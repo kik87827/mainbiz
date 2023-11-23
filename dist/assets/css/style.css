@@ -571,6 +571,23 @@ img.ico_img {
   src: local("Poppins Black Italic"), url("./webfont/Poppins-BlackItalic.woff") format("woff");
 }
 /* mixin */ /* layout */
+html:not(.touchmode) ::-webkit-scrollbar {
+  width: 10px;
+}
+
+html:not(.touchmode) ::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+
+html:not(.touchmode) ::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px transparent;
+}
+
 /* skip navigation */
 .skiplist {
   position: relative;
@@ -634,21 +651,11 @@ img.ico_img {
 }
 
 /* //skip navigation */
-body ::-webkit-scrollbar {
-  width: 10px;
-}
-body ::-webkit-scrollbar-thumb {
-  background-color: #ccc;
-  border-radius: 10px;
-  background-clip: padding-box;
-  border: 2px solid transparent;
-}
-body ::-webkit-scrollbar-track {
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: inset 0px 0px 5px white;
-}
-
+/* body{
+    ::-webkit-scrollbar {width:10px;}
+    ::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;background-clip: padding-box;border: 2px solid transparent;}
+    ::-webkit-scrollbar-track {background-color: #fff;border-radius: 10px;box-shadow: inset 0px 0px 5px white;}
+} */
 .page_wrap {
   min-width: 280px;
   display: flex;
@@ -868,7 +875,7 @@ body ::-webkit-scrollbar-track {
 
 .mobile_mainmenu_wrap {
   width: 247px;
-  background: #fff;
+  background: #0077C0;
   position: fixed;
   top: 0;
   right: -247px;
@@ -934,7 +941,7 @@ body ::-webkit-scrollbar-track {
 
 .mbmenu_one {
   display: block;
-  color: #333333;
+  color: #fff;
   font-size: 17px;
   padding: 15px 55px 15px 20px;
   line-height: 1;
@@ -944,27 +951,43 @@ body ::-webkit-scrollbar-track {
 .mbmenu_one:after {
   display: block;
   content: "";
-  width: 7px;
-  height: 7px;
-  border-right: 2px solid #888888;
-  border-bottom: 2px solid #888;
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
   position: absolute;
-  top: 19px;
-  right: 26px;
+  top: 15px;
+  right: 22px;
   transform: translateZ(0);
-  transform: rotate(-45deg);
-  -moz-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
+  transform: rotate(45deg);
+}
+
+.mbmenu_two_menu_list_wrap {
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+  background: #0066a5;
+}
+
+.mbmenu_two_menu_list {
+  padding: 10px 0;
+}
+.mbmenu_two_menu {
+  font-size: 0.875rem;
+  display: block;
+  padding: 10px 30px;
+  color: #fff;
 }
 
 .mbmenu_vlist {
   text-align: left;
 }
-.mbmenu_vlist > li {
-  border-bottom: 0.0625rem solid #e5e5e5;
-}
-.mbmenu_vlist > li.active .mbmenu_one {
+.mbmenu_vlist > li.active .mbmenu_one .mbmenu_one {
   color: #FFBC00;
+}
+.mbmenu_vlist > li.active .mbmenu_one:after {
+  transform: rotate(225deg);
+  top: 19px;
 }
 
 .mbmenu_util_menu_vlist {
@@ -984,13 +1007,13 @@ body ::-webkit-scrollbar-track {
 .mbmenu_util_menu {
   display: block;
   font-size: 14px;
-  color: #999999;
+  font-weight: 700;
+  color: #0077C0;
   font-weight: 600;
   line-height: 1;
-  background: #0077C0;
+  background: #fff;
   padding: 10px 12px;
   border-radius: 100px;
-  color: #fff;
   text-align: center;
 }
 
@@ -1263,6 +1286,10 @@ body ::-webkit-scrollbar-track {
   margin-bottom: 40px;
 }
 
+.sub_contents {
+  padding-bottom: 100px;
+}
+
 @media (max-width: 1299px) {
   .header_util_wrap {
     gap: 10px;
@@ -1381,6 +1408,9 @@ body ::-webkit-scrollbar-track {
   .sub_title {
     font-size: 20px;
     margin-bottom: 25px;
+  }
+  .sub_contents {
+    padding-bottom: 30px;
   }
   .sub_content_wrap {
     padding: 0 20px;

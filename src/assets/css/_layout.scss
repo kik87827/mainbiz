@@ -1,4 +1,8 @@
 /* layout */
+html:not(.touchmode) ::-webkit-scrollbar {width: 10px;}
+html:not(.touchmode) ::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;background-clip: padding-box;border: 2px solid transparent;}
+html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;border-radius: 10px;box-shadow: inset 0px 0px 5px transparent;}
+
 
 /* skip navigation */
 .skiplist {position:relative;z-index:9999;margin:0; padding:0;}
@@ -12,11 +16,11 @@
 .skip.mb_skip{display:none;}
 /* //skip navigation */
 
-body{
+/* body{
     ::-webkit-scrollbar {width:10px;}
     ::-webkit-scrollbar-thumb {background-color: #ccc;border-radius: 10px;background-clip: padding-box;border: 2px solid transparent;}
     ::-webkit-scrollbar-track {background-color: #fff;border-radius: 10px;box-shadow: inset 0px 0px 5px white;}
-}
+} */
 .front_body{
 }
 .page_wrap{
@@ -111,7 +115,7 @@ body{
     }
 }
 .mainmenu_dim{position:fixed;top:0;left:0;width:100%;height:100%;background:#000;opacity:0;transition: .5s;}
-.mobile_mainmenu_wrap{width:247px;background:#fff;position:fixed;top:0;right:-247px;height:100%; transition: .5s;display:flex;flex-direction: column;}
+.mobile_mainmenu_wrap{width:247px;background:$primary;position:fixed;top:0;right:-247px;height:100%; transition: .5s;display:flex;flex-direction: column;}
 .mbelse_low{flex:0;padding:20px;text-align: center;}
 .mbelse_copy{font-size:10px;}
 .mbutil_row{height:56px;background:$primary;display:flex;align-items: center;padding:0 60px 0 20px;position:relative;z-index:5;flex:0 0 56px;}
@@ -126,21 +130,36 @@ body{
 .mblog_sym{color:#fff;font-weight:500;}
 .mbmenu_row{position:relative;overflow-y:auto;flex:1;}
 .mbmenu_one{
-    display:block;color:#333333;font-size:17px;padding:15px 55px 15px 20px;line-height:1;position:relative;font-weight:500;
+    display:block;color:#fff;font-size:17px;padding:15px 55px 15px 20px;line-height:1;position:relative;font-weight:500;
     &:after{
-        display:block;content:'';width:7px;height:7px;border-right:2px solid #888888;border-bottom:2px solid #888;
-        position:absolute;top:19px;right:26px;
-        transform: translateZ(0);-webkit-transform: translateZ(0);-ms-transform: translateZ(0);-moz-transform: translateZ(0);
-        -webkit-transform:rotate(-45deg);transform:rotate(-45deg);-moz-transform:rotate(-45deg);-ms-transform:rotate(-45deg);
+        display:block;content:'';width:8px;height:8px;border-right:2px solid #fff;border-bottom:2px solid #fff;
+        position:absolute;top:15px;right:22px;
+        transform: translateZ(0);
+        transform:rotate(45deg);
     }
+
+   
 }
+.mbmenu_two_menu_list_wrap{
+    height:0;transition:.5s;overflow:hidden;
+    background:#0066a5;
+}
+.mbmenu_two_menu_list{
+    padding:10px 0;
+    > li{}
+}
+.mbmenu_two_menu{font-size:rem(14);display:block;padding:10px 30px;color:#fff;}
 .mbmenu_vlist{
     text-align:left;
     > li{
-        border-bottom:rem(1) solid #e5e5e5;
-
+        
         &.active{
-            .mbmenu_one{color:#FFBC00; }
+            .mbmenu_one{
+                .mbmenu_one{color:#FFBC00; }
+                &:after{
+                    transform:rotate(225deg); top:19px;
+                }
+            }
         }
     }
 }
@@ -150,7 +169,7 @@ body{
 }
 .btn_mbmenuclose{display:block;width:55px;height:55px;z-index:10;background:url("../images/btn_totalclose.png") no-repeat 50% 50%/100% auto;position:absolute;top:0;right:0;}
 .mbmenu_util_menu{
-    display:block; font-size:14px; color:#999999; font-weight:600; line-height:1;background:$primary;padding:10px 12px;border-radius:100px;color:#fff; text-align: center;
+    display:block; font-size:14px; font-weight:700; color:$primary; font-weight:600; line-height:1;background:#fff;padding:10px 12px;border-radius:100px;text-align: center;
 }
 
 .middle_wrap{flex:1; min-height:0;}
@@ -258,7 +277,7 @@ body{
 
 .sub_content_package{}
 .sub_title{font-size:36px;line-height:1; @include gmarket; font-weight:700; color:#333333;margin-bottom:40px;}
-.sub_contents{}
+.sub_contents{padding-bottom:100px;}
 
 @media (max-width:$tablet){
     .header_util_wrap{
@@ -317,7 +336,7 @@ body{
     .breadcrumb_list_wrap{margin:20px 0;}
     .sub_content_package{}
     .sub_title{font-size:20px;margin-bottom:25px;}
-    .sub_contents{}
+    .sub_contents{padding-bottom:30px;}
 
     .sub_content_wrap{padding:0 20px;}
 
