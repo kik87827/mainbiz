@@ -13,7 +13,7 @@
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<script src="./assets/js/main.js"></script>
-	<title>레이아웃 | 메인비즈</title>
+	<title>FAQ | 고객지원 | 메인비즈</title>
 </head>
 
 <body class="front_body">
@@ -44,7 +44,7 @@
 			<div class="header_nav_wrap">
 				<nav class="header_nav_list_wrap">
 					<ul class="header_nav_list" id="pc_gnb">
-						<li>
+						<li name="gnb_info">
 							<a href="#" class="header_nav_menu">MAINBiz 안내</a>
 							<div class="nav_depth_menu_list_wrap">
 								<ul class="nav_depth_menu_list">
@@ -56,7 +56,7 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li name="gnb_app">
 							<a href="#" class="header_nav_menu">인증 신청</a>
 							<div class="nav_depth_menu_list_wrap">
 								<ul class="nav_depth_menu_list">
@@ -66,7 +66,7 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li name="gnb_issue">
 							<a href="#" class="header_nav_menu">확인서 발급</a>
 							<div class="nav_depth_menu_list_wrap">
 								<ul class="nav_depth_menu_list">
@@ -77,7 +77,7 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li name="gnb_data">
 							<a href="#" class="header_nav_menu">정보 마당</a>
 							<div class="nav_depth_menu_list_wrap">
 								<ul class="nav_depth_menu_list">
@@ -87,7 +87,7 @@
 								</ul>
 							</div>
 						</li>
-						<li>
+						<li name="gnb_customer">
 							<a href="#" class="header_nav_menu">고객 지원</a>
 							<div class="nav_depth_menu_list_wrap">
 								<ul class="nav_depth_menu_list">
@@ -124,11 +124,11 @@
 					<div class="mbmenu_row">
 						<div class="mbmenu_inwrap">
 							<ul class="mbmenu_vlist">
-								<li><a href="#" class="mbmenu_one">MAINBiz 안내</a></li>
-								<li><a href="#" class="mbmenu_one">인증 신청</a></li>
-								<li><a href="#" class="mbmenu_one">확인서 발급</a></li>
-								<li><a href="#" class="mbmenu_one">정보 마당</a></li>
-								<li><a href="#" class="mbmenu_one">고객 지원</a></li>
+								<li name="gnb_info"><a href="#" class="mbmenu_one">MAINBiz 안내</a></li>
+								<li name="gnb_app"><a href="#" class="mbmenu_one">인증 신청</a></li>
+								<li name="gnb_issue"><a href="#" class="mbmenu_one">확인서 발급</a></li>
+								<li name="gnb_data"><a href="#" class="mbmenu_one">정보 마당</a></li>
+								<li name="gnb_customer"><a href="#" class="mbmenu_one">고객 지원</a></li>
 							</ul>
 							<ul class="mbmenu_util_menu_vlist">
 								<li><a href="#" class="mbmenu_util_menu" target="_blank">중소벤처24 이지패스</a></li>
@@ -141,8 +141,31 @@
 			<!-- // mobile -->
 		</header>
 		<section class="middle_wrap" id="content">
-			내용이 들어갑니다.
+			<div class="sub_visual_wrap sv05">
+				<div class="sub_visual_copy_group">
+					<p class="sub_visual_secondary_copy">MAINBiz</p>
+					<h2 class="sub_visual_primary_copy">고객지원</h2>
+				</div>
+			</div>
+			<div class="sub_content_wrap">
+				<div class="breadcrumb_list_wrap">
+					<ul class="breadcrumb_list">
+						<li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+						<li><a href="#" class="breadcrumb_menu_item">고객지원</a></li>
+						<li><a href="#" class="breadcrumb_menu_item emp">FAQ</a></li>
+					</ul>
+				</div>
+				<div class="sub_content_package">
+					<h3 class="sub_title">FAQ</h3>
+					<div class="sub_contents">
+						내용이 들어갑니다.
+					</div>
+				</div>
+			</div>
 		</section>
+		<script>
+			menuRock("[name='gnb_customer']");
+		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
 				<div class="footer_sub_cols">

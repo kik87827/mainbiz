@@ -86,13 +86,15 @@ function layoutFunc() {
 
   function pcGnb() {
     const header_nav_list_wrap = document.querySelector(".header_nav_list_wrap");
-    const header_nav_list = document.querySelector(".header_nav_list");
-    const header_nav_li = document.querySelectorAll(".header_nav_list > li");
     const nav_depth_menu_list_wrap = document.querySelectorAll(".nav_depth_menu_list_wrap");
     const nav_depth_menu_list = document.querySelectorAll(".nav_depth_menu_list");
     const header_nav_menu = document.querySelectorAll(".header_nav_menu");
     const middle_wrap = document.querySelector(".page_wrap > .middle_wrap");
-    const middle_focusItem = middle_wrap.querySelectorAll("a,button,input,textarea,select")[0];
+    let middle_focusItem = null;
+
+    if (!!middle_wrap) {
+      middle_focusItem = middle_wrap.querySelectorAll("a,button,input,textarea,select")[0];
+    }
     // let twodep_ani_is = false;
     let bg_depth = null;
     let max_height = 0;
@@ -110,9 +112,11 @@ function layoutFunc() {
         menuOpen();
       });
     });
-    header_nav_list_wrap.addEventListener("mouseleave", () => {
-      menuReset();
-    });
+    if (!!header_nav_list_wrap) {
+      header_nav_list_wrap.addEventListener("mouseleave", () => {
+        menuReset();
+      });
+    }
     if (!!middle_focusItem) {
       middle_focusItem.addEventListener("focusin", () => {
         menuReset();
@@ -414,5 +418,20 @@ function swiperFunc(option) {
     } else {
       swiper_obj = new Swiper(option.target, option.swiper_option);
     }
+  }
+}
+
+
+
+
+/**
+ * menu rock
+ */
+function menuRock(target) {
+  const targetDom = document.querySelectorAll(target);
+  if (!!targetDom) {
+    targetDom.forEach((item) => {
+      item.classList.add("active");
+    })
   }
 }
