@@ -468,3 +468,70 @@ $(function() {
     }
   }
   
+
+
+
+
+  /* 레이어 포커스 머물게 하는 함수 */
+function setTabControl(element){
+  let focusable = [];
+  let el_firstFocus = null;
+  let el_lastFocus = null;
+  const targetElement = document.querySelector(element);
+  const targetElementAll = targetElement.querySelectorAll("*");
+  targetElement.setAttribute("tabIndex","0");
+  if(!!targetElementAll){
+    targetElementAll.forEach((item)=>{
+      if(item.tagName.match(/^A$|AREA|INPUT|TEXTAREA|SELECT|BUTTON/gim) && parseInt(item.getAttribute("tabIndex")) !== -1) {
+          focusable.push(item);
+      }
+      if((item.getAttribute("tabIndex") !== null) && (parseInt(item.getAttribute("tabIndex")) >= 0) && (item.getAttribute("tabIndex", 2) !== 32768)) {
+          focusable.push(item);
+      }
+    });
+  }
+  
+  el_firstFocus = focusable[0];
+  el_lastFocus = focusable[focusable.length-1];
+  console.log(el_firstFocus, el_lastFocus);
+  el_firstFocus.addEventListener("keydown",(e)=>{
+      let keyCode = e.keyCode || e.which;
+      if(keyCode == 9){
+          if(e.shiftKey){
+            el_lastFocus.focus();
+              e.preventDefault();
+          }
+      }
+  });
+  el_lastFocus.addEventListener("keydown",(e)=>{
+    let keyCode = e.keyCode || e.which;
+    if(keyCode == 9){
+        if(!e.shiftKey){
+          el_firstFocus.focus();
+            e.preventDefault();
+        }
+    }
+  });
+  /* el_firstFocus.addEventListener("keydown",(e)=>{
+      let keyCode = e.keyCode || e.which;
+      if(keyCode == 9){
+          if(e.shiftKey){
+            el_lastFocus.focus();
+              e.preventDefault();
+          }
+      }
+  });
+  el_lastFocus.addEventListener("keydown",(e)=>{
+    let keyCode = e.keyCode || e.which;
+    if(keyCode == 9){
+        if(!e.shiftKey){
+            $(el_firstFocus).focus();
+            e.preventDefault();
+        }
+    }
+  });
+  targetElement.querySelector(el_firstFocus).focus(); */
+ // targetElement.querySelector("."+el_firstFocus.className).focus();
+
+  el_firstFocus.focus();
+}
