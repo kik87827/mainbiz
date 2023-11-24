@@ -405,3 +405,88 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 }
 @media (max-width:$mobile_small){
 }
+
+
+
+/* form */
+.form_cols_container{}
+.form_cols{}
+.form_fieldset{
+    &.type2{
+
+    }
+}
+.form_field_legend{}
+.form_field_legend_logo{
+    &.type2{}
+}
+.field_inner_block{
+    &:last-of-type{}
+}
+input.form_input{}
+.btn_form_submit{}
+.btn_form_submit_text{}
+.field_other_item_wrap{}
+.field_other_item_list{
+    > li{
+        &:last-of-type{}
+    }
+}
+.btn_text_item{}
+
+.form_linkbox{}
+.form_linkbox_title_group{}
+.form_linkbox_title_sub{}
+.form_linkbox_title_main{}
+.form_linkbox_content_group{}
+.btn_direct_go{}
+
+.ms_inner_container{
+    &.type2{
+        .btn_form_submit_wrap{}
+    }
+}
+
+.form_block_wrap{}
+.form_block_item{
+    &:last-of-type{}
+}
+.form_block_title_row{}
+.form_block_label{}
+.form_block_label_message{}
+.form_block_content_row{
+    input.form_input{}
+}
+.inline_form_group{}
+.inline_form_group{}
+.inline_form_cols{
+    &.else_cols{}
+}
+.inline_form_else_text{}
+.form_item_box_group{
+    input.form_input{}
+}
+.btn_form_box_control_cols{}
+.btn_form_box_control{}
+.note_contents_wrap{
+    .bullet_text_list{
+        > li {
+            &::before{}
+            &:last-of-type{}
+        }
+    }
+}
+.bullet_text_list{
+    > li {
+        &::before{}
+        &:last-of-type{}
+    }
+}
+
+.btn_form_submit_wrap{}
+.btn_form_submit_text{}
+
+
+.result_message_box{
+    & + .note_contents_wrap{}
+}
