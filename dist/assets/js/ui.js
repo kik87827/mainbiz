@@ -133,14 +133,14 @@ function layoutFunc() {
           const thisEventParentGlobalLi = thisEventParentGlobal.querySelectorAll(":scope > li");
           const thisEventDepth = thisEventParent.querySelector(".mbmenu_two_menu_list_wrap");
           const thisEventDepthInner = thisEventParent.querySelector(".mbmenu_two_menu_list");
-          console.log(thisEventParentGlobalLi);
           if (!!thisEventParentGlobalLi) {
             thisEventParentGlobalLi.forEach((item) => {
               const thisItem = item;
-              const thisItemDepth = item.querySelector(".mbmenu_two_menu_list_wrap");
+              const thisItemDepth = thisItem.querySelector(".mbmenu_two_menu_list_wrap");
               if (thisEventParent !== item) {
                 item.classList.remove("active");
                 if (!!thisItemDepth) {
+                  thisItemDepth.classList.remove("motion");
                   thisItemDepth.style.height = "0px";
                 }
               }
@@ -148,8 +148,10 @@ function layoutFunc() {
           }
           thisEventParent.classList.toggle("active");
           if (thisEventParent.classList.contains("active")) {
+            thisEventDepth.classList.add("motion");
             thisEventDepth.style.height = thisEventDepthInner.getBoundingClientRect().height + "px";
           } else {
+            thisEventDepth.classList.remove("motion");
             thisEventDepth.style.height = "0px";
           }
         });
@@ -167,11 +169,6 @@ function layoutFunc() {
     }
 
     function menuOpen() {
-      /* console.log(timeout_value);
-      if(timeout_value){
-        clearTimeout(timeout_value);
-      } */
-      //if(twodep_ani_is){return;}
       if (!!nav_depth_menu_list_wrap) {
         let motionObj = [bg_depth, ...nav_depth_menu_list_wrap];
         header_nav_list_wrap.classList.add("ready");
@@ -184,24 +181,15 @@ function layoutFunc() {
 
     function menuReset() {
       if (!!nav_depth_menu_list_wrap) {
-        // twodep_ani_is = true;
         let motionObj = [bg_depth, ...nav_depth_menu_list_wrap];
-        /* if(timeout_value){
-          clearTimeout(timeout_value);
-        } */
         getHeight();
         motionObj.forEach((item) => {
           item.style.height = "0px";
         });
-        /* timeout_value = setTimeout(()=>{
-          header_nav_list_wrap.classList.remove("ready");
-          // twodep_ani_is = false;
-        },500); */
       }
     }
 
     function getHeight() {
-
       let twodepArray = [];
       nav_depth_menu_list.forEach((item) => {
         twodepArray.push(item.getBoundingClientRect().height);
@@ -217,7 +205,8 @@ function layoutFunc() {
       mobile_mainmenu_zone = document.querySelector(".mobile_mainmenu_zone"),
       mainmenu_dim = document.querySelector(".mainmenu_dim"),
       btn_mbmenuclose = document.querySelector(".btn_mbmenuclose"),
-      domHtml = document.querySelector("html"),
+      mobile_mainmenu_wrap = document.querySelector(".mobile_mainmenu_wrap");
+    domHtml = document.querySelector("html"),
       domBody = document.querySelector("body");
 
     // init 
@@ -246,9 +235,12 @@ function layoutFunc() {
       mobile_mainmenu_zone.classList.add("active")
       setTimeout(function() {
         mobile_mainmenu_zone.classList.add("motion");
+        setTimeout(function() {
+          if (!!mobile_mainmenu_wrap) {
+            setTabControl(".mobile_mainmenu_wrap");
+          }
+        }, 500);
         if (touchstart) {
-          /* domBody.setAttribute("data-scr", window.pageYOffset);
-          domBody.style.marginTop = -window.pageYOffset + "px"; */
           domHtml.classList.add("touchDis");
         }
       }, 30);
@@ -259,8 +251,7 @@ function layoutFunc() {
       setTimeout(function() {
         mobile_mainmenu_zone.classList.remove("active");
         domHtml.classList.remove("touchDis");
-        /*  domBody.style.marginTop = 0;
-         window.scrollTo(0, parseInt(domBody.getAttribute("data-scr"))); */
+        btn_panel_menu.focus();
       }, 500);
     }
   }
@@ -494,7 +485,6 @@ function setTabControl(element) {
 
   el_firstFocus = focusable[0];
   el_lastFocus = focusable[focusable.length - 1];
-  console.log(el_firstFocus, el_lastFocus);
   el_firstFocus.addEventListener("keydown", (e) => {
     let keyCode = e.keyCode || e.which;
     if (keyCode == 9) {
@@ -513,26 +503,5 @@ function setTabControl(element) {
       }
     }
   });
-  /* el_firstFocus.addEventListener("keydown",(e)=>{
-      let keyCode = e.keyCode || e.which;
-      if(keyCode == 9){
-          if(e.shiftKey){
-            el_lastFocus.focus();
-              e.preventDefault();
-          }
-      }
-  });
-  el_lastFocus.addEventListener("keydown",(e)=>{
-    let keyCode = e.keyCode || e.which;
-    if(keyCode == 9){
-        if(!e.shiftKey){
-            $(el_firstFocus).focus();
-            e.preventDefault();
-        }
-    }
-  });
-  targetElement.querySelector(el_firstFocus).focus(); */
-  // targetElement.querySelector("."+el_firstFocus.className).focus();
-
   el_firstFocus.focus();
 }

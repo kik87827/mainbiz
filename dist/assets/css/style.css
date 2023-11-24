@@ -966,7 +966,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   height: 0;
   transition: 0.5s;
   overflow: hidden;
+  visibility: hidden;
   background: #0066a5;
+}
+.mbmenu_two_menu_list_wrap.motion {
+  visibility: visible;
 }
 
 .mbmenu_two_menu_list {

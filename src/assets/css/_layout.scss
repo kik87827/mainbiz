@@ -141,7 +141,10 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
    
 }
 .mbmenu_two_menu_list_wrap{
-    height:0;transition:.5s;overflow:hidden;
+    height:0;transition:.5s;overflow:hidden; visibility: hidden;
+    &.motion{
+        visibility: visible;
+    }
     background:#0066a5;
 }
 .mbmenu_two_menu_list{
