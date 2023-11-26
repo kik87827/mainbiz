@@ -25,7 +25,67 @@
                 <div class="sub_content_package">
                     <h3 class="sub_title">공지사항</h3>
                     <div class="sub_contents">
-                        내용이 들어갑니다.
+                        <form>
+                            <div class="sort_item_wrap">
+                                <div class="sort_item_cols">
+                                    <select class="form_select" title="항목 선택"><option>제목</option></select>
+                                </div>
+                                <div class="sort_item_cols long_type">
+                                    <input type="text" class="form_input search_input" title="검색어 입력" placeholder="검색어를 입력해주세요">
+                                </div>
+                                <div class="sort_item_cols">
+                                    <select class="form_select" title="게시물 리스트 보기 선택"><option>10개씩 보기</option></select>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="list_board_table_wrap">
+                            <table class="list_board_table">
+                                <caption>공지사항 리스트</caption>
+                                <colgroup>
+                                    <col style="width:8%;" />
+                                    <col style="width:10%;" />
+                                    <col />
+                                    <col style="width:10%;" />
+                                    <col style="width:8%;" />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col"><span class="list_th_text">번호</span></th>
+                                        <th scope="col"><span class="list_th_text">분류</span></th>
+                                        <th scope="col"><span class="list_th_text">제목</span></th>
+                                        <th scope="col"><span class="list_th_text">등록일</span></th>
+                                        <th scope="col"><span class="list_th_text">조회수</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><span class="list_td_text cloudy">26</span></td>
+                                        <td><span class="list_td_text current_keyword">기타</span></td>
+                                        <td class="has_primary">
+                                            <a href="#" class="list_td_link">2023년 원자력안전위원회 업무계획</a>
+                                        </td>
+                                        <td><span class="list_td_text cloudy">2027.02.01</span></td>
+                                        <td><span class="list_td_text cloudy">987</span></td>
+                                    </tr>
+                                    <tr class="nodata_tr">
+                                        <td class="nodata_td" colspan="5"><p class="nodata_para">데이터가 들어갑니다.</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- paging -->
+                        <div class="pagination">
+                            <a href="#none" class="control first"><span class="hdtext">처음 목록으로 이동</span></a>
+                            <a href="#none" class="control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+                            <a href="#none" class="num on">1</a>
+                            <a href="#none" class="num">2</a>
+                            <a href="#none" class="num">3</a>
+                            <a href="#none" class="num">4</a>
+                            <a href="#none" class="num">5</a>
+                            <a href="#none" class="control next"><span class="hdtext">다음 목록으로 이동</span></a>
+                            <a href="#none" class="control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+                        </div>
+                        <!-- // paging -->
                     </div>
                 </div>
             </div>

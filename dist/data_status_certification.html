@@ -209,7 +209,103 @@
 				<div class="sub_content_package">
 					<h3 class="sub_title">인증현황</h3>
 					<div class="sub_contents">
-						내용이 들어갑니다.
+						<form>
+							<div class="sort_item_wrap">
+								<div class="sort_item_cols">
+									<select class="form_select" title="지역 선택">
+										<option>전국</option>
+									</select>
+								</div>
+								<div class="sort_item_cols">
+									<select class="form_select" title="평가지표 선택">
+										<option>평가지표</option>
+									</select>
+								</div>
+								<div class="sort_item_cols">
+									<select class="form_select" title="업체명 선택">
+										<option>업체명</option>
+									</select>
+								</div>
+								<div class="sort_item_cols long_type">
+									<div class="search_field_container">
+										<input type="text" class="form_input search_input" title="검색어 입력" placeholder="검색어를 입력해주세요">
+										<a href="#" class="btn_ico_search_submit"><span class="hdtext">검색</span></a>
+									</div>
+								</div>
+								<div class="sort_item_cols">
+									<select class="form_select" title="게시물 리스트 보기 선택">
+										<option>10개씩 보기</option>
+									</select>
+								</div>
+							</div>
+						</form>
+						<div class="list_board_table_wrap">
+							<table class="list_board_table">
+								<caption>인증 현황 리스트</caption>
+								<colgroup>
+									<col style="width:5%;" />
+									<col style="width:10%;" />
+									<col style="width:5%;" />
+									<col style="width:15%;" />
+									<col />
+									<col style="width:5%;" />
+									<col style="width:10%;" />
+									<col style="width:15%;" />
+								</colgroup>
+								<thead>
+									<tr>
+										<th scope="col"><span class="list_th_text">번호</span></th>
+										<th scope="col"><span class="list_th_text">업체명</span></th>
+										<th scope="col"><span class="list_th_text">지역</span></th>
+										<th scope="col"><span class="list_th_text">대표자명</span></th>
+										<th scope="col"><span class="list_th_text">평가지표</span></th>
+										<th scope="col"><span class="list_th_text">업종</span></th>
+										<th scope="col"><span class="list_th_text">업종코드</span></th>
+										<th scope="col"><span class="list_th_text">인증만료일</span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td><span class="list_td_text cloudy">22807</span></td>
+										<td><span class="list_td_text">(주)신안정보통신</span></td>
+										<td><span class="list_td_text">경기</span></td>
+										<td><span class="list_td_text">주을목 , 주기철</span></td>
+										<td><span class="list_td_text">-</span></td>
+										<td><span class="list_td_text">건설업</span></td>
+										<td><span class="list_td_text">41111</span></td>
+										<td><span class="list_td_text cloudy">2027.02.01</span></td>
+									</tr>
+									<tr>
+										<td><span class="list_td_text cloudy">22807</span></td>
+										<td><span class="list_td_text">주식회사 케이엠에스</span></td>
+										<td><span class="list_td_text">충남</span></td>
+										<td><span class="list_td_text">김철휘</span></td>
+										<td><span class="list_td_text">-</span></td>
+										<td><span class="list_td_text">도소매업</span></td>
+										<td><span class="list_td_text">25941</span></td>
+										<td><span class="list_td_text cloudy">2027.02.01</span></td>
+									</tr>
+									<tr class="nodata_tr">
+										<td class="nodata_td" colspan="8">
+											<p class="nodata_para">데이터가 들어갑니다.</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- paging -->
+						<div class="pagination">
+							<a href="#none" class="control first"><span class="hdtext">처음 목록으로 이동</span></a>
+							<a href="#none" class="control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+							<a href="#none" class="num on">1</a>
+							<a href="#none" class="num">2</a>
+							<a href="#none" class="num">3</a>
+							<a href="#none" class="num">4</a>
+							<a href="#none" class="num">5</a>
+							<a href="#none" class="control next"><span class="hdtext">다음 목록으로 이동</span></a>
+							<a href="#none" class="control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+						</div>
+						<!-- // paging -->
 					</div>
 				</div>
 			</div>
