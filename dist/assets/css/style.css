@@ -2108,6 +2108,7 @@ select.form_select.current_placeholder:hover {
   flex: 1;
 }
 
+/* button */
 /* contents */
 .pcbr {
   display: block !important;
@@ -3110,6 +3111,7 @@ input.input_global_search::input-placeholder {
     top: -6px;
   }
 }
+/* view */
 /* form */
 .form_cols_container {
   display: flex;
