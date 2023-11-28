@@ -805,7 +805,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 }
 
 .nav_depth_menu_list {
-  padding-bottom: 65px;
+  padding-bottom: 25px;
 }
 .nav_depth_menu_list > li {
   padding-bottom: 19px;
