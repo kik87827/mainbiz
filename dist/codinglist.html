@@ -107,7 +107,7 @@
 			color: #fff;
 		}
 
-		.defer {
+		.else {
 			color: red;
 		}
 
@@ -405,8 +405,10 @@
 						<td class="no"></td>
 						<td class="link"><a href="data_status_certification_view.html" target="_blank">인증현황 - 상세</a></td>
 						<td class="td_url"></td>
-						<td class="work ing"></td>
-						<td class="bgo"></td>
+						<td class="work else"></td>
+						<td class="bgo">
+							<p>[20231128]기획디자인 확인안됨</p>
+						</td>
 					</tr>
 					<tr>
 						<td class="no"></td>
@@ -500,6 +502,8 @@
 				} else {
 					if ($td.hasClass("ing")) {
 						$td.text(today + " 작업중").addClass('ing');
+					} else if ($td.hasClass("else")) {
+						$td.text("보류").addClass('else');
 					} else {
 						$td.text("대기중").addClass('stand_by');
 					}

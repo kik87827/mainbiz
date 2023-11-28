@@ -213,11 +213,17 @@
 							<div class="sort_item_wrap">
 								<div class="sort_item_cols">
 									<select class="form_select" title="항목 선택">
-										<option>제목</option>
+										<option value="1">번호</option>
+										<option value="2">제목</option>
+										<option value="3">등록일</option>
+										<option value="4">조회수</option>
 									</select>
 								</div>
 								<div class="sort_item_cols long_type">
-									<input type="text" class="form_input search_input" title="검색어 입력">
+									<div class="search_field_container">
+										<input type="text" class="form_input search_input" title="검색어 입력" placeholder="검색어를 입력해주세요">
+										<a href="#" class="btn_ico_search_submit"><span class="hdtext">검색</span></a>
+									</div>
 								</div>
 								<div class="sort_item_cols">
 									<select class="form_select" title="게시물 리스트 보기 선택">
@@ -228,7 +234,7 @@
 						</form>
 						<div class="list_board_table_wrap">
 							<table class="list_board_table">
-								<caption>인증선정취소공고 리스트</caption>
+								<caption><span class="hdtext">인증선정취소공고 리스트</span></caption>
 								<colgroup>
 									<col style="width:8%;" />
 									<col />

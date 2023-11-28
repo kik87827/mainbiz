@@ -27,7 +27,7 @@ a:hover {text-decoration:underline;}
 .ing {color:blue;}
 .bgo{text-align:left;}
 .end {background:green;color:#fff;}
-.defer{color:red;}
+.else{color:red;}
 .modify{color:#ff5400;}
 .list_w table td.link,
 .list_w table td.td_url,
@@ -261,8 +261,10 @@ a:hover {text-decoration:underline;}
 					<td class="no"></td>
 					<td class="link"><a href="data_status_certification_view.html" target="_blank">인증현황 - 상세</a></td>
 					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
+					<td class="work else"></td>
+					<td class="bgo">
+						<p>[20231128]기획디자인 확인안됨</p>
+					</td>
 				</tr>
 				<tr>
 					<td class="no"></td>
@@ -356,6 +358,8 @@ function chkList(){
 		} else {
 			if($td.hasClass("ing")){
 				$td.text(today+" 작업중").addClass('ing');
+			}else if($td.hasClass("else")){
+				$td.text("보류").addClass('else');
 			}else{
 				$td.text("대기중").addClass('stand_by');
 			}
