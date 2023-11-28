@@ -1,5 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
     commonInit();
+    selectFunc();
 });
 window.addEventListener("load", () => {
   layoutFunc();
@@ -508,4 +509,22 @@ function setTabControl(element){
     }
   });
   el_firstFocus.focus();
+}
+
+
+
+function selectFunc(){
+  addDynamicEventListener(document.body, 'change', '.form_select', function(e) {
+    const thisTarget = e.target;
+
+    valueCheck(thisTarget);
+  });
+
+  function valueCheck(target){
+    if(!target.value){
+      target.classList.add("current_placeholder");
+    }else{
+      target.classList.remove("current_placeholder");
+    }
+  }
 }

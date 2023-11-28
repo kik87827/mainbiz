@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
@@ -212,18 +212,17 @@
 						<form>
 							<div class="sort_item_wrap">
 								<div class="sort_item_cols">
-									<select class="form_select" title="지역 선택">
-										<option>전국</option>
+									<select class="form_select" required title="지역 선택">
+										<option value="">선택</option>
+										<option value="1" selected>전국</option>
 									</select>
-								</div>
-								<div class="sort_item_cols">
-									<select class="form_select" title="평가지표 선택">
-										<option>평가지표</option>
+									<select class="form_select" required title="평가지표 선택">
+										<option value="">선택</option>
+										<option value="1" selected>평가지표</option>
 									</select>
-								</div>
-								<div class="sort_item_cols">
-									<select class="form_select" title="업체명 선택">
-										<option>업체명</option>
+									<select class="form_select" required title="업체명 선택">
+										<option value="">선택</option>
+										<option value="1" selected>업체명</option>
 									</select>
 								</div>
 								<div class="sort_item_cols long_type">
@@ -233,8 +232,9 @@
 									</div>
 								</div>
 								<div class="sort_item_cols">
-									<select class="form_select" title="게시물 리스트 보기 선택">
-										<option>10개씩 보기</option>
+									<select class="form_select" required title="게시물 리스트 보기 선택">
+										<option value="">선택</option>
+										<option value="1" selected>10개씩 보기</option>
 									</select>
 								</div>
 							</div>
