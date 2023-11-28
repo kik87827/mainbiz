@@ -172,7 +172,9 @@ $(function() {
       function menuOpen(){
         if(!!nav_depth_menu_list_wrap){
           let motionObj = [bg_depth,...nav_depth_menu_list_wrap];
-          header_nav_list_wrap.classList.add("ready");
+          if(!!header_nav_list_wrap){
+            header_nav_list_wrap.classList.add("ready","active");
+          }
           getHeight();
           motionObj.forEach((item)=>{
             item.style.height = max_height + "px";
@@ -180,6 +182,9 @@ $(function() {
         }
       }
       function menuReset(){
+        if(!!header_nav_list_wrap){
+          header_nav_list_wrap.classList.remove("active");
+        }
         if(!!nav_depth_menu_list_wrap){
           let motionObj = [bg_depth,...nav_depth_menu_list_wrap];
           getHeight();
