@@ -1,0 +1,71 @@
+/* 공통 */
+
+.table.type1 {
+  border: 1px solid #73b4dd;
+  border-radius: 16px;
+
+  th {
+    padding: 12px 20px;
+    background-color: rgba(0, 119, 192, 0.1);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: -5%;
+    text-align: left;
+    color: #0077c0;
+  }
+
+  td {
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23.4px;
+    letter-spacing: -5%;
+    text-align: left;
+    color: #555;
+  }
+}
+
+.heading1 {
+  display: block;
+  margin: 64px 0 32px;
+  font-weight: 700;
+  font-size: 28px;
+  letter-spacing: -5%;
+  color: #555;
+}
+
+
+
+
+/* MAINBiz 안내 - 제도안내 */
+
+.overview_visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  padding-left: 64px;
+  border-radius: 16px;
+  background:linear-gradient(to left, #3ec6c9, #5c79d1);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -42px;
+    right: 20px;
+    width: 612px;
+    height: 312px;
+    background: url("../images/img_overview_visual.png") no-repeat 0 0;
+    background-size: contain;
+  }
+}
+
+.overview_visual_text {
+  display: block;
+  font-family: 'Poppins Bold';
+  font-size: 64px;
+  line-height: 80px;
+  color: rgba(255, 255, 255, 0.5);
+}
