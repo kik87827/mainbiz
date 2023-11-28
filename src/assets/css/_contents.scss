@@ -427,7 +427,13 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 }
 input.form_input{
     border:1px solid #ddd; appearance: none; border-radius:12px;width:100%;height:1;height:60px;width:100%; box-sizing: border-box; padding:0 16px;font-size:18px; font-weight:500; color:#000;
-    &.search_input{}
+    &.search_input{border:0;height:46px;border-radius:8px;width:100%;
+        &::-webkit-input-placeholder{color:#bbb;}
+        &::-moz-input-placeholder{color:#bbb;}
+        &:-ms-input-placeholder{color:#bbb;}
+        &::-ms-input-placeholder{color:#bbb;}
+        &::input-placeholder{color:#bbb;}
+    }
 
     &.size2{height:48px;border-radius:8px;font-size:16px;}
 }
@@ -510,17 +516,20 @@ input.form_input{
     & + .note_contents_wrap{}
 }
 
-
-
-.sort_item_wrap{}
+.sort_item_wrap{display:flex; gap:16px;}
 .sort_item_cols{
-    &.long_type{}
+    display:flex; gap: 16px;
+    .form_select{width:100%;min-width:160px;}
+    &.long_type{flex:1; }
     &:last-of-type{}
 }
 select.form_select{}
-.search_field_container{}
+.search_field_container{
+    border:1px solid #bbb; height: 48px; border-radius:8px; position:relative; overflow:hidden; box-sizing: border-box; width:100%; display:flex;align-items:center;
+    > input.search_input{flex:1;}
+}
 
-.btn_ico_search_submit{}
+.btn_ico_search_submit{flex:0 0 46px;display:block; width:46px;height:46px;background:url("../images/ico_search_20x20.png") no-repeat 50% 50%/20px auto;}
 .list_board_table_wrap{}
 .list_board_table{
     thead{
@@ -634,10 +643,10 @@ select.form_select{}
 	-webkit-transform:rotate(45deg);transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);top:1px;
 }
 .pnt_ellipsis{display:inline-block; box-sizing:border-box; position:relative;height:19px; font-size:14px;line-height:1.2; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:100%;}
-@media (max-width: 1023px) {
+@media (max-width: $mobile_large) {
     .paging_layer_right{top:-1px;}
 }
-@media (max-width: 767px) {
+@media (max-width: $mobile) {
 	.prevnext_list_w{font-size:14px;}
 	.pnt_low{padding:10px 15px;}
 	
@@ -657,7 +666,7 @@ select.form_select{}
     .paging_layer_right{position:static;text-align:center;margin-top:30px;}
     
 }
-@media (max-width: 359px) {
+@media (max-width: $mobile_small) {
 	
 
 	.pagination a {width: 25px;height: 25px;font-size:12px;line-height: 25px;}
