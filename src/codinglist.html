@@ -27,7 +27,7 @@ a:hover {text-decoration:underline;}
 .ing {color:blue;}
 .bgo{text-align:left;}
 .end {background:green;color:#fff;}
-.defer{color:red;}
+.else{color:red;}
 .modify{color:#ff5400;}
 .list_w table td.link,
 .list_w table td.td_url,
@@ -176,42 +176,7 @@ a:hover {text-decoration:underline;}
 				</tr>
 				<tr>
 					<td class="no"></td>
-					<td class="link"><a href="biz_benefit_01.html" target="_blank">인증혜택-01</a></td>
-					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="biz_benefit_02.html" target="_blank">인증혜택-02</a></td>
-					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="biz_benefit_03.html" target="_blank">인증혜택-03</a></td>
-					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="biz_benefit_04.html" target="_blank">인증혜택-04</a></td>
-					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="biz_benefit_05.html" target="_blank">인증혜택-05</a></td>
-					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
-				</tr>
-				<tr>
-					<td class="no"></td>
-					<td class="link"><a href="biz_benefit_06.html" target="_blank">인증혜택-06</a></td>
+					<td class="link"><a href="biz_benefit.html" target="_blank">인증혜택</a></td>
 					<td class="td_url"></td>
 					<td class="work ing"></td>
 					<td class="bgo"></td>
@@ -261,8 +226,10 @@ a:hover {text-decoration:underline;}
 					<td class="no"></td>
 					<td class="link"><a href="data_status_certification_view.html" target="_blank">인증현황 - 상세</a></td>
 					<td class="td_url"></td>
-					<td class="work ing"></td>
-					<td class="bgo"></td>
+					<td class="work else"></td>
+					<td class="bgo">
+						<p>[20231128]기획디자인 확인안됨</p>
+					</td>
 				</tr>
 				<tr>
 					<td class="no"></td>
@@ -356,6 +323,8 @@ function chkList(){
 		} else {
 			if($td.hasClass("ing")){
 				$td.text(today+" 작업중").addClass('ing');
+			}else if($td.hasClass("else")){
+				$td.text("보류").addClass('else');
 			}else{
 				$td.text("대기중").addClass('stand_by');
 			}
