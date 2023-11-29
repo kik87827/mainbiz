@@ -56,7 +56,7 @@ input:-webkit-autofill {
 
 .touchDis{touch-action: none;overflow:hidden;position:relative;}
 .ellips{display:inline-block; white-space: nowrap; text-overflow: ellipsis;overflow:hidden;position:relative; max-width:99%;}
-.hdtext{display:inline-block;width:0;height:0;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
+.hdtext{overflow: hidden;display: inline-block;position: absolute;z-index: -1;width: 1px;height: 1px;margin: 0;border: 0;font-size: 1px;line-height: 1px;clip: rect(1px, 1px, 1px, 1px);clip-path: inset(50%);}
 .enable_text{display:block;width:auto;height:auto;overflow:visible;line-height:1;color:#000;position:relative;top:0;left:0;}
 .none{display:none !important;}
 i{display:flex;align-items: center;justify-content: center;font-size:0;line-height:0;text-align:center;
