@@ -67,13 +67,122 @@
 			</div>
 			<div class="guide_contents_item">
 				<div class="guide_contents_title_row">
+					<h3 class="guide_contents_title">Pagination</h3>
+					<p class="guide_contents_title_copy">Pagination 컴포넌트 가이드입니다.</p>
+				</div>
+				<div class="guide_contents_content_row">
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">Default</p>
+						<p class="vertical_cont_copy">반응형 페이징은 넘버 1~5까지 들어갑니다.</p>
+						<div class="vertical_render_wrap">
+							<!-- paging -->
+							<div class="paging_wrap">
+								<a href="#none" class="paging_control first"><span class="hdtext">처음 목록으로 이동</span></a>
+								<a href="#none" class="paging_control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+								<div class="paging_number_group">
+									<a href="#none" class="paging_number active">1</a>
+									<a href="#none" class="paging_number">2</a>
+									<a href="#none" class="paging_number">3</a>
+									<a href="#none" class="paging_number">4</a>
+									<a href="#none" class="paging_number">5</a>
+								</div>
+								<a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+								<a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+							</div>
+							<!-- // paging -->
+						</div>
+						<div class="vertical_code_wrap">
+							<textarea rows="10" cols="10" class="textarea">
+<!-- paging -->
+<div class="paging_wrap">
+    <a href="#none" class="paging_control first disabled"><span class="hdtext">처음 목록으로 이동</span></a>
+    <a href="#none" class="paging_control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+    <div class="paging_number_group">
+        <a href="#none" class="paging_number active">1</a>
+        <a href="#none" class="paging_number">2</a>
+        <a href="#none" class="paging_number">3</a>
+        <a href="#none" class="paging_number">4</a>
+        <a href="#none" class="paging_number">5</a>
+    </div>
+    <a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+    <a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+</div>
+<!-- // paging -->
+                            </textarea>
+							<a href="#" class="btn_copyitem"></a>
+						</div>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">Disabled 버튼 있을시</p>
+						<ul class="vertical_cont_copy_list">
+							<li>반응형 페이징은 모바일 폭까지 감안해서 넘버 1~5까지 들어갑니다.</li>
+						</ul>
+						<div class="vertical_render_wrap">
+							<!-- paging -->
+							<div class="paging_wrap">
+								<a href="#none" class="paging_control first disabled" aria-hidden="true"><span class="hdtext">처음 목록으로 이동</span></a>
+								<a href="#none" class="paging_control prev disabled" aria-hidden="true"><span class="hdtext">이전 목록으로 이동</span></a>
+								<div class="paging_number_group">
+									<a href="#none" class="paging_number active">1</a>
+									<a href="#none" class="paging_number">2</a>
+									<a href="#none" class="paging_number">3</a>
+									<a href="#none" class="paging_number">4</a>
+									<a href="#none" class="paging_number">5</a>
+								</div>
+								<a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+								<a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+							</div>
+							<!-- // paging -->
+						</div>
+						<div class="vertical_code_wrap">
+							<textarea rows="10" cols="10" class="textarea">
+ <!-- paging -->
+ <div class="paging_wrap">
+    <a href="#none" class="paging_control first disabled" aria-hidden="true"><span class="hdtext">처음 목록으로 이동</span></a>
+    <a href="#none" class="paging_control prev disabled" aria-hidden="true"><span class="hdtext">이전 목록으로 이동</span></a>
+    <div class="paging_number_group">
+        <a href="#none" class="paging_number active">1</a>
+        <a href="#none" class="paging_number">2</a>
+        <a href="#none" class="paging_number">3</a>
+        <a href="#none" class="paging_number">4</a>
+        <a href="#none" class="paging_number">5</a>
+    </div>
+    <a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+    <a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+</div>
+<!-- // paging -->
+                            </textarea>
+							<a href="#" class="btn_copyitem"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="guide_contents_item">
+				<div class="guide_contents_title_row">
 					<h3 class="guide_contents_title">Select</h3>
 					<p class="guide_contents_title_copy">Select 컴포넌트 가이드입니다.</p>
 				</div>
 				<div class="guide_contents_content_row">
 					<div class="vertical_cont_item">
-						<p class="vertical_cont_title">기본 가이드</p>
-						<p class="vertical_cont_copy">기본 가이드 설명입니다.</p>
+						<p class="vertical_cont_title">선택된 옵션이 없는경우</p>
+						<div class="vertical_render_wrap">
+							<select class="form_select current_placeholder" required>
+								<option value="" selected>선택</option>
+								<option value="1">전국</option>
+							</select>
+						</div>
+						<div class="vertical_code_wrap">
+							<textarea rows="10" cols="10" class="textarea">
+<select class="form_select current_placeholder" required>
+    <option value="" selected>선택</option>
+    <option value="1">전국</option>
+</select>
+                            </textarea>
+							<a href="#" class="btn_copyitem"></a>
+						</div>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">선택된 옵션이 있을경우</p>
 						<div class="vertical_render_wrap">
 							<select class="form_select" required>
 								<option value="">선택</option>
@@ -82,17 +191,10 @@
 						</div>
 						<div class="vertical_code_wrap">
 							<textarea rows="10" cols="10" class="textarea">
-
-                            </textarea>
-							<a href="#" class="btn_copyitem"></a>
-						</div>
-					</div>
-					<div class="vertical_cont_item">
-						<p class="vertical_cont_title">기본 가이드</p>
-						<p class="vertical_cont_copy">기본 가이드 설명입니다.</p>
-						<div class="vertical_code_wrap">
-							<textarea rows="10" cols="10" class="textarea">
-
+<select class="form_select" required>
+    <option value="">선택</option>
+    <option value="1" selected>전국</option>
+</select>
                             </textarea>
 							<a href="#" class="btn_copyitem"></a>
 						</div>
