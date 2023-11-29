@@ -40,25 +40,38 @@
 				</div>
 				<div class="guide_contents_content_row">
 					<div class="vertical_cont_item">
-						<p class="vertical_cont_title">기본 가이드</p>
-						<p class="vertical_cont_copy">기본 가이드 설명입니다.</p>
+						<p class="vertical_cont_title">Default</p>
+						<p class="vertical_cont_copy">Primary 컬러를 default로 스타일링 되었습니다.</p>
+						<ul class="vertical_cont_copy_list">
+							<li>Primary 컬러를 default로 스타일링 되었습니다.</li>
+							<li>다른 타입의 디자인이 있을 시 addClass로 추가정의합니다.</li>
+						</ul>
+						<div class="vertical_render_wrap">
+							<a href="#" class="btn_box"><span class="btn_box_text">목록</span></a>
+						</div>
 						<div class="vertical_code_wrap">
 							<textarea rows="10" cols="10" class="textarea">
-        <div class="test">
-        test
-        </div>
+<a href="#" class="btn_box"><span class="btn_box_text">목록</span></a>
                             </textarea>
 							<a href="#" class="btn_copyitem"></a>
 						</div>
 					</div>
 					<div class="vertical_cont_item">
 						<p class="vertical_cont_title">정렬 가이드</p>
-						<p class="vertical_cont_copy">정렬 가이드 설명입니다.</p>
+						<ul class="vertical_cont_copy_list">
+							<li>센터 정렬을 default로 스타일링 되었습니다.</li>
+							<li>다른 정렬 타입이 있을 시 addClass로 추가정의합니다.</li>
+						</ul>
+						<div class="vertical_render_wrap">
+							<div class="btn_bottom_wrap">
+								<a href="#" class="btn_box"><span class="btn_box_text">목록</span></a>
+							</div>
+						</div>
 						<div class="vertical_code_wrap">
 							<textarea rows="10" cols="10" class="textarea">
-        <div class="test">
-        test2
-        </div>
+<div class="btn_bottom_wrap">
+    <a href="#" class="btn_box"><span class="btn_box_text">목록</span></a>
+</div>
                             </textarea>
 							<a href="#" class="btn_copyitem"></a>
 						</div>
@@ -225,6 +238,7 @@
 			const btn_copy = item.querySelector(".btn_copyitem");
 			btn_copy.addEventListener("click", (e) => {
 				// textarea의 내용을 복사한다.
+				e.preventDefault();
 				window.navigator.clipboard.writeText(textarea.value).then(() => {
 					// 복사가 완료되면 호출된다.
 					btn_copy.classList.add("active");
