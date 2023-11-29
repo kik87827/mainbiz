@@ -88,15 +88,184 @@
 						</div>
 					</div>
 					<div class="vertical_cont_item">
-						<p class="vertical_cont_title">기본 가이드</p>
-						<p class="vertical_cont_copy">기본 가이드 설명입니다.</p>
+						<p class="vertical_cont_title">title</p>
+						<p class="vertical_cont_copy">타입에 따라 type1, type2 클래스 추가</p>
+						<div class="vertical_render_wrap">
+							<div class="title_wrap">
+								<h4 class="title type1">title type1</h4>
+							</div>
+
+							<h5 class="title type2">title type2</h5>
+						</div>
 						<div class="vertical_code_wrap">
 							<textarea rows="10" cols="10" class="textarea">
+<div class="title_wrap">
+    <h4 class="title type1">title type1</h4>
+</div>
 
+<h5 class="title type2">title type2</h5>
                             </textarea>
 							<a href="#" class="btn_copyitem"></a>
 						</div>
 					</div>
+
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">text</p>
+						<p class="vertical_cont_copy">타입에 따라 type1, type2 클래스 추가</p>
+						<div class="vertical_render_wrap">
+							<p class="text type1">text type1</p>
+						</div>
+						<div class="vertical_code_wrap">
+							<textarea rows="10" cols="10" class="textarea">
+<p class="text type1">text type1</p>
+                            </textarea>
+							<a href="#" class="btn_copyitem"></a>
+						</div>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">안내(유의사항) 리스트</p>
+						<p class="vertical_cont_copy">컬러에 따라 blue, gray 더블클래스 추가</p>
+						<div class="vertical_render_wrap">
+							<div class="info_list">
+								<strong class="info_list_title">title</strong>
+								<ul>
+									<li class="info_list_item blue">info_list_item blue</li>
+									<li class="info_list_item gray">info_list_item gray</li>
+								</ul>
+							</div>
+						</div>
+						<div class="vertical_code_wrap">
+							<textarea rows="10" cols="10" class="textarea">
+<div class="info_list">
+    <strong class="info_list_title">title</strong>
+    <ul>
+        <li class="info_list_item blue">info_list_item blue</li>
+        <li class="info_list_item gray">info_list_item gray</li>
+  </ul>
+</div>
+                            </textarea>
+							<a href="#" class="btn_copyitem"></a>
+						</div>
+					</div>
+					<div class="vertical_cont_item">
+						<p class="vertical_cont_title">table</p>
+						<p class="vertical_cont_copy">타입에 따라 type1, type2 클래스 추가 <br><br>
+							type1 : 기본 좌측 정렬<br><br>
+							tyep2 : 기본 가운데 정렬<br><br>
+							정렬에 따라 left, center 클래스 추가</p>
+						<div class="vertical_render_wrap">
+							<div class="table type1">
+								<table>
+									<caption><span class="hdtext">메인비즈 운영기관 개요 목록</span></caption>
+									<colgroup>
+										<col style="width:13%">
+										<col>
+									</colgroup>
+									<tbody>
+										<tr>
+											<th scope="row">총괄기관</th>
+											<td>
+												중소벤처기업부
+												<p class="table_text gray">table_text gray</p>
+											</td>
+										</tr>
+										<tr>
+											<th scope="row">평가기관</th>
+											<td>
+												신용보증기금, 한국생산성본부(KPC), 기술보증기금, 메인비즈협회*
+												<p class="table_text gray">table_text gray</p>
+												<p class="table_text orange">table_text orange</p>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="table type2">
+								<table>
+									<caption><span class="hdtext">평가제외대상기업 업종 및 한국표준산업분류 목록</span></caption>
+									<colgroup>
+										<col>
+										<col style="width:25%">
+									</colgroup>
+									<thead>
+										<tr>
+											<th scope="col">업종</th>
+											<th scope="col">한국표준산업분류</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td class="left">불건전 영상게임기 제조업 C33402 중</td>
+											<td>C33402 중</td>
+										</tr>
+										<tr>
+											<td class="left">도박게임장비 등 불건전, 오락용품 제조업</td>
+											<td>C33409 중</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div class="vertical_code_wrap">
+							<textarea rows="10" cols="10" class="textarea">
+<div class="table type1">
+    <table>
+        <caption><span class="hdtext">메인비즈 운영기관 개요 목록</span></caption>
+        <colgroup>
+            <col style="width:13%">
+            <col>
+        </colgroup>
+        <tbody>
+        <tr>
+            <th scope="row">총괄기관</th>
+            <td>
+                중소벤처기업부
+                <p class="table_text gray">table_text gray</p>
+            </td>
+        </tr>
+        <tr>
+            <th scope="row">평가기관</th>
+            <td>
+                신용보증기금, 한국생산성본부(KPC), 기술보증기금, 메인비즈협회*
+                <p class="table_text gray">table_text gray</p>
+                <p class="table_text orange">table_text orange</p>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<div class="table type2">
+    <table>
+        <caption><span class="hdtext">평가제외대상기업 업종 및 한국표준산업분류 목록</span></caption>
+        <colgroup>
+            <col>
+            <col style="width:25%">
+        </colgroup>
+        <thead>
+        <tr>
+            <th scope="col">업종</th>
+            <th scope="col">한국표준산업분류</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="left">불건전 영상게임기 제조업 C33402 중</td>
+            <td>C33402 중</td>
+        </tr>
+        <tr>
+            <td class="left">도박게임장비 등 불건전, 오락용품 제조업</td>
+            <td>C33409 중</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+                            </textarea>
+							<a href="#" class="btn_copyitem"></a>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</section>
