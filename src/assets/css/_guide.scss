@@ -35,6 +35,15 @@
 .vertical_cont_item{padding-top:60px;}
 .vertical_cont_title{font-weight:700;color:#3074F0;font-size:20px;}
 .vertical_cont_copy{margin-top:15px;font-size:16px;}
+.vertical_cont_copy_list{
+    margin-top:15px;font-size:16px;
+    > li{
+        position: relative; padding-left:15px;
+        &:before{
+            display:block;content:"-";position:absolute;top:0;left:0;
+        }
+    }
+}
 .vertical_code_wrap{margin-top:10px;position:relative;overflow:hidden;}
 .vertical_code_wrap .CodeMirror{background:#f3f4f5;border-top:5px solid #e7e8e9;padding:40px 30px 25px}
 .vertical_code_wrap > .textarea{
