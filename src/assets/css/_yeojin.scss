@@ -1,37 +1,5 @@
 /* 공통 */
 
-.button_wrap {
-  display: flex;
-  margin-top: 64px;
-  gap: 16px;
-  text-align: center;
-}
-
-.button {
-  display: inline-block;
-  border: 0;
-  border-radius: 0;
-  background: transparent;
-  color: #222;
-  appearance: none;
-
-  &.blue {
-    border-radius: 12px;
-    border-color: #0077c0;
-    background-color: #0077c0;
-    color: #fff;
-  }
-
-  &.1x {
-    width: 180px;
-    height: 60px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 60px;
-    letter-spacing: -0.5px;
-  }
-}
-
 .table {
   margin-top: 32px;
 
@@ -124,7 +92,6 @@
     }
   }
 }
-
 .table_text {
   display: block;
   margin-top: 6px;
@@ -168,7 +135,6 @@
 .title_wrap {
   margin: 64px 0 32px;
 }
-
 .title {
   display: block;
 
@@ -209,7 +175,6 @@
   border-radius: 16px;
   background-color: rgba(0, 119, 192, 0.1);
 }
-
 .info_list_title {
   display: inline-block;
   position: relative;
@@ -235,7 +200,6 @@
     background-size: contain;
   }
 }
-
 .info_list_item {
   padding-left: 24px;
   background-repeat: no-repeat;
@@ -262,7 +226,6 @@
 }
 
 /* MAINBiz 안내 - 제도 안내 */
-
 .overview_visual {
   position: relative;
   display: flex;
@@ -277,14 +240,13 @@
     display: block;
     position: absolute;
     top: -42px;
-    right: 20px;
+    right: 30px;
     width: 612px;
     height: 312px;
     background: url("../images/img_overview_visual.png") no-repeat 0 0;
     background-size: contain;
   }
 }
-
 .overview_visual_text {
   display: block;
   font-family: 'Poppins Bold';
@@ -293,8 +255,62 @@
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* MAINBiz 안내 - 인증 절차 */
+.overview_history {
+  overflow: hidden;
+  display: flex;
+  gap: 25px;
+}
+.overview_history_item {
+  flex: 1;
+  height: 263px;
+  box-sizing: border-box;
 
+  &.item1 {
+    padding-top: 80px;
+  }
+  &.item2 {
+    padding-top: 60px;
+  }
+  &.item3 {
+    padding-top: 40px;
+  }
+  &.item4 {
+    padding-top: 20px;
+  }
+  &.item5 {
+    padding-top: 0;
+  }
+}
+.overview_history_date {
+  display: block;
+  margin-bottom: 16px;
+  border-bottom: 20px solid #0077c0;
+  padding-bottom: 16px;
+  font-size: 36px;
+  font-family: 'Rubik Light';
+  line-height: 36px;
+  color: #0077c0;
+}
+.overview_history_cont {
+  height: 100%;
+  border-left: 1px solid #ddd;
+}
+.overview_history_text {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-align: right;
+}
+.overview_history_small {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: #888;
+}
+
+/* MAINBiz 안내 - 인증 절차 */
 .step_visual {
   position: relative;
   display: flex;
@@ -309,20 +325,125 @@
     display: block;
     position: absolute;
     top: -42px;
-    right: 20px;
-    width: 612px;
+    right: 30px;
+    width: 733px;
     height: 312px;
-    background: url("../images/img_overview_visual.png") no-repeat 0 0;
+    background: url("../images/img_step_visual.png") no-repeat 0 0;
     background-size: contain;
   }
 }
-
 .step_visual_text {
   display: block;
   font-family: 'Poppins Bold';
   font-size: 64px;
   line-height: 80px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.step_list {
+  display: flex;
+  gap: 30px;
+}
+.step_list_item {
+  flex: 1;
+  position: relative;
+  padding-bottom: 40px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 66px;
+    right: -20px;
+    width: 10px;
+    height: 26px;
+    background: url("../images/ico_step_list_arrow.png") no-repeat 0 0;
+    background-size: contain;
+  }
+
+  &:last-child::after {
+    display: none;
+  }
+}
+.step_list_icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+.step_list_title {
+  display: block;
+  position: relative;
+  margin: 10px 0;
+  padding-bottom: 11px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #0077c0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30px;
+    height: 1px;
+    background-color: #0077c0;
+    transform: translateX(-50%);
+  }
+}
+.step_list_text {
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #777;
+
+  &.gray {
+    color: #bbb;
+  }
+}
+.step_list_info {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 90px;
+  height: 63px;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  color: #f7943e;
+}
+.step_list_period {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #0077c0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 16px;
+    border: 1px solid #0077c0;
+    border-top: none;
+    border-radius: 0 0 16px 16px;
+  }
 }
 
 .step_method {
@@ -363,7 +484,6 @@
     margin-top: 16px;
   }
 }
-
 .step_data_anchor {
   display: inline-block;
   margin-left: 10px;
@@ -378,27 +498,12 @@
 }
 
 /* MAINBiz 안내 - 인증 혜택 */
-
-.benefit_list {
-  overflow-x: auto;
-
-}
-
-.benefit_panel {
-  padding-top: 64px;
-
-  .title_wrap {
-    margin-top: 0;
-  }
-}
-
 .benefit_list {
   display: flex;
   margin-bottom: 54px;
   padding-bottom: 10px;
   gap: 16px;
 }
-
 .benefit_anchor {
   flex: 1;
   padding: 20px;
@@ -431,5 +536,26 @@
     }
   }
 }
+.benefit_panel {
+  padding-top: 64px;
+
+  .title_wrap {
+    margin-top: 0;
+  }
+}
 
 /* MAINBiz 안내 - CI 소개 */
+.ci {
+  display: flex;
+  gap: 30px;
+}
+.ci_item {
+  flex: 1;
+}
+.ci_text {
+  margin-top: 32px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  color: #777;
+}
