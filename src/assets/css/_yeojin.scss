@@ -5,8 +5,18 @@
   border: 1px solid #73b4dd;
   border-radius: 16px;
 
+  table {
+    width: 100%;
+  }
+
+  tr:nth-child(n+2) th,
+  tr:nth-child(n+2) td {
+    border-top: 1px solid #73b4dd;
+  }
+
   th {
     padding: 12px 20px;
+    border-right: 1px solid #73b4dd;
     background-color: rgba(0, 119, 192, 0.1);
     font-weight: 700;
     font-size: 18px;
@@ -24,6 +34,22 @@
     letter-spacing: -5%;
     text-align: left;
     color: #555;
+  }
+}
+
+.table_text {
+  display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -5%;
+
+  &.gray {
+    color: #888;
+  }
+
+  &.orange {
+    color: #f7943e;
   }
 }
 
