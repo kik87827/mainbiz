@@ -43,7 +43,12 @@ input.form_input{
 /* button */
 .btn_box{min-width:180px;height:60px;box-sizing: border-box;display:inline-flex; align-items: center; justify-content: center; background:$primary;border-radius: 12px;}
 .btn_box_text{display:inline-block;font-weight:700;color:#fff;line-height:1;font-size:20px;letter-spacing: -0.05em;}
-
+.btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
+@media (max-width:$mobile){
+    .btn_bottom_wrap{gap:10px;}
+    .btn_box{min-width:120px;height:40px;border-radius:8px;}
+    .btn_box_text{font-size:16px;}
+}
 
 
 

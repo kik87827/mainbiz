@@ -1,8 +1,6 @@
 @charset "UTF-8";
 /* default */
-.touchmode * {
-  outline: 0 !important;
-} /* 20220415 터치모드 일때 포커스라인 히든 */
+/* .touchmode *{outline:0 !important}  */ /* 20220415 터치모드 일때 포커스라인 히든 */
 * {
   margin: 0;
   padding: 0;
@@ -2193,6 +2191,28 @@ input.form_input.size2 {
   letter-spacing: -0.05em;
 }
 
+.btn_bottom_wrap {
+  margin-top: 64px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .btn_bottom_wrap {
+    gap: 10px;
+  }
+  .btn_box {
+    min-width: 120px;
+    height: 40px;
+    border-radius: 8px;
+  }
+  .btn_box_text {
+    font-size: 16px;
+  }
+}
 /* pagination */
 .paging_wrap {
   margin-top: 64px;
@@ -3470,14 +3490,6 @@ input.input_global_search::input-placeholder {
   font-weight: 500;
 }
 
-.btn_bottom_wrap {
-  margin-top: 64px;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
 /* form */
 .form_cols_container {
   display: flex;
@@ -4516,7 +4528,7 @@ td.nodata_td {
   letter-spacing: -0.5px;
 }
 .table_text.gray {
-  color: #888;
+  color: #999;
 }
 .table_text.orange {
   color: #f7943e;
