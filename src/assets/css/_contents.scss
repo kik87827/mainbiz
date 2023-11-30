@@ -4,12 +4,17 @@
 .pc_img{display:inline-block !important;}
 .mb_img{display:none !important;}
 .mb_item{display:none !important;}
+.pc_item{display:block !important;}
 
-@media (max-width:$mobile){
+@media (max-width:$mobile_large){
+    .pc_item{display:none !important;}
+    .mb_item{display:block !important;}
     .pc_img{display:none !important;}
     .mb_img{display:inline-block !important;}
     .mb_hide{display:none !important;}
     .mb_hidden{display:inline-block;margin:0 !important;padding:0 !important;width:0 !important;height:0 !important;overflow:hidden;line-height:0;color:transparent;position:absolute;top:0;left:-99999px;}
+    
+    .mb_nobreak{white-space: nowrap}
 }
 
 /* main */
@@ -582,6 +587,9 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 .list_board_table_wrap{border-top:3px solid $primary;}
 .list_board_table{
     width:100%;  text-align: center; table-layout: fixed;
+    &.type2{
+        table-layout: auto;
+    }
     thead{
         th{border-bottom:1px solid #73B4DD;padding:18px 10px;text-align: center;}
     }
@@ -648,7 +656,11 @@ td.nodata_td{padding:200px 20px !important;}
     }
 
         
-    .sort_item_wrap{flex-direction: column;}
+    .sort_item_wrap{flex-direction: column;
+        &.break_type2{
+            flex-direction: row;
+        }
+    }
     .sort_item_cols{
         &:last-of-type{}
     }
@@ -661,6 +673,16 @@ td.nodata_td{padding:200px 20px !important;}
 
     .list_board_table_wrap{
         border-top-width:2px;
+        thead{
+            th{padding:15px;}
+        }
+        tbody{
+            td{padding:15px;}
+        }
+        .list_td_link,
+        .list_td_number,
+        .list_th_text{font-size:14px;}
+        .list_td_link{position:relative;top:1px;}
         &.respon_type{
             .list_board_table{
                 colgroup{display:none;}
@@ -686,6 +708,10 @@ td.nodata_td{padding:200px 20px !important;}
     }
     .nodata_para{font-size:14px;}
 }
+
+@media (max-width:$mobile_size1){
+    
+}
 @media (max-width:$mobile_size3){
     .list_board_table_wrap{
         &.respon_type{
@@ -700,10 +726,10 @@ td.nodata_td{padding:200px 20px !important;}
     .sort_item_cols{
        flex-direction: column;
     }
-}
-@media (max-width:$mobile_size2){
- /*    .sort_item_cols{
-        flex-direction: column;
-    } */
+    .sort_item_wrap{
+        &.break_type2{
+            flex-direction: column;
+        }
+    }
 }
 

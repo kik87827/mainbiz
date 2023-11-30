@@ -528,3 +528,52 @@ function selectFunc(){
     }
   }
 }
+
+
+function responColsgroup(){
+  const responcols = document.querySelectorAll("[data-responcols]");
+  action();
+  window.addEventListener("resize",()=>{
+    action();
+  });
+  function action(){
+    if(!!responcols){
+      responcols.forEach((item)=>{
+        const thisItem = item;
+        const thisItemCols = thisItem.querySelectorAll("col:not(.mb_hide)");
+        
+        thisItemCols.forEach((col)=>{
+          if(window.innerWidth>1023){
+            if(!!col.dataset.pccols){
+              col.style.width = col.dataset.pccols;
+            }
+          }else{
+            if(!!col.dataset.mbcols){
+
+              col.style.width = col.dataset.mbcols;
+            }
+          }
+        });
+      });
+    }
+  }
+ 
+}
+
+
+
+function setupScrolling() {
+  function scrollToTarget(target) {
+      $('html, body').animate({
+          scrollTop: $(target).offset().top
+      }, 800);
+  }
+
+  $(document).ready(function() {
+      $(".benefit_anchor").on('click', function(e) {
+          e.preventDefault();
+          var target = $(this).attr('href');
+          scrollToTarget(target);
+      });
+  });
+}

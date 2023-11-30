@@ -2131,6 +2131,7 @@ input.form_input.search_input {
   height: 46px;
   border-radius: 8px;
   width: 100%;
+  padding-right: 0;
 }
 input.form_input.search_input::-webkit-input-placeholder {
   color: #bbb;
@@ -2351,7 +2352,17 @@ input.form_input.size2 {
   display: none !important;
 }
 
-@media (max-width: 767px) {
+.pc_item {
+  display: block !important;
+}
+
+@media (max-width: 1023px) {
+  .pc_item {
+    display: none !important;
+  }
+  .mb_item {
+    display: block !important;
+  }
   .pc_img {
     display: none !important;
   }
@@ -2373,6 +2384,9 @@ input.form_input.size2 {
     position: absolute;
     top: 0;
     left: -99999px;
+  }
+  .mb_nobreak {
+    white-space: nowrap;
   }
 }
 /* main */
@@ -3775,6 +3789,9 @@ input.input_global_search::input-placeholder {
   text-align: center;
   table-layout: fixed;
 }
+.list_board_table.type2 {
+  table-layout: auto;
+}
 .list_board_table thead th {
   border-bottom: 1px solid #73B4DD;
   padding: 18px 10px;
@@ -3920,6 +3937,9 @@ td.nodata_td {
   .sort_item_wrap {
     flex-direction: column;
   }
+  .sort_item_wrap.break_type2 {
+    flex-direction: row;
+  }
   .search_field_container {
     height: 40px;
   }
@@ -3931,6 +3951,21 @@ td.nodata_td {
   }
   .list_board_table_wrap {
     border-top-width: 2px;
+  }
+  .list_board_table_wrap thead th {
+    padding: 15px;
+  }
+  .list_board_table_wrap tbody td {
+    padding: 15px;
+  }
+  .list_board_table_wrap .list_td_link,
+.list_board_table_wrap .list_td_number,
+.list_board_table_wrap .list_th_text {
+    font-size: 14px;
+  }
+  .list_board_table_wrap .list_td_link {
+    position: relative;
+    top: 1px;
   }
   .list_board_table_wrap.respon_type .list_board_table colgroup {
     display: none;
@@ -4004,11 +4039,9 @@ td.nodata_td {
   .sort_item_cols {
     flex-direction: column;
   }
-}
-@media (max-width: 450px) {
-  /*    .sort_item_cols{
-         flex-direction: column;
-     } */
+  .sort_item_wrap.break_type2 {
+    flex-direction: column;
+  }
 }
 .guide_contents_item {
   margin-bottom: 120px;

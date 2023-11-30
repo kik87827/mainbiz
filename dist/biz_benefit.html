@@ -798,20 +798,5 @@
 </html>
 
 <script>
-	function setupScrolling() {
-		function scrollToTarget(target) {
-			$('html, body').animate({
-				scrollTop: $(target).offset().top
-			}, 800);
-		}
-
-		$(document).ready(function() {
-			$(".benefit_anchor").on('click', function(e) {
-				e.preventDefault();
-				var target = $(this).attr('href');
-				scrollToTarget(target);
-			});
-		});
-	}
 	setupScrolling();
 </script>
