@@ -215,15 +215,19 @@ input:-webkit-autofill {
 }
 
 .hdtext {
-  display: inline-block;
-  width: 0;
-  height: 0;
   overflow: hidden;
-  line-height: 0;
-  color: transparent;
+  display: inline-block;
   position: absolute;
-  top: 0;
-  left: -99999px;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  border: 0;
+  font-size: 1px;
+  line-height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
 }
 
 .enable_text {
@@ -4426,10 +4430,28 @@ td.nodata_td {
   }
 }
 /* 공통 */
+.table {
+  margin-top: 32px;
+}
+.table .left {
+  text-align: left !important;
+}
+.table .center {
+  text-align: center !important;
+}
+.table table {
+  width: 100%;
+  table-layout: fixed;
+}
 .table.type1 {
   overflow: hidden;
+  margin-top: 32px;
   border: 1px solid #73b4dd;
   border-radius: 16px;
+}
+.table.type1 tr:nth-child(n+2) th,
+.table.type1 tr:nth-child(n+2) td {
+  border-top: 1px solid #73b4dd;
 }
 .table.type1 th {
   padding: 12px 20px;
@@ -4437,30 +4459,180 @@ td.nodata_td {
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  letter-spacing: -5%;
+  letter-spacing: -0.5px;
   text-align: left;
   color: #0077c0;
 }
 .table.type1 td {
   padding: 12px 20px;
+  border-left: 1px solid #73b4dd;
   font-size: 18px;
-  font-weight: 500;
   line-height: 23.4px;
-  letter-spacing: -5%;
+  letter-spacing: -0.5px;
   text-align: left;
-  color: #555;
+  color: #333;
+}
+.table.type2 {
+  overflow: hidden;
+  margin-top: 32px;
+  border: 1px solid #73b4dd;
+  border-radius: 16px;
+}
+.table.type2 tr:nth-child(n+2) th,
+.table.type2 tr:nth-child(n+2) td {
+  border-top: 1px solid #73b4dd;
+}
+.table.type2 thead th {
+  height: 60px;
+  padding: 0 20px;
+  border-bottom: 1px solid #73b4dd;
+  background-color: rgba(0, 119, 192, 0.1);
+}
+.table.type2 thead th:nth-child(n+2) {
+  border-left: 1px solid #73b4dd;
+}
+.table.type2 th {
+  padding: 12px 20px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #0077c0;
+}
+.table.type2 td {
+  padding: 12px 20px;
+  border-left: 1px solid #73b4dd;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #333;
 }
 
-.heading1 {
+.table_text {
   display: block;
+  margin-top: 6px;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+}
+.table_text.gray {
+  color: #888;
+}
+.table_text.orange {
+  color: #f7943e;
+}
+.table_text.bullet {
+  position: relative;
+  padding-left: 12px;
+}
+.table_text.bullet::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 3px;
+  background-color: #333;
+}
+.table_text.small {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+}
+
+.title_wrap {
   margin: 64px 0 32px;
+}
+
+.title {
+  display: block;
+}
+.title.type1 {
   font-weight: 700;
   font-size: 28px;
-  letter-spacing: -5%;
+  line-height: 28px;
+  letter-spacing: -0.5px;
   color: #555;
 }
+.title.type2 {
+  margin: 32px 0 16px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: -0.5px;
+  color: #0077c0;
+}
+.title.type2:first-child {
+  margin-top: 0;
+}
 
-/* MAINBiz 안내 - 제도안내 */
+.text.type1 {
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.5px;
+  color: #777;
+}
+
+.info_list {
+  margin: 32px 0;
+  padding: 24px;
+  border-radius: 16px;
+  background-color: rgba(0, 119, 192, 0.1);
+}
+
+.info_list_title {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 21px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  background-color: #f7943e;
+  font-weight: 700;
+  color: #fff;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+}
+.info_list_title::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -6px;
+  left: 12px;
+  width: 12px;
+  height: 6px;
+  background: url("../images/ico_info_list_arrow.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.info_list_item {
+  padding-left: 24px;
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  background-size: 16px auto;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.5px;
+  color: #0077c0;
+}
+.info_list_item + .info_list_item {
+  margin-top: 8px;
+}
+.info_list_item.blue {
+  background-image: url("../images/ico_info_list_item_blue.png");
+  color: #0077c0;
+}
+.info_list_item.gray {
+  background-image: url("../images/ico_info_list_item_gray.png");
+  color: #999;
+}
+
+/* MAINBiz 안내 - 제도 안내 */
 .overview_visual {
   position: relative;
   display: flex;
@@ -4475,7 +4647,7 @@ td.nodata_td {
   display: block;
   position: absolute;
   top: -42px;
-  right: 20px;
+  right: 30px;
   width: 612px;
   height: 312px;
   background: url("../images/img_overview_visual.png") no-repeat 0 0;
@@ -4488,5 +4660,312 @@ td.nodata_td {
   font-size: 64px;
   line-height: 80px;
   color: rgba(255, 255, 255, 0.5);
+}
+
+.overview_history {
+  overflow: hidden;
+  display: flex;
+  gap: 25px;
+}
+
+.overview_history_item {
+  flex: 1;
+  height: 263px;
+  box-sizing: border-box;
+}
+.overview_history_item.item1 {
+  padding-top: 80px;
+}
+.overview_history_item.item2 {
+  padding-top: 60px;
+}
+.overview_history_item.item3 {
+  padding-top: 40px;
+}
+.overview_history_item.item4 {
+  padding-top: 20px;
+}
+.overview_history_item.item5 {
+  padding-top: 0;
+}
+
+.overview_history_date {
+  display: block;
+  margin-bottom: 16px;
+  border-bottom: 20px solid #0077c0;
+  padding-bottom: 16px;
+  font-size: 36px;
+  font-family: "Rubik Light";
+  line-height: 36px;
+  color: #0077c0;
+}
+
+.overview_history_cont {
+  height: 100%;
+  border-left: 1px solid #ddd;
+}
+
+.overview_history_text {
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-align: right;
+}
+
+.overview_history_small {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  text-align: right;
+  color: #888;
+}
+
+/* MAINBiz 안내 - 인증 절차 */
+.step_visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 300px;
+  padding-left: 64px;
+  border-radius: 16px;
+  background: linear-gradient(to left, #3ec6c9, #5c79d1);
+}
+.step_visual::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -42px;
+  right: 30px;
+  width: 733px;
+  height: 312px;
+  background: url("../images/img_step_visual.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.step_visual_text {
+  display: block;
+  font-family: "Poppins Bold";
+  font-size: 64px;
+  line-height: 80px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.step_list {
+  display: flex;
+  gap: 30px;
+}
+
+.step_list_item {
+  flex: 1;
+  position: relative;
+  padding-bottom: 40px;
+}
+.step_list_item::after {
+  content: "";
+  position: absolute;
+  top: 66px;
+  right: -20px;
+  width: 10px;
+  height: 26px;
+  background: url("../images/ico_step_list_arrow.png") no-repeat 0 0;
+  background-size: contain;
+}
+.step_list_item:last-child::after {
+  display: none;
+}
+
+.step_list_icon {
+  display: block;
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+
+.step_list_title {
+  display: block;
+  position: relative;
+  margin: 10px 0;
+  padding-bottom: 11px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #0077c0;
+}
+.step_list_title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 30px;
+  height: 1px;
+  background-color: #0077c0;
+  transform: translateX(-50%);
+}
+
+.step_list_text {
+  font-size: 16px;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #777;
+}
+.step_list_text.gray {
+  color: #bbb;
+}
+
+.step_list_info {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: -60px;
+  width: 90px;
+  height: 63px;
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  color: #f7943e;
+}
+
+.step_list_period {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-weight: 600;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 20.8px;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: #0077c0;
+}
+.step_list_period::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 16px;
+  border: 1px solid #0077c0;
+  border-top: none;
+  border-radius: 0 0 16px 16px;
+}
+
+.step_method {
+  padding: 24px;
+  border: 1px solid #73b4dd;
+  border-radius: 16px;
+}
+.step_method .title {
+  margin-top: 24px;
+}
+.step_method .text + .text {
+  margin-top: 16px;
+}
+
+.step_data_item {
+  position: relative;
+  padding-left: 16px;
+  font-size: 18px;
+  line-height: 23.4px;
+  letter-spacing: -0.5px;
+  color: #777;
+}
+.step_data_item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6.5px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: #ffbc00;
+}
+.step_data_item + .step_data_item {
+  margin-top: 16px;
+}
+
+.step_data_anchor {
+  display: inline-block;
+  margin-left: 10px;
+  padding-right: 22px;
+  background: url("../images/ico_step_data.png") no-repeat 100% 50%;
+  background-size: 16px 16px;
+  font-size: 16px;
+  line-height: 23.4px;
+  letter-spacing: -0.5px;
+  color: #f7943e;
+  vertical-align: top;
+}
+
+/* MAINBiz 안내 - 인증 혜택 */
+.benefit_list {
+  display: flex;
+  margin-bottom: 54px;
+  padding-bottom: 10px;
+  gap: 16px;
+}
+
+.benefit_anchor {
+  flex: 1;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #e9e9e9;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #999;
+  text-align: center;
+}
+.benefit_anchor:hover, .benefit_anchor:focus {
+  position: relative;
+  background-color: #0077c0;
+  color: #fff;
+}
+.benefit_anchor:hover::after, .benefit_anchor:focus::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16px;
+  height: 10px;
+  background: url("../images/ico_benefit_anchor_arrow.png") no-repeat 0 0;
+  background-size: contain;
+}
+
+.benefit_panel {
+  padding-top: 64px;
+}
+.benefit_panel .title_wrap {
+  margin-top: 0;
+}
+
+/* MAINBiz 안내 - CI 소개 */
+.ci {
+  display: flex;
+  gap: 30px;
+}
+
+.ci_item {
+  flex: 1;
+}
+
+.ci_text {
+  margin-top: 32px;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.5px;
+  color: #777;
 }
 /*# sourceMappingURL=style.css.map */
