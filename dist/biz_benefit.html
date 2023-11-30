@@ -798,44 +798,14 @@
 </html>
 
 <script>
-	document.addEventListener('DOMContentLoaded', () => {
-		const smoothScrollAnchors = document.querySelectorAll('.benefit_anchor');
+	$(document).ready(function() {
+		$(".benefit_anchor").on('click', function(e) {
+			e.preventDefault();
 
-		smoothScrollAnchors.forEach(anchor => {
-			anchor.addEventListener('click', e => {
-				e.preventDefault();
-
-				const targetId = anchor.getAttribute('href').slice(1);
-				const targetElement = document.getElementById(targetId);
-
-				targetElement.scrollIntoView({
-					behavior: 'smooth'
-				});
-			});
-		});
-
-		const firstAnchor = smoothScrollAnchors[0];
-		firstAnchor.classList.add('active');
-
-		window.addEventListener('scroll', () => {
-			const sections = document.querySelectorAll('.benefit_panel');
-			const anchors = document.querySelectorAll('.benefit_anchor');
-
-			sections.forEach(section => {
-				const bounding = section.getBoundingClientRect();
-
-				if (bounding.top <= 0 && bounding.bottom >= 0) {
-					const sectionId = section.getAttribute('id');
-
-					anchors.forEach(anchor => {
-						if (anchor.getAttribute('href').slice(1) === sectionId) {
-							anchor.classList.add('active');
-						} else {
-							anchor.classList.remove('active');
-						}
-					});
-				}
-			});
+			var target = $(this).attr('href');
+			$('html, body').animate({
+				scrollTop: $(target).offset().top
+			}, 800);
 		});
 	});
 </script>
