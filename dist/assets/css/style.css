@@ -4699,15 +4699,15 @@ td.nodata_td {
     overflow-x: auto;
     margin-top: 25px;
   }
-  .table table {
-    width: 1022px;
-  }
   .table.type1 th,
 .table.type1 td, .table.type2 th,
 .table.type2 td {
-    padding: 12px 10px;
-    font-size: 15px;
+    padding: 12px 5px;
+    font-size: 14px;
     line-height: 20px;
+  }
+  .table.type2 table {
+    min-width: 830px;
   }
   .table_text {
     font-size: 14px;
@@ -4730,8 +4730,26 @@ td.nodata_td {
   .table {
     margin-top: 20px;
   }
+  .table.type1 th,
+.table.type1 td, .table.type2 th,
+.table.type2 td {
+    padding: 10px 5px;
+    font-size: 13px;
+    line-height: 16px;
+  }
   .table.type2 thead th {
     height: 45px;
+  }
+  .table.type2 table {
+    min-width: 780px;
+  }
+  .table_text {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  .table_text.small {
+    font-size: 13px;
+    line-height: 16px;
   }
 }
 .title_wrap {
