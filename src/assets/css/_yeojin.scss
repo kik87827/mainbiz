@@ -177,17 +177,19 @@
     overflow-x: auto;
     margin-top: 25px;
 
-    table {
-      width: 1022px;
-    }
-
     &.type1,
     &.type2 {
       th,
       td {
-        padding: 12px 10px;
-        font-size: 15px;
+        padding: 12px 5px;
+        font-size: 14px;
         line-height: 20px;
+      }
+    }
+
+    &.type2 {
+      table {
+        min-width: 830px;
       }
     }
   }
@@ -215,10 +217,35 @@
   .table {
     margin-top: 20px;
 
+    &.type1,
+    &.type2 {
+      th,
+      td {
+        padding: 10px 5px;
+        font-size: 13px;
+        line-height: 16px;
+      }
+    }
+
     &.type2 {
       thead th {
         height: 45px;
       }
+    }
+
+    &.type2 {
+      table {
+        min-width: 780px;
+      }
+    }
+  }
+  .table_text {
+    font-size: 13px;
+    line-height: 16px;
+
+    &.small {
+      font-size: 13px;
+      line-height: 16px;
     }
   }
 }
