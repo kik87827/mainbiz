@@ -2099,7 +2099,6 @@ select.form_select.current_placeholder {
 select.form_select.current_placeholder:hover {
   color: #333;
 }
-
 @media (max-width: 767px) {
   select.form_select {
     font-size: 14px;
@@ -2162,6 +2161,7 @@ input.form_input.size2 {
     height: 38px;
   }
 }
+/* props */
 /* grid */
 .grid_container {
   display: flex;

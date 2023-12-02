@@ -6,6 +6,7 @@ select.form_select{color:#333;cursor:pointer;font-size:18px; font-weight:500; bo
     &.current_placeholder{color:#bbb;
         &:hover{color:#333;}
     }
+    &.size2{}
 }
 @media (max-width:$mobile){
     select.form_select{
@@ -32,6 +33,20 @@ input.form_input{
         }
     }
 }
+
+/* props */
+.props_item{}
+input.props_form{}
+.props_label{}
+.props_form{
+    &:checked{
+        & + .props_label{}
+    }
+}
+.props_item{}
+.props_item{}
+.props_item{}
+.props_item{}
 
 /* grid */
 .grid_container{

@@ -728,6 +728,70 @@ td.nodata_td{padding:200px 20px !important;}
 .list_td_link{@include clamp(1);font-size:18px;color:#333333; font-weight:500; line-height:1.4;vertical-align: middle;}
 
 
+.box_form_table_wrap{}
+.box_form_table{
+    tr{
+    }
+    th{}
+    td{}
+}
+.box_form_label{}
+.box_radio_item_group{}
+.box_radio_item{}
+.box_radio_label{}
+.box_radio_form{
+    &:checked{
+        & + .box_radio_label{}
+    }
+}
+.grid_form_box_wrap{}
+.grid_form_box{}
+.message_note_box{}
+.meaage_note_list{
+    > li{}
+}
+.grid_note_para{
+    .emp{}
+    .emp_sub{}
+}
+.grid_form_table{}
+.grid_form_tr{}
+.grid_form_cols{}
+.grid_form_item{}
+.grid_form_key{}
+.grid_form_value{
+    input.form_input{}
+}
+.message_note_title_row{}
+.message_note_wordbox{}
+.message_note_word{}
+.data_render_box{}
+.form_flag{}
+.grid_form_label{}
+.grid_form_value{}
+.form_file_group{}
+.form_file_get_name{}
+.form_file_btn_group{}
+.file_origin_form{}
+.form_file_control{}
+
+.inform_group{
+    input.form_input{}
+}
+.btn_inform_control{}
+
+
+.inline_form_wrap{}
+.inline_form_cols{
+    &.else_cols{}
+    input.form_input{}
+}
+.inline_else_text{}
+
+.form_inner_block{
+    .props_item{}
+}
+
 
 @media (max-width:$tablet){
     .form_cols_container{gap:40px;}
