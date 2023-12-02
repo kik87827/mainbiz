@@ -474,6 +474,18 @@
 		</section>
 		<script>
 			menuRock("[name='gnb_overview']");
+
+			const tableDom = document.querySelectorAll("div.table");
+			let tableArray = [];
+			if (!!tableDom) {
+				tableDom.forEach((item, index) => {
+					item.setAttribute("id", "table" + index);
+					tableArray.push("#table" + index);
+				});
+			}
+			console.log(tableArray);
+
+			scrollDrag(tableArray);
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
