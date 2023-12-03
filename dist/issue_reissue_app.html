@@ -335,7 +335,7 @@
 										</div>
 										<div class="grid_form_table">
 											<div class="grid_form_tr">
-												<div class="grid_form_cols pixed_cols" style="flex-basis:292px" data-basis="292">
+												<div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="140">
 													<div class="grid_form_item">
 														<div class="grid_form_key">
 															<span class="grid_form_label">발급구분</span>
@@ -345,7 +345,7 @@
 														</div>
 													</div>
 												</div>
-												<div class="grid_form_cols pixed_cols" style="flex-basis:292px" data-basis="292">
+												<div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="140">
 													<div class="grid_form_item">
 														<div class="grid_form_key">
 															<label for="app_form_01_02" class="grid_form_label">한글/영문 구분</label>
@@ -366,7 +366,7 @@
 															<p class="form_label_copy">최근 정보의 사업자 등록증을 업로드해주세요.</p>
 														</div>
 														<div class="grid_form_value">
-															<div class="inline_form_wrap">
+															<div class="inline_form_wrap break_type">
 																<div class="inline_form_cols define_short" data-basis="200">
 																	<input type="text" class="form_input size2" placeholder="-없이 입력해주세요." id="app_form_01_03">
 																</div>
@@ -468,7 +468,7 @@
 															<p class="form_label_copy">최근 정보의 사업자 등록증을 업로드해주세요.</p>
 														</div>
 														<div class="grid_form_value">
-															<div class="inline_form_wrap">
+															<div class="inline_form_wrap break_type">
 																<div class="inline_form_cols">
 																	<div class="inform_group">
 																		<input type="text" class="form_input" id="app_form_04_01">
@@ -980,6 +980,8 @@
 					tableArray.push("#table" + index);
 				});
 			}
+
+			responColsFunc();
 
 			scrollDrag(tableArray);
 		</script>

@@ -2164,7 +2164,7 @@ input.form_input.size2 {
 
 @media (max-width: 767px) {
   input.form_input {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   input.form_input.search_input {
     height: 38px;
@@ -2200,6 +2200,63 @@ input.props_form:checked {
   cursor: pointer;
 }
 
+.box_radio_item_group {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.box_radio_item {
+  position: relative;
+  display: flex;
+}
+
+.box_radio_label {
+  display: flex;
+  width: 100%;
+  font-weight: 500;
+  min-height: 48px;
+  min-width: 120px;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 18px;
+  color: #999999;
+  cursor: pointer;
+}
+
+.box_radio_form {
+  width: 0;
+  height: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex: 0;
+}
+.box_radio_form:checked + .box_radio_label {
+  background-color: #F7943E;
+  color: #fff;
+  border-color: #F7943E;
+  font-weight: 700;
+}
+
+@media (max-width: 1299px) {
+  .box_radio_label {
+    min-width: 80px;
+    padding: 10px;
+  }
+}
+@media (max-width: 767px) {
+  .box_radio_label {
+    font-size: 14px;
+  }
+}
 /* grid */
 .grid_container {
   display: flex;
@@ -2273,7 +2330,7 @@ input.props_form:checked {
   }
   .btn_box_group {
     gap: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .btn_box {
     min-width: 100px;
@@ -2730,6 +2787,9 @@ input.props_form:checked {
   }
   .column_key {
     margin-bottom: 10px;
+  }
+  .column_obj_item {
+    margin-bottom: 30px;
   }
 }
 /* main */
@@ -4323,51 +4383,6 @@ td.nodata_td {
   cursor: pointer;
 }
 
-.box_radio_item_group {
-  display: flex;
-  gap: 12px;
-}
-
-.box_radio_item {
-  position: relative;
-  display: flex;
-}
-
-.box_radio_label {
-  display: flex;
-  width: 100%;
-  font-weight: 500;
-  min-height: 48px;
-  min-width: 120px;
-  text-align: center;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #bbb;
-  border-radius: 8px;
-  font-size: 18px;
-  color: #999999;
-  cursor: pointer;
-}
-
-.box_radio_form {
-  width: 0;
-  height: 0;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  box-sizing: border-box;
-  overflow: hidden;
-  flex: 0;
-}
-.box_radio_form:checked + .box_radio_label {
-  background-color: #F7943E;
-  color: #fff;
-  border-color: #F7943E;
-  font-weight: 700;
-}
-
 .grid_form_box_wrap {
   border: 1px solid #BBBBBB;
   border-radius: 16px;
@@ -4660,6 +4675,28 @@ td.nodata_td {
 .list_td_number {
     font-size: 15px;
   }
+  .box_form_table_wrap {
+    border-radius: 10px;
+  }
+  .box_form_table tbody tr th {
+    width: 1px;
+    padding: 10px 15px;
+  }
+}
+@media (max-width: 1023px) {
+  .grid_form_tr {
+    flex-direction: column;
+  }
+  .grid_form_cols {
+    flex: 0 !important;
+  }
+  .inline_form_wrap.break_type {
+    flex-direction: column;
+  }
+  .inline_form_wrap.break_type .inline_form_cols {
+    flex: 1 !important;
+    width: 100%;
+  }
 }
 @media (max-width: 767px) {
   .form_cols_container {
@@ -4801,6 +4838,54 @@ td.nodata_td {
     flex: 0 0 58%;
   }
   .nodata_para {
+    font-size: 14px;
+  }
+  .box_form_table {
+    display: block;
+  }
+  .box_form_table tbody {
+    display: block;
+  }
+  .box_form_table tbody tr {
+    display: block;
+  }
+  .box_form_table tbody tr th {
+    display: block;
+    width: auto;
+    border: 0;
+    text-align: left;
+    padding: 15px 20px 0;
+  }
+  .box_form_table tbody tr td {
+    border: 0;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 15px;
+    display: block;
+  }
+  .box_form_table tbody tr td:last-of-type {
+    border-bottom: 0;
+  }
+  .box_form_label {
+    font-size: 14px;
+  }
+  .grid_form_box_wrap {
+    border-radius: 10px;
+    padding: 20px;
+  }
+  .message_note_box {
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .grid_note_para_text {
+    font-size: 14px;
+  }
+  .grid_form_label {
+    font-size: 14px;
+  }
+  .message_note_title_row {
+    margin-bottom: 10px;
+  }
+  .message_note_word {
     font-size: 14px;
   }
 }

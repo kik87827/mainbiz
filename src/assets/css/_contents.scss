@@ -166,6 +166,8 @@
 
     .column_obj_title{font-size:16px;}
     .column_key{margin-bottom:10px;}
+
+    .column_obj_item{margin-bottom:30px;}
 }
 
 /* main */
@@ -841,15 +843,7 @@ td.nodata_td{padding:200px 20px !important;}
     td{padding:12px 20px;}
 }
 .box_form_label{display:inline-block;font-size:16px;line-height:1; font-weight:600; color:#999; cursor: pointer;}
-.box_radio_item_group{display:flex;gap:12px;}
-.box_radio_item{position:relative;display:flex;}
-.box_radio_label{display:flex; width:100%; font-weight:500; min-height:48px; min-width:120px;text-align:center; box-sizing: border-box; justify-content: center; align-items: center;  background:#fff; border:1px solid #bbb; border-radius:8px; font-size:18px;color:#999999; cursor: pointer;}
-.box_radio_form{
-    width:0;height:0; appearance: none; box-sizing: border-box; overflow:hidden;flex:0; 
-    &:checked{
-        & + .box_radio_label{background-color:$sub_color; color:#fff;border-color:$sub_color; font-weight:700;}
-    }
-}
+
 .grid_form_box_wrap{
     border: 1px solid #BBBBBB; border-radius: 16px; background:#F9F9F9; padding:26px;
 }
@@ -946,6 +940,29 @@ td.nodata_td{padding:200px 20px !important;}
     .list_th_text{font-size:15px;}
     .td_obj_text_value,
     .list_td_number{font-size:15px;}
+
+    .box_form_table_wrap{border-radius:10px;}
+    .box_form_table{
+        tbody{
+            tr{
+                th{width:1px;padding:10px 15px;}
+                td{
+                }
+            }
+        }
+    }
+}
+@media (max-width:$mobile_large){
+    .grid_form_table{}
+    .grid_form_tr{flex-direction: column;}
+    .grid_form_cols{flex:0 !important;}
+
+    .inline_form_wrap{
+        &.break_type{
+            flex-direction: column;
+            .inline_form_cols{flex:1 !important;width:100%;}
+        }
+    }
 }
 @media (max-width:$mobile){
     .form_cols_container{flex-direction: column;gap:60px;}
@@ -1032,6 +1049,33 @@ td.nodata_td{padding:200px 20px !important;}
         }
     }
     .nodata_para{font-size:14px;}
+
+    .box_form_table{
+        display:block;
+        tbody{
+            display:block;
+            tr{
+                display:block; 
+                th{display:block;width:auto;border:0; text-align: left;padding:15px 20px 0;}
+                td{
+                    border:0;border-bottom:1px solid #bbb; padding-bottom:15px;
+                    &:last-of-type{border-bottom:0;}
+                    display:block;
+                }
+            }
+        }
+    }
+    .box_form_label{font-size:14px;}
+
+    
+
+    .grid_form_box_wrap{border-radius:10px;padding:20px;}
+    .message_note_box{border-radius:10px;padding:12px;}
+    .grid_note_para_text{font-size:14px;}
+    .grid_form_label{font-size:14px;}
+
+    .message_note_title_row{margin-bottom:10px;}
+    .message_note_word{font-size:14px;}
 }
 
 @media (max-width:$mobile_size1){

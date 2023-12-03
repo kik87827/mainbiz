@@ -617,3 +617,37 @@ function scrollDrag(target){
     });
   }
 }
+
+
+function responColsFunc(){
+  const responCols = document.querySelectorAll("[name='respon_cols']");
+
+  action();
+  let windowWidth = window.innerWidth;
+  window.addEventListener("resize",()=>{
+    if(windowWidth !== window.innerWidth){
+      action();
+    }
+    windowWidth = window.innerWidth;
+  });
+  
+
+
+  function action(){
+    if(!!responCols){
+      responCols.forEach((item)=>{
+        const thisItem = item;
+        const thispcAttri = thisItem.dataset.pc;
+        const thistabletAttri = thisItem.dataset.tablet;
+
+        if(window.innerWidth>1280){
+          thisItem.style.flexBasis = thispcAttri +"px";
+        }else if(window.innerWidth>=768){
+          thisItem.style.flexBasis = thistabletAttri +"px";
+        }else{
+          thisItem.style.removeProperty("flexBasis");
+        }
+      });
+    }
+  }
+}
