@@ -20,7 +20,14 @@
 
     th{
       &.type2{
-        
+        color:#333;
+      }
+    }
+
+    td{
+      .td_para + .indent_bullet_list{margin-top:5px;}
+      .indent_bullet_list{text-align: center;
+        > li{justify-content: center;}
       }
     }
   }
@@ -100,6 +107,12 @@
     tr td:last-child {
       border-right: none;
     }
+  }
+
+  &.ptype2{
+    th,td{padding:18px;}
+    th{}
+    td{}
   }
 }
 .table_text {

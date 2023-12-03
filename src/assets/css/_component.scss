@@ -56,14 +56,15 @@ input.props_form{}
 
 
 /* button */
-.btn_box{min-width:180px;height:60px;padding:0 32px;box-sizing: border-box;display:inline-flex; align-items: center; justify-content: center; background:$primary;border-radius: 12px;
+.btn_box{min-width:180px;height:60px;padding:0 32px;box-sizing: border-box;display:inline-flex; align-items: center; justify-content: center; background:$primary; border:1px solid $primary; border-radius: 12px;
     &.type2{
-        .btn_box_text{}
+        background:#fff;
+        .btn_box_text{color:$primary;}
     }
 }
 .btn_box_text{display:inline-block;font-weight:700;color:#fff;line-height:1;font-size:20px;letter-spacing: -0.05em;}
 .btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
-.btn_box_group{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
+.btn_box_group{margin-top:32px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
 @media (max-width:$mobile){
     .btn_bottom_wrap{gap:10px;margin-top:30px;}
     .btn_box_group{gap:10px;margin-top:30px;}

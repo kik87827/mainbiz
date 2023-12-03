@@ -6,20 +6,30 @@
 .mb_item{display:none !important;}
 .pc_item{display:block !important;}
 .column_obj_item{
-    &:last-of-type{}
+    margin-bottom:60px;
+    &:last-of-type{margin-bottom:0;}
 }
-.column_key{}
-.column_obj_title{}
+.column_key{margin-bottom:30px;}
+.column_obj_title{font-size:28px; line-height:1; font-weight:700; color:#555555; letter-spacing: -0.05em;}
 .column_value{}
 
-.import_box_container{}
-.import_box_para_wrap{
-    &:before{}
+.note_box{background:#F9F9F9; border-radius:16px; border:1px solid #bbb;padding:20px 25px;
+    .indent_text_list{font-size:16px;color:#777;font-weight:500;}
+    .indent_bullet{min-width:14px;}
 }
-.import_box_para{}
+
+.import_box_container{margin-top:60px;}
+.import_box_para_wrap{
+    background: rgba(0, 119, 192, 0.1);display:flex; justify-content: center; align-items: center; gap:12px; padding:64px; border-radius:16px;
+    &:before{
+        display:block; content:''; width:30px;height:30px; background:url("../images/ico_org_notex2.png") no-repeat 50% 50%/100% auto; border-radius:100%;
+    }
+}
+.import_box_para{font-size:32px;color:#19417F; letter-spacing: -0.05em; color:#19417F; font-weight:600; }
 .import_else_group{
-    .indent_text_list{}
-    .bullet_text_list{}
+    margin-top:24px;
+    .indent_text_list{color:#777;font-size:18px;letter-spacing: -0.05em; font-weight:700;}
+    .bullet_text_list{margin:16px 10px 0;}
 }
 .indent_text_list_wrap{
     &.number_type{
@@ -34,23 +44,29 @@
 }
 .indent_text_list{
     > li{
-        &:last-of-type{}
+        display:flex;gap:5px; margin-bottom:5px;
+        &:last-of-type{margin-bottom:0;}
     }
 }
-.indent_bullet{}
+.indent_bullet{white-space: nowrap;}
 .indent_text_group{}
 
 .bullet_list{
+    font-size:16px;color:#777777; font-weight:500; line-height:1.4; font-weight:500;
     > li{
-        &.emp{}
-        &:before{}
-        &:last-of-type{}
+        position:relative; padding-left:12px; margin-bottom:5px;
+        &.emp{color:$sub_color; font-weight:700;
+            &:before{background:$sub_color;}
+        }
+        &:before{display:block;content:'';width:3px;height:3px; background:#777; position:absolute;top:10px;left:0;}
+        &:last-of-type{margin-bottom:0;}
         .else_size{}
     }
 }
 
 .note_guide_para{
-    &.emp{}
+    font-size:16px; font-weight:700; line-height:1.4; letter-spacing: -0.05em; margin-top:8px;
+    &.emp{color:$sub_color;}
 }
 
 .bullet_text_list{
@@ -64,19 +80,23 @@
 }
 
 .check_sign_item{
-    &:before{}
+    display:flex; justify-content: center; align-items: center;
+    &:before{display:block;content:'';width:13px;height:13px; border-radius:100%; background:#333;margin:0 auto;}
 }
 
 .td_para{
+    color:#333; font-size:16px; letter-spacing: -0.05em; font-weight: 500;
     &.size_small{}
 }
 
 .indent_bullet_list{
+    color:#808285; font-size:16px;
     > li{
+        display:flex; gap:5px;
         &:last-of-type{}
     }
 }
-.indent_bullet{}
+.indent_bullet{flex:0;white-space: nowrap;}
 .indent_text_group{}
 .indent_text{}
 
@@ -707,6 +727,10 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
             &.has_primary{
                 text-align: left;
             }
+            &.align_type2{
+                text-align: left;
+                .td_obj_text_group{justify-content: flex-start;}
+            }
         }
     }
 }
@@ -723,7 +747,9 @@ td.nodata_td{padding:200px 20px !important;}
 
 .td_obj_text_group{display:flex;align-items: center; gap:10px;justify-content:center;}
 .td_obj_text_key{ display:none;font-size:14px;color:#666;white-space: nowrap;}
-.td_obj_text_value{font-size:18px;color:#333333; font-weight:500; display:inline-block;}
+.td_obj_text_value{font-size:18px;color:#333333; font-weight:500; display:inline-block;
+    &.sub_emp{color:$sub_color}
+}
 
 .list_td_link{@include clamp(1);font-size:18px;color:#333333; font-weight:500; line-height:1.4;vertical-align: middle;}
 
