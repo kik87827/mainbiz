@@ -214,11 +214,11 @@
 								<h4 class="column_obj_title">확인서 신청목록</h4>
 							</div>
 							<div class="column_value">
-								<div class="list_board_table_wrap respon_type">
+								<div class="list_board_table_wrap respon_type mb_cols_type2">
 									<table class="list_board_table">
 										<caption><span class="hdtext">확인서 신청목록 리스트</span></caption>
 										<colgroup>
-											<col style="width:7%;">
+											<col style="width:7%;" class="mb_hidden">
 											<col style="width:10%;">
 											<col>
 											<col style="width:13%;">
@@ -229,7 +229,7 @@
 										</colgroup>
 										<thead>
 											<tr>
-												<th scope="col"><span class="list_th_text">번호</span></th>
+												<th scope="col" class="mb_hidden"><span class="list_th_text">번호</span></th>
 												<th scope="col"><span class="list_th_text">구분</span></th>
 												<th scope="col"><span class="list_th_text">발급사유</span></th>
 												<th scope="col"><span class="list_th_text">신청일</span></th>
@@ -278,7 +278,7 @@
 														<span class="td_obj_text_value">완료</span>
 													</div>
 												</td>
-												<td>
+												<td class="no_data_cell">
 													<span class="hdtext">내용없음</span>
 												</td>
 											</tr>
@@ -317,7 +317,7 @@
 														<span class="td_obj_text_value">완료</span>
 													</div>
 												</td>
-												<td>
+												<td class="no_data_cell">
 													<span class="hdtext">내용없음</span>
 												</td>
 											</tr>
@@ -359,15 +359,13 @@
 														<span class="td_obj_text_value">완료</span>
 													</div>
 												</td>
-												<td>
+												<td class="no_data_cell">
 													<span class="hdtext">내용없음</span>
 												</td>
 											</tr>
-											<tr class="nodata_tr">
-												<td class="nodata_td" colspan="8">
-													<p class="nodata_para">데이터가 없습니다.</p>
-												</td>
-											</tr>
+											<!-- <tr class="nodata_tr">
+                                                <td class="nodata_td" colspan="8"><p class="nodata_para">데이터가 없습니다.</p></td>
+                                            </tr> -->
 										</tbody>
 									</table>
 								</div>
@@ -798,6 +796,16 @@
 		</section>
 		<script>
 			menuRock("[name='gnb_issue']");
+			const tableDom = document.querySelectorAll("div.table");
+			let tableArray = [];
+			if (!!tableDom) {
+				tableDom.forEach((item, index) => {
+					item.setAttribute("id", "table" + index);
+					tableArray.push("#table" + index);
+				});
+			}
+
+			scrollDrag(tableArray);
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
