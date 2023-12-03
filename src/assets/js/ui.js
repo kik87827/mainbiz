@@ -460,6 +460,14 @@ $(function() {
     const targetDom = document.querySelectorAll(target);
     if (!!targetDom) {
       targetDom.forEach((item)=>{
+        const thisItem = item;
+        const thisItemDepth = thisItem.querySelector(".mbmenu_one");
+        const thisItemDepth2 = thisItem.querySelector(".mbmenu_two_menu_list_wrap");
+        const thisItemDepth3 = thisItem.querySelector(".mbmenu_two_menu_list");
+        if(!!thisItemDepth2){
+          thisItemDepth2.classList.add("motion");
+          thisItemDepth2.style.height = "auto";
+        }
         item.classList.add("active");
       })
     }

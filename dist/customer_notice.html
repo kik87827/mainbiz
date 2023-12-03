@@ -13,7 +13,7 @@
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<script src="./assets/js/main.js"></script>
-	<title>인증현황 | 메인비즈</title>
+	<title>공지사항 | 메인비즈</title>
 </head>
 
 <body class="front_body">
@@ -195,55 +195,27 @@
 			<div class="sub_visual_wrap">
 				<div class="sub_visual_copy_group">
 					<p class="sub_visual_secondary_copy">MAINBiz</p>
-					<h2 class="sub_visual_primary_copy">정보마당</h2>
+					<h2 class="sub_visual_primary_copy">MAINBiz 안내</h2>
 				</div>
 			</div>
 			<div class="sub_content_wrap">
 				<div class="breadcrumb_list_wrap">
 					<ul class="breadcrumb_list">
 						<li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
-						<li><a href="#" class="breadcrumb_menu_item">정보마당</a></li>
-						<li><a href="#" class="breadcrumb_menu_item emp">인증현황</a></li>
+						<li><a href="#" class="breadcrumb_menu_item">고객지원</a></li>
+						<li><a href="#" class="breadcrumb_menu_item emp">공지사항</a></li>
 					</ul>
 				</div>
 				<div class="sub_content_package">
-					<h3 class="sub_title">인증현황</h3>
+					<h3 class="sub_title">공지사항</h3>
 					<div class="sub_contents">
 						<form>
-							<div class="sort_item_wrap">
+							<div class="sort_item_wrap break_type2">
 								<div class="sort_item_cols">
-									<select class="form_select" required title="지역 선택">
-										<option value="all">전국</option>
-										<option value="1">강원</option>
-										<option value="2">경기</option>
-										<option value="3">경남</option>
-										<option value="4">경북</option>
-										<option value="5">광주</option>
-										<option value="6">대구</option>
-										<option value="7">대전</option>
-										<option value="8">부산</option>
-										<option value="9">서울</option>
-										<option value="10">세종</option>
-										<option value="11">울산</option>
-										<option value="12">인천</option>
-										<option value="13">전남</option>
-										<option value="14">전북</option>
-										<option value="15">제주</option>
-										<option value="16">충남</option>
-										<option value="17">충북</option>
-									</select>
-									<select class="form_select" required title="평가지표 선택">
-										<option value="all">평가지표</option>
-										<option value="1">제조업</option>
-										<option value="2">도소매업</option>
-										<option value="3">건설업</option>
-										<option value="4">일반서비스업</option>
-										<option value="5">지식서비스업</option>
-									</select>
-									<select class="form_select" required title="업체명 선택">
-										<option value="all">전체</option>
-										<option value="1">업체명</option>
-										<option value="2">대표자명</option>
+									<select class="form_select" title="항목 선택">
+										<option value="1">분류</option>
+										<option value="2">제목</option>
+										<option value="3">등록일</option>
 									</select>
 								</div>
 								<div class="sort_item_cols long_type">
@@ -262,169 +234,137 @@
 								</div>
 							</div>
 						</form>
-						<div class="list_board_table_wrap respon_type">
+						<div class="list_board_table_wrap">
 							<table class="list_board_table">
-								<caption><span class="hdtext">인증 현황 리스트</span></caption>
-								<colgroup>
-									<col style="width:10%;" class="mb_hidden">
-									<col style="width:13%;">
-									<col style="width:9%;">
-									<col style="width:15%;">
-									<col />
-									<col style="width:10%;">
-									<col style="width:10%;">
-									<col style="width:15%;">
+								<caption><span class="hdtext">공지사항 리스트</span></caption>
+								<colgroup data-responcols>
+									<col style="width:10%;" class="mb_hide">
+									<col data-mbcols="1px" data-pccols="5%" style="width:8%;" />
+									<col data-mbcols="95%" data-pccols="auto" style="width:auto" />
+									<col data-mbcols="1px" data-pccols="11%" style="width:11%;" />
+									<col style="width:12%;" class="mb_hide">
 								</colgroup>
 								<thead>
 									<tr>
-										<th scope="col" class="mb_hidden"><span class="list_th_text">번호</span></th>
-										<th scope="col"><span class="list_th_text">업체명</span></th>
-										<th scope="col"><span class="list_th_text">지역</span></th>
-										<th scope="col"><span class="list_th_text">대표자명</span></th>
-										<th scope="col"><span class="list_th_text">평가지표(업종)</span></th>
-										<th scope="col"><span class="list_th_text">종목</span></th>
-										<th scope="col"><span class="list_th_text">업종코드</span></th>
-										<th scope="col"><span class="list_th_text">인증만료일</span></th>
+										<th scope="col" class="mb_hide"><span class="list_th_text">번호</span></th>
+										<th scope="col"><span class="list_th_text mb_nobreak">분류</span></th>
+										<th scope="col"><span class="list_th_text">제목</span></th>
+										<th scope="col"><span class="list_th_text mb_nobreak">등록일</span></th>
+										<th scope="col" class="mb_hide"><span class="list_th_text">조회수</span></th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td class="mb_hidden"><span class="list_td_number">22807</span></td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">업체명</span>
-												<span class="td_obj_text_value">(주)신안정보통신</span>
-											</div>
+										<td class="mb_hide"><span class="list_td_number">262</span></td>
+										<td><span class="list_td_text emp">중요</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">2023년 10월말 기준 메인비즈 기업리스트</a>
 										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">지역</span>
-												<span class="td_obj_text_value">경기</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">대표자명</span>
-												<span class="td_obj_text_value">주을목 , 주기철</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">평가지표(업종)</span>
-												<span class="td_obj_text_value">-</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">종목</span>
-												<span class="td_obj_text_value">건설업</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">업종코드</span>
-												<span class="td_obj_text_value">41111</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">인증만료일</span>
-												<span class="td_obj_text_value list_td_number">2027.02.01</span>
-											</div>
-										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
 									</tr>
 									<tr>
-										<td class="mb_hidden"><span class="list_td_number">22807</span></td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">업체명</span>
-												<span class="td_obj_text_value">(주)신안정보통신</span>
-											</div>
+										<td class="mb_hide"><span class="list_td_number">261</span></td>
+										<td><span class="list_td_text emp">안내</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
 										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">지역</span>
-												<span class="td_obj_text_value">경기</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">대표자명</span>
-												<span class="td_obj_text_value">주을목 , 주기철</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">평가지표(업종)</span>
-												<span class="td_obj_text_value">-</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">종목</span>
-												<span class="td_obj_text_value">건설업</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">업종코드</span>
-												<span class="td_obj_text_value">41111</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">인증만료일</span>
-												<span class="td_obj_text_value list_td_number">2027.02.01</span>
-											</div>
-										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
 									</tr>
 									<tr>
-										<td class="mb_hidden"><span class="list_td_number">22807</span></td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">업체명</span>
-												<span class="td_obj_text_value">(주)신안정보통신</span>
-											</div>
+										<td class="mb_hide"><span class="list_td_number">262</span></td>
+										<td><span class="list_td_text emp">중요</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">2023년 10월말 기준 메인비즈 기업리스트</a>
 										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">지역</span>
-												<span class="td_obj_text_value">경기</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">대표자명</span>
-												<span class="td_obj_text_value">주을목 , 주기철</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">평가지표(업종)</span>
-												<span class="td_obj_text_value">-</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">종목</span>
-												<span class="td_obj_text_value">건설업</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">업종코드</span>
-												<span class="td_obj_text_value">41111</span>
-											</div>
-										</td>
-										<td>
-											<div class="td_obj_text_group">
-												<span class="td_obj_text_key">인증만료일</span>
-												<span class="td_obj_text_value list_td_number">2027.02.01</span>
-											</div>
-										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
 									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">261</span></td>
+										<td><span class="list_td_text emp">안내</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">262</span></td>
+										<td><span class="list_td_text emp">중요</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">2023년 10월말 기준 메인비즈 기업리스트</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">261</span></td>
+										<td><span class="list_td_text emp">안내</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">262</span></td>
+										<td><span class="list_td_text emp">중요</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">2023년 10월말 기준 메인비즈 기업리스트</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">261</span></td>
+										<td><span class="list_td_text emp">안내</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">262</span></td>
+										<td><span class="list_td_text emp">중요</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">2023년 10월말 기준 메인비즈 기업리스트</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">261</span></td>
+										<td><span class="list_td_text emp">안내</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">262</span></td>
+										<td><span class="list_td_text emp">중요</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">2023년 10월말 기준 메인비즈 기업리스트</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+									<tr>
+										<td class="mb_hide"><span class="list_td_number">261</span></td>
+										<td><span class="list_td_text emp">안내</span></td>
+										<td class="has_primary">
+											<a href="#" class="list_td_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
+										</td>
+										<td><span class="list_td_number mb_nobreak">2027.02.01</span></td>
+										<td class="mb_hide"><span class="list_td_number">987</span></td>
+									</tr>
+
 									<tr class="nodata_tr">
-										<td class="nodata_td" colspan="8">
+										<td class="nodata_td" colspan="5">
 											<p class="nodata_para">데이터가 없습니다.</p>
 										</td>
 									</tr>
@@ -451,7 +391,7 @@
 			</div>
 		</section>
 		<script>
-			menuRock("[name='gnb_data']");
+			menuRock("[name='gnb_customer']");
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">

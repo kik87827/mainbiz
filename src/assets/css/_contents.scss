@@ -808,18 +808,23 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
                 text-align: left;
                 .td_obj_text_group{justify-content: flex-start;}
             }
+            &.has_ico{
+                padding-top:0;padding-bottom:0;
+            }
         }
     }
 }
 .list_th_text{font-size:18px; color:$primary; line-height:1; font-weight: 700; line-height: 130%;
     letter-spacing: -0.05em;}
 .list_td_text{
+    font-size:18px; font-weight:700; letter-spacing: -0.05em; line-height:1;
     &.cloudy{}
     &.current_keyword{}
+    &.emp{color:$sub_color;white-space: nowrap;}
 }
 .list_td_number{font-size:18px;color:#999999 !important; @include rubik; display:inline-block; line-height:1;position:relative;top:1px;}
 .nodata_tr{}
-td.nodata_td{padding:200px 20px !important;}
+td.nodata_td{padding:150px 20px !important;}
 .nodata_para{font-size:18px;color:#333333; font-weight:500; display:inline-block;}
 
 .td_obj_text_group{display:flex;align-items: center; gap:10px;justify-content:center;}
@@ -829,7 +834,7 @@ td.nodata_td{padding:200px 20px !important;}
 }
 
 .list_td_link{@include clamp(1);font-size:18px;color:#333333; font-weight:500; line-height:1.4;vertical-align: middle;}
-
+.btn_board_ico{display:inline-block;width:24px;height:24px;background:url("../images/ico_file_down.png") no-repeat 0 0/100% auto;border-radius:100%;vertical-align: middle;}
 
 .box_form_table_wrap{position:relative;overflow:hidden;border:1px solid #bbb;border-radius:16px;}
 .box_form_table{
@@ -936,7 +941,7 @@ td.nodata_td{padding:200px 20px !important;}
     .list_board_table{
         colgroup{display:none;}
     }
-
+    .list_td_text{font-size:14px;}
     .list_th_text{font-size:15px;}
     .td_obj_text_value,
     .list_td_number{font-size:15px;}

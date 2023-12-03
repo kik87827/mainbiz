@@ -4280,6 +4280,10 @@ input.input_global_search::input-placeholder {
 .list_board_table tbody td.align_type2 .td_obj_text_group {
   justify-content: flex-start;
 }
+.list_board_table tbody td.has_ico {
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 .list_th_text {
   font-size: 18px;
@@ -4288,6 +4292,17 @@ input.input_global_search::input-placeholder {
   font-weight: 700;
   line-height: 130%;
   letter-spacing: -0.05em;
+}
+
+.list_td_text {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  line-height: 1;
+}
+.list_td_text.emp {
+  color: #F7943E;
+  white-space: nowrap;
 }
 
 .list_td_number {
@@ -4301,7 +4316,7 @@ input.input_global_search::input-placeholder {
 }
 
 td.nodata_td {
-  padding: 200px 20px !important;
+  padding: 150px 20px !important;
 }
 
 .nodata_para {
@@ -4345,6 +4360,15 @@ td.nodata_td {
   color: #333333;
   font-weight: 500;
   line-height: 1.4;
+  vertical-align: middle;
+}
+
+.btn_board_ico {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background: url("../images/ico_file_down.png") no-repeat 0 0/100% auto;
+  border-radius: 100%;
   vertical-align: middle;
 }
 
@@ -4667,6 +4691,9 @@ td.nodata_td {
   } */
   .list_board_table colgroup {
     display: none;
+  }
+  .list_td_text {
+    font-size: 14px;
   }
   .list_th_text {
     font-size: 15px;
