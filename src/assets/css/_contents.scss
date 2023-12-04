@@ -745,7 +745,7 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 .form_block_content_row{
     input.form_input{}
 }
-.inline_form_group{}
+.inline_form_group{display:flex;align-items: center;}
 .inline_form_cols{
     &.define_long{}
     &.define_short{flex:0 0 200px;white-space: nowrap;}
