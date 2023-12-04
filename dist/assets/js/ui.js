@@ -664,3 +664,25 @@ function responColsFunc() {
     }
   }
 }
+
+function toggleItemFunc(option) {
+  const toggle_item = document.querySelectorAll(".toggle_bar");
+  if (!!toggle_item) {
+    toggle_item.forEach((item) => {
+      item.addEventListener("click", (e) => {
+        e.preventDefault();
+        const thisEventTarget = e.currentTarget;
+        const thisEventParent = thisEventTarget.closest(".toggle_item");
+        const thisBoolean = thisEventParent.classList.contains("active");
+        const controlWord = thisEventParent.querySelector(".control_word");
+        thisEventParent.classList.toggle("active");
+        thisEventTarget.setAttribute("aria-expanded", thisBoolean);
+        if (thisBoolean) {
+          controlWord.textContent = option.hiddenOpenText;
+        } else {
+          controlWord.textContent = option.hiddenCloseText;
+        }
+      });
+    });
+  }
+}

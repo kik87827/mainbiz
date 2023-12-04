@@ -25,12 +25,280 @@
                 <div class="sub_content_package">
                     <h3 class="sub_title">FAQ</h3>
                     <div class="sub_contents">
-                        내용이 들어갑니다.
+                        <form>
+                            <div class="sort_item_wrap break_type2">
+                                <div class="sort_item_cols">
+                                    <select class="form_select" title="항목 선택">
+                                        <option value="1" selected>제목</option>
+                                        <option value="2">내용</option>
+                                    </select>
+                                </div>
+                                <div class="sort_item_cols long_type">
+                                    <div class="search_field_container">
+                                        <input type="text" class="form_input search_input" title="검색어 입력" placeholder="검색어를 입력해주세요">
+                                        <a href="#" class="btn_ico_search_submit"><span class="hdtext">검색</span></a>
+                                    </div>
+                                </div>
+                                <div class="sort_item_cols">
+                                    <select class="form_select" title="게시물 리스트 보기 선택">
+                                        <option>10개씩 보기</option>
+                                        <option>20개씩 보기</option>
+                                        <option>30개씩 보기</option>
+                                        <option>40개씩 보기</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="tab_menu_list_wrap" id="tab_menu_container">
+                            <!-- current_menu_text ==> 화면낭독기 텍스트 -->
+                            <ul class="tab_menu_list">
+                                <li><a href="#" class="tab_menu active"><span class="tab_menu_text">전체<span class="current_menu_text">선택됨</span></a></li>
+                                <li><a href="#" class="tab_menu"><span class="tab_menu_text">운영 규정</span></a></li>
+                                <li><a href="#" class="tab_menu"><span class="tab_menu_text">인증 절차</span></a></li>
+                                <li><a href="#" class="tab_menu"><span class="tab_menu_text">확인서 발급</span></a></li>
+                                <li><a href="#" class="tab_menu"><span class="tab_menu_text">기타</span></a></li>
+                            </ul>
+                        </div>
+                        <div class="tab_cont_wrap">
+                            <h4 class="hdtext">전체</h4>
+                            <div class="tab_cont">
+                                <div class="toggle_item_list_wrap">
+                                    <ul class="toggle_item_list">
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">확인서발급</span>
+                                                        <span class="toggle_bar_main_text">개인기업인데 공동대표에서 1인으로 변경되었습니다. 확인서재발급이 가능할까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">확인서발급</span>
+                                                        <span class="toggle_bar_main_text">개인기업인데 공동대표에서 1인으로 변경되었습니다. 확인서재발급이 가능할까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">메인비즈혜택</span>
+                                                        <span class="toggle_bar_main_text">신용보증기금과 보증거래를 하고 있는데 메인비즈기업 인 경우 어떤 혜택이 있을까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">[개발연동]가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">운영규정</span>
+                                                        <span class="toggle_bar_main_text">신용보증기금과 보증거래를 하고 있는데 메인비즈기업 인 경우 어떤 혜택이 있을까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">[개발연동]가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">확인서발급</span>
+                                                        <span class="toggle_bar_main_text">개인기업인데 공동대표에서 1인으로 변경되었습니다. 확인서재발급이 가능할까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">확인서발급</span>
+                                                        <span class="toggle_bar_main_text">개인기업인데 공동대표에서 1인으로 변경되었습니다. 확인서재발급이 가능할까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">메인비즈혜택</span>
+                                                        <span class="toggle_bar_main_text">신용보증기금과 보증거래를 하고 있는데 메인비즈기업 인 경우 어떤 혜택이 있을까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">[개발연동]가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">운영규정</span>
+                                                        <span class="toggle_bar_main_text">신용보증기금과 보증거래를 하고 있는데 메인비즈기업 인 경우 어떤 혜택이 있을까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">[개발연동]가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">메인비즈혜택</span>
+                                                        <span class="toggle_bar_main_text">신용보증기금과 보증거래를 하고 있는데 메인비즈기업 인 경우 어떤 혜택이 있을까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">[개발연동]가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="toggle_item">
+                                                <button type="button" class="toggle_bar" aria-expanded="false">
+                                                    <div class="toggle_bar_text_group">
+                                                        <span class="hdtext">질문</span>
+                                                        <span class="toggle_bar_keyword">운영규정</span>
+                                                        <span class="toggle_bar_main_text">신용보증기금과 보증거래를 하고 있는데 메인비즈기업 인 경우 어떤 혜택이 있을까요?</span>
+                                                    </div>
+                                                    <span class="hdtext control_word">답변 열기</span>
+                                                </button>
+                                                <div class="toggle_contents_wrap">
+                                                    <div class="toggle_contents_inner">
+                                                        <span class="hdtext">답변</span>
+                                                        <div class="toggle_cbox">
+                                                            <p class="toggle_cbox_para">[개발연동]가능합니다. 운영규정에 따라 상속세 및 증여세법 제18조에 의한 가업상속 공제를 받은 개인기업의 경우 재발급 신청이 가능합니다.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="nodata_li">
+                                            <p class="nodata_para">데이터가 없습니다.</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- paging -->
+                                <div class="paging_wrap">
+                                    <a href="#none" class="paging_control first disabled"><span class="hdtext">처음 목록으로 이동</span></a>
+                                    <a href="#none" class="paging_control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+                                    <div class="paging_number_group">
+                                        <a href="#none" class="paging_number active">1</a>
+                                        <a href="#none" class="paging_number">2</a>
+                                        <a href="#none" class="paging_number">3</a>
+                                        <a href="#none" class="paging_number">4</a>
+                                        <a href="#none" class="paging_number">5</a>
+                                    </div>
+                                    <a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+                                    <a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+                                </div>
+                                <!-- // paging -->
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <script>menuRock("[name='gnb_customer']");</script>
+        <script>
+            menuRock("[name='gnb_customer']");
+            toggleItemFunc({
+                hiddenOpenText : "답변 열기",
+                hiddenCloseText : "답변 닫기",
+            });
+
+            scrollDrag(["#tab_menu_container"]);
+        </script>
         @@include('./include/_footer.html')
     </div>
 </body>
