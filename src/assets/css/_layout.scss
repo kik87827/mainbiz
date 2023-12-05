@@ -39,7 +39,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     flex:0; position:relative; z-index:50;
 }
 .header_util_wrap{
-    background-color:#EEEEEE; display:flex; justify-content: space-between; gap:20px; padding:9px 60px; 
+    background-color:#EEEEEE; display:flex; justify-content: space-between; gap:20px; padding:9px 60px; position:relative;z-index:5;
 }
 .header_toplogo{
     display:inline-block; max-width:227px;
@@ -51,15 +51,29 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     display:inline-block;
     img{vertical-align: top;}
 }
+.header_util_item_list_wrap{position:relative;}
 .header_util_item_list_wrap,
 .header_util_item_list{
     display:flex; justify-content: flex-end; align-items: center; gap:16px;
-    > li{}
+    > li{
+        &.else_layer{position:absolute;top:68px;right:0;}
+    }
 }
+.header_util_logtext{color:#fff; display:inline-block; font-size:14px; font-weight:700;line-height:1; @include clamp(1); max-width:200px;}
 .header_util_menu{
     display:inline-block; font-size:14px; color:#999999; font-weight:600; line-height:1;
     &.type2{background:$primary;padding:7px 12px;border-radius:100px;color:#fff;}
 }
+.header_util_text{
+    display:inline-block; font-size:14px; color:#999999; font-weight:600; line-height:1;
+}
+
+.header_util_ico_menu{
+    display:inline-block;width:28px;height:28px;background-repeat:no-repeat; background-position:50 50%; background-size:100% auto;  vertical-align: middle;
+    &.ico_my{background-image:url("../images/ico_mypage.png");}
+    &.ico_logout{background-image:url("../images/ico_logout.png");}
+}
+
 .header_nav_wrap{
 }
 .header_nav_list_wrap{
@@ -111,7 +125,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 
 
 .btn_panel_menu{
-    display:none;align-items:center;justify-content:center;width:40px;height:40px;background:$primary;border-radius: 100%; position:absolute; top:50%;right:20px;flex-direction:column; transform: translateY(-50%);
+    display:none;align-items:center;justify-content:center;width:40px;height:40px;background:$primary;border-radius: 100%; z-index:5; position:absolute; top:50%;right:20px;flex-direction:column; transform: translateY(-50%);
     &:before,
     &:after{display:block;content:'';width:20px;height:2px;background:#fff;border-radius:2px;}
 }
@@ -130,6 +144,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .mbelse_low{flex:0;padding:20px;text-align: center;}
 .mbelse_copy{font-size:10px;}
 .mbutil_row{height:56px;background:$primary;display:flex;align-items: center;padding:0 60px 0 20px;position:relative;z-index:5;flex:0 0 56px;}
+.mbutil_log_row{position:relative;z-index:5;flex:0}
 .mbutil_hlist{
     display:flex;align-items: center;
     > li{
@@ -138,6 +153,16 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     }
 }
 .mbutil{display:inline-block;border:1px solid #fff; font-size:14px;line-height:1;padding:7px 14px 6px;text-shadow: 0 1px 2px rgba(0, 0, 0, 0.11); white-space: nowrap;color:#fff;}
+
+.mbutil_log_row{padding:0 20px;flex:0;display:flex;flex-wrap:wrap;gap:10px; align-items: center;}
+.mbutil_logtext{display:inline-block;color:#fff;font-size:13px; font-weight:500; line-height:1.4;}
+
+.mbutil_ico_menu{
+    display:inline-block;width:28px;height:28px;background-repeat:no-repeat; background-position:50 50%; background-size:100% auto;  vertical-align: middle;
+    &.ico_my{background-image:url("../images/ico_mypage_mb.png");}
+    &.ico_logout{background-image:url("../images/ico_logout_mb.png");}
+}
+
 .mblog_sym{color:#fff;font-weight:500;}
 .mbmenu_row{position:relative;overflow-y:auto;flex:1;}
 .mbmenu_one{
@@ -304,6 +329,14 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     .header_nav_list{
         gap:60px;
     }
+
+    .header_util_item_list{
+        > li{
+            &.else_layer{position:static}
+        }
+    }
+    .header_util_logtext{color:$primary;}
+
     .nav_depth_menu_list_wrap{left:-30px;width:calc(100% + 60px);}
     .footer_sub_row{padding:10px 30px;}
     .footer_main_row{padding:30px 30px;}
@@ -337,6 +370,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     .sub_content_package{}
     .sub_title{font-size:30px;margin-bottom:40px;}
     .sub_contents{}
+
+    
 }
 @media (max-width:$mobile){
     .skip.pc_skip{display:none;}
