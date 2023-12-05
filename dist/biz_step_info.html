@@ -297,7 +297,7 @@
 						<div class="step_data">
 							<ul class="step_data_list">
 								<li class="step_data_item">현장평가시 자가진단에 입력한 내용을 증빙할수 있는 자료를 준비하십시오.</li>
-								<li class="step_data_item">귀사에 해당되는 평가지표를 참고하시기 바랍니다. <a href="#" download class="step_data_anchor">평가지표 다운로드</a></li>
+								<li class="step_data_item">귀사에 해당되는 평가지표를 참고하시기 바랍니다. <a href="#" download class="step_data_anchor" title="다운로드">평가지표 다운로드</a></li>
 								<li class="step_data_item">필수항목은 평가전 서류 제출 요청시까지 제출되어야 합니다.</li>
 							</ul>
 						</div>
@@ -405,6 +405,17 @@
 		</section>
 		<script>
 			menuRock("[name='gnb_info']");
+
+			const tableDom = document.querySelectorAll("div.table");
+			let tableArray = [];
+			if (!!tableDom) {
+				tableDom.forEach((item, index) => {
+					item.setAttribute("id", "table" + index);
+					tableArray.push("#table" + index);
+				});
+			}
+
+			scrollDrag(tableArray);
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">

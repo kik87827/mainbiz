@@ -4379,6 +4379,11 @@ input.input_global_search::input-placeholder {
   color: #F7943E;
 }
 
+.inline_form_group {
+  display: flex;
+  align-items: center;
+}
+
 .inline_form_cols {
   flex: 1;
 }
