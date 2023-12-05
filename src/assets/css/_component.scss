@@ -17,7 +17,7 @@ select.form_select{color:#333;cursor:pointer;font-size:18px; font-weight:500; bo
 
 /* input */
 input.form_input{
-    border:1px solid #ddd; appearance: none; border-radius:12px;width:100%;height:1;height:60px;width:100%; box-sizing: border-box; padding:0 16px;font-size:18px; font-weight:500; color:#000;
+    border:1px solid #ddd; appearance: none; border-radius:12px;width:100%;height:60px; box-sizing: border-box; padding:0 16px;font-size:18px; font-weight:500; color:#000;
     &.search_input{border:0;height:46px;border-radius:8px;width:100%; padding-right:0;
         &::-webkit-input-placeholder{color:#bbb;}
         &::-moz-input-placeholder{color:#bbb;}
@@ -32,6 +32,12 @@ input.form_input{
         &.search_input{height:38px;
         }
     }
+}
+
+/* textarea */
+textarea.form_textarea{border:1px solid #ddd; font-size:18px; font-weight:500; color:#000; appearance: none; border-radius:8px;width:100%;height:348px; padding:16px 16px; color:#000; box-sizing: border-box; resize: none;}
+@media (max-width:$mobile){
+    textarea.form_textarea{font-size:14px; border-radius:8px;}
 }
 
 /* props */
@@ -79,7 +85,8 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
 .btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
 .btn_box_group{margin-top:32px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
 .btn_control{
-    &.ico_reload{}
+    display:inline-block;width:48px;height:48px;border-radius:8px; flex:0 0 48px;  border:1px solid #999; background-repeat:no-repeat; background-position: 50% 50%; background-color:#fff;
+    &.ico_reload{background-image:url("../images/ico_replay.png");background-size:24px auto;}
 }
 
 @media (max-width:$tablet){
@@ -92,6 +99,10 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
     .btn_box_group{gap:10px;margin-top:20px;}
     .btn_box{min-width:100px;min-height:40px;border-radius:8px;padding:0 20px;}
     .btn_box_text{font-size:16px;}
+
+    .btn_control{
+        border-radius:8px;
+    }
 }
 
 

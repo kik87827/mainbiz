@@ -2222,9 +2222,7 @@ input.form_input {
           appearance: none;
   border-radius: 12px;
   width: 100%;
-  height: 1;
   height: 60px;
-  width: 100%;
   box-sizing: border-box;
   padding: 0 16px;
   font-size: 18px;
@@ -2265,6 +2263,30 @@ input.form_input.size2 {
   }
   input.form_input.search_input {
     height: 38px;
+  }
+}
+/* textarea */
+textarea.form_textarea {
+  border: 1px solid #ddd;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 8px;
+  width: 100%;
+  height: 348px;
+  padding: 16px 16px;
+  color: #000;
+  box-sizing: border-box;
+  resize: none;
+}
+
+@media (max-width: 767px) {
+  textarea.form_textarea {
+    font-size: 14px;
+    border-radius: 8px;
   }
 }
 /* props */
@@ -2410,6 +2432,22 @@ input.props_form:checked {
   flex-wrap: wrap;
 }
 
+.btn_control {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  flex: 0 0 48px;
+  border: 1px solid #999;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #fff;
+}
+.btn_control.ico_reload {
+  background-image: url("../images/ico_replay.png");
+  background-size: 24px auto;
+}
+
 @media (max-width: 1299px) {
   .btn_box {
     min-width: 140px;
@@ -2437,6 +2475,9 @@ input.props_form:checked {
   }
   .btn_box_text {
     font-size: 16px;
+  }
+  .btn_control {
+    border-radius: 8px;
   }
 }
 /* pagination */
@@ -4491,6 +4532,9 @@ input.input_global_search::input-placeholder {
 
 .inline_form_cols {
   flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 .inline_form_cols.define_short {
   flex: 0 0 200px;
@@ -4515,6 +4559,28 @@ input.input_global_search::input-placeholder {
 .inline_else_text {
   font-size: 16px;
   color: #999999;
+}
+
+.capform_img_box {
+  border: 1px solid #333;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+  height: 48px;
+  box-sizing: border-box;
+  width: 240px;
+}
+.capform_img_box > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 
 .form_inner_block {
@@ -5493,6 +5559,9 @@ li.nodata_li {
   .toggle_cbox {
     padding: 15px;
     border-radius: 10px;
+  }
+  .capform_img_box {
+    width: 120px;
   }
 }
 @media (max-width: 374px) {
