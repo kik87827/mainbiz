@@ -3979,6 +3979,8 @@ input.input_global_search::input-placeholder {
   display: inline-block;
   vertical-align: middle;
   position: relative;
+  top: -2px;
+  margin-left: 12px;
 }
 
 .view_flag {
@@ -4027,6 +4029,8 @@ input.input_global_search::input-placeholder {
 
 .view_caption_data {
   display: inline-block;
+  color: #666666;
+  font-size: 16px;
 }
 
 .view_contents {
@@ -4112,7 +4116,13 @@ input.input_global_search::input-placeholder {
   border-bottom: 0;
 }
 
+.neighbor_data_key_cols {
+  flex: 0;
+  white-space: nowrap;
+}
+
 .neighbor_data_link_cols {
+  flex: 1;
   padding-left: 28px;
 }
 
@@ -4153,6 +4163,67 @@ input.input_global_search::input-placeholder {
   font-weight: 500;
 }
 
+.neighbor_data_flex_group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.neighbor_data_flex_group .neighbor_data_link {
+  flex: 1;
+  min-width: 0;
+}
+.neighbor_data_flex_group .flag_current {
+  flex: 0;
+  white-space: nowrap;
+}
+
+.view_reply_contents {
+  background: #F9F9F9;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.view_reply_keyword_row {
+  margin-bottom: 16px;
+}
+
+.view_reply_keyword_list {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.view_reply_who {
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  line-height: 29px;
+  height: 28px;
+  border-radius: 4px;
+  white-space: nowrap;
+  padding: 0 8px;
+  font-weight: 700;
+  background: #73B4DD;
+}
+
+.view_reply_else {
+  font-size: 16px;
+  font-family: "Rubik Regular", "Pretendard", dotum;
+  line-height: 1;
+  color: #999999;
+}
+
+.view_reply_getdata {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.4;
+  word-break: break-all;
+}
+.view_reply_getdata * {
+  word-break: break-all;
+}
+
 @media (max-width: 767px) {
   .view_title_row {
     padding-bottom: 20px;
@@ -4160,13 +4231,23 @@ input.input_global_search::input-placeholder {
   .view_title {
     font-size: 20px;
   }
-  .view_flag {
-    top: -1px;
-    font-size: 14px;
+  .view_title .flag_current {
+    border-radius: 5px;
+    font-size: 12px;
     line-height: 22px;
     height: 22px;
-    padding: 0 12px;
+    padding: 0 8px;
+    margin-left: 5px;
+  }
+  .view_flag {
+    top: -2px;
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+    padding: 0 8px;
     margin-right: 10px;
+    border-radius: 5px;
+    margin-right: 5px;
   }
   .view_util_wrap {
     margin-top: 10px;
@@ -4175,6 +4256,9 @@ input.input_global_search::input-placeholder {
     gap: 12px;
   }
   .view_caption_obj {
+    font-size: 14px;
+  }
+  .view_caption_data {
     font-size: 14px;
   }
   .view_contents {
@@ -4187,6 +4271,27 @@ input.input_global_search::input-placeholder {
   }
   .view_contents * {
     word-break: break-all;
+    font-size: 14px;
+  }
+  .view_reply_keyword_row {
+    margin-bottom: 10px;
+  }
+  .view_reply_else,
+.view_reply_who {
+    font-size: 14px;
+  }
+  .view_reply_contents {
+    padding: 15px;
+    border-radius: 15px;
+  }
+  .neighbor_data_flex_group {
+    gap: 10px;
+    margin: -5px 0;
+  }
+  .neighbor_data_flex_group .flag_current {
+    font-size: 13px;
+  }
+  .view_reply_getdata {
     font-size: 14px;
   }
   .attach_file_wrap {
