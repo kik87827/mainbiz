@@ -671,7 +671,6 @@ function toggleItemFunc(option){
         const thisBoolean = thisEventParent.classList.contains("active");
         const controlWord = thisEventParent.querySelector(".control_word");
         thisEventParent.classList.toggle("active");
-        thisEventTarget.setAttribute("aria-expanded",thisBoolean);
         if(thisBoolean){
           controlWord.textContent = option.hiddenOpenText;
         }else{
