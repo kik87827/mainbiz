@@ -19,18 +19,684 @@
                     <ul class="breadcrumb_list">
                         <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
                         <li><a href="#" class="breadcrumb_menu_item">확인서 발급</a></li>
-                        <li><a href="#" class="breadcrumb_menu_item emp">재발급 신청</a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">확인서 재발급</a></li>
                     </ul>
                 </div>
                 <div class="sub_content_package">
-                    <h3 class="sub_title">재발급 신청</h3>
+                    <h3 class="sub_title">확인서 재발급</h3>
                     <div class="sub_contents">
-                        내용이 들어갑니다.
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">공동이용 대상 행정 정보</h4></div>
+                            <div class="column_value">
+                                <div class="box_form_table_wrap">
+                                    <table class="box_form_table">
+                                        <caption><span class="hdtext">공동이용 대상 행정 정보 서식표</span></caption>
+                                        <tr>
+                                            <th scope="row"><span class="box_form_label">법인 등기부 등본필수</span></th>
+                                            <td>
+                                                <div class="box_radio_item_group">
+                                                    <div class="box_radio_item">
+                                                        <input type="radio" class="box_radio_form" name="props_radio_01" id="props_radio_01_01">
+                                                        <label for="props_radio_01_01" class="box_radio_label">동의함</label>
+                                                    </div>
+                                                    <div class="box_radio_item">
+                                                        <input type="radio" class="box_radio_form" name="props_radio_01" id="props_radio_01_02" checked>
+                                                        <label for="props_radio_01_02" class="box_radio_label">동의안함</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <th scope="row"><span class="box_form_label">법인 등기부 등본</span></th>
+                                            <td>
+                                                <div class="box_radio_item_group">
+                                                    <div class="box_radio_item">
+                                                        <input type="radio" class="box_radio_form" name="props_radio_02" id="props_radio_02_01" checked>
+                                                        <label for="props_radio_02_01" class="box_radio_label">동의함</label>
+                                                    </div>
+                                                    <div class="box_radio_item">
+                                                        <input type="radio" class="box_radio_form" name="props_radio_02" id="props_radio_02_02">
+                                                        <label for="props_radio_02_02" class="box_radio_label">동의안함</label>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">이용기관의 명칭 : 지방중소벤처기업청</h4></div>
+                            <div class="column_value">
+                                <div class="grid_form_box_wrap">
+                                    <div class="grid_form_box">
+                                        <div class="message_note_box">
+                                            <ul class="meaage_note_list">
+                                                <li>
+                                                    <div class="grid_note_para">
+                                                        <div class="grid_note_para_text">
+                                                            <span class="emp">본인은 이 건 사무의 처리와 관련하여 「전자정부법」 제 21조 제1항 또는 제 22조의2 제1항에 따른 행정정보의 공동이용을 통하여 이용기관의 민원 담당자가 전자적으로 귀하의 정보를 확인하는 것에 
+                                                            동의합니다.</span>( 위에 기재된 공동이용 대상 행정정보는 목적 외의 용도로 사용될 수 없으며, 만약 전자적 확인에 대하여 본인이 동의하지 아니하는 경우에는 본인의 선택에 때라 서류로 대신 제출할 수 있음)
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="grid_form_table">
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key"><label for="organ_form_01" class="grid_form_label">동의인 성명</label></div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="organ_form_01"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key"><label for="organ_form_02" class="grid_form_label">전화번호</label></div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="organ_form_02"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">확인 신청서</h4></div>
+                            <div class="column_value">
+                                <div class="grid_form_box_wrap">
+                                    <div class="grid_form_box">
+                                        <div class="message_note_box">
+                                            <div class="message_note_title_row">
+                                                <div class="message_note_wordbox">
+                                                    <p class="message_note_word">작성 전 꼭 확인해주세요</p>
+                                                </div>
+                                            </div>
+                                            <ul class="meaage_note_list">
+                                                <li>
+                                                    <div class="grid_note_para">
+                                                        <div class="grid_note_para_text">
+                                                            <span class="emp">사업자 등록증 상 기업의 최근 정보와 동일하게 입력해 주시기 바랍니다.</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="grid_note_para">
+                                                        <div class="grid_note_para_text">
+                                                            <span class="emp">영문 신청은 영문자 기입하시기 바랍니다.</span>
+                                                        </div>   
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="grid_note_para">
+                                                        <div class="grid_note_para_text">
+                                                            <span class="emp">영문발급은 원본 확인서 신청 이후 가능합니다.</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="grid_note_para">
+                                                        <div class="grid_note_para_text">
+                                                            <span class="emp">영문확인서 발급신청이후 기업 소재지로 지방청에서 우편발송됩니다.</span>
+                                                            <span class="emp_sub">약 7일 소요</span>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="grid_form_table">
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="140">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <span class="grid_form_label">발급구분</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <div class="data_render_box">원본 재발급</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="140">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_01_02" class="grid_form_label">한글/영문 구분</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <select class="form_select size2 full" id="app_form_01_02" title="한글/영문 구분 선택">
+                                                                <option>영문</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_01_03" class="grid_form_label">사업자등록번호</label>
+                                                            <span class="form_flag">필수</span>
+                                                            <p class="form_label_copy">최근 정보의 사업자 등록증을 업로드해주세요.</p>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <div class="inline_form_wrap break_type">
+                                                                <div class="inline_form_cols define_short" data-basis="200">
+                                                                    <input type="text" class="form_input size2" placeholder="-없이 입력해주세요." id="app_form_01_03">
+                                                                </div>
+                                                                <div class="inline_form_cols define_long">
+                                                                    <div class="form_file_group">
+                                                                        <div class="form_file_get_name">파일명</div>
+                                                                        <div class="form_file_btn_group">
+                                                                            <input type="file" class="file_origin_form" title="파일 업로드">
+                                                                            <span class="form_file_control">업로드</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_02_01" class="grid_form_label">기업명</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <input type="text" class="form_input size2" id="app_form_02_01">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key"><label for="app_form_02_02" class="grid_form_label">기업명 (영문)</label></div>
+                                                        <div class="grid_form_value">
+                                                            <input type="text" class="form_input size2" id="app_form_02_02">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <span class="grid_form_label">사업자 종류</span>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <div class="box_radio_item_group">
+                                                                <div class="box_radio_item">
+                                                                    <input type="radio" class="box_radio_form" name="props_biz_kind" id="props_biz_kind_01" checked>
+                                                                    <label for="props_biz_kind_01" class="box_radio_label">법인기업</label>
+                                                                </div>
+                                                                <div class="box_radio_item">
+                                                                    <input type="radio" class="box_radio_form" name="props_biz_kind" id="props_biz_kind_02">
+                                                                    <label for="props_biz_kind_02" class="box_radio_label">개인기업</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_03_01" class="grid_form_label">법인등록번호</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <input type="text" class="form_input size2" placeholder="-없이 입력해주세요." id="app_form_03_01">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_03_02" class="grid_form_label">대표자명</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <input type="text" class="form_input size2" id="app_form_03_02">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_03_03" class="grid_form_label">대표자명 (영문)</label>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <input type="text" class="form_input size2" id="app_form_03_03">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_04_01" class="grid_form_label">주소(한글)</label>
+                                                            <span class="form_flag">필수</span>
+                                                            <p class="form_label_copy">최근 정보의 사업자 등록증을 업로드해주세요.</p>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <div class="inline_form_wrap break_type">
+                                                                <div class="inline_form_cols">
+                                                                   <div class="inform_group">
+                                                                        <input type="text" class="form_input" id="app_form_04_01">
+                                                                        <a href="javascript:;" class="btn_inform_control" title="새창">우편번호</a>
+                                                                   </div>
+                                                                </div>
+                                                                <div class="inline_form_cols">
+                                                                    <input type="text" class="form_input size2">
+                                                                </div>
+                                                                <div class="inline_form_cols">
+                                                                    <input type="text" class="form_input size2">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key"><label for="app_form_05_01" class="grid_form_label">주소(영문)</label></div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="app_form_05_01"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_06_01" class="grid_form_label">신청인 이름</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="app_form_06_01"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_06_02" class="grid_form_label">신청인 직위</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="app_form_06_02"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_06_03" class="grid_form_label">신청인 연락처</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="app_form_06_03"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="grid_form_tr">
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_07_01" class="grid_form_label">세금계산서 수신 이메일</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value">
+                                                            <div class="inline_form_wrap type2">
+                                                                <div class="inline_form_cols">
+                                                                    <input type="text" class="form_input size2" id="app_form_07_01">
+                                                                </div>
+                                                                <div class="inline_form_cols else_cols">
+                                                                    <span class="inline_else_text">@</span>
+                                                                </div>
+                                                                <div class="inline_form_cols">
+                                                                    <input type="text" class="form_input size2">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form_inner_block">
+                                                                <div class="props_item">
+                                                                    <input type="checkbox" class="props_form" id="check_email">
+                                                                    <label for="check_email" class="props_label">담당자 이메일 주소와 동일</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                    <div class="grid_form_item">
+                                                        <div class="grid_form_key">
+                                                            <label for="app_form_07_02" class="grid_form_label">행정정보 공유 동의</label>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                        <div class="grid_form_value"><input type="text" class="form_input size2" id="app_form_07_02"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="grid_form_cols">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_box_group">
+                                    <a href="#" class="btn_box"><span class="btn_box_text">재발급신청</span></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">MAINBiz 확인서 재발급 신청 안내</h4></div>
+                            <div class="column_value">
+                                <div class="indent_text_list_wrap number_type">
+                                    <div class="note_box">
+                                        <ul class="indent_text_list">
+                                            <li>
+                                                <span class="indent_bullet">1.</span>
+                                                <div class="indent_text_group">
+                                                    확인서 온라인 재발급 신청
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <span class="indent_bullet">2.</span>
+                                                <div class="indent_text_group">
+                                                    관할 지방중소벤처기업청으로 필수서류 우편발송
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p class="note_guide_para emp">
+                                            주소변경등에 의한 재발급 신청시에는 변경된 주소지의 지방중소벤청기업청으로 관계 서류를 동봉하여 신청해주시기 바랍니다.<br>
+                                            (예 : '서울 동대문구' 에서 '경기 성남시'로 변경된 경우 경기지방중소벤처기업청으로 재발급 신청)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">메인비즈확인서 재발급 온라인 신청 유의사항</h4></div>
+                            <div class="column_value">
+                                <div class="note_box">
+                                    <ul class="bullet_list">
+                                        <li>기업의 현황에 대한 항목별 변경사항을 정확히 넣어주십시오.</li>
+                                        <li>확인서 신청사유는 중복체크가 가능하오니 해당사유에 모두 체크해 주십시오.</li>
+                                        <li>법인전환, 합병 등 서면제출이 필요한 서류는 온라인 신청 즉시 해당 지방중소벤처기업청에 우편 등을 송부해 주시기 바랍니다.</li>
+                                        <li>확인서는 본사 주소로 입력해주시기 바랍니다.</li>
+                                        <li>영문 중문 발급은 원본 확인서 발급 이후 신청해주시기바랍니다.<br>(현재는 영문확인서 발급 후 기업 소재지 지방청에서 우편발송(~7일 소요))</li>
+                                        <li>경기지역에 해당하는 세부 주소를 확인하여 우편 발송해주시기 바랍니다.<br>(예: “남양주” 주소로 되어 있는 기업 >경기지방중소벤처기업청(경기북부사무소)</li>
+                                        <li class="emp"><p class="else_size">확인서는 해당 지방중소벤처기업청에서 업체로 우편 송부됩니다.</p></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">필수서류 안내</h4></div>
+                            <div class="column_value">
+                                <div class="table type2">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:16%">
+                                            <col style="width:14%">
+                                            <col style="width:20%">
+                                            <col style="width:17%">
+                                            <col style="width:14%">
+                                            <col>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">준비서류</th>
+                                                <th scope="col">법인전환</th>
+                                                <th scope="col">흡수합병 · 통합</th>
+                                                <th scope="col">신설합병 · 통합</th>
+                                                <th scope="col">조직변경</th>
+                                                <th scope="col">가업승계<br>(개인기업)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    법인등기부등본<br>
+                                                    (말소포함)
+                                                </th>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    포괄양도<br>
+                                                    양수계약서<br>
+                                                    (공증)
+                                                </th>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    주주명부
+                                                </th>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    재무제표 또는<br>
+                                                    부가가치세 과세표준<br>증명원
+                                                </th>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    4대 보험<br>
+                                                    가입자 명부
+                                                </th>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    폐업사실<br>
+                                                    증명원
+                                                </th>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td>
+                                                    <div class="check_sign_item"><span class="hdtext">필수서류 체크</span></div>
+                                                </td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                                <td><span class="hdtext">내용없음</span></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    비고
+                                                </th>
+                                                <td><p class="td_para">폐업사실증명원 (개인)</p></td>
+                                                <td><p class="td_para">합병 전 과 후 서류 각 1부씩</p></td>
+                                                <td><p class="td_para">최근 3개년 재무제표<br>기존기업 서류로 준비</p></td>
+                                                <td><p class="td_para">변경 전과 후<br>서류 각 1부씩</p></td>
+                                                <td><p class="td_para">상속세 및 증여세법 제18조에 의한 <br>가업상속공제에대한 증빙자료 제출</p></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column_obj_item">
+                            <div class="column_key"><h4 class="column_obj_title">관할 지방청</h4></div>
+                            <div class="column_value">
+                                <div class="table type2 ptype2">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width:17%">
+                                            <col>
+                                            <col style="width:15%">
+                                            <col style="width:23%">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">관할지방청</th>
+                                                <th scope="col">주소</th>
+                                                <th scope="col">전화번호</th>
+                                                <th scope="col">이메일 주소</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="type2">서울지방청</th>
+                                                <td><p class="td_para">경기도 과천시 관문로 47 정부과천청사 1동, 창업벤처과</p></td>
+                                                <td><p class="td_para">02)2110-6363</p></td>
+                                                <td><p class="hdtext">내용없음</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">경기(북부)지방청</th>
+                                                <td>
+                                                    <p class="td_para">경기도 양주시 평화로 1215, 경기지방중소벤처기업청 경기북부사무소</p>
+                                                    <ul class="indent_bullet_list">
+                                                        <li>
+                                                            <span class="indent_bullet">* </span>
+                                                            <div class="indent_text_group">
+                                                                <p class="indent_text">관할지역 : 가평, 고양, 구리, 남양주, 동두천, 양주, 연천, 의정부, 파주, 포천</p>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                                <td><p class="td_para">031)820-9012</p></td>
+                                                <td><p class="td_para">kiu5231@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">경기(남부)지방청</th>
+                                                <td><p class="td_para">경기도 수원시 영통구 반달로 87(영통동), 창업벤처과</p></td>
+                                                <td><p class="td_para">031)201-6983</p></td>
+                                                <td><p class="td_para">jiwon0211@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">부산지방청</th>
+                                                <td><p class="td_para">부산광역시 강서구 녹산산단 335로 8(송정동), 성장지원과</p></td>
+                                                <td><p class="td_para">051)601-5129</p></td>
+                                                <td><p class="td_para">jhkim0420@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">울산지방청</th>
+                                                <td><p class="td_para">울산광역시 북구 산업로 915 (2층 지역혁신과)</p></td>
+                                                <td><p class="td_para">052)210-0050</p></td>
+                                                <td><p class="td_para">miging79@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">대구ㆍ경북지방청</th>
+                                                <td><p class="td_para">대구광역시 달서구 성서4차 첨단로 122-11(월암동 1111), 창업벤처과</p></td>
+                                                <td><p class="td_para">053)659-2294</p></td>
+                                                <td><p class="td_para">jsson@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">광주ㆍ전남ㆍ제주지방청</th>
+                                                <td><p class="td_para">광주광역시 서구 천변우하로 391(농성동), 창업벤처과</p></td>
+                                                <td><p class="td_para">062)360-9145</p></td>
+                                                <td><p class="td_para">so7482@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">대전ㆍ세종지방청</th>
+                                                <td><p class="td_para">대전광역시 유성구 가정북로 104, 지역혁신과</p></td>
+                                                <td><p class="td_para">042)865-6156</p></td>
+                                                <td>
+                                                    <p class="td_para">songys1@korea.kr</p>
+                                                    <p class="td_para">khrlove88@korea.krr</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">인천지방청</th>
+                                                <td><p class="td_para">인천광역시 남동구 은봉로 82(논현동), 창업벤처팀</p></td>
+                                                <td><p class="td_para">032)450-1156</p></td>
+                                                <td>
+                                                    <p class="td_para">sea1003@korea.kr</p>
+                                                    <p class="td_para">whitemks@korea.kr</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">강원지방청</th>
+                                                <td><p class="td_para">강원도 춘천시 안마산로 262(퇴계동), 지역혁신과</p></td>
+                                                <td><p class="td_para">033)260-1639</p></td>
+                                                <td><p class="td_para">hsw80@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">충북지방청</th>
+                                                <td><p class="td_para">충청북도 청주시 청원구 오창읍 중심상업2로 48(양청리), 지역혁신과</p></td>
+                                                <td><p class="td_para">043)230-5336</p></td>
+                                                <td><p class="td_para">rudekgml@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">충남지방청</th>
+                                                <td><p class="td_para">충청남도 천안시 서북구 광장로 215 (불당동1418) 충남경제종합지원센터 9층, 지역혁신과</p></td>
+                                                <td><p class="td_para">041)415-0633</p></td>
+                                                <td><p class="td_para">audy303@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">전북지방청</th>
+                                                <td><p class="td_para">전북 전주시 완산구 서원로 77, 창업벤처팀</p></td>
+                                                <td><p class="td_para">063)210-6444</p></td>
+                                                <td><p class="td_para">gon7803@korea.kr</p></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="type2">경남지방청</th>
+                                                <td><p class="td_para">경상남도 창원시 의창구 창이대로 532번길 50(신월동), 지역혁신과</p></td>
+                                                <td><p class="td_para">055)268-2551</p></td>
+                                                <td><p class="td_para">kje7e@korea.kr</p></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <script>menuRock("[name='gnb_issue']");</script>
+        <script>
+            menuRock("[name='gnb_issue']");
+            const tableDom = document.querySelectorAll("div.table");
+            let tableArray = [];
+            if(!!tableDom){
+                tableDom.forEach((item,index)=>{
+                    item.setAttribute("id","table"+index);
+                    tableArray.push("#table"+index);
+                });
+            }
+
+            responColsFunc();
+
+            scrollDrag(tableArray);
+        </script>
         @@include('./include/_footer.html')
     </div>
 </body>

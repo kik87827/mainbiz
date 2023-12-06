@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html;  charset=utf-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="./assets/css/style.css" rel="stylesheet">
+	<script src="./assets/js/jquery-3.4.1.min.js"></script>
+	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/swiper.min.js"></script>
+	<script src="./assets/js/ui.js"></script>
+	<script src="./assets/js/main.js"></script>
+	<title>상세페이지 접속 시 (로그인 전) | 메인비즈</title>
+</head>
+
+<body class="front_body">
+	<div class="page_wrap">
+		<!-- skip menu -->
+		<ul class="skiplist">
+			<li class="skip pc_skip"><a href="#pc_gnb">주메뉴 바로가기</a></li>
+			<li class="skip mb_skip"><a href="#mobile_gnb">주메뉴 바로가기</a></li>
+			<li class="skip"><a href="#content">본문내용으로 바로가기</a></li>
+		</ul>
+		<!-- //skip menu -->
+		<header class="header_wrap">
+			<div class="header_util_wrap">
+				<h1 class="header_toplogo">
+					<a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.png" alt="중소벤처기업부 MAin Biz"></a>
+				</h1>
+				<h1 class="header_toplogo_mb">
+					<a href="#" class="header_toplogo_link"><img src="./assets/images/toplogo.svg" alt="MAin Biz"></a>
+				</h1>
+				<div class="header_util_item_list_wrap">
+					<ul class="header_util_item_list">
+						<li><a href="#" class="header_util_menu">로그인</a></li>
+						<li><a href="#" class="header_util_menu">회원가입</a></li>
+						<li><a href="#" class="header_util_menu type2" target="_blank">중소벤처24 이지패스</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="header_nav_wrap">
+				<nav class="header_nav_list_wrap">
+					<ul class="header_nav_list" id="pc_gnb">
+						<li name="gnb_info">
+							<a href="#" class="header_nav_menu">MAINBiz 안내</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">제도안내</a></li>
+									<li><a href="#" class="nav_depth_menu">인증 절차</a></li>
+									<li><a href="#" class="nav_depth_menu">인증 혜택</a></li>
+									<li><a href="#" class="nav_depth_menu">CI 소개</a></li>
+									<li><a href="#" class="nav_depth_menu">홍보 자료</a></li>
+								</ul>
+							</div>
+						</li>
+						<li name="gnb_app">
+							<a href="#" class="header_nav_menu">인증 신청</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">신규 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">연장 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">진행 현황</a></li>
+								</ul>
+							</div>
+						</li>
+						<li name="gnb_issue">
+							<a href="#" class="header_nav_menu">확인서 발급</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">온라인 발급</a></li>
+									<li><a href="#" class="nav_depth_menu">확인서 재발급</a></li>
+									<li><a href="#" class="nav_depth_menu">사본 발급</a></li>
+									<li><a href="#" class="nav_depth_menu">영문 · 중문 발급</a></li>
+								</ul>
+							</div>
+						</li>
+						<li name="gnb_data">
+							<a href="#" class="header_nav_menu">정보 마당</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">인증 현황</a></li>
+									<li><a href="#" class="nav_depth_menu">인증선정 취소 공고</a></li>
+									<li><a href="#" class="nav_depth_menu">자료실</a></li>
+								</ul>
+							</div>
+						</li>
+						<li name="gnb_customer">
+							<a href="#" class="header_nav_menu">고객 지원</a>
+							<div class="nav_depth_menu_list_wrap">
+								<ul class="nav_depth_menu_list">
+									<li><a href="#" class="nav_depth_menu">공지사항</a></li>
+									<li><a href="#" class="nav_depth_menu">FAQ</a></li>
+									<li><a href="#" class="nav_depth_menu">문의하기</a></li>
+									<li><a href="#" class="nav_depth_menu">인증교육 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">맞춤코칭 신청</a></li>
+									<li><a href="#" class="nav_depth_menu">위치 및 연락처</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<a href="javascript:;" class="btn_panel_menu"><i class="btn_panel_menu_ico"></i><span class="hdtext">메인메뉴 열기</span></a>
+			<!-- mobile -->
+			<div class="mobile_mainmenu_zone" id="mobile_gnb">
+				<div class="mainmenu_dim"></div>
+				<div class="mobile_mainmenu_wrap">
+					<div class="mbutil_row">
+						<!-- 로그인 전 -->
+						<ul class="mbutil_hlist">
+							<li><a href="#" class="mbutil">로그인</a></li>
+							<li><a href="#" class="mbutil">회원가입</a></li>
+						</ul>
+						<!-- // 로그인 전 -->
+						<!-- 로그인 후 -->
+						<!-- <ul class="mbutil_hlist">
+                    <li><a href="#" class="mbutil">로그아웃</a></li>
+                </ul> -->
+						<!-- // 로그인 후 -->
+					</div>
+					<div class="mbmenu_row">
+						<div class="mbmenu_inwrap">
+							<ul class="mbmenu_vlist">
+								<li name="gnb_info">
+									<a href="#" class="mbmenu_one">MAINBiz 안내</a>
+									<div class="mbmenu_two_menu_list_wrap">
+										<ul class="mbmenu_two_menu_list">
+											<li><a href="#" class="mbmenu_two_menu">제도안내</a></li>
+											<li><a href="#" class="mbmenu_two_menu">인증 절차</a></li>
+											<li><a href="#" class="mbmenu_two_menu">인증 혜택</a></li>
+											<li><a href="#" class="mbmenu_two_menu">CI 소개</a></li>
+											<li><a href="#" class="mbmenu_two_menu">홍보 자료</a></li>
+										</ul>
+									</div>
+								</li>
+								<li name="gnb_app">
+									<a href="#" class="mbmenu_one">인증 신청</a>
+									<div class="mbmenu_two_menu_list_wrap">
+										<ul class="mbmenu_two_menu_list">
+											<li><a href="#" class="mbmenu_two_menu">신규 신청</a></li>
+											<li><a href="#" class="mbmenu_two_menu">연장 신청</a></li>
+											<li><a href="#" class="mbmenu_two_menu">진행 현황</a></li>
+										</ul>
+									</div>
+								</li>
+								<li name="gnb_issue">
+									<a href="#" class="mbmenu_one">확인서 발급</a>
+									<div class="mbmenu_two_menu_list_wrap">
+										<ul class="mbmenu_two_menu_list">
+											<li><a href="#" class="mbmenu_two_menu">온라인 발급</a></li>
+											<li><a href="#" class="mbmenu_two_menu">확인서 재발급</a></li>
+											<li><a href="#" class="mbmenu_two_menu">사본 발급</a></li>
+											<li><a href="#" class="mbmenu_two_menu">영문 · 중문 발급</a></li>
+										</ul>
+									</div>
+								</li>
+								<li name="gnb_data">
+									<a href="#" class="mbmenu_one">정보 마당</a>
+									<div class="mbmenu_two_menu_list_wrap">
+										<ul class="mbmenu_two_menu_list">
+											<li><a href="#" class="mbmenu_two_menu">인증 현황</a></li>
+											<li><a href="#" class="mbmenu_two_menu">인증선정 취소 공고</a></li>
+											<li><a href="#" class="mbmenu_two_menu">자료실</a></li>
+										</ul>
+									</div>
+								</li>
+								<li name="gnb_customer">
+									<a href="#" class="mbmenu_one">고객 지원</a>
+									<div class="mbmenu_two_menu_list_wrap">
+										<ul class="mbmenu_two_menu_list">
+											<li><a href="#" class="mbmenu_two_menu">공지사항</a></li>
+											<li><a href="#" class="mbmenu_two_menu">FAQ</a></li>
+											<li><a href="#" class="mbmenu_two_menu">문의하기</a></li>
+											<li><a href="#" class="mbmenu_two_menu">인증교육 신청</a></li>
+											<li><a href="#" class="mbmenu_two_menu">맞춤코칭 신청</a></li>
+											<li><a href="#" class="mbmenu_two_menu">위치 및 연락처</a></li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+							<ul class="mbmenu_util_menu_vlist">
+								<li><a href="#" class="mbmenu_util_menu" target="_blank">중소벤처24 이지패스</a></li>
+							</ul>
+						</div>
+					</div>
+					<a href="#" class="btn_mbmenuclose"><span class="hdtext">메인메뉴 닫기</span></a>
+				</div>
+			</div>
+			<!-- // mobile -->
+		</header>
+	</div>
+</body>
+
+</html>

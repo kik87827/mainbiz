@@ -288,7 +288,20 @@
                 </div>
             </div>
         </section>
-        <script>menuRock("[name='gnb_overview']");</script>
+        <script>
+            menuRock("[name='gnb_overview']");
+
+            const tableDom = document.querySelectorAll("div.table");
+            let tableArray = [];
+            if(!!tableDom){
+                tableDom.forEach((item,index)=>{
+                    item.setAttribute("id","table"+index);
+                    tableArray.push("#table"+index);
+                });
+            }
+
+            scrollDrag(tableArray);
+        </script>
         @@include('./include/_footer.html')
     </div>
 </body>

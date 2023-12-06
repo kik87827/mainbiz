@@ -63,7 +63,9 @@
 
 .screen_link{}
 .screen_link:hover{text-decoration: underline;}
-.vertical_render_wrap{margin:20px 0;}
+.vertical_render_wrap{margin:20px 0;
+    .btn_box_group{margin-top:0;}
+}
 
 @media (max-width:767px){
     .guide_header{position:sticky;top:0;left:0;background:#fff;z-index:20;}
