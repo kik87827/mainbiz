@@ -11,7 +11,7 @@ select.form_select{color:#333;cursor:pointer;font-size:18px; font-weight:500; bo
 }
 @media (max-width:$mobile){
     select.form_select{
-        font-size:14px; height: 40px; line-height:40px;padding:0 25px 0 10px; background-position:calc(100% - 10px);
+        font-size:14px !important; height: 40px; line-height:40px;padding:0 25px 0 10px; background-position:calc(100% - 10px);
     }
 }
 
@@ -51,8 +51,14 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
 .props_label{font-size:14px;color:#999999;font-weight:500;display:inline-block;padding:1px 0 0 0;cursor: pointer;}
 .props_form{
 }
-.box_radio_item_group{display:flex;gap:12px;flex-wrap:wrap;}
-.box_radio_item{position:relative;display:flex;}
+.box_radio_item_group{display:flex;gap:12px;flex-wrap:wrap;
+    &.type2{
+        .box_radio_label{min-height:40px;min-width:80px;}
+    }
+}
+.box_radio_item{position:relative;display:flex;
+    
+}
 .box_radio_label{display:flex; width:100%; font-weight:500; min-height:48px; min-width:120px;text-align:center; box-sizing: border-box; justify-content: center; align-items: center;  background:#fff; border:1px solid #bbb; border-radius:8px; font-size:18px;color:#999999; cursor: pointer;}
 .box_radio_form{
     width:0;height:0; appearance: none; box-sizing: border-box; overflow:hidden;flex:0; 
@@ -64,7 +70,12 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
     .box_radio_label{min-width:80px;padding:10px;}
 }
 @media (max-width:$mobile){
-    .box_radio_label{font-size:14px;}
+    .box_radio_label{font-size:14px;min-height:30px;}
+    .box_radio_item_group{display:flex;gap:12px;
+        &.type2{
+            .box_radio_label{min-height:30px;min-width:60px;font-size:14px;}
+        }
+    }
 }
 
 /* grid */
@@ -97,7 +108,7 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
 @media (max-width:$mobile){
     .btn_bottom_wrap{gap:10px;margin-top:30px;}
     .btn_box_group{gap:10px;margin-top:20px;}
-    .btn_box{min-width:100px;min-height:40px;border-radius:8px;padding:0 20px;}
+    .btn_box{min-width:100px;min-height:45px;border-radius:8px;padding:0 20px;}
     .btn_box_text{font-size:16px;}
 
     .btn_control{
