@@ -6583,6 +6583,10 @@ li.nodata_li {
   letter-spacing: -0.5px;
   color: #777;
 }
+.text .bold {
+  font-weight: 700;
+  color: #333;
+}
 
 @media (max-width: 1023px) {
   .title_wrap {
@@ -6981,8 +6985,8 @@ li.nodata_li {
 
 .step_list_icon {
   display: block;
-  width: 65px;
-  height: 65px;
+  width: 64px;
+  height: 64px;
   margin: 0 auto;
 }
 
@@ -7094,17 +7098,19 @@ li.nodata_li {
   background-color: #ffbc00;
 }
 .step_data_item + .step_data_item {
-  margin-top: 16px;
+  margin-top: 8px;
 }
 
 .step_data_anchor {
   display: inline-block;
   margin-left: 10px;
-  padding-right: 22px;
-  background: url("../images/ico_step_data.png") no-repeat 100% 50%;
+  padding: 4.5px 32px 4.5px 10px;
+  border: 1px solid #f7943e;
+  border-radius: 8px;
+  background: url("../images/ico_step_data.png") no-repeat right 10px top 50%;
   background-size: 16px 16px;
   font-size: 16px;
-  line-height: 23.4px;
+  line-height: 21px;
   letter-spacing: -0.5px;
   color: #f7943e;
   vertical-align: top;
@@ -7220,9 +7226,6 @@ li.nodata_li {
     width: 8px;
     height: 8px;
   }
-  .step_data_item + .step_data_item {
-    margin-top: 12px;
-  }
   .step_data_anchor {
     margin-left: 8px;
     padding-right: 20px;
@@ -7302,9 +7305,6 @@ li.nodata_li {
     top: 7.5px;
     width: 6px;
     height: 6px;
-  }
-  .step_data_item + .step_data_item {
-    margin-top: 8px;
   }
   .step_data_anchor {
     margin-left: 2px;
