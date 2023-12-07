@@ -6,7 +6,9 @@ window.addEventListener("load", () => {
   layoutFunc();
 });
 
-$(function() {})
+$(function() {
+  datePicker();
+})
 
 /**
  * device check
@@ -683,6 +685,32 @@ function toggleItemFunc(option) {
           controlWord.textContent = option.hiddenCloseText;
         }
       });
+    });
+  }
+}
+
+
+function datePicker() {
+  var $datepicker = $(".calendar_type");
+  let touchstart = "ontouchstart" in window;
+  if ($datepicker.length) {
+    $datepicker.each(function() {
+      var $dateThis = $(this);
+      $(this).datepicker({
+        monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+        changeMonth: true,
+        changeYear: true,
+        dateFormat: 'yy.mm.dd'
+      });
+    });
+    var $windowWidth = 0;
+    $(window).on("resize", function() {
+      if ($windowWidth == $(window).width() && touchstart) {
+        return;
+      }
+      $datepicker.datepicker("hide");
+      $windowWidth = $(window).width();
     });
   }
 }
