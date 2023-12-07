@@ -2207,7 +2207,7 @@ select.form_select.full {
 
 @media (max-width: 767px) {
   select.form_select {
-    font-size: 14px;
+    font-size: 14px !important;
     height: 40px;
     line-height: 40px;
     padding: 0 25px 0 10px;
@@ -2324,6 +2324,10 @@ input.props_form:checked {
   gap: 12px;
   flex-wrap: wrap;
 }
+.box_radio_item_group.type2 .box_radio_label {
+  min-height: 40px;
+  min-width: 80px;
+}
 
 .box_radio_item {
   position: relative;
@@ -2373,6 +2377,16 @@ input.props_form:checked {
 }
 @media (max-width: 767px) {
   .box_radio_label {
+    font-size: 14px;
+    min-height: 30px;
+  }
+  .box_radio_item_group {
+    display: flex;
+    gap: 12px;
+  }
+  .box_radio_item_group.type2 .box_radio_label {
+    min-height: 30px;
+    min-width: 60px;
     font-size: 14px;
   }
 }
@@ -2469,7 +2483,7 @@ input.props_form:checked {
   }
   .btn_box {
     min-width: 100px;
-    min-height: 40px;
+    min-height: 45px;
     border-radius: 8px;
     padding: 0 20px;
   }
@@ -2740,6 +2754,13 @@ input.props_form:checked {
   display: block !important;
 }
 
+.column_obj_item_wrap .column_obj_item {
+  margin-bottom: 32px;
+}
+.column_obj_item_wrap .column_obj_item:last-of-type {
+  margin-bottom: 0;
+}
+
 .column_obj_item {
   margin-bottom: 60px;
 }
@@ -2749,6 +2770,10 @@ input.props_form:checked {
 
 .column_key {
   margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
 }
 
 .column_obj_title {
@@ -2757,6 +2782,27 @@ input.props_form:checked {
   font-weight: 700;
   color: #555555;
   letter-spacing: -0.05em;
+}
+
+.btn_column_bottom_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+}
+.btn_column_bottom_wrap.align_right {
+  justify-content: flex-end;
+}
+
+.text_flag {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  color: #0077C0;
+}
+.text_flag.type2 {
+  color: #bbb;
 }
 
 .note_box {
@@ -3004,6 +3050,9 @@ input.props_form:checked {
   .column_value .table {
     margin-top: 0;
   }
+  .text_flag {
+    font-size: 13px;
+  }
 }
 @media (max-width: 1023px) {
   .pc_item {
@@ -3041,10 +3090,13 @@ input.props_form:checked {
     font-size: 16px;
   }
   .column_key {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .column_obj_item {
     margin-bottom: 30px;
+  }
+  .btn_column_bottom_wrap {
+    margin-top: 16px;
   }
 }
 /* main */
@@ -4464,24 +4516,39 @@ input.input_global_search::input-placeholder {
 .form_linkbox {
   background: #003863;
   border-radius: 12px;
-  min-height: 224px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
-  padding: 32px;
+  padding: 20px;
+}
+.form_linkbox + .message_note_box {
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
 .form_linkbox_title_group {
   color: #fff;
   text-align: center;
   line-height: 1.35;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  gap: 5px;
+}
+
+.form_linkbox_title_sub,
+.form_linkbox_title_main {
+  line-height: 1;
+  display: inline-block;
 }
 
 .form_linkbox_title_sub {
   font-size: 24px;
-  letter-spacing: -0.05em;
+  padding-top: 3px;
 }
 
 .form_linkbox_title_main {
@@ -4495,6 +4562,7 @@ input.input_global_search::input-placeholder {
   height: 40px;
   background: url("../images/ico_family_go.png") no-repeat 50% 50%/100% auto;
   margin: 0 auto;
+  vertical-align: top;
 }
 
 .form_block_item {
@@ -4888,7 +4956,17 @@ td.nodata_td {
   margin-bottom: 4px;
 }
 .meaage_note_list > li:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+.meaage_note_list.type2 > li {
+  margin-bottom: 8px;
+}
+.meaage_note_list.type2 .grid_note_para {
+  align-items: flex-start;
+}
+.meaage_note_list.type2 .grid_note_para:before {
+  position: relative;
+  top: 5px;
 }
 
 .grid_note_para {
@@ -5048,6 +5126,7 @@ td.nodata_td {
   position: relative;
   border: 1px solid #ddd;
   height: 48px;
+  width: 100%;
   align-items: center;
   border-radius: 8px;
   background: #fff;
@@ -5108,6 +5187,7 @@ td.nodata_td {
   display: flex;
   position: relative;
   border: 1px solid #ddd;
+  width: 100%;
   height: 48px;
   align-items: center;
   border-radius: 8px;
@@ -5131,6 +5211,81 @@ td.nodata_td {
   line-height: 1;
 }
 
+.agree_terms_box {
+  background: #F9F9F9;
+  border-radius: 16px;
+  border: 1px solid #BBBBBB;
+  height: 330px;
+  position: relative;
+  overflow: hidden;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.agree_terms_box::-webkit-scrollbar {
+  width: 20px !important;
+}
+.agree_terms_box::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 30px;
+  background-clip: padding-box;
+  border: 7px solid transparent !important;
+}
+.agree_terms_box::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 30px;
+  box-shadow: inset 0px 0px 5px transparent !important;
+}
+
+.agree_terms_inner {
+  padding: 26px;
+}
+
+.terms_tail_group {
+  margin-bottom: 16px;
+}
+.terms_tail_group:last-of-type {
+  margin-bottom: 0;
+}
+
+.terms_tail_title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #777777;
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.terms_tail_cont {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.05em;
+  color: #999;
+}
+
+@media (max-width: 1023px) {
+  .agree_terms_box {
+    height: 165px;
+    border-radius: 8px;
+  }
+  .agree_terms_inner {
+    padding: 18px;
+  }
+  .terms_tail_title {
+    font-size: 14px;
+  }
+  .terms_tail_cont {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+  .meaage_note_list.type2 > li {
+    margin-bottom: 4px;
+  }
+  .meaage_note_list.type2 .grid_note_para:before {
+    top: 3px;
+  }
+}
 /* toggle */
 .toggle_item_list > li {
   margin-bottom: 16px;
@@ -5358,8 +5513,12 @@ li.nodata_li {
     font-size: 24px;
   }
   .form_linkbox {
-    min-height: 180px;
+    min-height: 70px;
     padding: 20px;
+  }
+  .btn_direct_go {
+    width: 30px;
+    height: 30px;
   }
   .result_message_box {
     font-size: 16px;

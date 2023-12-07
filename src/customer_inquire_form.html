@@ -29,14 +29,33 @@
                             <div class="grid_form_box">
                                 <div class="grid_form_table">
                                     <div class="grid_form_tr">
-                                        <div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="140">
+                                        <div class="grid_form_cols">
                                             <div class="grid_form_item">
                                                 <div class="grid_form_key">
-                                                    <label for="inquire_form_01" class="grid_form_label">분류</label>
+                                                    <span class="grid_form_label">공개여부</span>
+                                                </div>
+                                                <div class="grid_form_value">
+                                                    <div class="box_radio_item_group">
+                                                        <div class="box_radio_item">
+                                                            <input type="radio" class="box_radio_form" name="props_radio_01" id="props_radio_01_01">
+                                                            <label for="props_radio_01_01" class="box_radio_label">공개</label>
+                                                        </div>
+                                                        <div class="box_radio_item">
+                                                            <input type="radio" class="box_radio_form" name="props_radio_01" id="props_radio_01_02" checked>
+                                                            <label for="props_radio_01_02" class="box_radio_label">비공개</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid_form_cols">
+                                            <div class="grid_form_item">
+                                                <div class="grid_form_key">
+                                                    <label for="inquire_form_02" class="grid_form_label">분류</label>
                                                     <span class="form_flag">필수</span>
                                                 </div>
                                                 <div class="grid_form_value">
-                                                    <select class="form_select size2 full" id="inquire_form_01" title="분류 선택">
+                                                    <select class="form_select size2 full" id="inquire_form_02" title="분류 선택">
                                                         <option value="1">운영 규정</option>
                                                         <option value="2">시스템</option>
                                                         <option value="3">절차,혜택</option>
@@ -47,11 +66,11 @@
                                         <div class="grid_form_cols">
                                             <div class="grid_form_item">
                                                 <div class="grid_form_key">
-                                                    <label for="inquire_form_02" class="grid_form_label">제목</label>
+                                                    <label for="inquire_form_03" class="grid_form_label">연락처</label>
                                                     <span class="form_flag">필수</span>
                                                 </div>
                                                 <div class="grid_form_value">
-                                                    <input type="text" class="form_input size2" id="inquire_form_02">
+                                                    <input type="text" class="form_input size2" id="inquire_form_03">
                                                 </div>
                                             </div>
                                         </div>
@@ -60,11 +79,11 @@
                                         <div class="grid_form_cols">
                                             <div class="grid_form_item">
                                                 <div class="grid_form_key">
-                                                    <label for="inquire_form_03" class="grid_form_label">내용</label>
+                                                    <label for="inquire_form_04" class="grid_form_label">제목</label>
                                                     <span class="form_flag">필수</span>
                                                 </div>
                                                 <div class="grid_form_value">
-                                                    <textarea rows="10" cols="10" class="form_textarea" id="inquire_form_03"></textarea> 
+                                                    <input type="text" class="form_input size2" id="inquire_form_04">
                                                 </div>
                                             </div>
                                         </div>
@@ -73,7 +92,20 @@
                                         <div class="grid_form_cols">
                                             <div class="grid_form_item">
                                                 <div class="grid_form_key">
-                                                    <label for="inquire_form_04" class="grid_form_label">자동입력방지</label>
+                                                    <label for="inquire_form_05" class="grid_form_label">내용</label>
+                                                    <span class="form_flag">필수</span>
+                                                </div>
+                                                <div class="grid_form_value">
+                                                    <textarea rows="10" cols="10" class="form_textarea" id="inquire_form_05"></textarea> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="grid_form_tr">
+                                        <div class="grid_form_cols">
+                                            <div class="grid_form_item">
+                                                <div class="grid_form_key">
+                                                    <label for="inquire_form_06" class="grid_form_label">자동입력방지</label>
                                                     <span class="form_flag">필수</span>
                                                 </div>
                                                 <div class="grid_form_value">
@@ -83,7 +115,7 @@
                                                             <button type="button" class="btn_control ico_reload"><span class="hdtext">자동입력방지 이미지 변경</span></button>
                                                         </div>
                                                         <div class="inline_form_cols define_short" data-basis="290">
-                                                            <input type="text" class="form_input size2" id="inquire_form_04">
+                                                            <input type="text" class="form_input size2" id="inquire_form_06">
                                                         </div>
                                                     </div>
                                                 </div>
