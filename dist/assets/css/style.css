@@ -6791,7 +6791,7 @@ li.nodata_li {
   }
   .text.type1 {
     font-size: 16px;
-    line-height: 21px;
+    line-height: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -6811,8 +6811,8 @@ li.nodata_li {
     line-height: 17px;
   }
   .text.type1 {
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 .info_list {
@@ -7404,7 +7404,7 @@ li.nodata_li {
   .step_data_item {
     padding-left: 14px;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 20px;
   }
   .step_data_item::after {
     top: 6.5px;
@@ -7484,8 +7484,8 @@ li.nodata_li {
   }
   .step_data_item {
     padding-left: 12px;
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 18px;
   }
   .step_data_item::after {
     top: 7.5px;
