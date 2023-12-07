@@ -4516,24 +4516,39 @@ input.input_global_search::input-placeholder {
 .form_linkbox {
   background: #003863;
   border-radius: 12px;
-  min-height: 224px;
+  min-height: 140px;
   display: flex;
   flex-direction: column;
+  gap: 12px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   box-sizing: border-box;
-  padding: 32px;
+  padding: 20px;
+}
+.form_linkbox + .message_note_box {
+  margin-top: 12px;
+  margin-bottom: 0;
 }
 
 .form_linkbox_title_group {
   color: #fff;
   text-align: center;
   line-height: 1.35;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: -0.05em;
+  gap: 5px;
+}
+
+.form_linkbox_title_sub,
+.form_linkbox_title_main {
+  line-height: 1;
+  display: inline-block;
 }
 
 .form_linkbox_title_sub {
   font-size: 24px;
-  letter-spacing: -0.05em;
+  padding-top: 3px;
 }
 
 .form_linkbox_title_main {
@@ -4547,6 +4562,7 @@ input.input_global_search::input-placeholder {
   height: 40px;
   background: url("../images/ico_family_go.png") no-repeat 50% 50%/100% auto;
   margin: 0 auto;
+  vertical-align: top;
 }
 
 .form_block_item {
@@ -4940,7 +4956,17 @@ td.nodata_td {
   margin-bottom: 4px;
 }
 .meaage_note_list > li:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
+}
+.meaage_note_list.type2 > li {
+  margin-bottom: 8px;
+}
+.meaage_note_list.type2 .grid_note_para {
+  align-items: flex-start;
+}
+.meaage_note_list.type2 .grid_note_para:before {
+  position: relative;
+  top: 5px;
 }
 
 .grid_note_para {
@@ -5253,6 +5279,12 @@ td.nodata_td {
     margin-top: 10px;
     font-size: 12px;
   }
+  .meaage_note_list.type2 > li {
+    margin-bottom: 4px;
+  }
+  .meaage_note_list.type2 .grid_note_para:before {
+    top: 3px;
+  }
 }
 /* toggle */
 .toggle_item_list > li {
@@ -5481,8 +5513,12 @@ li.nodata_li {
     font-size: 24px;
   }
   .form_linkbox {
-    min-height: 180px;
+    min-height: 70px;
     padding: 20px;
+  }
+  .btn_direct_go {
+    width: 30px;
+    height: 30px;
   }
   .result_message_box {
     font-size: 16px;

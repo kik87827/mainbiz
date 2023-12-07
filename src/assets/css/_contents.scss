@@ -775,12 +775,16 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 }
 .btn_text_item{font-size:16px;color:#999999; line-height:1; display:inline-block; font-weight:500;}
 
-.form_linkbox{background:#003863; border-radius:12px;min-height:224px;display:flex;flex-direction: column; align-items: center;justify-content: space-between; box-sizing: border-box;padding:32px;}
-.form_linkbox_title_group{color:#fff; text-align: center;line-height:1.35;}
-.form_linkbox_title_sub{font-size:24px; letter-spacing: -0.05em;}
+.form_linkbox{background:#003863; border-radius:12px;min-height:140px;display:flex;flex-direction: column;gap:12px; align-items: center;justify-content: center; box-sizing: border-box;padding:20px;
+    & + .message_note_box{margin-top:12px;margin-bottom:0;}
+}
+.form_linkbox_title_group{color:#fff; text-align: center;line-height:1.35; display:inline-flex;align-items: center; letter-spacing: -0.05em; gap:5px;}
+.form_linkbox_title_sub,
+.form_linkbox_title_main{line-height:1; display:inline-block;}
+.form_linkbox_title_sub{font-size:24px; padding-top:3px;}
 .form_linkbox_title_main{font-size:30px; font-weight:700;}
 .form_linkbox_content_group{}
-.btn_direct_go{display:inline-block;width:40px;height:40px;background:url("../images/ico_family_go.png") no-repeat 50% 50%/100% auto;margin:0 auto;}
+.btn_direct_go{display:inline-block;width:40px;height:40px;background:url("../images/ico_family_go.png") no-repeat 50% 50%/100% auto;margin:0 auto;vertical-align: top;}
 
 .ms_inner_container{
     &.type2{
@@ -956,7 +960,15 @@ td.nodata_td{padding:150px 20px !important;}
 .meaage_note_list{
     > li{
         margin-bottom: 4px;
-        &:last-of-type{margin-bottom:0;}
+        &:last-of-type{margin-bottom:0 !important;}
+    }
+    &.type2{
+        > li{
+            margin-bottom: 8px;
+        }
+        .grid_note_para{align-items: flex-start;
+            &:before{position:relative;top:5px;}
+        }
     }
 }
 .grid_note_para{
@@ -1035,6 +1047,17 @@ td.nodata_td{padding:150px 20px !important;}
     .terms_tail_title{font-size:14px;}
     .terms_tail_cont{margin-top:10px;font-size:12px;}
 
+    .meaage_note_list{
+        &.type2{
+            >li{
+                margin-bottom:4px;
+            }
+            
+            .grid_note_para{
+                &:before{top:3px;}
+            }
+        }
+    }
 }
 
 
@@ -1178,7 +1201,9 @@ li.nodata_li{
     .form_linkbox_title_sub{font-size:20px;}
     .form_linkbox_title_main{font-size:24px;}
 
-    .form_linkbox{min-height:180px;padding:20px;}
+    .form_linkbox{min-height:70px;padding:20px;}
+
+    .btn_direct_go{width:30px;height:30px;}
 
     .result_message_box{
         font-size:16px; padding:20px; border-radius: 10px;
