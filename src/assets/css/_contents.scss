@@ -1004,7 +1004,13 @@ td.nodata_td{padding:150px 20px !important;}
     ::-ms-input-placeholder{color:#bbb;}
     ::input-placeholder{color:#bbb;}
 }
-.grid_form_tr{display:flex;gap:20px;}
+.grid_form_tr{display:flex;gap:20px;
+    &.else_tr{display:block;
+        .message_note_box{
+            &:last-of-type{margin-bottom:0;}
+        }
+    }
+}
 .grid_form_cols{flex:1;
     &.pixed_cols{flex:0;}
 }

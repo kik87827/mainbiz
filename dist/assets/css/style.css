@@ -5293,6 +5293,12 @@ td.nodata_td {
   display: flex;
   gap: 20px;
 }
+.grid_form_tr.else_tr {
+  display: block;
+}
+.grid_form_tr.else_tr .message_note_box:last-of-type {
+  margin-bottom: 0;
+}
 
 .grid_form_cols {
   flex: 1;
