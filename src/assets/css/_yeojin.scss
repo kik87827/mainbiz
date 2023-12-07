@@ -158,6 +158,19 @@
     letter-spacing: -0.5px;
   }
 }
+.table_button_go {
+  display: inline-block;
+  margin-left: 5px;
+  padding: 4.5px 36px 4.5px 10px;
+  border: 1px solid #f7943e;
+  border-radius: 8px;
+  background: url("../images/ico_table_button_go.png") no-repeat right 10px top 50%;
+  background-size: 20px auto;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+  color: #f7943e;
+}
 
 @media (max-width:$tablet){
   .table {
@@ -233,6 +246,12 @@
       line-height: 17px;
     }
   }
+  .table_button_go {
+    padding: 3px 28px 3px 7px;
+    font-size: 14px;
+    background-position: right 7px top 50%;
+    background-size: 16px auto;
+  }
 }
 @media (max-width:$mobile){
   .table {
@@ -269,6 +288,12 @@
       font-size: 13px;
       line-height: 16px;
     }
+  }
+  .table_button_go {
+    padding: 3px 28px 3px 7px;
+    font-size: 13px;
+    background-position: right 7px top 50%;
+    background-size: 14px auto;
   }
 }
 
@@ -334,7 +359,7 @@
   .text {
     &.type1 {
       font-size: 16px;
-      line-height: 20px;
+      line-height: 21px;
     }
   }
 }
@@ -358,8 +383,8 @@
   }
   .text {
     &.type1 {
-      font-size: 14px;
-      line-height: 18px;
+      font-size: 15px;
+      line-height: 21px;
     }
   }
 }
@@ -848,7 +873,7 @@
 }
 .step_data_anchor {
   display: inline-block;
-  margin-left: 10px;
+  margin: -4px 0 -5px 10px;
   padding: 4.5px 32px 4.5px 10px;
   border: 1px solid #f7943e;
   border-radius: 8px;
@@ -984,9 +1009,10 @@
   }
   .step_data_anchor {
     margin-left: 8px;
-    padding-right: 20px;
+    padding: 3px 28px 3px 7px;
     background-size: 16px 16px;
-    font-size: 15px;
+    background-position: right 7px top 50%;
+    font-size: 14px;
     line-height: 21px;
   }
 }
@@ -1014,7 +1040,7 @@
     justify-content: center;
   }
   .step_list_item {
-    flex: 0 0 110px;
+    flex: 0 0 124px;
     padding-bottom: 40px;
 
     &::after {
@@ -1070,9 +1096,10 @@
     }
   }
   .step_data_anchor {
-    margin-left: 2px;
-    padding-right: 20px;
-    background-size: 16px 16px;
+    margin-left: 5px;
+    padding: 3px 28px 3px 10px;
+    background-position: right 7px top 50%;
+    background-size: 14px 14px;
     font-size: 13px;
     line-height: 21px;
   }
