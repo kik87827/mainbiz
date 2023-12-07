@@ -607,6 +607,7 @@ function scrollDrag(target){
       slider.classList.add('active');
       startX = e.pageX - slider.offsetLeft;
       scrollLeft = slider.scrollLeft;
+      e.preventDefault();
     });
     slider.addEventListener('mouseleave', () => {
       isDown = false;
