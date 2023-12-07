@@ -359,7 +359,7 @@
   .text {
     &.type1 {
       font-size: 16px;
-      line-height: 21px;
+      line-height: 20px;
     }
   }
 }
@@ -383,8 +383,8 @@
   }
   .text {
     &.type1 {
-      font-size: 15px;
-      line-height: 21px;
+      font-size: 14px;
+      line-height: 18px;
     }
   }
 }
@@ -999,7 +999,7 @@
   .step_data_item {
     padding-left: 14px;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 20px;
 
     &::after {
       top: 6.5px;
@@ -1086,8 +1086,8 @@
 
   .step_data_item {
     padding-left: 12px;
-    font-size: 15px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 18px;
 
     &::after {
       top: 7.5px;
