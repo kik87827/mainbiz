@@ -3644,6 +3644,7 @@ input.props_form:checked {
 .box_radio_label {
   display: flex;
   width: 100%;
+  padding: 10px 16px;
   font-weight: 500;
   min-height: 48px;
   min-width: 120px;
@@ -3657,6 +3658,9 @@ input.props_form:checked {
   font-size: 18px;
   color: #999999;
   cursor: pointer;
+}
+.box_radio_label.type2 {
+  min-width: inherit;
 }
 
 .box_radio_form {
@@ -4450,6 +4454,7 @@ input.props_form:checked {
   font-weight: 500;
   line-height: 1.4;
   font-weight: 500;
+  letter-spacing: -0.05em;
 }
 .bullet_list > li {
   position: relative;
@@ -4476,6 +4481,37 @@ input.props_form:checked {
 .bullet_list > li:last-of-type {
   margin-bottom: 0;
 }
+.bullet_list.type2 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #999999;
+}
+.bullet_list.type2 > li {
+  margin: 0;
+}
+.bullet_list.type2 > li:before {
+  background-color: #999;
+}
+.bullet_list.type3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.bullet_list.type3 > li {
+  margin: 0;
+}
+.bullet_list.type3 > li:before {
+  top: 8px;
+}
+.bullet_list.emp {
+  color: #F7943E;
+}
+.bullet_list.emp > li {
+  margin: 0;
+}
+.bullet_list.emp > li:before {
+  background-color: #F7943E;
+}
+
 .note_guide_para {
   font-size: 16px;
   font-weight: 700;
@@ -6858,6 +6894,86 @@ td.nodata_td {
 }
 .tab_contents_wrap .tab_menu_list_wrap {
   margin-bottom: 32px;
+}
+
+.props_form_table_wrap {
+  background: #F9F9F9;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #BBBBBB;
+  border-radius: 16px;
+}
+
+.props_form_table {
+  width: 100%;
+}
+.props_form_table tbody tr th,
+.props_form_table tbody tr td {
+  border-bottom: 1px solid #bbb;
+  text-align: left;
+}
+.props_form_table tbody tr th {
+  border-right: 1px solid #bbb;
+  padding: 20px;
+  width: 165px;
+}
+.props_form_table tbody tr:last-of-type th,
+.props_form_table tbody tr:last-of-type td {
+  border-bottom: 0;
+}
+.props_form_table tbody tr th[rowspan] {
+  border-bottom: 0;
+}
+
+.props_form_title {
+  font-size: 18px;
+  color: #999999;
+  font-weight: 700;
+  display: inline;
+  vertical-align: middle;
+}
+.props_form_title + .form_flag {
+  vertical-align: middle;
+  margin: 1px 0 0 5px;
+}
+
+.props_form_sub {
+  font-size: 16px;
+  font-weight: 500;
+  color: #BBBBBB;
+  margin-top: 5px;
+}
+
+.props_detail_form_wrap {
+  display: flex;
+  align-items: center;
+}
+
+.props_detail_long_cols {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 20px;
+}
+
+.props_detail_key_para + .bullet_list {
+  margin-top: 5px;
+}
+
+.props_detail_short_cols {
+  flex: 0;
+  padding: 12px 20px;
+  white-space: nowrap;
+}
+.props_detail_short_cols .box_radio_item_group {
+  flex-wrap: nowrap;
+}
+
+.props_detail_key_para {
+  font-size: 18px;
+  color: #333;
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 1.4;
 }
 
 @media (max-width: 1023px) {

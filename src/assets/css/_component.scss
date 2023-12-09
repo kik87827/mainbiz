@@ -60,7 +60,9 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
 .box_radio_item{position:relative;display:flex;
     
 }
-.box_radio_label{display:flex; width:100%; font-weight:500; min-height:48px; min-width:120px;text-align:center; box-sizing: border-box; justify-content: center; align-items: center;  background:#fff; border:1px solid #bbb; border-radius:8px; font-size:18px;color:#999999; cursor: pointer;}
+.box_radio_label{display:flex; width:100%; padding:10px 16px; font-weight:500; min-height:48px; min-width:120px;text-align:center; box-sizing: border-box; justify-content: center; align-items: center;  background:#fff; border:1px solid #bbb; border-radius:8px; font-size:18px;color:#999999; cursor: pointer;
+    &.type2{min-width:inherit;}
+}
 .box_radio_form{
     width:0;height:0; appearance: none; box-sizing: border-box; overflow:hidden;flex:0; 
     &:checked{
