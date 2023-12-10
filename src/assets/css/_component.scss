@@ -7,6 +7,7 @@ select.form_select{color:#333;cursor:pointer;font-size:18px; font-weight:500; bo
         &:hover{color:#333;}
     }
     &.size2{height:48px;border-radius:8px;font-size:16px;}
+    &.size3{height:36px;border-radius:8px;line-height:36px;font-size:16px;font-weight:500;}
     &.full{width:100%;}
 }
 @media (max-width:$mobile){
@@ -28,6 +29,14 @@ input.form_input{
     &.size2{height:48px;border-radius:8px;font-size:16px;}
     &.calendar_type{background:#fff url("../images/ico_calendar_input.png") no-repeat calc(100% - 8px) 50%/32px auto;padding-right:50px;}
 }
+
+input.form_input_value{
+    border:1px solid #ddd; @include rubik; text-align:right; appearance: none; border-radius:8px;width:100%;height:48px; box-sizing: border-box; padding:0 16px;font-size:16px; font-weight:500; color:#333;
+    &:disabled{
+        background:#E9E9E9; color:#333;
+    }
+}
+
 @media (max-width:$mobile){
     input.form_input{font-size:14px !important;
         padding:0 10px;
@@ -37,7 +46,9 @@ input.form_input{
 }
 
 /* textarea */
-textarea.form_textarea{border:1px solid #ddd; font-size:18px; font-weight:500; color:#000; appearance: none; border-radius:8px;width:100%;height:348px; padding:16px 16px; color:#000; box-sizing: border-box; resize: none;}
+textarea.form_textarea{border:1px solid #ddd; line-height:1.4; font-size:18px; font-weight:500; color:#000; appearance: none; border-radius:8px;width:100%;height:348px; padding:16px 16px; color:#000; box-sizing: border-box; resize: none;
+    &.htype2{height:300px;}
+}
 @media (max-width:$mobile){
     textarea.form_textarea{font-size:14px; border-radius:8px;}
 }
@@ -73,15 +84,25 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
     &:checked{
         & + .box_radio_label{background-color:$sub_color; color:#fff;border-color:$sub_color; font-weight:700;}
     }
+    &:disabled{
+        & + .box_radio_label{background-color:#E9E9E9; color:#bbb;border-color:#ddd; font-weight:700;cursor: default;}
+    }
 }
 @media (max-width:$tablet){
     .box_radio_label{min-width:80px;padding:10px;}
 }
 @media (max-width:$mobile){
     .box_radio_label{font-size:14px;/* min-height:30px; */}
-    .box_radio_item_group{display:flex;gap:8px 12px;
-        &.type2{
-            .box_radio_label{min-height:30px;min-width:60px;font-size:14px;}
+    .box_radio_item_group{gap:10px;}
+    .grid_form_value{
+        .box_radio_item_group{display:flex;gap:8px 10px;
+            &.type2{
+                .box_radio_label{min-height:30px;min-width:60px;font-size:14px;}
+            }
+            &.break_type2{
+                flex-wrap:wrap; gap:8px 10px;
+                .box_radio_item{flex:0 0 calc(50% - 5px);}
+            }
         }
     }
     .box_radio_label{min-height:30px;}
@@ -100,9 +121,15 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
         background:#fff;
         .btn_box_text{color:$primary;}
     }
+    &.type3{
+        background:$sub_color; border-color:$sub_color;
+        .btn_box_text{color:#fff;}
+    }
 }
 .btn_box_text{display:inline-block;font-weight:700;color:#fff;line-height:1;font-size:20px;letter-spacing: -0.05em;}
-.btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
+.btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;
+    &.type2{gap:16px;}
+}
 .btn_box_group{margin-top:32px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
 .btn_control{
     display:inline-block;width:48px;height:48px;border-radius:8px; flex:0 0 48px;  border:1px solid #999; background-repeat:no-repeat; background-position: 50% 50%; background-color:#fff;
@@ -112,13 +139,17 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
 @media (max-width:$tablet){
     .btn_box{min-width:140px;min-height:50px;}
     .btn_box_group,
-    .btn_bottom_wrap{gap:15px;}
+    .btn_bottom_wrap{gap:15px;
+        &.type2{gap:10px;}
+    }
 }
 @media (max-width:$mobile){
-    .btn_bottom_wrap{gap:10px;margin-top:30px;}
+    .btn_bottom_wrap{gap:10px;margin-top:30px;
+        &.type2{gap:5px;}
+    }
     .btn_box_group{gap:10px;margin-top:20px;}
     .btn_box{min-width:100px;min-height:45px;border-radius:8px;padding:0 20px;}
-    .btn_box_text{font-size:16px;}
+    .btn_box_text{font-size:16px; position:relative;top:1px;}
 
     .btn_control{
         border-radius:8px;
