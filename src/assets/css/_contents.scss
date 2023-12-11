@@ -1260,6 +1260,9 @@ td.nodata_td{padding:150px 20px !important;}
             flex-direction: column;
             > .grid_form_cols{flex:0 !important;}
         }
+        .grid_form_cols{
+            &.empty{display:none;}
+        }
     }
 }
 

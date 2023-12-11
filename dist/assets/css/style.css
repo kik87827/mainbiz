@@ -4148,10 +4148,7 @@ input.props_form:checked {
   line-height: 1;
   font-weight: 700;
 }
-.boxtab_list_wrap.type2 .boxtab_text {
-  position: relative;
-  top: 2px;
-}
+.boxtab_list_wrap.type2 .boxtab_text { /* position:relative;top:2px; */ }
 
 .boxtab_list {
   display: flex;
@@ -7476,6 +7473,9 @@ td.nodata_td {
   }
   .grid_form_tr.break_type2 > .grid_form_cols {
     flex: 0 !important;
+  }
+  .grid_form_tr .grid_form_cols.empty {
+    display: none;
   }
 }
 @media (max-width: 1023px) {
