@@ -111,20 +111,230 @@
                             <!-- tab contents 2 -->
                             <div class="tab_contents_depth_wrap">
                                 <h5 class="hdtext">원가명세서</h5>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.<br>
-                                내용이 들어갑니다.
+                                <div class="form_value_tb_wrap type2" id="data_write_form">
+                                    <table class="form_value_tb">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="has_value_key"><span class="form_value_th_key">과목 \ 결산년도</span></th>
+                                                <th scope="col"><span class="form_value_th_value">2020 년</span></th>
+                                                <th scope="col"><span class="form_value_th_value">2021 년</span></th>
+                                                <th scope="col">
+                                                    <div class="inline_form_obj_group">
+                                                        <select class="form_select size3" title="년도 선택"><option>2022</option></select>
+                                                        <span class="inline_form_unit">년</span>
+                                                    </div>
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">당기 총제조비용</p>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 당기 총제조비용 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 당기 총제조비용 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 당기 총제조비용 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">재료비</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 재료비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 재료비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 재료비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">노무비</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 노무비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 노무비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 노무비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">경비</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 경비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 경비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 경비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">복리후생비</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 복리후생비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 복리후생비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 복리후생비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">감가상각비</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 감가상각비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 감가상각비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 감가상각비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">교육훈련비</p>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 교육훈련비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 교육훈련비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 교육훈련비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">경상개발비</p>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 경상개발비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 경상개발비 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 경상개발비 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">세금과공과</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 세금과공과 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 세금과공과 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 세금과공과 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">임차료</p>
+                                                            <span class="form_flag">필수</span>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 임차료 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 임차료 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 임차료 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="has_value_key">
+                                                    <div class="form_value_td_key_group">
+                                                        <div class="fv_key_main_group">
+                                                            <p class="form_value_td_key_main">제품 제조원가</p>
+                                                        </div>
+                                                    </div>
+                                                </th>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2020년 제품 제조원가 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2021년 제품 제조원가 금액" value="123,456,789,000">
+                                                </td>
+                                                <td>
+                                                    <input type="text" class="form_input_value" title="2022년 제품 제조원가 금액" value="123,456,789,000">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                             <!-- // tab contents 2 -->
                         </div>
