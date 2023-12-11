@@ -134,7 +134,12 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
 .btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;
     &.type2{gap:16px;}
 }
-.btn_box_group{margin-top:32px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;}
+.btn_box_group{margin-top:32px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;
+    &.type2{
+        justify-content: flex-end;
+    }
+    & + .paging_wrap{margin-top:15px;}
+}
 .btn_control{
     display:inline-block;width:48px;height:48px;border-radius:8px; flex:0 0 48px;  border:1px solid #999; background-repeat:no-repeat; background-position: 50% 50%; background-color:#fff;
     &.ico_reload{background-image:url("../images/ico_replay.png");background-size:24px auto;}

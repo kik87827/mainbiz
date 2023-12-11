@@ -3836,6 +3836,12 @@ input.props_form:checked {
   gap: 20px;
   flex-wrap: wrap;
 }
+.btn_box_group.type2 {
+  justify-content: flex-end;
+}
+.btn_box_group + .paging_wrap {
+  margin-top: 15px;
+}
 
 .btn_control {
   display: inline-block;
