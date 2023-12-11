@@ -3583,7 +3583,7 @@ input.form_input_value {
   height: 48px;
   box-sizing: border-box;
   padding: 0 16px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   color: #333;
 }
@@ -3592,6 +3592,11 @@ input.form_input_value:disabled {
   color: #333;
 }
 
+@media (max-width: 1299px) {
+  input.form_input_value {
+    font-size: 16px;
+  }
+}
 @media (max-width: 767px) {
   input.form_input {
     font-size: 14px !important;
@@ -3599,6 +3604,9 @@ input.form_input_value:disabled {
   }
   input.form_input.search_input {
     height: 38px;
+  }
+  input.form_input_value {
+    font-size: 14px;
   }
 }
 /* textarea */
@@ -6854,7 +6862,7 @@ td.nodata_td {
 .form_flag {
   display: inline-block;
   background: #0077C0;
-  border-radius: 6px;
+  border-radius: 4px;
   height: 16px;
   line-height: 17px;
   white-space: nowrap;
@@ -7189,6 +7197,7 @@ td.nodata_td {
 .form_value_th_key {
   font-size: 16px;
   color: #333333;
+  font-weight: 600;
 }
 
 .form_value_th_value {
@@ -7208,6 +7217,12 @@ td.nodata_td {
   color: #BBBBBB;
   font-weight: 600;
 }
+.form_value_td_key_sub .key_number {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 2px;
+}
 .form_value_td_key_sub.emp {
   color: #F7943E;
 }
@@ -7224,6 +7239,30 @@ td.nodata_td {
   line-height: 1;
   display: inline-block;
   font-weight: 600;
+}
+
+.fvd_key_indent_group {
+  display: flex;
+  gap: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #999999;
+}
+
+.fv_key_main_group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+.fv_key_main_group .form_value_td_key_main {
+  position: relative;
+  top: -1px;
+}
+.btn_tooltip {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ico_help.png") no-repeat 50% 50%/100% auto;
 }
 
 @media (max-width: 1299px) {
@@ -7378,10 +7417,23 @@ td.nodata_td {
   .inline_form_unit {
     font-size: 14px;
   }
+  .fvd_key_indent_group {
+    font-size: 14px;
+  }
+  .fv_key_main_group .form_value_td_key_main {
+    top: 0;
+  }
+  .btn_tooltip {
+    width: 14px;
+    height: 14px;
+  }
 }
 @media (max-width: 767px) {
   .form_value_tb {
     min-width: 767px;
+  }
+  .form_value_tb .has_value_key {
+    width: 20%;
   }
 }
 /* toggle */
