@@ -10,6 +10,7 @@
 	<link href="./assets/css/style.css" rel="stylesheet">
 	<script src="./assets/js/jquery-3.4.1.min.js"></script>
 	<script src="./assets/js/dynamicListener.min.js"></script>
+	<script src="./assets/js/jquery-ui.js"></script>
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<script src="./assets/js/main.js"></script>
@@ -207,13 +208,286 @@
 					</ul>
 				</div>
 				<div class="sub_content_package">
-					<h3 class="sub_title">제도 개요</h3>
+					<h3 class="sub_title">신규 신청</h3>
 					<div class="sub_contents">
-						내용이 들어갑니다.
+						<!-- step -->
+						<div class="step_item_list_wrap">
+							<ul class="step_item_list">
+								<li class="active">
+									<div class="step_item">
+										<div class="step_index_row">
+											<span class="step_index_box">
+												<span class="step_index_text">1</span>
+												<span class="hdtext">선택됨</span><!-- 접근성 마크업 -->
+											</span>
+										</div>
+										<div class="step_spec_row">
+											<p class="step_spec_para">기업등록</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="step_item">
+										<div class="step_index_row">
+											<span class="step_index_box">
+												<span class="step_index_text">2</span>
+											</span>
+										</div>
+										<div class="step_spec_row">
+											<p class="step_spec_para">자가진단</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="step_item">
+										<div class="step_index_row">
+											<span class="step_index_box">
+												<span class="step_index_text">3</span>
+											</span>
+										</div>
+										<div class="step_spec_row">
+											<p class="step_spec_para">현장평가 신청</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="step_item">
+										<div class="step_index_row">
+											<span class="step_index_box">
+												<span class="step_index_text">4</span>
+											</span>
+										</div>
+										<div class="step_spec_row">
+											<p class="step_spec_para">평가진행</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<!-- // step -->
+						<!-- tab -->
+						<div class="boxtab_list_wrap">
+							<ul class="boxtab_list">
+								<li>
+									<a href="#" class="boxtab_item">
+										<span class="boxtab_text">기업기본정보</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="boxtab_item">
+										<span class="boxtab_text">공장 및 주생산품</span>
+									</a>
+								</li>
+								<li>
+									<a href="#" class="boxtab_item active">
+										<span class="boxtab_text">재무사항</span>
+										<span class="hdtext">선택됨</span><!-- 접근성 마크업 -->
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!-- // tab  -->
+						<!-- tab contents -->
+						<div class="tab_contents_wrap">
+							<h4 class="hdtext">공장 및 주생산품</h4><!-- 접근성 마크업 -->
+							<!-- tab 2 -->
+							<div class="tab_menu_list_wrap type2" id="tab_menu_container">
+								<!-- current_menu_text ==> 화면낭독기 텍스트 -->
+								<ul class="tab_menu_list">
+									<li><a href="#" class="tab_menu"><span class="tab_menu_text">재무상태표</a></li>
+									<li><a href="#" class="tab_menu"><span class="tab_menu_text">손익계산서</span></a></li>
+									<li><a href="#" class="tab_menu active"><span class="tab_menu_text">비재무성과</span><span class="current_menu_text">선택됨</span></a></li>
+									<li><a href="#" class="tab_menu"><span class="tab_menu_text">원가명세서</span></a></li>
+								</ul>
+							</div>
+							<!-- // tab 2 -->
+							<!-- tab contents 2 -->
+							<div class="tab_contents_depth_wrap">
+								<h5 class="hdtext">비재무성과</h5>
+								<div class="message_note_box">
+									<div class="message_note_title_row">
+										<div class="message_note_wordbox">
+											<p class="message_note_word">작성 전 꼭 확인해주세요</p>
+										</div>
+									</div>
+									<ul class="meaage_note_list">
+										<li>
+											<div class="grid_note_para">
+												<div class="grid_note_para_text">
+													<span class="emp">재무상태표와 손익계산서에서 입력했던, 동일한 년도를 선택하고 입력하세요.</span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="grid_note_para">
+												<div class="grid_note_para_text">
+													<span class="emp">핵심고객 매출액은 최소 1,000원 이상 / 상시근로자 수는 1명 이상 / 해당사항 없는 항목은 0 입력</span>
+												</div>
+											</div>
+										</li>
+										<li class="type2">
+											<div class="grid_note_para">
+												<div class="grid_note_para_text">
+													개인에서 법인으로 전환된 업체는 개인일 때의 손익계산서를 입력하시기 바랍니다.
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="form_value_tb_wrap type2" id="data_write_form">
+									<table class="form_value_tb">
+										<thead>
+											<tr>
+												<th scope="col" class="has_value_key"><span class="form_value_th_key">과목 \ 결산년도</span></th>
+												<th scope="col"><span class="form_value_th_value">2020 년</span></th>
+												<th scope="col"><span class="form_value_th_value">2021 년</span></th>
+												<th scope="col">
+													<div class="inline_form_obj_group">
+														<select class="form_select size3" title="년도 선택">
+															<option>2022</option>
+														</select>
+														<span class="inline_form_unit">년</span>
+													</div>
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<th scope="row" class="has_value_key">
+													<div class="form_value_td_key_group">
+														<div class="fv_key_main_group">
+															<p class="form_value_td_key_main">상시근로자 수</p>
+															<span class="form_flag">필수</span>
+														</div>
+													</div>
+												</th>
+												<td>
+													<input type="text" class="form_input_value" title="2020년 상시근로자 수 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2021년 상시근로자 수 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2022년 상시근로자 수 금액" value="123,456,789,000">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" class="has_value_key">
+													<div class="form_value_td_key_group">
+														<div class="fv_key_main_group">
+															<p class="form_value_td_key_main">연구, 개발, 설계 담당인원</p>
+														</div>
+													</div>
+												</th>
+												<td>
+													<input type="text" class="form_input_value" title="2020년 연구, 개발, 설계 담당인원 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2021년 연구, 개발, 설계 담당인원 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2022년 연구, 개발, 설계 담당인원 금액" value="123,456,789,000">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" class="has_value_key">
+													<div class="form_value_td_key_group">
+														<div class="fv_key_main_group">
+															<p class="form_value_td_key_main">경영혁신 마일리지 점수</p>
+															<a href="#" class="btn_tooltip" title="툴팁 메세지 출력"><span class="hdtext">툴팁</span></a>
+														</div>
+														<p class="form_value_td_key_sub">(단위 : 점)</p>
+													</div>
+												</th>
+												<td>
+													<span class="hdtext">내용없음</span>
+												</td>
+												<td>
+													<span class="hdtext">내용없음</span>
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2022년 경영혁신 마일리지 점수 금액" value="123,456,789,000">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" class="has_value_key">
+													<div class="form_value_td_key_group">
+														<div class="fv_key_main_group">
+															<p class="form_value_td_key_main">퇴사인원 수</p>
+														</div>
+													</div>
+												</th>
+												<td>
+													<input type="text" class="form_input_value" title="2020년 퇴사인원 수 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2021년 퇴사인원 수 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2022년 퇴사인원 수 금액" value="123,456,789,000">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" class="has_value_key">
+													<div class="form_value_td_key_group">
+														<div class="fv_key_main_group">
+															<p class="form_value_td_key_main">고객만족도</p>
+															<span class="form_flag">필수</span>
+															<a href="#" class="btn_tooltip" title="툴팁 메세지 출력"><span class="hdtext">툴팁</span></a>
+														</div>
+														<p class="form_value_td_key_sub">(100점 기준)</p>
+													</div>
+												</th>
+												<td>
+													<input type="text" class="form_input_value" title="2020년 고객만족도 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2021년 고객만족도 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2022년 고객만족도 금액" value="123,456,789,000">
+												</td>
+											</tr>
+											<tr>
+												<th scope="row" class="has_value_key">
+													<div class="form_value_td_key_group">
+														<div class="fv_key_main_group">
+															<p class="form_value_td_key_main">핵심고객 매출액</p>
+															<span class="form_flag">필수</span>
+															<a href="#" class="btn_tooltip" title="툴팁 메세지 출력"><span class="hdtext">툴팁</span></a>
+														</div>
+														<p class="form_value_td_key_sub">(단위 : 원)</p>
+													</div>
+												</th>
+												<td>
+													<input type="text" class="form_input_value" title="2020년 핵심고객 매출액 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2021년 핵심고객 매출액 금액" value="123,456,789,000">
+												</td>
+												<td>
+													<input type="text" class="form_input_value" title="2022년 핵심고객 매출액 금액" value="123,456,789,000">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<!-- // tab contents 2 -->
+						</div>
+						<!-- // tab contents -->
+						<div class="btn_bottom_wrap type2">
+							<a href="#" class="btn_box type2"><span class="btn_box_text">이전</span></a>
+							<a href="#" class="btn_box type3"><span class="btn_box_text">저장</span></a>
+							<a href="#" class="btn_box"><span class="btn_box_text">다음</span></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<script>
+			scrollDrag(["#data_write_form"]);
+		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
 				<div class="footer_sub_cols">
