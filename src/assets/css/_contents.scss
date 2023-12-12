@@ -1130,7 +1130,7 @@ td.nodata_td{padding:150px 20px !important;}
 .data_render_text{flex:1; padding:0 16px; color:$primary;font-weight: 500;font-size: 18px;}
 
 
-.btn_inform_control{display:inline-block;white-space: nowrap;color:#fff; font-size:14px; background:#777777; border-radius:4px; padding:10px 15px; line-height:1; box-sizing: border-box; text-align: center; min-width:64px;}
+.btn_inform_control{display:inline-block;white-space: nowrap;color:#fff; font-size:14px; background:#777777; border-radius:4px; padding:10px 15px; line-height:1; box-sizing: border-box; text-align: center; /* min-width:64px; */}
 
 .agree_terms_box{background:#F9F9F9;border-radius:16px;border:1px solid #BBBBBB;height:330px;position:relative;overflow:hidden;overflow-y:auto;box-sizing: border-box;
     &::-webkit-scrollbar {width: 20px !important;}

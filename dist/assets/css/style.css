@@ -7199,8 +7199,7 @@ td.nodata_td {
   padding: 10px 15px;
   line-height: 1;
   box-sizing: border-box;
-  text-align: center;
-  min-width: 64px;
+  text-align: center; /* min-width:64px; */
 }
 
 .agree_terms_box {
