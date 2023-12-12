@@ -30,12 +30,18 @@
     }
     &:last-of-type{margin-bottom:0;}
 }
-.column_obj_item_cols{flex:1;}
+.column_obj_item_cols{flex:1;display:flex; flex-direction: column;
+    .column_key{flex:0;}
+    .column_value{flex:1;}
+    .message_note_box{box-sizing: border-box;height:100%;}
+}
 .column_key{margin-bottom:30px;display:flex;flex-wrap:wrap; align-items: center; gap:8px;
     &.align_type2{justify-content: space-between; align-items: center;}
 }
 .column_obj_title{font-size:28px; line-height:1; font-weight:700; color:#555555; letter-spacing: -0.05em;}
-.column_value{}
+.column_value{
+    .message_note_box{margin-bottom:0;}
+}
 
 .column_obj_title_group{}
 .qus_form_obj{display:flex;gap:10px;align-items: center;flex-wrap:wrap;}
@@ -238,7 +244,12 @@
     .column_obj_title{font-size:16px;}
     .column_key{margin-bottom:15px;}
 
-    .column_obj_item{margin-bottom:30px;}
+    .column_obj_item{margin-bottom:30px;display:block !important;}
+
+    .column_obj_item_cols{
+        margin-bottom:40px;
+        &:last-of-type{margin-bottom:0;}
+    }
 
     .btn_column_bottom_wrap{
         margin-top:16px;
@@ -1013,6 +1024,16 @@ td.nodata_td{padding:150px 20px !important;}
 .grid_form_box{}
 .message_note_box{
     background: rgba(0, 119, 192, 0.1); border-radius: 16px; padding:24px; margin-bottom:20px;
+    &.skin2{
+        background:#F9F9F9;
+        .meaage_note_list.type2{
+
+            .grid_note_para{
+                &:before{top:7px;}
+            }
+        }
+        .grid_note_para_text{font-size:18px;}
+    }
 }
 .meaage_note_list{
     > li{
@@ -1039,6 +1060,11 @@ td.nodata_td{padding:150px 20px !important;}
             &:before{position:relative;top:5px;}
         }
     }
+    &.gap_type2{
+        > li{
+            margin-bottom: 12px;
+        }
+    }
 }
 .grid_note_para{
     display:flex; align-items: center; gap:8px;
@@ -1047,7 +1073,9 @@ td.nodata_td{padding:150px 20px !important;}
     .sub_emp{}
     .emp_sub{color:$sub_color; font-weight:500;}
 }
-.grid_note_para_text{font-size:16px;line-height:1.4;color:#808285;padding-top:2px;}
+.grid_note_para_text{font-size:16px;line-height:1.4;color:#808285;padding-top:2px;word-break: keep-all;
+    .emp{word-break: keep-all;}
+}
 .grid_form_table{display:flex;flex-direction: column;gap:20px;
     ::-webkit-input-placeholder{color:#bbb;}
     ::-moz-input-placeholder{color:#bbb;}
@@ -1057,6 +1085,7 @@ td.nodata_td{padding:150px 20px !important;}
 }
 .call_inline_box{
     display:inline-flex; vertical-align: middle; align-items: center; background:#999999; border-radius:4px;gap:5px;padding:5px 8px;
+    &.skin2{background-color:$primary;}
     &:before{display:block;content:'';width:16px;height:14px;background:url("../images/ico_customer_head.png") no-repeat 0 0/100% auto;}
 }
 .call_inline_box_text{color:#fff;font-size:14px;font-weight:700;line-height:1;}
@@ -1089,9 +1118,12 @@ td.nodata_td{padding:150px 20px !important;}
     &:after{display:block;content:'';width:10px;height:6px;background:url("../images/ico_note_pointerx2.png") no-repeat 0 0/100% auto;position:absolute;top:100%;left:12px;}
 }
 .message_note_word{font-size:16px; font-weight:700; color:#fff; line-height:1; }
-.data_render_box{border-radius:8px;color:$primary;background: rgba(0, 119, 192, 0.1);border:1px solid $primary; display:flex;flex-wrap:wrap;align-items: center;box-sizing: border-box;font-weight:500;font-size:18px;padding:0 16px;min-height:48px;
+.data_render_box{border-radius:8px;color:$primary;background: rgba(0, 119, 192, 0.1); line-height:1.4; border:1px solid $primary; display:flex;flex-wrap:wrap;align-items: center;box-sizing: border-box;font-weight:500;font-size:18px;padding:10px 16px;min-height:48px;
     &.type2{
         border-color:#999; color:#333; background:#fff;
+    }
+    &.multi_line{
+        padding:17px 16px;
     }
 }
 .form_flag{display:inline-block;background:$primary;border-radius:4px;height:16px;line-height:17px; white-space: nowrap;padding:0 4px;color:#fff; font-size:11px; font-weight:700;}
@@ -1286,6 +1318,33 @@ td.nodata_td{padding:150px 20px !important;}
 }
 .note_para{color:$sub_color;font-size:16px; word-break: keep-all;}
 
+.grid_note_else_group{margin:8px 0 0 24px;}
+.caption_obj_list{
+    display:flex;flex-wrap:wrap;gap:8px;
+    >li{
+        &:last-of-type{}
+    }
+}
+.caption_obj_item{display:flex;gap:8px;align-items: center;letter-spacing: -0.05em;}
+.caption_obj_key{display:inline-block;color:#fff;border-radius:4px; padding:4px 8px 3px;background:#999999;font-size:16px;font-weight:500;white-space: nowrap;}
+.caption_obj_value_group{display:flex; flex-wrap:wrap; gap:8px; align-items: center;}
+.caption_value_data{
+    display:flex; flex-wrap:wrap; gap:8px;
+    > *{
+        &:last-child{}
+    }
+}
+.caption_value_data{font-size:18px;font-weight:500;line-height:1;color:#999;display:inline-block;}
+.emp_text_box{display:inline-block;color:#fff;border-radius:4px; padding:4px 8px 3px;background:$sub_color;font-size:16px;font-weight:500;}
+.emp_text_unit{font-size:18px;font-weight:500;line-height:1;color:#999;display:inline-block;}
+
+.note_text_list{
+    > li{
+        margin-bottom:8px; font-size:18px;font-weight:500;line-height:1.3;color:#999;
+        &:last-of-type{margin-bottom:0;}
+    }
+}
+
 @media (max-width : $tablet){
     .grid_form_tr{
         &.break_type2{
@@ -1424,6 +1483,18 @@ td.nodata_td{padding:150px 20px !important;}
     .boxtab_list_wrap + .grid_form_box_wrap{
         margin-top:16px;
     }
+
+    
+    .emp_text_box,
+    .caption_obj_key{font-size:14px;padding:4px 8px;}
+    .emp_text_unit{font-size:14px;}
+    .caption_value_data{font-size:14px;}
+
+    .note_text_list{
+        >li{
+            font-size:14px;
+        }
+    }
 }
 
 @media (max-width : $mobile){
@@ -1452,7 +1523,7 @@ td.nodata_td{padding:150px 20px !important;}
         }
     }
     .note_para{font-size:14px; display:inline;}
-
+    
 }
 
 /* toggle */
@@ -1575,6 +1646,20 @@ li.nodata_li{
     .list_multi_group{
         flex-direction: column; justify-content: flex-start; align-items: flex-start; gap:5px;
         .list_td_text{display:block;}
+    }
+}
+@media (max-width:$tablet){
+    .message_note_box{
+        &.skin2{
+            .grid_note_para_text{font-size:16px;}
+            .meaage_note_list{
+                &.type2{
+                    .grid_note_para{
+                        &:before{top:5px;}
+                    }
+                }
+            }
+        }
     }
 }
 @media (max-width:$mobile){
@@ -1732,6 +1817,19 @@ li.nodata_li{
 
     .capform_img_box{
        width:120px;
+    }
+
+    .message_note_box{
+        &.skin2{
+            .grid_note_para_text{font-size:14px;}
+            .meaage_note_list{
+                &.type2{
+                    .grid_note_para{
+                        &:before{top:4px;}
+                    }
+                }
+            }
+        }
     }
 }
 
