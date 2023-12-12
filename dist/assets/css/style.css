@@ -6853,6 +6853,10 @@ td.nodata_td {
   background: #F9F9F9;
   padding: 26px;
 }
+.grid_form_box_wrap.type2 {
+  border-color: #333333;
+  padding: 48px;
+}
 
 .message_note_box {
   background: rgba(0, 119, 192, 0.1);
@@ -7466,6 +7470,72 @@ td.nodata_td {
   background: url("../images/ico_help.png") no-repeat 50% 50%/100% auto;
 }
 
+.step_finish_wrap {
+  text-align: center;
+}
+.step_finish_wrap > * {
+  margin-bottom: 25px;
+}
+.step_finish_wrap > *:last-child {
+  margin-bottom: 0;
+}
+.step_finish_wrap .btn_box_group {
+  margin-top: 0;
+}
+
+.finish_main_para {
+  font-size: 24px;
+  color: #333333;
+  letter-spacing: -0.05em;
+  font-weight: 500;
+  word-break: keep-all;
+}
+
+.sub_key_box {
+  display: inline-block;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1;
+  padding: 5px 8px 3px;
+  background: #999999;
+}
+
+.sub_value_row {
+  margin-top: 8px;
+}
+
+.sub_value_text {
+  color: #333333;
+  font-family: "Rubik Medium", "Pretendard", dotum;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.note_para_list.align_type2 > li {
+  justify-content: center;
+}
+.note_para_list > li {
+  display: flex;
+  gap: 4px;
+}
+.note_para_list > li:before {
+  display: block;
+  content: "";
+  position: relative;
+  top: 1.5px;
+  width: 16px;
+  height: 16px;
+  background: url("../images/ico_org_notex2.png") no-repeat 50% 50%/100% auto;
+  flex: 0 0 16px;
+}
+.note_para {
+  color: #F7943E;
+  font-size: 16px;
+  word-break: keep-all;
+}
+
 @media (max-width: 1299px) {
   .grid_form_tr.break_type2 {
     flex-direction: column;
@@ -7641,6 +7711,33 @@ td.nodata_td {
   }
   .form_value_tb .has_value_key {
     width: 20%;
+  }
+  .step_finish_wrap > * {
+    margin-bottom: 20px;
+  }
+  .finish_main_para {
+    font-size: 16px;
+  }
+  .sub_key_box {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+  .sub_value_text {
+    font-size: 16px;
+  }
+  .note_para_list > li {
+    display: block;
+  }
+  .note_para_list > li:before {
+    display: inline-block;
+    top: 2px;
+    position: relative;
+    width: 14px;
+    height: 14px;
+  }
+  .note_para {
+    font-size: 14px;
+    display: inline;
   }
 }
 /* toggle */
@@ -8018,6 +8115,9 @@ li.nodata_li {
   }
   .grid_form_box_wrap {
     border-radius: 10px;
+    padding: 20px;
+  }
+  .grid_form_box_wrap.type2 {
     padding: 20px;
   }
   .message_note_box {
