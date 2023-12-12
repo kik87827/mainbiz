@@ -9829,6 +9829,7 @@ li.nodata_li {
     line-height: 15px;
   }
   .step_list_period {
+    bottom: 5px;
     font-size: 13px;
     line-height: 15px;
   }
