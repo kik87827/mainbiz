@@ -122,12 +122,20 @@
   line-height: 20.8px;
   letter-spacing: -0.5px;
 
+  &.inline {
+    display: inline;
+  }
+
   &.gray {
     color: #999;
   }
 
   &.orange {
     color: #f7943e;
+  }
+
+  &.blue {
+    color: #0077c0;
   }
 
   &.bullet {
@@ -161,11 +169,9 @@
 .table_button_go {
   display: inline-block;
   margin-left: 5px;
-  padding: 4.5px 36px 4.5px 10px;
+  padding: 4.5px 10px;
   border: 1px solid #f7943e;
   border-radius: 8px;
-  background: url("../images/ico_table_button_go.png") no-repeat right 10px top 50%;
-  background-size: 20px auto;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.5px;
@@ -247,10 +253,8 @@
     }
   }
   .table_button_go {
-    padding: 3px 28px 3px 7px;
+    padding: 3px 7px;
     font-size: 14px;
-    background-position: right 7px top 50%;
-    background-size: 16px auto;
   }
 }
 @media (max-width:$mobile){
@@ -290,10 +294,7 @@
     }
   }
   .table_button_go {
-    padding: 3px 28px 3px 7px;
     font-size: 13px;
-    background-position: right 7px top 50%;
-    background-size: 14px auto;
   }
 }
 
@@ -1070,8 +1071,8 @@
     line-height: 15px;
   }
   .step_list_period {
+    bottom: 5px;
     font-size: 13px;
-    line-height: 15px;
     line-height: 15px;
 
     &::before {
