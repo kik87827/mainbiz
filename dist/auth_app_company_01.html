@@ -416,7 +416,7 @@
 																<div class="grid_form_value">
 																	<div class="inform_group">
 																		<input type="text" class="form_input" id="company_form_09">
-																		<a href="javascript:;" class="btn_inform_control" title="새창">업종조회</a>
+																		<a href="javascript:;" class="btn_inform_control" id="btnCodeCall" title="새창">업종조회</a>
 																	</div>
 																</div>
 															</div>
@@ -1090,10 +1090,59 @@
 				</div>
 			</div>
 		</section>
+		<!-- popup -->
+		<div class="popup_wrap" id="codePopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item">
+				<div class="popup_title_row">
+					<h3 class="popup_title">업종코드 검색</h3>
+				</div>
+				<div class="popup_contents_row">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="popup_btn_row">
+					<a href="#" class="btn_box close_trigger"><span class="btn_box_text">저장</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
 		<script>
 			menuRock("[name='gnb_app']");
 
 			responColsFunc();
+
+			// 팝업 인스턴스 선언
+			let codePopup = new DesignPopup({
+				selector: "#codePopup",
+				beforeCallback() {
+
+				},
+				callback() {
+
+				},
+				closeCallback() {
+					document.querySelector("#btnCodeCall").focus(); // 접근성 키보드 이슈로 이벤트 발생 버튼에 포커스
+				}
+			});
+
+			codePopup.popupShow(); // show
+			// codePopup.popupShow(); // hide
+
+			// event
+			document.querySelector("#btnCodeCall").addEventListener("click", () => {
+				codePopup.popupShow(); // show
+			});
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
