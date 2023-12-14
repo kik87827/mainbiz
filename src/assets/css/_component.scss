@@ -179,7 +179,9 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;backg
         border-radius:8px;
     }
 }
-
+@media (max-width:$mobile_size3){
+    .btn_box{min-width:70px;}
+}
 
 
 /* pagination */
