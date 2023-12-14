@@ -26,7 +26,7 @@ input.form_input{
         &::-ms-input-placeholder{color:#bbb;}
         &::input-placeholder{color:#bbb;}
     }
-    &.size2{height:48px;border-radius:8px;font-size:16px;}
+    &.size2{height:48px;border-radius:8px;}
     &.calendar_type{background:#fff url("../images/ico_calendar_input.png") no-repeat calc(100% - 8px) 50%/32px auto;padding-right:50px;}
 }
 
@@ -59,9 +59,9 @@ textarea.form_textarea{border:1px solid #ddd; line-height:1.4; font-size:18px; f
 
 /* props */
 .props_item{display:flex;gap:8px;}
-input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;background:#fff url("../images/ico_checkbox.png") no-repeat 0 0/100% auto;border:1px solid #ddd;
+input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;cursor: pointer;background:#fff url("../images/ico_checkbox2.png") no-repeat 0 0/100% auto;border:1px solid #ddd;
     &:checked{
-        background-color:$primary; border-color:$primary;background-position:0 100%;
+        /*background-color:$primary;  border-color:$primary; */background-position:0 100%;
         & + .props_label{}
     }
 }

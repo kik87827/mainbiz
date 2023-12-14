@@ -889,6 +889,7 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
 .inline_form_cols{
     &.else_cols{}
     input.form_input{}
+    select.form_select{width:100%;}
 }
 .inline_else_text{font-size:16px;color:#999999;}
 
@@ -1173,7 +1174,9 @@ td.nodata_td{padding:150px 20px !important;}
 .data_render_text{flex:1; padding:0 16px; color:$primary;font-weight: 500;font-size: 18px;}
 
 
-.btn_inform_control{display:inline-block;white-space: nowrap;color:#fff; font-size:14px; background:#777777; border-radius:4px; padding:10px 15px; line-height:1; box-sizing: border-box; text-align: center; /* min-width:64px; */}
+.btn_inform_control{display:inline-block;white-space: nowrap;color:#fff; font-size:14px; background:#777777; border-radius:4px; padding:10px 15px; line-height:1; box-sizing: border-box; text-align: center; /* min-width:64px; */
+    &.bg_type2{background:#333333 !important;}
+}
 
 .agree_terms_box{background:#F9F9F9;border-radius:16px;border:1px solid #BBBBBB;height:330px;position:relative;overflow:hidden;overflow-y:auto;box-sizing: border-box;
     &::-webkit-scrollbar {width: 20px !important;}

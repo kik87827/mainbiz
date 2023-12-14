@@ -3564,7 +3564,6 @@ input.form_input.search_input::input-placeholder {
 input.form_input.size2 {
   height: 48px;
   border-radius: 8px;
-  font-size: 16px;
 }
 input.form_input.calendar_type {
   background: #fff url("../images/ico_calendar_input.png") no-repeat calc(100% - 8px) 50%/32px auto;
@@ -3650,12 +3649,12 @@ input.props_form {
      -moz-appearance: none;
           appearance: none;
   border-radius: 4px;
-  background: #fff url("../images/ico_checkbox.png") no-repeat 0 0/100% auto;
+  cursor: pointer;
+  background: #fff url("../images/ico_checkbox2.png") no-repeat 0 0/100% auto;
   border: 1px solid #ddd;
 }
 input.props_form:checked {
-  background-color: #0077C0;
-  border-color: #0077C0;
+  /*background-color:$primary;  border-color:$primary; */
   background-position: 0 100%;
 }
 .props_label {
@@ -7269,6 +7268,10 @@ input.input_global_search::input-placeholder {
   gap: 0;
 }
 
+.inline_form_cols select.form_select {
+  width: 100%;
+}
+
 .inline_else_text {
   font-size: 16px;
   color: #999999;
@@ -7967,6 +7970,9 @@ td.nodata_td {
   line-height: 1;
   box-sizing: border-box;
   text-align: center; /* min-width:64px; */
+}
+.btn_inform_control.bg_type2 {
+  background: #333333 !important;
 }
 
 .agree_terms_box {
