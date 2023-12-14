@@ -3569,6 +3569,11 @@ input.form_input.calendar_type {
   background: #fff url("../images/ico_calendar_input.png") no-repeat calc(100% - 8px) 50%/32px auto;
   padding-right: 50px;
 }
+input.form_input:disabled {
+  background: #E9E9E9;
+  color: #bbb;
+  border-color: #bbb;
+}
 
 input.form_input_value {
   border: 1px solid #ddd;
@@ -3898,7 +3903,7 @@ input.props_form:checked {
     gap: 5px;
   }
   .btn_box_group {
-    gap: 10px;
+    gap: 10px !important;
     margin-top: 20px;
   }
   .btn_box {
@@ -5361,6 +5366,17 @@ input.props_form:checked {
   margin-bottom: 0;
 }
 
+.column_value_block {
+  margin-bottom: 64px;
+}
+.column_value_block:last-of-type {
+  margin-bottom: 0;
+}
+
+.map_api_render {
+  height: 480px;
+}
+
 .qus_form_obj {
   display: flex;
   gap: 10px;
@@ -5496,7 +5512,7 @@ input.props_form:checked {
   left: 0;
 }
 .bullet_list > li:last-of-type {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .bullet_list.type2 {
   font-size: 16px;
@@ -5527,6 +5543,25 @@ input.props_form:checked {
 }
 .bullet_list.emp > li:before {
   background-color: #F7943E;
+}
+.bullet_list.skin2 > li {
+  padding-left: 18px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #777777;
+  margin-bottom: 6px;
+}
+.bullet_list.skin2 > li:before {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #FFBC00;
+}
+
+.emp_link {
+  display: inline-block;
+  color: #1454FF;
+  font-size: 16px;
 }
 
 .note_guide_para {
@@ -5598,6 +5633,42 @@ input.props_form:checked {
 .indent_bullet {
   flex: 0;
   white-space: nowrap;
+}
+
+.figure_caption_list > li {
+  margin-bottom: 24px;
+}
+.figure_caption_list > li:last-of-type {
+  margin-bottom: 0;
+}
+
+.figure_caption_item {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.figure_caption_item .ico_figure {
+  width: 64px;
+  height: 64px;
+  flex: 0 0 64px;
+  background: url("../images/img_ico_map_01.png") no-repeat 0 0/100% auto;
+}
+.figure_caption_item .ico_figure.type2 {
+  background-image: url("../images/img_ico_map_02.png");
+}
+
+.figure_main_spec {
+  font-size: 24px;
+  color: #0077C0;
+  font-weight: 700;
+}
+
+.figure_sub_spec {
+  font-size: 18px;
+  color: #777;
+  font-weight: 500;
+  margin-top: 3px;
+  word-break: break-all;
 }
 
 @media (max-width: 1299px) {
@@ -5715,7 +5786,7 @@ input.props_form:checked {
     white-space: nowrap;
   }
   .column_obj_title {
-    font-size: 16px;
+    font-size: 18px;
   }
   .column_key {
     margin-bottom: 15px;
@@ -5738,6 +5809,55 @@ input.props_form:checked {
   }
   .column_obj_item_wrap.type2 .column_obj_item {
     margin-bottom: 30px;
+  }
+  .bullet_list.skin2 > li {
+    padding-left: 14px;
+    font-size: 16px;
+  }
+  .bullet_list.skin2 > li:before {
+    width: 7px;
+    height: 7px;
+  }
+  .emp_link {
+    font-size: 14px;
+  }
+  .column_value_block {
+    margin-bottom: 24px;
+  }
+  .map_api_render {
+    height: 360px;
+  }
+  .figure_caption_list > li {
+    margin-bottom: 10px;
+  }
+  .figure_caption_item {
+    gap: 15px;
+  }
+  .figure_caption_item .ico_figure {
+    width: 50px;
+    height: 50px;
+    flex-basis: 50px;
+  }
+  .figure_main_spec {
+    font-size: 16px;
+  }
+  .figure_sub_spec {
+    font-size: 13px;
+    margin-top: 5px;
+  }
+}
+@media (max-width: 767px) {
+  .column_obj_title {
+    font-size: 16px;
+  }
+  .bullet_list.skin2 > li {
+    padding-left: 10px;
+    font-size: 14px;
+  }
+  .bullet_list.skin2 > li:before {
+    width: 5px;
+    height: 5px;
+    top: 6px;
   }
 }
 /* main */
@@ -7252,10 +7372,16 @@ input.input_global_search::input-placeholder {
 .inline_form_cols.define_short.swid2 {
   flex-basis: 220px;
 }
+.inline_form_cols.define_short.swid3 {
+  flex-basis: 396px;
+}
 .inline_form_cols.else_cols {
   white-space: nowrap;
   flex: 0;
   padding: 0 4px;
+}
+.inline_form_cols select.form_select {
+  width: 100%;
 }
 
 .inline_form_wrap {
@@ -7266,10 +7392,6 @@ input.input_global_search::input-placeholder {
 }
 .inline_form_wrap.type2 {
   gap: 0;
-}
-
-.inline_form_cols select.form_select {
-  width: 100%;
 }
 
 .inline_else_text {
@@ -7974,6 +8096,9 @@ td.nodata_td {
 .btn_inform_control.bg_type2 {
   background: #333333 !important;
 }
+.btn_inform_control.ptype2 {
+  padding: 10px;
+}
 
 .agree_terms_box {
   background: #F9F9F9;
@@ -8623,6 +8748,9 @@ td.nodata_td {
   }
   .swiper_form_fraction .swiper-pagination-current {
     font-size: 24px;
+  }
+  .inline_else_text {
+    font-size: 14px;
   }
 }
 @media (max-width: 767px) {
