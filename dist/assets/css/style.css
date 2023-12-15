@@ -4434,7 +4434,7 @@ input.props_form:checked {
     margin: 0 -12.5%;
   }
   .step_item_list > li:before, .step_item_list > li:after {
-    top: 15px;
+    top: 20px;
   }
   .step_item_list > li.end .step_index_box {
     background-size: 12px auto;
