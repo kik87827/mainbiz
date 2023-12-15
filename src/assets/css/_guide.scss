@@ -67,13 +67,15 @@
     .btn_box_group{margin-top:0;}
 }
 
-@media (max-width:767px){
+@media (max-width:1023px){
     .guide_header{position:sticky;top:0;left:0;background:#fff;z-index:20;}
     .header_pix_inner{padding:15px 20px;}
     .guide_toplogo{margin-right:15px;}
     .guide_toplogo_text{font-size:13px;margin-top:7px;}
     .guide_util_menu{font-size:12px;padding:10px;word-break: keep-all;}
     .guide_toplogo_item{gap:10px;}
+
+    .guide_middle{padding-left:20px;padding-right:20px;}
 
     .middle_pix_inner{display:block;}
     .middle_left_cols{display:none;position:fixed;top:0;right:0;z-index:30;width:100%;height:100%;margin:0;}

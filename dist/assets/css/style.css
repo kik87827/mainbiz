@@ -4541,6 +4541,66 @@ input.props_form:checked {
   word-break: keep-all;
 }
 
+.process_dia_list {
+  display: flex;
+  min-height: 64px;
+  gap: 70px;
+  text-align: center;
+}
+.process_dia_list > li {
+  flex: 1;
+  position: relative;
+}
+.process_dia_list > li:after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(100% + 30px);
+  width: 10px;
+  height: 64px;
+  background: url("../images/ico_step_allow.png") no-repeat 50% 50%/100% auto;
+}
+.process_dia_list > li:last-of-type:after {
+  display: none;
+}
+
+.process_dia_item:before {
+  display: block;
+  content: "";
+  width: 64px;
+  height: 64px;
+  background: url("../images/ico_auth_step01.png") no-repeat 0 0/100% auto;
+  margin: 0 auto;
+}
+.process_dia_item.ico_02:before {
+  background-image: url("../images/ico_auth_step02.png");
+}
+.process_dia_item.ico_03:before {
+  background-image: url("../images/ico_auth_step03.png");
+}
+.process_dia_item.ico_04:before {
+  background-image: url("../images/ico_auth_step04.png");
+}
+.process_dia_item.ico_05:before {
+  background-image: url("../images/ico_auth_step05.png");
+}
+.process_dia_item.active:before {
+  background-position: 0 100%;
+}
+.process_dia_item.active .process_dia_spec {
+  color: #0077C0;
+}
+
+.process_dia_spec {
+  font-size: 20px;
+  color: #999999;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  margin-top: 10px;
+  word-break: keep-all;
+}
+
 @media (max-width: 1023px) {
   .process_bar {
     min-height: 45px;
@@ -4561,6 +4621,22 @@ input.props_form:checked {
   }
   .process_bar_text {
     font-size: 13px;
+  }
+  .process_dia_list {
+    min-height: 32px;
+    gap: 0;
+  }
+  .process_dia_list > li:after {
+    left: calc(100% - 2.5px);
+    height: 32px;
+    width: 5px;
+  }
+  .process_dia_item:before {
+    width: 32px;
+    height: 32px;
+  }
+  .process_dia_spec {
+    font-size: 14px;
   }
 }
 @media (max-width: 359px) {
@@ -10048,7 +10124,7 @@ li.nodata_li {
   margin-top: 0;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .guide_header {
     position: -webkit-sticky;
     position: sticky;
@@ -10074,6 +10150,10 @@ li.nodata_li {
   }
   .guide_toplogo_item {
     gap: 10px;
+  }
+  .guide_middle {
+    padding-left: 20px;
+    padding-right: 20px;
   }
   .middle_pix_inner {
     display: block;
