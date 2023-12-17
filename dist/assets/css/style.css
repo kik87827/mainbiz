@@ -5380,6 +5380,33 @@ input.props_form:checked {
     display: inline-block;
   }
 }
+/* tooltip */
+.tooltip_wrap {
+  display: none;
+  border-radius: 4px;
+  position: absolute;
+  opacity: 0;
+  transition: 0.4s opacity;
+  z-index: 50;
+  padding: 20px;
+  box-shadow: 4px 5px 10px 0 rgba(63, 82, 111, 0.2);
+  border: solid 1px #dadcde;
+  background-color: #fff;
+}
+.tooltip_wrap.active {
+  display: block;
+}
+.tooltip_wrap.active.posend {
+  opacity: 1;
+}
+.tooltip_wrap.right_end {
+  right: 20px !important;
+  left: auto !important;
+}
+.tooltip_wrap.left_end {
+  right: auto !important;
+  left: 20px !important;
+}
 /* contents */
 .pcbr {
   display: block !important;
@@ -8847,10 +8874,10 @@ td.nodata_td {
   min-width: 0;
 }
 
-.swiper-container.swiper_form_container .swiper-slide {
+.swiper-container.swiper_form_container .swiper-slide .swiper_slide_form {
   visibility: hidden;
 }
-.swiper-container.swiper_form_container .swiper-slide.swiper-slide-active {
+.swiper-container.swiper_form_container .swiper-slide.swiper-slide-active .swiper_slide_form {
   visibility: visible;
 }
 

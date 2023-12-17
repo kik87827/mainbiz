@@ -1535,8 +1535,14 @@ td.nodata_td{padding:150px 20px !important;}
 .swiper-container{
     &.swiper_form_container{
         .swiper-slide{
-            visibility: hidden;
-            &.swiper-slide-active{visibility: visible;}
+            .swiper_slide_form{
+                visibility: hidden;
+            }
+            &.swiper-slide-active{
+                .swiper_slide_form{
+                    visibility: visible;
+                }
+            }
         }
     }
 }
