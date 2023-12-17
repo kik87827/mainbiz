@@ -394,7 +394,7 @@
 													<div class="form_value_td_key_group">
 														<div class="fv_key_main_group">
 															<p class="form_value_td_key_main">경영혁신 마일리지 점수</p>
-															<a href="#" class="btn_tooltip" title="툴팁 메세지 출력"><span class="hdtext">툴팁</span></a>
+															<a href="javascript:;" class="btn_tooltip" data-tooltip="#tooltip_layer01"><span class="hdtext">툴팁</span></a>
 														</div>
 														<p class="form_value_td_key_sub">(단위 : 점)</p>
 													</div>
@@ -433,7 +433,7 @@
 														<div class="fv_key_main_group">
 															<p class="form_value_td_key_main">고객만족도</p>
 															<span class="form_flag">필수</span>
-															<a href="#" class="btn_tooltip" title="툴팁 메세지 출력"><span class="hdtext">툴팁</span></a>
+															<a href="javascript:;" class="btn_tooltip" data-tooltip="#tooltip_layer02"><span class="hdtext">툴팁</span></a>
 														</div>
 														<p class="form_value_td_key_sub">(100점 기준)</p>
 													</div>
@@ -454,7 +454,7 @@
 														<div class="fv_key_main_group">
 															<p class="form_value_td_key_main">핵심고객 매출액</p>
 															<span class="form_flag">필수</span>
-															<a href="#" class="btn_tooltip" title="툴팁 메세지 출력"><span class="hdtext">툴팁</span></a>
+															<a href="#" class="btn_tooltip" data-tooltip="#tooltip_layer03"><span class="hdtext">툴팁</span></a>
 														</div>
 														<p class="form_value_td_key_sub">(단위 : 원)</p>
 													</div>
@@ -485,9 +485,104 @@
 				</div>
 			</div>
 		</section>
+		<!-- tooltip -->
+		<div class="tooltip_wrap" id="tooltip_layer01" role="tooltip">
+			<div class="message_note_title_row">
+				<div class="message_note_wordbox">
+					<p class="message_note_word">경영혁신 마일리지란?</p>
+				</div>
+			</div>
+			<div class="message_note_copy_wrap">
+				<ul class="message_note_copy_list">
+					<li>중소벤처기업부에서 경영혁신 활동을 한 기업에 점수를 부여하여 정부사업 참여 시 가점으로 사용할 수 있도록 만든 제도</li>
+					<li>경영혁신 마일리지 제도에 가입하고 지정된 교육 수강 및 혁신활동을 하여 마일리지를 적립</li>
+				</ul>
+			</div>
+			<ul class="meaage_note_list">
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							<span class="emp">메인비즈사로 선정된 기업은 마일리지 점수 140점이 자동 부여되므로 재선정(연장)신청 기업은 최소 140점 기재 가능</span>
+						</div>
+					</div>
+				</li>
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							<span class="emp">마일리지 점수확인 : <a href="https://www.mileage.or.kr" class="link_text_item">https://www.mileage.or.kr</a></span>
+						</div>
+					</div>
+				</li>
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							마일리지 점수 없을 시 : 0 기재
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="tooltip_wrap" id="tooltip_layer02" role="tooltip">
+			<div class="message_note_title_row">
+				<div class="message_note_wordbox">
+					<p class="message_note_word">고객 만족도란?</p>
+				</div>
+			</div>
+			<div class="message_note_copy_wrap">
+				<ul class="message_note_copy_list">
+					<li>조직의 고객 만족, 불만족 요소에 대한 파악을 위해 체계적인 방법을 활용하여 측정 및 조사한 결과</li>
+				</ul>
+			</div>
+			<ul class="meaage_note_list">
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							<span class="emp">고객만족 측정 자료가 없을 시 : 주요 고객(거래처, 구매자, 파트너 등)과의 관계를 예상하여 기재해 주세요.</span>
+						</div>
+					</div>
+				</li>
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							<span class="emp">정확한 측정 불가 시 0점 기재, 평가 시 인터뷰 및 평가 자료를 통해 평가 점수 조정됩니다.</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="tooltip_wrap" id="tooltip_layer03" role="tooltip">
+			<div class="message_note_title_row">
+				<div class="message_note_wordbox">
+					<p class="message_note_word">핵심고객 매출액이란?</p>
+				</div>
+			</div>
+			<div class="message_note_copy_wrap">
+				<ul class="message_note_copy_list">
+					<li>핵심고객(매출순위 1, 2위)합계 매출액입니다.</li>
+				</ul>
+			</div>
+			<ul class="meaage_note_list">
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							<span class="emp">거래 장부 등을 참고하여 매출액 1위, 2위 거래처의 (해당년도)매출액을 더한 금액을 원 단위로 기재해 주세요.</span>
+						</div>
+					</div>
+				</li>
+				<li class="type2">
+					<div class="grid_note_para">
+						<div class="grid_note_para_text">
+							<span class="emp">매출액 1, 2위 업체(=핵심고객)의 3년간의 매출액 증가율 추이를 확인하는 지표입니다.</span>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<!-- // tooltip -->
 		<script>
 			menuRock("[name='gnb_app']");
 			scrollDrag(["#data_write_form"]);
+			tooltipFunc();
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">

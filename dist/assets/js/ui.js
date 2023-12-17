@@ -814,7 +814,9 @@ function swiperForm(option) {
 function tooltipFunc() {
   const tooltipCall = document.querySelectorAll("[data-tooltip]");
   const tooltipWrap = document.querySelectorAll(".tooltip_wrap");
-  let tooltopMargin = 10;
+  const page_wrap = document.querySelector(".page_wrap");
+  let tooltopTopMargin = 10;
+  let tooltopLeftMargin = 10;
   let tooltipActive = null;
   let barwidth = getScrollBarWidth();
 
@@ -828,44 +830,45 @@ function tooltipFunc() {
     const thisItem = item;
     const thisItemToolTip = document.querySelector(item.dataset.tooltip);
 
+    page_wrap.append(thisItemToolTip);
 
-    item.addEventListener("mouseenter", (e) => {
+    thisItem.addEventListener("click", (e) => {
       e.preventDefault();
       const thisTarget = e.currentTarget;
       const thisTargetLayer = document.querySelector(thisTarget.getAttribute("data-tooltip"));
       if (!!thisTargetLayer) {
-        thisTargetLayer.classList.remove("posend", "active");
-        setTimeout(() => {
-          thisTargetLayer.classList.add("active");
-
-          tooltipActive = thisTargetLayer;
-          posAction(thisTarget);
-          setTimeout(() => {
-            thisTargetLayer.classList.add("posend");
-          }, 30);
-        }, 30);
-
-      }
-
-    });
-    item.addEventListener("mouseleave", (e) => {
-      e.preventDefault();
-      const thisTarget = e.currentTarget;
-      const thisTargetLayer = document.querySelector(thisTarget.getAttribute("data-tooltip"));
-      if (!!thisTargetLayer) {
-        thisTargetLayer.classList.remove("posend", "active");
+        tooltipWrap.forEach((item) => {
+          if (item !== thisTargetLayer) {
+            item.classList.remove("active");
+          }
+        });
+        console.log(thisTargetLayer);
+        thisTargetLayer.classList.add("active");
+        tooltipActive = thisTargetLayer;
+        posAction(thisTarget);
       }
     });
   });
 
+  document.querySelector("body").addEventListener("click", (e) => {
+    console.log(!e.target.closest(".tooltip_wrap"), !e.target.classList.contains("btn_tooltip"));
+    if (!e.target.closest(".tooltip_wrap") && !e.target.classList.contains("btn_tooltip")) {
+      tooltipWrap.forEach((item) => {
+        item.classList.remove("active");
+      });
+    }
+  });
+
+
   window.addEventListener("resize", () => {
-    posAction();
+    if (!!tooltipCall) {
+      tooltipCall.forEach((item) => {
+        posAction(item);
+      });
+    }
   });
 
   function posAction(target) {
-
-    let windowInnerWidth = window.innerWidth - barwidth;
-    let windowInnerHeight = window.innerHeight - barwidth;
 
     let topValue = 0;
     let leftValue = 0;
@@ -876,14 +879,15 @@ function tooltipFunc() {
 
 
     const callItem = target;
-    tooltipActive.classList.remove("right_end", "left_end");
     tooltipActive.removeAttribute("style");
 
 
 
     // default
-    topValue = callItem.getBoundingClientRect().top + callItem.getBoundingClientRect().height + tooltopMargin;
-    leftValue = callItem.getBoundingClientRect().left - (tooltipActive.getBoundingClientRect().width / 2 - callItem.getBoundingClientRect().width / 2);
+    topValue = (callItem.getBoundingClientRect().top - tooltipActive.getBoundingClientRect().height) + callItem.getBoundingClientRect().height + window.scrollY;
+    topValue2 = callItem.getBoundingClientRect().top + callItem.getBoundingClientRect().height + tooltopTopMargin + window.scrollY;
+    leftValue = callItem.getBoundingClientRect().left + callItem.getBoundingClientRect().width + tooltopLeftMargin;
+    leftValue2 = callItem.getBoundingClientRect().left - callItem.getBoundingClientRect().width - tooltipActive.getBoundingClientRect().width;
 
 
     tooltipActive.setAttribute("style", `
@@ -892,19 +896,17 @@ function tooltipFunc() {
     `)
 
     // else
-    if (tooltipActive.getBoundingClientRect().right >= windowInnerWidth) {
-      tooltipActive.classList.add("right_end");
+    if (tooltipActive.getBoundingClientRect().right - callItem.getBoundingClientRect().width >= window.innerWidth) {
+      tooltipActive.setAttribute("style", `
+          top : ${topValue}px;
+          left : ${leftValue2}px;
+      `)
     }
-    if (tooltipActive.getBoundingClientRect().left < 0) {
-      tooltipActive.classList.add("left_end");
+    if (window.innerWidth < 767) {
+      tooltipActive.setAttribute("style", `
+          top : ${topValue2}px;
+      `)
     }
-    if (tooltipActive.getBoundingClientRect().bottom >= windowInnerHeight) {
-      topValue = window.scrollY + callItem.getBoundingClientRect().top - tooltipActive.getBoundingClientRect().height - tooltopMargin;
-    }
-    tooltipActive.setAttribute("style", `
-        top : ${topValue}px;
-        left : ${leftValue}px;
-    `)
   }
 }
 
