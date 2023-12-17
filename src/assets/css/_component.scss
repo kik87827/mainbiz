@@ -168,6 +168,7 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;curso
 @media (max-width:$mobile){
     .btn_bottom_wrap{gap:10px;margin-top:30px;
         &.type2{gap:5px;}
+        .btn_box{flex:1;}
     }
     .btn_box_group{gap:10px !important;margin-top:20px;}
     .btn_box{min-width:100px;min-height:45px;border-radius:8px;padding:0 20px;
@@ -388,7 +389,7 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;curso
     }   
 }
 @media (max-width:$mobile){
-    .tab_menu_list_wrap{margin-right:-20px;padding-right:20px;
+    .tab_menu_list_wrap{margin:0 -20px;padding:0 20px 0 0;
         &:before{display:none;}
     }
     .tab_menu_list{justify-content: flex-start;

@@ -148,16 +148,17 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="form_value_tb_wrap" id="data_write_form">
+                                <!-- pc skin -->
+                                <div class="form_value_tb_wrap pc_item" id="data_write_form">
                                     <table class="form_value_tb">
                                         <thead>
                                             <tr>
                                                 <th scope="col" class="has_value_key"><span class="form_value_th_key">과목 \ 결산년도</span></th>
-                                                <th scope="col"><span class="form_value_th_value">2020 년</span></th>
-                                                <th scope="col"><span class="form_value_th_value">2021 년</span></th>
+                                                <th scope="col"><span class="form_value_th_value">2020년</span></th>
+                                                <th scope="col"><span class="form_value_th_value">2021년</span></th>
                                                 <th scope="col">
                                                     <div class="inline_form_obj_group">
-                                                        <select class="form_select size3" title="년도 선택"><option>2022</option></select>
+                                                        <select class="form_select size3" title="년도 선택"><option>2022년</option></select>
                                                         <span class="inline_form_unit">년</span>
                                                     </div>
                                                 </th>
@@ -363,6 +364,361 @@
                                         </tbody>
                                     </table>
                                 </div>
+                                <!-- // pc skin -->
+                                <!-- mobile skin -->
+                                <div class="table_toggle_item_wrap mb_item">
+                                    <ul class="table_toggle_item_list">
+                                        <li>
+                                            <a href="#" class="table_toggle_bar"><span class="table_toggle_bar_text">2020년</span><span class="hdtext">재무상태표</span> <span class="hdtext control_text">열기</span></a>
+                                            <div class="table_toggle_contents">
+                                                <table class="mb_data_tb">
+                                                    <caption><span class="hdtext">2020년 재무상태표</span></caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_01" class="form_value_td_key_main">자산총계</label>
+                                                                    <p class="form_value_td_key_sub emp">자산총계 = 유동자산 + 비유동자산 <br>아래 항목 입력 시 자동 계산됩니다.</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_01" value="123,456,789,000" disabled>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_02" class="form_value_td_key_main">유동자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_02" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_03" class="form_value_td_key_main">매출채권</label>
+                                                                    <p class="form_value_td_key_sub">(받을어음 + 외상매출)</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_03" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_04" class="form_value_td_key_main">재고자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_04" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_05" class="form_value_td_key_main">비유동(고정)자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_05" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_06" class="form_value_td_key_main">부채총계</label>
+                                                                    <p class="form_value_td_key_sub emp">부채총계 = 유동부채 + 비유동부채 <br>아래 항목 입력 시 자동 계산됩니다.</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_06" value="123,456,789,000" disabled>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_07" class="form_value_td_key_main">매입채무</label>
+                                                                    <p class="form_value_td_key_sub">(지급어음 + 외상매입)</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_07" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_08" class="form_value_td_key_main">비유동부채</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_08" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_09" class="form_value_td_key_main">자본총계</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_09" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2020_form_10" class="form_value_td_key_main">이익잉여금</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2020_form_10" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="table_toggle_bar"><span class="table_toggle_bar_text">2021년</span><span class="hdtext">재무상태표</span> <span class="hdtext control_text">열기</span></a>
+                                            <div class="table_toggle_contents">
+                                                <table class="mb_data_tb">
+                                                    <caption><span class="hdtext">2021년 재무상태표</span></caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_01" class="form_value_td_key_main">자산총계</label>
+                                                                    <p class="form_value_td_key_sub emp">자산총계 = 유동자산 + 비유동자산 <br>아래 항목 입력 시 자동 계산됩니다.</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_01" value="123,456,789,000" disabled>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_02" class="form_value_td_key_main">유동자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_02" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_03" class="form_value_td_key_main">매출채권</label>
+                                                                    <p class="form_value_td_key_sub">(받을어음 + 외상매출)</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_03" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_04" class="form_value_td_key_main">재고자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_04" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_05" class="form_value_td_key_main">비유동(고정)자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_05" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_06" class="form_value_td_key_main">부채총계</label>
+                                                                    <p class="form_value_td_key_sub emp">부채총계 = 유동부채 + 비유동부채 <br>아래 항목 입력 시 자동 계산됩니다.</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_06" value="123,456,789,000" disabled>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_07" class="form_value_td_key_main">매입채무</label>
+                                                                    <p class="form_value_td_key_sub">(지급어음 + 외상매입)</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_07" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_08" class="form_value_td_key_main">비유동부채</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_08" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_09" class="form_value_td_key_main">자본총계</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_09" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2021_form_10" class="form_value_td_key_main">이익잉여금</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2021_form_10" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="table_toggle_bar_form">
+                                                <select class="form_select size3" title="년도 선택"><option>2022년</option></select>
+                                                <button type="button" class="btn_tb_toggle_control">
+                                                    <span class="hdtext">재무상태표</span> 
+                                                    <span class="hdtext control_text">열기</span>
+                                                </button>
+                                            </div>
+                                            <div class="table_toggle_contents">
+                                                <table class="mb_data_tb">
+                                                    <caption><span class="hdtext">2022년 재무상태표</span></caption>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_01" class="form_value_td_key_main">자산총계</label>
+                                                                    <p class="form_value_td_key_sub emp">자산총계 = 유동자산 + 비유동자산 <br>아래 항목 입력 시 자동 계산됩니다.</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_01" value="123,456,789,000" disabled>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_02" class="form_value_td_key_main">유동자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_02" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_03" class="form_value_td_key_main">매출채권</label>
+                                                                    <p class="form_value_td_key_sub">(받을어음 + 외상매출)</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_03" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_04" class="form_value_td_key_main">재고자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_04" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_05" class="form_value_td_key_main">비유동(고정)자산</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_05" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_06" class="form_value_td_key_main">부채총계</label>
+                                                                    <p class="form_value_td_key_sub emp">부채총계 = 유동부채 + 비유동부채 <br>아래 항목 입력 시 자동 계산됩니다.</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_06" value="123,456,789,000" disabled>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_07" class="form_value_td_key_main">매입채무</label>
+                                                                    <p class="form_value_td_key_sub">(지급어음 + 외상매입)</p>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_07" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_08" class="form_value_td_key_main">비유동부채</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_08" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_09" class="form_value_td_key_main">자본총계</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_09" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th scope="row">
+                                                                <div class="form_value_td_key_group">
+                                                                    <label for="mb_2022_form_10" class="form_value_td_key_main">이익잉여금</label>
+                                                                </div>
+                                                            </th>
+                                                            <td>
+                                                                <input type="text" class="form_input_value" id="mb_2022_form_10" value="123,456,789,000">
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- // mobile skin -->
                             </div>
                             <!-- // tab contents 2 -->
                         </div>
@@ -379,6 +735,7 @@
         <script>
             menuRock("[name='gnb_app']");
             scrollDrag(["#data_write_form"]);
+            mobileToggle();
         </script>
         @@include('./include/_footer.html')
     </div>

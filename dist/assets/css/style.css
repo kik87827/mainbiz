@@ -3914,6 +3914,9 @@ input.props_form:checked {
   .btn_bottom_wrap.type2 {
     gap: 5px;
   }
+  .btn_bottom_wrap .btn_box {
+    flex: 1;
+  }
   .btn_box_group {
     gap: 10px !important;
     margin-top: 20px;
@@ -4309,8 +4312,8 @@ input.props_form:checked {
 }
 @media (max-width: 767px) {
   .tab_menu_list_wrap {
-    margin-right: -20px;
-    padding-right: 20px;
+    margin: 0 -20px;
+    padding: 0 20px 0 0;
   }
   .tab_menu_list_wrap:before {
     display: none;
@@ -5887,6 +5890,95 @@ input.props_form:checked {
   display: inline-block;
 }
 
+.table_toggle_item_list > li {
+  margin-bottom: 8px;
+}
+.table_toggle_item_list > li:last-of-type {
+  margin-bottom: 0;
+}
+.table_toggle_item_list > li.active .table_toggle_bar_form,
+.table_toggle_item_list > li.active .table_toggle_bar {
+  background: #333;
+}
+.table_toggle_item_list > li.active .table_toggle_bar_form .table_toggle_bar_text,
+.table_toggle_item_list > li.active .table_toggle_bar .table_toggle_bar_text {
+  color: #fff;
+}
+.table_toggle_item_list > li.active .table_toggle_bar_form .btn_tb_toggle_control, .table_toggle_item_list > li.active .table_toggle_bar_form:after,
+.table_toggle_item_list > li.active .table_toggle_bar .btn_tb_toggle_control,
+.table_toggle_item_list > li.active .table_toggle_bar:after {
+  background-position: 0 100%;
+}
+.table_toggle_item_list > li.active .table_toggle_contents {
+  display: block;
+}
+
+.table_toggle_bar {
+  display: flex;
+  align-items: center;
+  background: #E9E9E9;
+  gap: 5px;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 10px 16px;
+}
+.table_toggle_bar:after {
+  display: block;
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url("../images/ico_toggle_polygon.png") no-repeat 0 0/100% auto;
+  flex: 0 0 15px;
+}
+
+.table_toggle_bar_text {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+  font-weight: 600;
+}
+
+.table_toggle_contents {
+  display: none;
+}
+
+.mb_data_tb {
+  width: 100%;
+  background: #F9F9F9;
+}
+.mb_data_tb th, .mb_data_tb td {
+  padding: 12px 16px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+.mb_data_tb th {
+  width: 45%;
+}
+.mb_data_tb tr:first-of-type th, .mb_data_tb tr:first-of-type td {
+  border-top: 0;
+}
+
+.table_toggle_bar_form {
+  display: flex;
+  align-items: center;
+  background: #E9E9E9;
+  gap: 5px;
+  min-height: 48px;
+  box-sizing: border-box;
+  padding: 10px 16px;
+}
+.table_toggle_bar_form > select.form_select {
+  flex: 1;
+}
+
+.btn_tb_toggle_control {
+  width: 15px;
+  height: 15px;
+  background: url("../images/ico_toggle_polygon.png") no-repeat 0 0/100% auto;
+  flex: 0 0 15px;
+}
+
 @media (max-width: 1299px) {
   .column_obj_title {
     font-size: 24px;
@@ -5970,37 +6062,6 @@ input.props_form:checked {
   }
 }
 @media (max-width: 1023px) {
-  .pc_item {
-    display: none !important;
-  }
-  .mb_item {
-    display: block !important;
-  }
-  .pc_img {
-    display: none !important;
-  }
-  .mb_img {
-    display: inline-block !important;
-  }
-  .mb_hide {
-    display: none !important;
-  }
-  .mb_hidden {
-    display: inline-block;
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 0 !important;
-    height: 0 !important;
-    overflow: hidden;
-    line-height: 0;
-    color: transparent;
-    position: absolute;
-    top: 0;
-    left: -99999px;
-  }
-  .mb_nobreak {
-    white-space: nowrap;
-  }
   .column_obj_title {
     font-size: 18px;
   }
@@ -6092,6 +6153,37 @@ input.props_form:checked {
   }
 }
 @media (max-width: 767px) {
+  .pc_item {
+    display: none !important;
+  }
+  .mb_item {
+    display: block !important;
+  }
+  .pc_img {
+    display: none !important;
+  }
+  .mb_img {
+    display: inline-block !important;
+  }
+  .mb_hide {
+    display: none !important;
+  }
+  .mb_hidden {
+    display: inline-block;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+    overflow: hidden;
+    line-height: 0;
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: -99999px;
+  }
+  .mb_nobreak {
+    white-space: nowrap;
+  }
   .column_obj_title {
     font-size: 16px;
   }
@@ -9092,7 +9184,7 @@ td.nodata_td {
     margin-top: 32px;
   }
   .tab_contents_wrap {
-    margin-top: 32px;
+    margin-top: 30px;
   }
   .tab_contents_wrap .tab_menu_list_wrap {
     margin-bottom: 20px;

@@ -847,13 +847,17 @@ function tooltipFunc(){
     }
   });
 
-
+  let windowWidth = window.innerWidth;
   window.addEventListener("resize",()=>{
-    if(!!tooltipCall){
-      tooltipCall.forEach((item)=>{
-        posAction(item);
-      });
+    if(window.innerWidth !== windowWidth){
+      if(!!tooltipCall){
+        tooltipWrap.forEach((item)=>{
+          // posAction(item);
+          item.classList.remove("active");
+        });
+      }
     }
+    windowWidth = window.innerWidth;
   });
 
   function posAction(target){
@@ -904,4 +908,32 @@ function getScrollBarWidth() {
   let width = el.offsetWidth - el.clientWidth;
   el.remove();
   return width;
+}
+
+
+function mobileToggle(){
+  const table_toggle_item_li = document.querySelectorAll(".table_toggle_item_list > li");
+  if(!!table_toggle_item_li){
+    table_toggle_item_li.forEach((item)=>{
+      const thisItem = item;
+      const thisItemBar = thisItem.querySelectorAll(".table_toggle_bar,.btn_tb_toggle_control");
+
+      if(!!thisItemBar){
+        thisItemBar.forEach((item)=>{
+          item.addEventListener("click",(e)=>{
+            e.preventDefault();
+            const thisEvent = e.currentTarget;
+            const thisParent = thisEvent.closest("li");
+
+            table_toggle_item_li.forEach((item)=>{
+              if(item !== thisParent){
+                item.classList.remove("active");
+              }
+            });
+            thisParent.classList.toggle("active");
+          });
+        })
+      }
+    });
+  }
 }
