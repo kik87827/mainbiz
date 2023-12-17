@@ -703,9 +703,11 @@ function swiperForm(option){
   const swiper_form_slide = swiper_form_container.querySelectorAll(".swiper-slide");
   const ft_depth_bar = document.querySelectorAll(".ft_depth_bar");
   let swiper_form_obj = null;
-  if(!swiper_form_obj && swiper_form_slide.length>1 && !!swiper_form_container_wrap){
+  if(!swiper_form_obj && swiper_form_slide.length>=1 && !!swiper_form_container_wrap){
       swiper_form_obj = new Swiper(".swiper_form_container",{
           autoHeight : true,
+          touchRatio: 0,
+          speed : 0,
           pagination: { 
               el: ".swiper_form_container_wrap .swiper_form_fraction",
               type : 'fraction',

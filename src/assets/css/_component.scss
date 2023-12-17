@@ -155,7 +155,9 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;curso
     display:inline-block;width:48px;height:48px;border-radius:8px; flex:0 0 48px;  border:1px solid #999; background-repeat:no-repeat; background-position: 50% 50%; background-color:#fff;
     &.ico_reload{background-image:url("../images/ico_replay.png");background-size:24px auto;}
 }
-
+.btn_control_quad{
+    background:#999999; border-radius:8px; display:inline-block; color:#fff;line-height:1; font-weight:700; font-size:16px;padding:8px 13px; white-space: nowrap;
+}
 @media (max-width:$tablet){
     .btn_box{min-width:140px;min-height:50px;}
     .btn_box_group,
@@ -181,6 +183,8 @@ input.props_form{width:20px;height:20px;appearance: none;border-radius:4px;curso
     .btn_control{
         border-radius:8px;
     }
+
+    .btn_control_quad{padding:6px 10px; border-radius:5px; font-size:14px;}
 }
 @media (max-width:$mobile_size3){
     .btn_box{min-width:70px;}
