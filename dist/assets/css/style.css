@@ -8453,6 +8453,9 @@ td.nodata_td {
 .inform_group.skin2 .btn_inform_control {
   background: #333333;
 }
+.inform_group + .bullet_list {
+  margin: 10px 10px 0;
+}
 
 .data_render_text {
   flex: 1;

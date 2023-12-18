@@ -1218,7 +1218,12 @@
 				}
 			});
 
-			codePopup.popupShow(); // show
+			// 퍼블 확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if (url_2 === "popup") {
+				codePopup.popupShow(); // show
+			}
 			// codePopup.popupShow(); // hide
 
 			// event

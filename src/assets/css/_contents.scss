@@ -1364,6 +1364,9 @@ td.nodata_td{padding:150px 20px !important;}
         .data_render_text{color:#333;}
         .btn_inform_control{background:#333333;}
     }
+    & + .bullet_list{
+        margin:10px 10px 0;
+    }
 }
 .data_render_text{flex:1; padding:0 16px; color:$primary;font-weight: 500;font-size: 18px;}
 

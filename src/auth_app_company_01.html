@@ -1019,8 +1019,13 @@
                     document.querySelector("#btnCodeCall").focus(); // 접근성 키보드 이슈로 이벤트 발생 버튼에 포커스
                 }
             });
-
-            codePopup.popupShow(); // show
+            
+            // 퍼블 확인용
+            let url = window.location.href.split('?')[1];
+            let url_2 = url !== undefined ? url.split('#')[0] : null;
+            if(url_2 === "popup"){
+                codePopup.popupShow(); // show
+            }
             // codePopup.popupShow(); // hide
 
             // event
