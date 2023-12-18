@@ -829,7 +829,8 @@
                                                             <p class="props_form_title">가족친화 인증여부</p><span class="form_flag">필수</span>
                                                         </th>
                                                         <td>
-                                                            <div class="props_detail_form_wrap">
+                                                            <!-- 20231218 [개발요청] html 변경 -->
+                                                            <div class="props_detail_form_wrap type2"><!-- type2 추가 -->
                                                                 <div class="props_detail_long_cols">
                                                                     <p class="props_detail_key_para">여성가족부의 가족친화인증기업입니까?</p>
                                                                     <ul class="bullet_list emp type3">
@@ -848,8 +849,19 @@
                                                                             <label for="qus03_01_false" class="box_radio_label">아니오</label>
                                                                         </div>
                                                                     </div>
+                                                                    <!-- html 추가 -->
+                                                                    <div class="props_second_form_group">
+                                                                        <div class="inform_group">
+                                                                            <input type="text" class="form_input" readonly>
+                                                                            <button  type="button" name="upfile" value="업로드" class="btn_inform_control" title="업로드">
+                                                                                업로드
+                                                                            </button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <!-- // html 추가 -->
                                                                 </div>
                                                             </div>
+                                                            <!-- // 20231218 [개발요청] html 변경 -->
                                                         </td>
                                                     </tr>
                                                     <tr>
@@ -857,7 +869,8 @@
                                                             <p class="props_form_title">PMS 인증여부</p><span class="form_flag">필수</span>
                                                         </th>
                                                         <td>
-                                                            <div class="props_detail_form_wrap">
+                                                            <!-- 20231218 [개발요청] html 변경 -->
+                                                            <div class="props_detail_form_wrap type2"><!-- type2 추가 -->
                                                                 <div class="props_detail_long_cols">
                                                                     <p class="props_detail_key_para">한국생산성본부의 PMS인증기업입니까?</p>
                                                                     <ul class="bullet_list emp type3">
@@ -877,8 +890,37 @@
                                                                             <label for="qus03_02_false" class="box_radio_label">아니오</label>
                                                                         </div>
                                                                     </div>
+                                                                    <!-- html 추가 -->
+                                                                    <div class="props_second_form_group">
+                                                                        <div class="grid_form_table">
+                                                                            <div class="grid_form_tr">
+                                                                                <div class="grid_form_cols">
+                                                                                    <div class="grid_form_item">
+                                                                                        <div class="grid_form_key">
+                                                                                            <label for="pms_item_01" class="grid_form_label">PMS취득일</label>
+                                                                                        </div>
+                                                                                        <div class="grid_form_value">
+                                                                                            <input type="text" class="form_input size2 calendar_type" id="pms_item_01">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="grid_form_cols">
+                                                                                    <div class="grid_form_item">
+                                                                                        <div class="grid_form_key">
+                                                                                            <label for="pms_item_02" class="grid_form_label">PMS인증만료일</label>
+                                                                                        </div>
+                                                                                        <div class="grid_form_value">
+                                                                                            <input type="text" class="form_input size2 calendar_type" id="pms_item_02">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>  
+                                                                    </div>
+                                                                    <!-- // html 추가 -->
                                                                 </div>
                                                             </div>
+                                                            <!-- // 20231218 [개발요청] html 변경 -->
                                                         </td>
                                                     </tr>
                                                 </tbody>

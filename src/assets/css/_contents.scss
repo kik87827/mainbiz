@@ -1424,6 +1424,11 @@ td.nodata_td{padding:150px 20px !important;}
 }
 .props_detail_form_wrap{
     display:flex;align-items: center;
+    &.type2{
+     .props_detail_long_cols,  
+     .props_detail_short_cols{flex:1;}   
+     .props_detail_short_cols{display:flex;flex-direction: column; align-items: flex-end;}   
+    }
 }
 .props_detail_long_cols{flex:1;min-width:0;padding:12px 20px;}
 .props_detail_key_para{
@@ -1661,6 +1666,8 @@ td.nodata_td{padding:150px 20px !important;}
 .liquid_formlabel{text-align: center;border:1px solid #bbb;border-radius:8px;display:block;color:#999; font-size:18px; font-weight:500;padding:20px; cursor: pointer;
 
 }
+
+.props_second_form_group{margin-top:12px;width:100%;}
 
 
 @media (max-width : $tablet){

@@ -8600,6 +8600,15 @@ td.nodata_td {
   display: flex;
   align-items: center;
 }
+.props_detail_form_wrap.type2 .props_detail_long_cols,
+.props_detail_form_wrap.type2 .props_detail_short_cols {
+  flex: 1;
+}
+.props_detail_form_wrap.type2 .props_detail_short_cols {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .props_detail_long_cols {
   flex: 1;
@@ -9149,6 +9158,11 @@ td.nodata_td {
   font-weight: 500;
   padding: 20px;
   cursor: pointer;
+}
+
+.props_second_form_group {
+  margin-top: 12px;
+  width: 100%;
 }
 
 @media (max-width: 1299px) {
