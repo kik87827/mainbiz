@@ -1185,7 +1185,11 @@ td.nodata_td{padding:150px 20px !important;}
 .list_td_link{@include clamp(1);font-size:18px;color:#333333; font-weight:500; line-height:1.4;vertical-align: middle;}
 .btn_board_ico{display:inline-block;width:24px;height:24px;background:url("../images/ico_file_down.png") no-repeat 0 0/100% auto;border-radius:100%;vertical-align: middle;}
 
-.box_form_table_wrap{position:relative;overflow:hidden;border:1px solid #bbb;border-radius:16px;}
+.box_form_table_wrap{position:relative;overflow:hidden;border:1px solid #bbb;border-radius:16px;
+    &.single_table{
+        display:flex; padding:26px; gap:12px;
+    }
+}
 .box_form_table{
     width:100%; background-color:#F9F9F9; table-layout: auto;
     tr{
@@ -1200,6 +1204,15 @@ td.nodata_td{padding:150px 20px !important;}
 
 .boxtab_list_wrap + .grid_form_box_wrap{
     margin-top:32px;
+}
+
+.box_form_single_cols{
+    &.auto_cols{
+
+    }
+    &.liquid_cols{
+        flex:1;
+    }
 }
 
 .grid_form_box_wrap{
@@ -1670,6 +1683,18 @@ td.nodata_td{padding:150px 20px !important;}
 .props_second_form_group{margin-top:12px;width:100%;}
 
 
+.form_guide_box{border:1px solid #73B4DD; border-radius:16px;padding:24px;}
+.form_guide_inner_block{margin-bottom:24px;
+    &:last-of-type{margin-bottom:0;}
+}
+.form_guide_inner_title{
+    display:flex; font-size:24px; font-weight:700; color:$primary;
+    &.bullet{flex:0;white-space: nowrap;}
+    &.inner_text{flex:1;}
+}
+.form_guide_inner_cont{margin-top:16px;}
+.inner_cont_para{font-size:18px;color:#777777; line-height:1.4; letter-spacing: -0.05em;}
+
 @media (max-width : $tablet){
     .grid_form_tr{
         &.break_type2{
@@ -1877,6 +1902,27 @@ td.nodata_td{padding:150px 20px !important;}
     .message_note_copy_list{
         font-size:14px; color:$primary; letter-spacing: 0; 
     }
+
+    .form_guide_box{ border-radius:10px;padding:16px;}
+    .form_guide_inner_block{margin-bottom:12px;
+    }
+    .form_guide_inner_title{
+        font-size:16px;
+    }
+    .form_guide_inner_cont{margin-top:5px;}
+    .inner_cont_para{font-size:14px; letter-spacing:0;}
+
+
+    .box_form_table_wrap{
+        &.single_table{
+            padding:16px; gap:12px; flex-direction: column;
+        }
+    }
+    
+    .box_form_single_cols{
+        flex:0 !important;
+    }
+    
 }
 
 @media (max-width : $mobile){
