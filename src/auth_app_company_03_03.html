@@ -675,7 +675,10 @@
             menuRock("[name='gnb_app']");
             scrollDrag(["#data_write_form"]);
             tooltipFunc();
-            mobileToggle();
+            mobileToggle({
+                openText : '닫기',
+                closeText : '열기',
+            });
         </script>
         @@include('./include/_footer.html')
     </div>

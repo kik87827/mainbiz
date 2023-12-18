@@ -811,7 +811,10 @@
         <script>
             menuRock("[name='gnb_app']");
             scrollDrag(["#tab_menu_container"]);
-            mobileToggle();
+            mobileToggle({
+                openText : '닫기',
+                closeText : '열기',
+            });
         </script>
         @@include('./include/_footer.html')
     </div>

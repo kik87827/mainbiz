@@ -911,7 +911,7 @@ function getScrollBarWidth() {
 }
 
 
-function mobileToggle(){
+function mobileToggle(option){
   const table_toggle_item_li = document.querySelectorAll(".table_toggle_item_list > li");
   if(!!table_toggle_item_li){
     table_toggle_item_li.forEach((item)=>{
@@ -924,13 +924,20 @@ function mobileToggle(){
             e.preventDefault();
             const thisEvent = e.currentTarget;
             const thisParent = thisEvent.closest("li");
+            const thisHiddenControl = thisParent.querySelector(".control_text");
 
             table_toggle_item_li.forEach((item)=>{
               if(item !== thisParent){
                 item.classList.remove("active");
+                item.querySelector(".control_text").textContent = option.closeText;
               }
             });
             thisParent.classList.toggle("active");
+            if(thisParent.classList.contains("active")){
+              thisHiddenControl.textContent = option.openText;
+            }else{
+              thisHiddenControl.textContent = option.closeText;
+            }
           });
         })
       }
