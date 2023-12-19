@@ -3639,6 +3639,10 @@ textarea.form_textarea.htype3 {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+textarea.form_textarea:disabled {
+  background: #E9E9E9;
+  color: #333;
+}
 
 @media (max-width: 767px) {
   textarea.form_textarea {
