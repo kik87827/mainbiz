@@ -3634,6 +3634,11 @@ textarea.form_textarea {
 textarea.form_textarea.htype2 {
   height: 300px;
 }
+textarea.form_textarea.htype3 {
+  height: 48px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
 
 @media (max-width: 767px) {
   textarea.form_textarea {
@@ -3645,11 +3650,13 @@ textarea.form_textarea.htype2 {
 .props_item {
   display: flex;
   gap: 8px;
+  align-items: flex-start;
 }
 
 input.props_form {
   width: 20px;
   height: 20px;
+  flex: 0 0 20px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -8232,6 +8239,12 @@ td.nodata_td {
   flex: 0;
 }
 
+.grid_form_item.type2 {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
 .grid_form_key {
   margin-bottom: 10px;
   display: flex;
@@ -8242,6 +8255,26 @@ td.nodata_td {
 
 .grid_form_value .box_radio_item_group .box_radio_item {
   flex: 1;
+}
+
+.form_coment_para_list {
+  margin-top: 10px;
+}
+.form_coment_para_list > li {
+  display: flex;
+  color: #F7943E;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.form_coment_bullet {
+  flex: 0;
+  white-space: nowrap;
+}
+
+.form_coment_para {
+  flex: 1;
+  min-width: 0;
 }
 
 .message_note_title_row {
@@ -8491,6 +8524,9 @@ td.nodata_td {
 }
 .btn_inform_control.ptype2 {
   padding: 10px;
+}
+.btn_inform_control.ptype3 {
+  padding: 10px 5px;
 }
 
 .agree_terms_box {
@@ -9548,6 +9584,9 @@ td.nodata_td {
   .note_para {
     font-size: 14px;
     display: inline;
+  }
+  .grid_form_item.type2 {
+    display: block;
   }
 }
 /* toggle */
