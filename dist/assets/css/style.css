@@ -1466,6 +1466,9 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
     font-size: 30px;
     margin-bottom: 40px;
   }
+  .sub_contents {
+    padding-bottom: 80px;
+  }
 }
 @media (max-width: 767px) {
   .skip.pc_skip {
@@ -9020,6 +9023,7 @@ td.nodata_td {
   justify-content: center;
   gap: 6px;
 }
+.swiper_form_fraction .fraction_current,
 .swiper_form_fraction .swiper-pagination-current {
   color: #F7943E;
   font-size: 36px;
@@ -9125,6 +9129,9 @@ td.nodata_td {
   border: 1px solid #bbb;
 }
 
+.data_tail_table {
+  width: 100%;
+}
 .data_tail_table tbody th,
 .data_tail_table tbody td {
   border-right: 1px solid #bbb;
@@ -9137,7 +9144,7 @@ td.nodata_td {
   border-right: 0;
 }
 .data_tail_table tbody th {
-  width: 1px;
+  width: 80px;
   white-space: nowrap;
 }
 .data_tail_table tbody tr:last-of-type th, .data_tail_table tbody tr:last-of-type td {
@@ -9479,7 +9486,8 @@ td.nodata_td {
   .swiper_form_fraction {
     font-size: 16px;
   }
-  .swiper_form_fraction .swiper-pagination-current {
+  .swiper_form_fraction .fraction_current,
+.swiper_form_fraction .swiper-pagination-current {
     font-size: 24px;
   }
   .inline_else_text {
@@ -9527,6 +9535,9 @@ td.nodata_td {
   }
   .data_tail_table_wrap {
     border-radius: 10px;
+  }
+  .data_tail_table tbody th {
+    width: 1px;
   }
   .data_tail_table tbody th,
 .data_tail_table tbody td {
