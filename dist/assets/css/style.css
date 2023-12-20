@@ -1293,7 +1293,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 }
 
 .ms_inner_container {
-  max-width: 356px;
+  max-width: 420px;
   margin: 0 auto;
 }
 .ms_inner_container.type2 {
@@ -3478,7 +3478,7 @@ select.form_select {
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
-  border: 1px solid #bbb;
+  border: 1px solid #ddd;
   height: 48px;
   padding: 0 40px 0 16px;
   border-radius: 8px;
@@ -7764,6 +7764,58 @@ input.input_global_search::input-placeholder {
   color: #999999;
 }
 
+.form_split_wrap {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.form_split_wrap .form_input,
+.form_split_wrap .form_select {
+  width: 100%;
+}
+
+.split_long_cols {
+  flex: 1;
+}
+
+.split_short_cols {
+  flex: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.split_else_text {
+  display: inline-block;
+  font-size: 16px;
+  color: #999;
+  padding: 0 3px;
+}
+
+.split_item_group {
+  display: flex;
+  align-items: center;
+}
+
+.split_item_cols {
+  flex: 1;
+}
+.split_item_cols.else_cols {
+  flex: 0;
+  white-space: nowrap;
+}
+
+.btn_inline_control {
+  display: inline-flex;
+  min-width: 80px;
+  text-align: center;
+  border-radius: 8px;
+  color: #fff;
+  min-height: 48px;
+  background-color: #333;
+  justify-content: center;
+  align-items: center;
+}
+
 .capform_img_box {
   border: 1px solid #333;
   overflow: hidden;
@@ -9844,6 +9896,31 @@ td.nodata_td {
   .box_form_single_cols {
     flex: 0 !important;
   }
+  .form_split_wrap {
+    flex-direction: column;
+  }
+  .form_split_wrap select.form_select {
+    height: 48px !important;
+  }
+  .split_long_cols {
+    flex: 1;
+  }
+  .split_short_cols {
+    flex: 1;
+    white-space: normal;
+    width: 100%;
+  }
+  .split_else_text {
+    font-size: 14px;
+  }
+  .btn_inline_control {
+    display: flex;
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 14px;
+  }
 }
 @media (max-width: 767px) {
   .form_value_tb {
@@ -10338,7 +10415,7 @@ li.nodata_li {
     top: 4px;
   }
 }
-@media (max-width: 374px) {
+@media (max-width: 450px) {
   .list_board_table_wrap.respon_type .list_board_table td {
     padding: 7px 10px;
   }
@@ -10355,6 +10432,8 @@ li.nodata_li {
     font-size: 14px;
     font-weight: 500;
   }
+}
+@media (max-width: 374px) {
   .sort_item_cols {
     flex-direction: column;
   }

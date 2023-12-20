@@ -248,12 +248,40 @@
 									<label for="pw_form_item_05" class="form_block_label">담당자 연락처</label>
 								</div>
 								<div class="form_block_content_row">
-									<div class="form_item_box_group">
-										<input type="text" class="form_input size2" id="pw_form_item_05">
-										<div class="btn_form_box_control_cols">
-											<a href="javascript:;" class="btn_form_box_control">휴대전화 인증</a>
+									<!-- 20231220 4차 수정 - 항목 변경 -->
+									<div class="form_split_wrap">
+										<div class="split_long_cols">
+											<div class="split_item_group">
+												<div class="split_item_cols">
+													<select class="form_select" title="연락처 앞자리 선택" id="pw_form_item_05">
+														<option>010</option>
+													</select>
+												</div>
+												<div class="split_item_cols else_cols">
+													<span class="split_else_text">-</span>
+												</div>
+												<div class="split_item_cols">
+													<input type="text" class="form_input size2" title="연락처 가운데자리 입력">
+												</div>
+												<div class="split_item_cols else_cols">
+													<span class="split_else_text">-</span>
+												</div>
+												<div class="split_item_cols">
+													<input type="text" class="form_input size2" title="연락처 뒷자리 입력">
+												</div>
+											</div>
+										</div>
+										<div class="split_short_cols">
+											<a href="javascript:;" class="btn_inline_control">휴대전화 인증</a>
 										</div>
 									</div>
+									<!-- <div class="form_item_box_group">
+                                        <input type="text" class="form_input size2" id="pw_form_item_05">
+                                        <div class="btn_form_box_control_cols">
+                                            <a href="javascript:;" class="btn_form_box_control">휴대전화 인증</a>
+                                        </div>
+                                    </div> -->
+									<!-- // 20231220 4차 수정 - 항목 변경 -->
 								</div>
 							</div>
 						</div>
