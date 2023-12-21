@@ -1298,6 +1298,7 @@ td.nodata_td{padding:150px 20px !important;}
 }
 .grid_note_para_text{font-size:16px;line-height:1.4;color:#808285;padding-top:2px;word-break: keep-all;
     .emp{word-break: keep-all;}
+    .sub_emp{color:$sub_color; font-weight:500;}
 }
 .grid_form_table{display:flex;flex-direction: column;gap:20px;
     ::-webkit-input-placeholder{color:#bbb;}
@@ -1339,6 +1340,8 @@ td.nodata_td{padding:150px 20px !important;}
     .box_radio_item_group{
         .box_radio_item{flex:1;}
     }
+    .box_radio_item_group{min-height:48px;}
+    select.form_select{height:48px;line-height:48px;}
 }
 
 .form_coment_para_list{

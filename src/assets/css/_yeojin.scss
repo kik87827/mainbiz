@@ -168,7 +168,9 @@
     letter-spacing: -0.5px;
   }
 
-  &.size2{font-size:18px;}
+  &.size2{font-size:18px;
+    *{font-size:18px;}
+  }
 }
 .table_button_go {
   display: inline-block;
@@ -215,6 +217,7 @@
 
     &.size2{
       font-size:13px;
+      *{font-size:13px;}
     }
   }
 }
