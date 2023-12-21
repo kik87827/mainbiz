@@ -11288,6 +11288,9 @@ li.nodata_li {
   line-height: 20.8px;
   letter-spacing: -0.5px;
 }
+.table_text:first-of-type {
+  margin-top: 0;
+}
 .table_text.inline {
   display: inline;
 }
@@ -11323,6 +11326,9 @@ li.nodata_li {
   font-size: 16px;
   line-height: 20.8px;
   letter-spacing: -0.5px;
+}
+.table_text.size2 {
+  font-size: 18px;
 }
 
 .table_button_go {
@@ -11360,6 +11366,9 @@ li.nodata_li {
   .table_text.small {
     font-size: 15px;
     line-height: 19px;
+  }
+  .table_text.size2 {
+    font-size: 13px;
   }
 }
 @media (max-width: 1023px) {

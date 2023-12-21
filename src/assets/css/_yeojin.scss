@@ -122,6 +122,8 @@
   line-height: 20.8px;
   letter-spacing: -0.5px;
 
+  &:first-of-type{margin-top:0;}
+
   &.inline {
     display: inline;
   }
@@ -165,6 +167,8 @@
     line-height: 20.8px;
     letter-spacing: -0.5px;
   }
+
+  &.size2{font-size:18px;}
 }
 .table_button_go {
   display: inline-block;
@@ -207,6 +211,10 @@
     &.small {
       font-size: 15px;
       line-height: 19px;
+    }
+
+    &.size2{
+      font-size:13px;
     }
   }
 }
