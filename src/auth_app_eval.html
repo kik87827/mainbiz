@@ -140,7 +140,9 @@
                                                             <div class="grid_form_value">
 																<div class="inform_group data_render_type ">
 																	<span class="data_render_text font_type2">신청</span>
-																	<a href="javascript:;" class="btn_inform_control">현장평가 준비방법</a>
+                                                                    <!-- 20231220 4차 수정 - 삭제 -->
+																	<!-- <a href="javascript:;" class="btn_inform_control">현장평가 준비방법</a> -->
+                                                                    <!-- // 20231220 4차 수정 - 삭제 -->
 																</div>
 															</div>
                                                         </div>
@@ -356,7 +358,28 @@
                                                                 <span class="form_flag">필수</span>
                                                             </div>
                                                             <div class="grid_form_value">
-                                                                <input type="text" class="form_input size2" id="eval_current_03">
+                                                                <!-- 20231220 4차 수정 - 변경 -->
+                                                                <div class="inline_form_wrap type2">
+                                                                    <div class="inline_form_cols">
+                                                                        <select class="form_select" id="eval_current_03" title="연락처 앞자리 선택">
+                                                                            <option>010</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="inline_form_cols else_cols">
+                                                                        <span class="inline_else_text">-</span>
+                                                                    </div>
+                                                                    <div class="inline_form_cols">
+                                                                        <input type="text" class="form_input size2" title="연락처 가운데자리 입력">
+                                                                    </div>
+                                                                    <div class="inline_form_cols else_cols">
+                                                                        <span class="inline_else_text">-</span>
+                                                                    </div>
+                                                                    <div class="inline_form_cols">
+                                                                        <input type="text" class="form_input size2" title="연락처 뒷자리 입력">
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <input type="text" class="form_input size2" id="eval_current_03"> -->
+                                                                <!-- // 20231220 4차 수정 - 변경 -->
                                                             </div>
                                                         </div>
                                                     </div>
