@@ -202,6 +202,7 @@
 				</div>
 				<div class="sub_content_package">
 					<h2 class="sub_title">마이페이지</h2>
+					<!-- 20231221 3차 수정 - 내용 변경 -->
 					<div class="sub_contents">
 						<div class="inform_board_box">
 							<div class="inform_main_copy_row">
@@ -745,9 +746,38 @@
 						</div>
 						<!-- // tab contents -->
 					</div>
+					<!-- // 20231221 3차 수정 - 내용 변경 -->
 				</div>
 			</div>
 		</section>
+		<!-- 20231221 3차 수정 - 모달 추가 -->
+		<script>
+			let modalCaseObj = new DesignModal({
+				type: "alert", // alert, confirm,
+				submitText: "수정",
+				closeText: "닫기",
+				closeText2: "취소",
+				main_message: `
+                    현재 인증 신청이 되어있어 수정이 불가합니다. <br>평가자 배정 전까지는 <strong>진행 현황 페이지</strong>에서 <br>수정할 수 있습니다.
+                `,
+				// sub_message : "서브 테스트",
+				identify_callback: function() {
+					console.log('확인');
+				},
+				cancel_callback: function() {
+					console.log('취소');
+				}
+			})
+
+
+			// 퍼블 확인용
+			let url = window.location.href.split('?')[1];
+			let url_2 = url !== undefined ? url.split('#')[0] : null;
+			if (url_2 === "modal") {
+				modalCaseObj.show(); // show
+			}
+		</script>
+		<!-- // 20231221 3차 수정 - 모달 추가 -->
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
 				<div class="footer_sub_cols">

@@ -952,3 +952,144 @@ function mobileToggle(option){
     });
   }
 }
+
+
+/**
+ * 디자인 모달
+ * @param {*} option
+ */
+function DesignModal(option) {
+  this.title = option.title;
+  this.message = option.message;
+  this.domHtml = document.querySelector("html");
+  this.domBody = document.querySelector("body");
+  this.pagewrap = document.querySelector(".page_wrap");
+  this.design_modal_wrap = null;
+  this.btn_dmsmidentify = null;
+  this.btn_dmsmcancel = null;
+  this.duration = option.duration !== undefined ? option.duration : 400;
+  this.initShow(option);
+}
+
+DesignModal.prototype.initShow = function(option) {
+  var innerPublish = "";
+  var objThis = this;
+  let confirmPublish =
+    option.type === "confirm" ?
+    `${option.closeText2}` :
+    `${option.closeText}`;
+  innerPublish = `
+  <div class='design_modal_wrap'>
+    <div class='design_modal_tb'>
+      <div class='design_modal_td'>
+        <div class='bg_design_modal'></div>
+        <div class='design_modal' tabindex='0'>
+          <div class='design_modal_cont_w'>
+            <div class='design_modal_maintext'></div>
+            <div class='design_modal_subtext'></div>
+          </div>
+          <div class='btn_dmsm_wrap'>
+          
+          <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmcancel'>${confirmPublish}</a>
+          <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmidentify'>${option.submitText}</a>
+          </div>
+          <a href='javascript:;' class='btn_modal_close'><span class='hdtext'>${option.closeText}</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  `;
+
+  this.modalparent = document.createElement("div");
+  this.pagewrap.appendChild(this.modalparent);
+  this.modalparent.classList.add("design_modal_insert_wrap");
+  this.modalparent.innerHTML = innerPublish;
+  this.closetrigger = document.querySelectorAll(".close_dmtrigger");
+  this.design_modal_wrap = document.querySelector(".design_modal_wrap");
+  this.btn_modal_close = document.querySelector(".btn_modal_close");
+
+  if (option.type === "confirm" || option.type === "alert") {
+    this.design_modal_tit = document.querySelector(".design_modal_tit");
+    this.design_modal_text = document.querySelector(".design_modal_maintext");
+    this.design_modal_subtext = document.querySelector(".design_modal_subtext");
+    this.btn_dmsmidentify = document.querySelector(".btn_dmsmidentify");
+
+    if(!!option.main_message){
+      this.design_modal_text.innerHTML = option.main_message;
+    }else{
+      this.design_modal_text.remove();
+    }
+
+    if(!!option.sub_message){
+      this.design_modal_subtext.innerHTML = option.sub_message;
+
+    }else{
+      this.design_modal_subtext.remove();
+    }
+  }
+  if (option.type === "confirm") {
+    this.btn_dmsmcancel = document.querySelector(".btn_dmsmcancel");
+  }
+  if (option.type === "title") {
+    this.design_modal_tit.innerHTML = option.title;
+  }
+
+  this.bindEvent(option);
+};
+DesignModal.prototype.show = function() {
+  this.pagewrap.style.zIndex = 0;
+  this.domHtml.classList.add("touchDis");
+
+  this.design_modal_wrap.classList.add("active");
+  setTimeout(() => {
+    this.design_modal_wrap.classList.add("motion");
+    setTimeout(()=>{
+      setTabControl(this.design_modal_wrap.querySelector(".design_modal"));
+    },450);
+  }, 30);
+};
+DesignModal.prototype.hide = function() {
+  var objThis = this;
+  this.design_modal_wrap.classList.remove("motion");
+  setTimeout(function() {
+    objThis.design_modal_wrap.classList.remove("active");
+    document.querySelector(".design_modal_insert_wrap").remove();
+    objThis.design_modal_wrap.remove();
+    objThis.domHtml.classList.remove("touchDis");
+  }, 530);
+};
+DesignModal.prototype.bindEvent = function(option) {
+  var objThis = this;
+  let btn_close_item = [this.btn_modal_close, ...this.closetrigger];
+  btn_close_item.forEach((element, index) => {
+    element.addEventListener(
+      "click",
+      function() {
+        objThis.hide();
+      },
+      false
+    );
+  });
+  if (this.btn_dmsmidentify !== null) {
+    this.btn_dmsmidentify.addEventListener(
+      "click",
+      function() {
+        if (option.identify_callback !== undefined) {
+          option.identify_callback();
+        }
+      },
+      false
+    );
+  }
+  if (this.btn_dmsmcancel !== null) {
+    this.btn_dmsmcancel.addEventListener(
+      "click",
+      function() {
+        if (option.cancel_callback !== undefined) {
+          option.cancel_callback();
+        }
+      },
+      false
+    );
+  }
+};

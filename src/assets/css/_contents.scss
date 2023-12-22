@@ -173,7 +173,7 @@
 }
 
 .td_para{
-    color:#333; font-size:16px; letter-spacing: -0.05em; font-weight: 500;
+    color:#333; font-size:16px; letter-spacing: -0.05em; font-weight: 500; word-break: keep-all;
     &.size_small{}
 }
 
