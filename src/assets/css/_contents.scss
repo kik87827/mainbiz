@@ -1305,6 +1305,7 @@ td.nodata_td{padding:150px 20px !important;}
     display:flex; align-items: center; gap:8px;
     &:before{display:block;content:'';width:16px;height:16px;background:url("../images/ico_note_bullet.png") no-repeat 50% 50%/100% auto; border-radius: 100%; flex:0 0 16px;}
     .emp{color:$primary; font-weight:500;}
+    .emp_bold{font-weight:700;}
     .sub_emp{}
     .emp_sub{color:$sub_color; font-weight:500;}
 }

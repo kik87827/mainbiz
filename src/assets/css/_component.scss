@@ -414,7 +414,9 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
 
 
 /* step */
-.step_item_list_wrap{max-width:936px;margin:0 auto 64px;}
+.step_item_list_wrap{max-width:936px;margin:0 auto 64px;
+    &.size2{max-width:1100px;}
+}
 .step_item_list{
     display:flex; justify-content:center; position:relative;
     
@@ -435,6 +437,9 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
             &:after{background:$primary}
             & + .active,& + .end{
                 &:before{background:$primary}
+            }
+            &.icon_only{
+                &:after{background:#ddd}
             }
         }
         &.active{
@@ -1006,4 +1011,11 @@ input.btn_submitbox{}
     .mb_br{display:block !important;}
 
     .design_modal_maintext{font-size:16px;}
+}
+
+
+/* note */
+.note_box_container{
+    .bullet_list{}
+    & + .column_obj_item_wrap{margin-top:rem(64);}
 }
