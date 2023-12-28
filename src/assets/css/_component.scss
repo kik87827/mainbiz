@@ -470,7 +470,13 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
 
 
 @media (max-width:$mobile_large){
-    .step_item_list_wrap{margin-bottom:32px;}
+    .step_item_list_wrap{margin-bottom:32px;
+        &.size2{
+            .step_item_list{
+                margin:0 -6%;
+            }
+        }
+    }
     .step_item_list{
         margin:0 -12.5%;
         > li{
@@ -1016,6 +1022,17 @@ input.btn_submitbox{}
 
 /* note */
 .note_box_container{
+    border: 1px solid #BBBBBB;
+    border-radius: 16px;
+    background: #F9F9F9;
+    padding: 26px;
     .bullet_list{}
-    & + .column_obj_item_wrap{margin-top:rem(64);}
+    & + .column_obj_item_wrap{margin-top:64px;}
+}
+@media(max-width:$mobile){
+    .note_box_container{
+        border-radius: 10px;
+        padding: 20px;
+        & + .column_obj_item_wrap{margin-top:32px;}
+    }
 }
