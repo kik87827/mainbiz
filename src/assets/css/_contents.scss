@@ -5,6 +5,8 @@
 .mb_img{display:none !important;}
 .mb_item{display:none !important;}
 .pc_item{display:block !important;}
+.respon_mt64{margin-top:64px !important}
+.respon_mt72{margin-top:72px !important}
 .font_type2{
     @include rubik;
     *{
@@ -41,6 +43,7 @@
     &.align_type2{justify-content: space-between; align-items: center;}
 }
 .column_obj_title{font-size:28px; line-height:1; font-weight:700; color:#555555; letter-spacing: -0.05em;}
+.column_obj_title_copy{font-size:14px;color:$sub_color;font-weight:600;}
 .column_value{
     .message_note_box{margin-bottom:0;}
 }
@@ -364,6 +367,8 @@
             .mb_nobreak{white-space: nowrap}
         }
     }
+    .respon_mt72{margin-top:48px !important}
+    .respon_mt64{margin-top:48px !important}
 }
 
 @media (max-width:$mobile_large){
@@ -436,6 +441,8 @@
     }
     .data_thtext,
     .data_tdtext{font-size:14px}
+    .respon_mt64,
+    .respon_mt72{margin-top:36px !important}
     
 }
 @media (max-width:$mobile){
@@ -1306,6 +1313,11 @@ td.nodata_td{padding:150px 20px !important;}
     &.gap_type2{
         > li{
             margin-bottom: 12px;
+        }
+    }
+    &.only_text{
+        .grid_note_para{
+            &:before{display:none;}
         }
     }
 }
