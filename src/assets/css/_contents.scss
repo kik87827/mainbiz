@@ -22,6 +22,8 @@
         margin-bottom:32px;
         &:last-of-type{margin-bottom:0;}
     }
+
+    & + .message_note_box{margin:32px 0 0 0;}
 }
 .column_obj_item{
     margin-bottom:60px;
@@ -390,6 +392,8 @@
                 margin-bottom:30px;
             }
         }
+
+        & + .message_note_box{margin-top:16px;}
     }
     .bullet_list{
         &.skin2{
@@ -1092,7 +1096,9 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
     flex:1;
     &.else_cols{flex:0;white-space: nowrap;}
 }
-.btn_inline_control{display:inline-flex;min-width:80px;text-align: center; border-radius:8px;color:#fff;min-height:48px;background-color:#333; justify-content: center; align-items: center;}
+.btn_inline_control{display:inline-flex;min-width:80px;text-align: center; border-radius:8px;color:#fff;min-height:48px;background-color:#333; justify-content: center; align-items: center;
+    &.type2{font-size:18px;min-width:0; padding:0 14px;}
+}
 
 .capform_img_box{
     border:1px solid #333;overflow:hidden; border-radius:8px;position:relative;height:48px;box-sizing:border-box;width:240px;
@@ -1269,6 +1275,7 @@ td.nodata_td{padding:150px 20px !important;}
         .grid_note_para_text{font-size:18px;}
     }
     & + .grid_form_table{margin-top:20px;}
+
 }
 .meaage_note_list{
     > li{
@@ -2125,7 +2132,7 @@ td.nodata_td{padding:150px 20px !important;}
     .form_split_wrap{flex-direction: column;
         select.form_select{height:48px !important;}
     }
-    .split_long_cols{flex:1;}
+    .split_long_cols{flex:1;width:100%;}
     .split_short_cols{flex:1;white-space: normal;width:100%;}
     .split_else_text{font-size:14px;}
     .btn_inline_control{display:flex;width:100%;min-width:0;box-sizing: border-box;padding:10px;font-size:14px;}
