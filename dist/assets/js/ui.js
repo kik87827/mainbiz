@@ -1067,8 +1067,8 @@ DesignModal.prototype.hide = function() {
   this.design_modal_wrap.classList.remove("motion");
   setTimeout(function() {
     objThis.design_modal_wrap.classList.remove("active");
-    document.querySelector(".design_modal_insert_wrap").remove();
-    objThis.design_modal_wrap.remove();
+    /* document.querySelector(".design_modal_insert_wrap").remove();
+    objThis.design_modal_wrap.remove(); */
     objThis.domHtml.classList.remove("touchDis");
   }, 530);
 };

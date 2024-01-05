@@ -7,7 +7,7 @@
 <body class="front_body">
 	<div class="page_wrap">
 		<div>
-			<a href="#" class="btn_guide">레이어팝업</a>
+			<a href="#" class="btn_guide" id="btn_guide">레이어팝업</a>
 		</div>
 	</div>
 	<script>
@@ -34,7 +34,12 @@
 		designAlert.show();
 		setTimeout(()=>{
 			designAlert.hide();
-		},1000)
+		},1000);
+
+		//test
+		document.querySelector("#btn_guide").addEventListener("click",()=>{
+			designAlert.show();
+		});
 
 		// 강제로 닫기 designAlert.hide();
 	</script>
