@@ -1107,3 +1107,69 @@ DesignModal.prototype.bindEvent = function(option) {
     );
   }
 };
+
+
+/**
+ * 디자인 모달 개선
+ * @param {*} option
+ */
+
+
+class DesignModal2 {
+  constructor(option) {
+    this.optionObj = option;
+    this.domHtml = document.querySelector("html");
+    this.domBody = document.querySelector("body");
+    this.pagewrap = document.querySelector(".page_wrap");
+  }
+  show() {
+    let innerPublish = `
+    <div class='design_modal_wrap'>
+      <div class='design_modal_tb'>
+        <div class='design_modal_td'>
+          <div class='bg_design_modal'></div>
+          <div class='design_modal' tabindex='0'>
+            <div class='design_modal_cont_w'>
+              <div class='design_modal_maintext'>${this.optionObj.main_message}</div>
+              <div class='design_modal_subtext'>${this.optionObj.sub_message}</div>
+            </div>
+            <div class='btn_dmsm_wrap'>
+              <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmcancel'>${this.optionObj.closeText2}</a>
+              <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmidentify'>${this.optionObj.submitText}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    `;
+    const allmodal = document.querySelectorAll(".design_modal_insert_wrap");
+    if (allmodal.length) {
+      allmodal.forEach((item) => {
+        item.remove();
+      });
+    }
+
+    let modalparent = null;
+    modalparent = document.createElement("div");
+
+    this.pagewrap.appendChild(modalparent);
+    modalparent.classList.add("design_modal_insert_wrap");
+    modalparent.innerHTML = innerPublish;
+
+    const currentModalWrap = modalparent.querySelector(".design_modal_wrap");
+    const currentModalMainText = currentModalWrap.querySelector(".design_modal_maintext");
+    const currentModalSubText = currentModalWrap.querySelector(".design_modal_subtext");
+    const currentModalCancelText = currentModalWrap.querySelector(".btn_dmsmcancel");
+    const currentModalSubmitText = currentModalWrap.querySelector(".btn_dmsmidentify");
+
+    if (!this.optionObj.main_message) {
+      currentModalMainText.remove();
+    }
+    if (!this.optionObj.sub_message) {
+      currentModalSubText.remove();
+    }
+  }
+  hide() {
+
+  }
+}
