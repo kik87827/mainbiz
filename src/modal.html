@@ -11,6 +11,7 @@
 		</div>
 	</div>
 	<script>
+		// 인스턴스 선언
 		let designAlert = new DesignModal({
 			type: "alert", // alert, confirm,
 			submitText: "수정",
@@ -27,8 +28,15 @@
 				console.log('취소');
 			}
 		})
+		
+
+		// action
 		designAlert.show();
-		// 강제로 닫기 designAlert.removeHide();
+		setTimeout(()=>{
+			designAlert.hide();
+		},1000)
+
+		// 강제로 닫기 designAlert.hide();
 	</script>
 </body>
 
