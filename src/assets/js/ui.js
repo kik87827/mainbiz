@@ -1095,6 +1095,160 @@ DesignModal.prototype.bindEvent = function(option) {
 };
  */
 
+
+/* design */
+function benefitTab(option){
+  const benefit_list_wrap = document.querySelector(".benefit_list_wrap");
+  const benefit_list_group = document.querySelector(".benefit_list_group");
+  const benefit_anchor = document.querySelectorAll(".benefit_anchor");
+  const benefit_panel = document.querySelectorAll(".benefit_panel");
+  let benefit_list_pos = benefit_list_wrap.getBoundingClientRect().top + window.scrollY;
+  let posRender = 0;
+  let posArrayBox = [];
+  let btnClickIs = false;
+  setTab();
+  window.addEventListener("touchstart", () => {
+      btnClickIs = false;
+  });
+
+  window.addEventListener("mousewheel", () => {
+      btnClickIs = false;
+  });
+
+  window.addEventListener("mousedown", () => {
+      btnClickIs = false;
+  });
+  window.addEventListener("resize",()=>{
+    setTab();
+  });
+  window.addEventListener("scroll",()=>{
+    if(window.scrollY > benefit_list_pos){
+      benefit_list_group.classList.add("fixed");
+    }else{
+      benefit_list_group.classList.remove("fixed");
+    }
+    panelScroll();
+    if(document.querySelector("body").getBoundingClientRect().height - window.innerHeight <= window.scrollY){
+      activeTab(benefit_anchor[benefit_anchor.length-1]);
+    }
+  });
+  if(!!benefit_anchor){
+    benefit_anchor.forEach((item)=>{
+      if(!!item.querySelector(".hdtext")){
+        item.querySelector(".hdtext").remove();
+      }else{
+        const domChild = document.createElement("span");
+        domChild.classList.add("hdtext");
+        item.appendChild(domChild);
+      }
+      item.addEventListener("click",(e)=>{
+        e.preventDefault();
+        const thisEvent = e.currentTarget;
+        const thisPanel = document.querySelector(thisEvent.getAttribute("href"));
+        const siblingsDom = siblings(thisEvent);
+        activeTab(thisEvent);
+        /* if(!!siblingsDom){
+          siblingsDom.forEach((sitem)=>{
+            if(thisEvent !== sitem){
+              sitem.querySelector(".hdtext").textContent = '';
+              sitem.classList.remove("active");
+            }
+          });
+        }
+
+        item.querySelector(".hdtext").textContent = option.hideText;
+        item.classList.add("active"); */
+        if(!!thisPanel){
+          if(window.innerWidth > 1023){
+            posRender = thisPanel.getBoundingClientRect().top + window.scrollY - 20;
+          }else{
+            posRender = thisPanel.getBoundingClientRect().top + window.scrollY - (benefit_list_group.getBoundingClientRect().height-20);
+          }
+          window.scrollTo({
+            top : posRender,
+            left: 0,
+            behavior : "smooth"
+          })
+        }
+        btnClickIs = true;
+      });
+    });
+  }
+  function setTab(){
+    benefit_list_wrap.style.removeProperty("height");
+    benefit_list_wrap.style.height = benefit_list_group.getBoundingClientRect().height +"px";
+    benefit_list_pos = benefit_list_wrap.getBoundingClientRect().top + window.scrollY;
+    posArrayBox = panelRender();
+  }
+
+  function panelScroll(){
+    if(!btnClickIs){
+      benefit_anchor.forEach((item,index) => {
+          if(posArrayBox[index] <= window.scrollY){
+              activeTab(item);
+          }
+      });
+  }
+    /* posArrayBox.forEach((pos,index)=>{
+      if(pos > window.scrollY){
+        const activeAnochor = benefit_anchor[index];
+        const siblingsDom = siblings(activeAnochor);
+        if(!!siblingsDom){
+          siblingsDom.forEach((sitem)=>{
+            if(activeAnochor !== sitem){
+              sitem.querySelector(".hdtext").textContent = '';
+              sitem.classList.remove("active");
+            }
+          });
+        }
+        activeAnochor.querySelector(".hdtext").textContent = option.hideText;
+        activeAnochor.classList.add("active");
+      }
+    }); */
+
+  }
+
+  function panelRender(){
+    let panelArray = [];
+    let posPanel = 0;
+    
+    if(!!benefit_panel){
+      benefit_panel.forEach((item,index)=>{
+        //panelArray.push(item.getBoundingClientRect().top + window.scrollY)
+        if(window.innerWidth > 1023){
+          posPanel = item.getBoundingClientRect().top + window.scrollY - 20;
+        }else{
+          posPanel = item.getBoundingClientRect().top + window.scrollY - (benefit_list_group.getBoundingClientRect().height-20);
+        }
+        panelArray.push(posPanel)
+      });
+      panelArray[0] = 0;
+    }
+    return panelArray;
+  }
+
+  function activeTab(target){
+    const thisEvent = target;
+
+    if(!!benefit_anchor){
+      benefit_anchor.forEach((sitem)=>{
+        sitem.querySelector(".hdtext").textContent = '';
+        sitem.classList.remove("active");
+      });
+    }
+    
+    
+    thisEvent.querySelector(".hdtext").textContent = option.hideText;
+    thisEvent.classList.add("active");
+    // benefit_list_group.scrollTo
+    benefit_list_group.scrollLeft = thisEvent.getBoundingClientRect().left - 20;
+  }
+}
+/* // design */
+
+
+
+
 /**
  * 디자인 모달 개선
  * @param {*} option

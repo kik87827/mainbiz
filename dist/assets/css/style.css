@@ -12659,9 +12659,23 @@ li.nodata_li {
 /* MAINBiz 안내 - 인증 혜택 */
 .benefit_list {
   display: flex;
-  margin-bottom: -10px;
-  padding-bottom: 10px;
+  background: #fff;
+  /* margin-bottom: -10px; */
+  /* padding-bottom: 10px; */
   gap: 16px;
+}
+
+.benefit_list_group.fixed {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 20;
+}
+.benefit_list_group.fixed .benefit_list {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 30px;
 }
 
 .benefit_anchor {
@@ -12676,12 +12690,12 @@ li.nodata_li {
   color: #999;
   text-align: center;
 }
-.benefit_anchor:hover, .benefit_anchor:focus {
+.benefit_anchor.active {
   position: relative;
   background-color: #0077c0;
   color: #fff;
 }
-.benefit_anchor:hover::after, .benefit_anchor:focus::after {
+.benefit_anchor.active::after {
   content: "";
   display: block;
   position: absolute;
@@ -12692,6 +12706,7 @@ li.nodata_li {
   height: 10px;
   background: url("../images/ico_benefit_anchor_arrow.png") no-repeat 0 0;
   background-size: contain;
+  z-index: 2;
 }
 
 .benefit_panel {
@@ -12719,19 +12734,36 @@ li.nodata_li {
   }
 }
 @media (max-width: 767px) {
-  .benefit_list {
+  .benefit_list_group {
+    padding: 0 0 5px 20px;
+    box-sizing: border-box;
+    margin: 0 -20px;
     overflow-x: auto;
-    margin-bottom: -5px;
-    padding-bottom: 5px;
+  }
+  .benefit_list_group.fixed {
+    margin: 0;
+  }
+  .benefit_list_group.fixed .benefit_list {
+    padding: 0;
+  }
+  .benefit_list {
     gap: 5px;
+  }
+  .benefit_list:after {
+    display: block;
+    content: "";
+    flex: 0 0 15px;
   }
   .benefit_anchor {
     flex: 1 0 80px;
     padding: 15px 5px;
     font-size: 15px;
     line-height: 15px;
+    /* 
+        &:hover,
+        &:focus, */
   }
-  .benefit_anchor:hover::after, .benefit_anchor:focus::after, .benefit_anchor.active::after {
+  .benefit_anchor.active::after {
     bottom: -5px;
     width: 8px;
     height: 5px;

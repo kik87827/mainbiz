@@ -1118,11 +1118,20 @@
 }
 
 /* MAINBiz 안내 - 인증 혜택 */
+.benefit_list_wrap{
+ 
+}
 .benefit_list {
   display: flex;
-  margin-bottom: -10px;
-  padding-bottom: 10px;
+  background:#fff;
+  /* margin-bottom: -10px; */
+  /* padding-bottom: 10px; */
   gap: 16px;
+}
+.benefit_list_group{
+  &.fixed{position:fixed;width:100%;left:0;top:0; z-index:20;
+    .benefit_list{max-width: 1280px;margin:0 auto;padding:0 30px;}
+  }
 }
 .benefit_anchor {
   flex: 1;
@@ -1136,8 +1145,8 @@
   color: #999;
   text-align: center;
 
-  &:hover,
-  &:focus {
+
+  &.active{
     position: relative;
     background-color: #0077c0;
     color: #fff;
@@ -1153,6 +1162,7 @@
       height: 10px;
       background: url("../images/ico_benefit_anchor_arrow.png") no-repeat 0 0;
       background-size: contain;
+      z-index:2;
     }
   }
 }
@@ -1187,20 +1197,28 @@
   }
 }
 @media (max-width:$mobile) {
+  .benefit_list_group{
+    padding:0 0 5px 20px;
+    box-sizing: border-box;
+    margin:0 -20px;
+    &.fixed{
+      margin:0;
+      .benefit_list{padding:0;}
+    }
+    overflow-x:auto;
+  }
   .benefit_list {
-    overflow-x: auto;
-    margin-bottom: -5px;
-    padding-bottom: 5px;
     gap: 5px;
+    &:after{display:block;content:''; flex:0 0 15px;}
   }
   .benefit_anchor {
     flex: 1 0 80px;
     padding: 15px 5px;
     font-size: 15px;
     line-height: 15px;
-
+/* 
     &:hover,
-    &:focus,
+    &:focus, */
     &.active {
       &::after {
         bottom: -5px;

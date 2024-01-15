@@ -212,14 +212,20 @@
 					<!-- 20231220 4차 수정 / 20231221 3차 수정 - 문구 관련 -->
 					<div class="sub_contents">
 						<div class="benefit">
-							<div class="benefit_list">
-								<a href="#benefit-panel-1" role="button" class="benefit_anchor">국세 &middot; 관세</a>
-								<a href="#benefit-panel-2" role="button" class="benefit_anchor">금융</a>
-								<a href="#benefit-panel-3" role="button" class="benefit_anchor">인력</a>
-								<a href="#benefit-panel-4" role="button" class="benefit_anchor">판로 &middot; 수출</a>
-								<a href="#benefit-panel-5" role="button" class="benefit_anchor">R&amp;D</a>
-								<a href="#benefit-panel-6" role="button" class="benefit_anchor">기타</a>
+							<!-- 20240116 변경 -->
+							<div class="benefit_list_wrap">
+								<div class="benefit_list_group">
+									<div class="benefit_list">
+										<a href="#benefit-panel-1" role="button" class="benefit_anchor active">국세 &middot; 관세</a>
+										<a href="#benefit-panel-2" role="button" class="benefit_anchor">금융</a>
+										<a href="#benefit-panel-3" role="button" class="benefit_anchor">인력</a>
+										<a href="#benefit-panel-4" role="button" class="benefit_anchor">판로 &middot; 수출</a>
+										<a href="#benefit-panel-5" role="button" class="benefit_anchor">R&amp;D</a>
+										<a href="#benefit-panel-6" role="button" class="benefit_anchor">기타</a>
+									</div>
+								</div>
 							</div>
+							<!-- // 20240116 변경 -->
 							<div id="benefit-panel-1" class="benefit_panel">
 								<div class="title_wrap">
 									<h4 class="title type1">국세 &middot; 관세</h4>
@@ -733,6 +739,13 @@
 		</section>
 		<script>
 			menuRock("[name='gnb_info']");
+			/* 20240116 */
+			window.addEventListener("load", () => {
+				benefitTab({
+					hideText: '활성화'
+				});
+			});
+			/* // 20240116 */
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
@@ -792,6 +805,6 @@
 
 </html>
 
-<script>
-	setupScrolling();
-</script>
+<!-- <script>
+    setupScrolling();
+</script> -->
