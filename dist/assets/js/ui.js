@@ -972,7 +972,7 @@ function mobileToggle(option) {
  * 디자인 모달
  * @param {*} option
  */
-function DesignModal(option) {
+/* function DesignModal(option) {
   this.title = option.title;
   this.message = option.message;
   this.domHtml = document.querySelector("html");
@@ -1028,16 +1028,16 @@ DesignModal.prototype.initShow = function(option) {
     this.design_modal_subtext = document.querySelector(".design_modal_subtext");
     this.btn_dmsmidentify = document.querySelector(".btn_dmsmidentify");
 
-    if (!!option.main_message) {
+    if(!!option.main_message){
       this.design_modal_text.innerHTML = option.main_message;
-    } else {
+    }else{
       this.design_modal_text.remove();
     }
 
-    if (!!option.sub_message) {
+    if(!!option.sub_message){
       this.design_modal_subtext.innerHTML = option.sub_message;
 
-    } else {
+    }else{
       this.design_modal_subtext.remove();
     }
   }
@@ -1057,9 +1057,9 @@ DesignModal.prototype.show = function() {
   this.design_modal_wrap.classList.add("active");
   setTimeout(() => {
     this.design_modal_wrap.classList.add("motion");
-    setTimeout(() => {
+    setTimeout(()=>{
       setTabControl(this.design_modal_wrap.querySelector(".design_modal"));
-    }, 450);
+    },450);
   }, 30);
 };
 DesignModal.prototype.hide = function() {
@@ -1067,8 +1067,8 @@ DesignModal.prototype.hide = function() {
   this.design_modal_wrap.classList.remove("motion");
   setTimeout(function() {
     objThis.design_modal_wrap.classList.remove("active");
-    /* document.querySelector(".design_modal_insert_wrap").remove();
-    objThis.design_modal_wrap.remove(); */
+    document.querySelector(".design_modal_insert_wrap").remove();
+    objThis.design_modal_wrap.remove();
     objThis.domHtml.classList.remove("touchDis");
   }, 530);
 };
@@ -1107,7 +1107,7 @@ DesignModal.prototype.bindEvent = function(option) {
     );
   }
 };
-
+ */
 
 /**
  * 디자인 모달 개선
@@ -1115,12 +1115,14 @@ DesignModal.prototype.bindEvent = function(option) {
  */
 
 
-class DesignModal2 {
+class DesignModal {
   constructor(option) {
     this.optionObj = option;
     this.domHtml = document.querySelector("html");
     this.domBody = document.querySelector("body");
     this.pagewrap = document.querySelector(".page_wrap");
+    this.currentModalWrap = null;
+    this.currentButtonItem = null;
   }
   show() {
     let innerPublish = `
@@ -1134,33 +1136,40 @@ class DesignModal2 {
               <div class='design_modal_subtext'>${this.optionObj.sub_message}</div>
             </div>
             <div class='btn_dmsm_wrap'>
-              <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmcancel'>${this.optionObj.closeText2}</a>
-              <a href='javascript:;' class='btn_dmsm close_dmtrigger btn_dmsmidentify'>${this.optionObj.submitText}</a>
+              <a href='javascript:;' class='btn_dmsm btn_dmsmcancel'>${this.optionObj.closeText2}</a>
+              <a href='javascript:;' class='btn_dmsm btn_dmsmidentify'>${this.optionObj.submitText}</a>
             </div>
           </div>
         </div>
       </div>
     </div>
     `;
+
     const allmodal = document.querySelectorAll(".design_modal_insert_wrap");
-    if (allmodal.length) {
-      allmodal.forEach((item) => {
-        item.remove();
-      });
-    }
 
     let modalparent = null;
     modalparent = document.createElement("div");
 
     this.pagewrap.appendChild(modalparent);
     modalparent.classList.add("design_modal_insert_wrap");
+
     modalparent.innerHTML = innerPublish;
 
-    const currentModalWrap = modalparent.querySelector(".design_modal_wrap");
-    const currentModalMainText = currentModalWrap.querySelector(".design_modal_maintext");
-    const currentModalSubText = currentModalWrap.querySelector(".design_modal_subtext");
-    const currentModalCancelText = currentModalWrap.querySelector(".btn_dmsmcancel");
-    const currentModalSubmitText = currentModalWrap.querySelector(".btn_dmsmidentify");
+    if (allmodal.length) {
+      allmodal.forEach((item) => {
+        item.remove();
+      });
+    }
+
+
+
+    this.currentModalWrap = modalparent.querySelector(".design_modal_wrap");
+    const currentModalMainText = this.currentModalWrap.querySelector(".design_modal_maintext");
+    const currentModalSubText = this.currentModalWrap.querySelector(".design_modal_subtext");
+    const currentModalCancel = this.currentModalWrap.querySelector(".btn_dmsmcancel");
+    const currentModalSubmit = this.currentModalWrap.querySelector(".btn_dmsmidentify");
+    this.currentButtonItem = this.currentModalWrap.querySelectorAll(".btn_dmsm");
+
 
     if (!this.optionObj.main_message) {
       currentModalMainText.remove();
@@ -1168,8 +1177,55 @@ class DesignModal2 {
     if (!this.optionObj.sub_message) {
       currentModalSubText.remove();
     }
+    if (!this.optionObj.submitText) {
+      currentModalSubmit.textContent = "Confirm";
+    }
+    if (this.optionObj.type == "alert") {
+      currentModalCancel.remove();
+      currentModalSubmit.textContent = this.optionObj.closeText;
+    } else {
+      currentModalCancel.textContent = this.optionObj.closeText;
+      currentModalSubmit.textContent = this.optionObj.submitText;
+    }
+
+    this.currentModalWrap.classList.add("active");
+
+    if (!!this.currentButtonItem) {
+      this.currentButtonItem.forEach((item) => {
+        item.addEventListener("click", () => {
+          this.hide();
+        });
+      });
+    }
+
+    if (!!currentModalSubmit) {
+      currentModalSubmit.addEventListener("click", () => {
+        if (!!this.optionObj.identify_callback) {
+          this.optionObj.identify_callback();
+        }
+      }, false);
+    }
+    if (!!currentModalCancel) {
+      currentModalCancel.addEventListener("click", () => {
+        if (!!this.optionObj.cancel_callback) {
+          this.optionObj.cancel_callback();
+        }
+      }, false);
+    }
+
+    setTimeout(() => {
+      this.currentModalWrap.classList.add("motion");
+      setTimeout(() => {
+        setTabControl(this.currentModalWrap.querySelector(".design_modal"));
+      }, 450);
+    }, 30);
   }
   hide() {
-
+    this.currentModalWrap.classList.remove("motion");
+    setTimeout(() => {
+      this.currentModalWrap.classList.remove("active");
+      this.currentModalWrap.remove();
+      this.domHtml.classList.remove("touchDis");
+    }, 530);
   }
 }
