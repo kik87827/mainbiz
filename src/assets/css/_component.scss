@@ -144,6 +144,9 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
     &.size2{
         min-height:48px; min-width:140px; 
     }
+    &.size3{
+        min-height:60px; min-width:240px; 
+    }
 }
 .btn_box_text{display:inline-block;font-weight:700;color:#fff;line-height:1;font-size:20px;letter-spacing: -0.05em;}
 .btn_bottom_wrap{margin-top:64px;text-align: center;display:flex;justify-content: center;gap:20px;flex-wrap:wrap;
@@ -153,6 +156,7 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
     &.type2{
         justify-content: flex-end;
     }
+    &.mtype2{margin-top:64px;}
     &.gap_type2{gap:16px;}
     & + .paging_wrap{margin-top:15px;}
 }
