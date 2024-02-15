@@ -14,7 +14,7 @@
 	<script src="./assets/js/swiper.min.js"></script>
 	<script src="./assets/js/ui.js"></script>
 	<script src="./assets/js/main.js"></script>
-	<title>레이아웃 01 | 메인비즈</title>
+	<title>메인비즈 인증 교육 · 코칭 신청 | 메인비즈</title>
 </head>
 
 <body class="front_body">
@@ -258,8 +258,175 @@
 				</div>
 			</div>
 		</section>
+		<!-- popup -->
+		<div class="popup_wrap" id="eduFormPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item size2">
+				<div class="popup_title_row">
+					<h3 class="popup_title">메인비즈 인증희망기업 교육 신청서</h3>
+				</div>
+				<div class="popup_contents_row">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="popup_btn_row type2">
+					<!-- close_trigger class 있을 시 닫기 -->
+					<a href="#" class="btn_box liquid close_trigger"><span class="btn_box_text">저장</span></a>
+					<a href="#" class="btn_box liquid type2 close_trigger"><i class="ico reset"></i><span class="btn_box_text">초기화</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="eduFormEndPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item size2">
+				<div class="popup_title_row">
+					<h3 class="popup_title">메인비즈 인증희망기업 교육 신청서</h3>
+				</div>
+				<div class="popup_contents_row">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="popup_btn_row type2">
+					<!-- close_trigger class 있을 시 닫기 -->
+					<a href="#" class="btn_box liquid close_trigger"><span class="btn_box_text">닫기</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="eduForm02Popup">
+			<div class="bg_dim"></div>
+			<div class="popup_item size2">
+				<div class="popup_title_row">
+					<h3 class="popup_title">현장방문 맞춤코칭 신청서</h3>
+				</div>
+				<div class="popup_contents_row">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="popup_btn_row type2">
+					<!-- close_trigger class 있을 시 닫기 -->
+					<a href="#" class="btn_box liquid close_trigger"><span class="btn_box_text">저장</span></a>
+					<a href="#" class="btn_box liquid type2 close_trigger"><i class="ico reset"></i><span class="btn_box_text">초기화</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+			</div>
+		</div>
+		<div class="popup_wrap" id="eduForm02EndPopup">
+			<div class="bg_dim"></div>
+			<div class="popup_item size2">
+				<div class="popup_title_row">
+					<h3 class="popup_title">현장방문 맞춤코칭 신청서</h3>
+				</div>
+				<div class="popup_contents_row">
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.<br>
+					내용이 들어갑니다.
+				</div>
+				<div class="popup_btn_row type2">
+					<!-- close_trigger class 있을 시 닫기 -->
+					<a href="#" class="btn_box liquid close_trigger"><span class="btn_box_text">닫기</span></a>
+				</div>
+				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
+			</div>
+		</div>
+		<!-- // popup -->
+		<script>
+
+		</script>
 		<script>
 			menuRock("[name='gnb_customer']");
+			document.addEventListener("DOMContentLoaded", function() {
+				// 인스턴스 선언
+				let eduFormPopup = new DesignPopup({
+					selector: "#eduFormPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {}
+				});
+				let eduFormEndPopup = new DesignPopup({
+					selector: "#eduFormEndPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {}
+				});
+				let eduForm02Popup = new DesignPopup({
+					selector: "#eduForm02Popup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {}
+				});
+				let eduForm02EndPopup = new DesignPopup({
+					selector: "#eduForm02EndPopup",
+					beforeCallback() {
+
+					},
+					callback() {
+
+					},
+					closeCallback() {}
+				});
+
+				// 퍼블확인용
+				let url = window.location.href.split('?')[1];
+				let url_2 = url !== undefined ? url.split('#')[0] : null;
+				if (url_2 === "form01") {
+					eduFormPopup.popupShow(); // show
+				} else if (url_2 === "form01_end") {
+					eduFormEndPopup.popupShow(); // show
+				} else if (url_2 === "form02") {
+					eduForm02Popup.popupShow(); // show
+				} else if (url_2 === "form02_end") {
+					eduForm02EndPopup.popupShow(); // show
+				}
+			});
 		</script>
 		<footer class="footer_wrap">
 			<div class="footer_sub_row">
