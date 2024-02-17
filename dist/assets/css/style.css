@@ -2260,7 +2260,7 @@ button.swiper-pagination-bullet {
 
 .ui-datepicker {
   width: 280px;
-  z-index: 10000 !important;
+  z-index: 100000 !important;
   display: none;
 }
 
@@ -3945,6 +3945,9 @@ input.props_form:checked {
 .btn_bottom_wrap.type2 {
     gap: 10px;
   }
+  .btn_box_group.mtype2 {
+    margin-top: 30px;
+  }
 }
 @media (max-width: 767px) {
   .btn_bottom_wrap {
@@ -3967,10 +3970,14 @@ input.props_form:checked {
     border-radius: 8px;
     padding: 0 20px;
   }
+  .btn_box.skin2 {
+    min-height: 48px;
+    min-width: 140px;
+  }
   .btn_box.skin2 .btn_box_text {
     font-size: 16px;
   }
-  .btn_box.size2 {
+  .btn_box.size3 {
     min-height: 48px;
     min-width: 140px;
   }
@@ -4225,7 +4232,12 @@ input.props_form:checked {
   line-height: 1;
   font-weight: 700;
 }
-.boxtab_list_wrap.type2 .boxtab_text { /* position:relative;top:2px; */ }
+.boxtab_list_wrap.skin2 .boxtab_item:after {
+  background-image: url("../images/ico_tab_pointer.png");
+}
+.boxtab_list_wrap.skin2 .boxtab_item.active {
+  background: #0077C0;
+}
 
 .boxtab_list {
   display: flex;
@@ -7484,7 +7496,6 @@ input.input_global_search::input-placeholder {
   top: -2px;
   margin-left: 12px;
 }
-
 .view_flag {
   display: inline-block;
   vertical-align: middle;
@@ -7627,7 +7638,6 @@ input.input_global_search::input-placeholder {
   flex: 1;
   padding-left: 28px;
 }
-
 .neighbor_data_key {
   display: inline-block;
   color: #999999;
@@ -8687,7 +8697,6 @@ td.nodata_td {
 .grid_form_table ::input-placeholder {
   color: #bbb;
 }
-
 .call_inline_box {
   display: inline-flex;
   vertical-align: middle;
@@ -11268,6 +11277,11 @@ li.nodata_li {
   }
 }
 /* // design page */
+/* flag */
+/* gallery list */
+/* // gallery list */
+/* form */
+/* // form */
 .guide_contents_item {
   margin-bottom: 120px;
 }

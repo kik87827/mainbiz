@@ -266,21 +266,264 @@
 					<h3 class="popup_title">메인비즈 인증희망기업 교육 신청서</h3>
 				</div>
 				<div class="popup_contents_row">
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.
+					<!-- popup form -->
+					<div class="grid_form_table pc_form_table">
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_item">
+									<div class="grid_form_key">
+										<label for="edu_form_01" class="grid_form_label">일정 및 장소</label>
+									</div>
+									<div class="grid_form_value">
+										<select class="form_select full current_placeholder skin2" id="edu_form_01" required title="일정 및 장소 선택">
+											<option value="">선택하세요</option>
+											<option value="1" selected>2014.12.12 한국경영혁신중소기업협회</option>
+											<option value="2">2014.12.13 한국경영혁신중소기업협회</option>
+											<option value="3">2014.12.14 한국경영혁신중소기업협회</option>
+											<option value="4">2014.12.15 한국경영혁신중소기업협회</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_item">
+									<div class="grid_form_key">
+										<label for="edu_form_02" class="grid_form_label">업체명</label>
+										<p class="form_label_copy">회원가입 시 자동으로 반영 됩니다.</p>
+									</div>
+									<div class="grid_form_value">
+										<input type="text" class="form_input size2" id="edu_form_02">
+									</div>
+								</div>
+							</div>
+							<div class="grid_form_cols">
+								<div class="grid_form_item">
+									<div class="grid_form_key">
+										<label for="edu_form_03" class="grid_form_label">사업자번호</label>
+										<p class="form_label_copy">회원가입 시 자동으로 반영 됩니다.</p>
+									</div>
+									<div class="grid_form_value">
+										<input type="text" class="form_input size2" id="edu_form_03">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_item">
+									<div class="grid_form_key">
+										<label for="edu_form_04" class="grid_form_label">업종</label>
+									</div>
+									<div class="grid_form_value">
+										<select class="form_select full current_placeholder skin2" id="edu_form_04" required title="업종 선택">
+											<option value="">업종 선택</option>
+											<option value="1">2014.12.12 한국경영혁신중소기업협회</option>
+											<option value="2">2014.12.13 한국경영혁신중소기업협회</option>
+											<option value="3">2014.12.14 한국경영혁신중소기업협회</option>
+											<option value="4">2014.12.15 한국경영혁신중소기업협회</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- // popup form -->
+					<!--  -->
+					<div class="keyform_container">
+						<div class="keyform_control_wrap">
+							<button class="btn_keyform_box">
+								<div class="btn_keyform_box_inner">
+									<span class="keyform_main_text">참석 인원 추가</span>
+									<span class="keyform_main_current">현재 2명</span>
+								</div>
+							</button>
+						</div>
+						<div class="keyform_toggle_wrap">
+							<div class="keyform_toggle_item">
+								<button class="btn_keyform_bar">
+									<i class="ico_keyform"></i>
+									<span class="btn_keyform_bar_text">참석자 1</span>
+									<span class="hdtext">닫힘</span>
+								</button>
+								<div class="keyform_content_wrap">
+									<div class="grid_form_table">
+										<div class="grid_form_tr">
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf01_01" class="grid_form_label">성함</label>
+													</div>
+													<div class="grid_form_value">
+														<input type="text" class="form_input size2" id="kf01_01" value="김동욱">
+													</div>
+												</div>
+											</div>
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf01_02" class="grid_form_label">부서 / 직위</label>
+													</div>
+													<div class="grid_form_value">
+														<input type="text" class="form_input size2" id="kf01_02" value="디자인실 / 과장">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="grid_form_tr">
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf01_03" class="grid_form_label">연락처</label>
+														<p class="form_label_copy">휴대폰 번호로 입력해 주세요.</p>
+													</div>
+													<div class="grid_form_value">
+														<div class="inline_form_wrap type2">
+															<div class="inline_form_cols">
+																<select class="form_select current_placeholder" required id="kf01_03" title="연락처 앞자리 선택">
+																	<option value="">선택</option>
+																	<option value="1">010</option>
+																	<option value="2">017</option>
+																</select>
+															</div>
+															<div class="inline_form_cols else_cols">
+																<span class="inline_else_text">-</span>
+															</div>
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="연락처 가운데자리 입력">
+															</div>
+															<div class="inline_form_cols else_cols">
+																<span class="inline_else_text">-</span>
+															</div>
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="연락처 뒷자리 입력">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="grid_form_tr">
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf01_04" class="grid_form_label">이메일</label>
+													</div>
+													<div class="grid_form_value">
+														<div class="inline_form_wrap type2">
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="이메일 앞자리 입력" id="kf01_04">
+															</div>
+															<div class="inline_form_cols else_cols">
+																<span class="inline_else_text">@</span>
+															</div>
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="이메일 뒷자리 입력">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="keyform_toggle_item">
+								<button class="btn_keyform_bar">
+									<i class="ico_keyform"></i>
+									<span class="btn_keyform_bar_text">참석자 2</span>
+									<span class="hdtext">닫힘</span>
+								</button>
+								<div class="keyform_content_wrap">
+									<div class="grid_form_table">
+										<div class="grid_form_tr">
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf02_01" class="grid_form_label">성함</label>
+													</div>
+													<div class="grid_form_value">
+														<input type="text" class="form_input size2" id="kf02_01" value="김동욱">
+													</div>
+												</div>
+											</div>
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf02_02" class="grid_form_label">부서 / 직위</label>
+													</div>
+													<div class="grid_form_value">
+														<input type="text" class="form_input size2" id="kf02_02" value="디자인실 / 과장">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="grid_form_tr">
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf02_03" class="grid_form_label">연락처</label>
+														<p class="form_label_copy">휴대폰 번호로 입력해 주세요.</p>
+													</div>
+													<div class="grid_form_value">
+														<div class="inline_form_wrap type2">
+															<div class="inline_form_cols">
+																<select class="form_select current_placeholder" required id="kf02_03" title="연락처 앞자리 선택">
+																	<option value="">선택</option>
+																	<option value="1">010</option>
+																	<option value="2">017</option>
+																</select>
+															</div>
+															<div class="inline_form_cols else_cols">
+																<span class="inline_else_text">-</span>
+															</div>
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="연락처 가운데자리 입력">
+															</div>
+															<div class="inline_form_cols else_cols">
+																<span class="inline_else_text">-</span>
+															</div>
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="연락처 뒷자리 입력">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="grid_form_tr">
+											<div class="grid_form_cols">
+												<div class="grid_form_item">
+													<div class="grid_form_key">
+														<label for="kf02_04" class="grid_form_label">이메일</label>
+													</div>
+													<div class="grid_form_value">
+														<div class="inline_form_wrap type2">
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="이메일 앞자리 입력" id="kf02_04">
+															</div>
+															<div class="inline_form_cols else_cols">
+																<span class="inline_else_text">@</span>
+															</div>
+															<div class="inline_form_cols">
+																<input type="text" class="form_input size2" title="이메일 뒷자리 입력">
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- //  -->
 				</div>
 				<div class="popup_btn_row type2">
 					<!-- close_trigger class 있을 시 닫기 -->
-					<a href="#" class="btn_box liquid close_trigger"><span class="btn_box_text">저장</span></a>
+					<a href="#" class="btn_box liquid close_trigger"><span class="btn_box_text">신청하기</span></a>
 					<a href="#" class="btn_box liquid type2 close_trigger"><i class="ico reset"></i><span class="btn_box_text">초기화</span></a>
 				</div>
 				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
@@ -293,17 +536,15 @@
 					<h3 class="popup_title">메인비즈 인증희망기업 교육 신청서</h3>
 				</div>
 				<div class="popup_contents_row">
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.
+					<!--  -->
+					<div class="inform_copy_group">
+						<p class="inform_main_copy">메인비즈 인증희망기업 교육 신청이 <br>완료되었습니다.</p>
+					</div>
+					<div class="inform_note_box">
+						<p class="inform_note_para primary">교육 관련 문의 : 메인비즈협회 인증사업팀</p>
+						<p class="inform_note_para">02-2230-2198 / 2181</p>
+					</div>
+					<!-- // -->
 				</div>
 				<div class="popup_btn_row type2">
 					<!-- close_trigger class 있을 시 닫기 -->
@@ -318,18 +559,105 @@
 				<div class="popup_title_row">
 					<h3 class="popup_title">현장방문 맞춤코칭 신청서</h3>
 				</div>
-				<div class="popup_contents_row">
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.
+				<div class="popup_contents_row" id="eduform_contents">
+					<div class="notify_note_box">
+						<p class="notify_note_para">
+							<i class="ico_notify"></i>
+							<span class="notify_note_text">인증기업이거나 갱신대상기업은 신청이 제외 됩니다.</span>
+						</p>
+					</div>
+					<div class="grid_form_table pc_form_table">
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_01" class="grid_form_label">업체명</label>
+								</div>
+								<div class="grid_form_value">
+									<input type="text" class="form_input size2" id="visit_form_01" value="세종컴퍼니">
+								</div>
+							</div>
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_02" class="grid_form_label">사업자번호</label>
+								</div>
+								<div class="grid_form_value">
+									<input type="text" class="form_input size2" id="visit_form_02" value="544-81-03087">
+								</div>
+							</div>
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_03" class="grid_form_label">업종</label>
+								</div>
+								<div class="grid_form_value">
+									<select class="form_select" required id="visit_form_03" title="업종 선택">
+										<option value="">업종 선택</option>
+										<option value="1">전문직</option>
+										<option value="2">교육직</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_04" class="grid_form_label">주소(한글)</label>
+									<span class="form_flag">필수</span>
+									<p class="form_label_copy">반드시 사업자등록 상의 (도로명)주소로 입력해주세요.</p>
+								</div>
+								<div class="grid_form_value">
+									<div class="inline_form_wrap break_type">
+										<div class="inline_form_cols define_short swid2">
+											<div class="inform_group">
+												<input type="text" class="form_input" id="visit_form_04" value="03111">
+												<a href="javascript:;" class="btn_inform_control ptype3" title="새창">도로명 검색</a>
+											</div>
+										</div>
+										<div class="inline_form_cols">
+											<input type="text" class="form_input size2" value="서울 종로구 종로 413">
+										</div>
+									</div>
+									<div class="form_inner_block">
+										<input type="text" class="form_input size2" value="208호, 308호(숭인동, 동보빌딩)">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_04" class="grid_form_label">전년도 매출액</label>
+								</div>
+								<div class="grid_form_value">
+									<div class="single_each_form">
+										<input type="text" class="form_each_input" value="8,000,000,0000" id="visit_form_04">
+										<span class="form_each_unit">원</span>
+									</div>
+								</div>
+							</div>
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_05" class="grid_form_label">상시 근로자수</label>
+								</div>
+								<div class="grid_form_value">
+									<div class="single_each_form">
+										<input type="text" class="form_each_input" value="8" id="visit_form_05">
+										<span class="form_each_unit">원</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="grid_form_tr">
+							<div class="grid_form_cols">
+								<div class="grid_form_key">
+									<label for="visit_form_06" class="grid_form_label">현장방문 맞춤 코칭 희망일정</label>
+									<p class="form_label_copy">일정은 변동될수 있습니다.</p>
+								</div>
+								<div class="grid_form_value">
+									<input type="text" class="form_input size2 calendar_type" id="visit_form_06">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="popup_btn_row type2">
 					<!-- close_trigger class 있을 시 닫기 -->
@@ -339,6 +667,7 @@
 				<a href="javascript:;" class="btn_popup_close"><span class="hdtext">팝업 닫기</span></a>
 			</div>
 		</div>
+
 		<div class="popup_wrap" id="eduForm02EndPopup">
 			<div class="bg_dim"></div>
 			<div class="popup_item size2">
@@ -346,17 +675,15 @@
 					<h3 class="popup_title">현장방문 맞춤코칭 신청서</h3>
 				</div>
 				<div class="popup_contents_row">
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.<br>
-					내용이 들어갑니다.
+					<!--  -->
+					<div class="inform_copy_group">
+						<p class="inform_main_copy">현장방문 맞춤코칭 <br>신청이 완료되었습니다.</p>
+					</div>
+					<div class="inform_note_box">
+						<p class="inform_note_para primary">코칭관련 문의 : 메인비즈협회 인증사업팀</p>
+						<p class="inform_note_para">02-2230-2198 / 2181</p>
+					</div>
+					<!-- // -->
 				</div>
 				<div class="popup_btn_row type2">
 					<!-- close_trigger class 있을 시 닫기 -->

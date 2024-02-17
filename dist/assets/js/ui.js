@@ -662,17 +662,20 @@ function toggleItemFunc(option) {
 
 function datePicker() {
   var $datepicker = $(".calendar_type");
+  var $popup_contents_row = $(".popup_contents_row");
+  // var $datepickerDiv = $(".calendar_render");
   let touchstart = "ontouchstart" in window;
+  let calendar_option = {
+    monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
+    dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
+    changeMonth: true,
+    changeYear: true,
+    dateFormat: 'yy.mm.dd'
+  }
   if ($datepicker.length) {
     $datepicker.each(function() {
       var $dateThis = $(this);
-      $(this).datepicker({
-        monthNamesShort: ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"],
-        dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"],
-        changeMonth: true,
-        changeYear: true,
-        dateFormat: 'yy.mm.dd'
-      });
+      $dateThis.datepicker(calendar_option);
     });
     var $windowWidth = 0;
     $(window).on("resize", function() {
@@ -682,7 +685,17 @@ function datePicker() {
       $datepicker.datepicker("hide");
       $windowWidth = $(window).width();
     });
+    $popup_contents_row.on("scroll", () => {
+      $datepicker.datepicker("hide");
+    });
+    $("body").on("scroll", () => {
+      $datepicker.datepicker("hide");
+    });
   }
+  /* if($datepickerDiv.length){
+		$datepickerDiv.datepicker(calendar_option);
+    //setTabControl($datepickerDiv);
+	} */
 }
 
 

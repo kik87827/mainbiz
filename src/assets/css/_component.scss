@@ -177,6 +177,11 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
     .btn_bottom_wrap{gap:15px;
         &.type2{gap:10px;}
     }
+    .btn_box_group{
+        &.mtype2{
+            margin-top:30px;
+        }
+    }
 }
 @media (max-width:$mobile){
     .btn_bottom_wrap{gap:10px;margin-top:30px;
@@ -187,8 +192,9 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
     .btn_box{min-width:100px;min-height:45px;border-radius:8px;padding:0 20px;
         &.skin2{
             .btn_box_text{font-size:16px;}
+            min-height:48px; min-width:140px; 
         }
-        &.size2{
+        &.size3{
             min-height:48px; min-width:140px; 
         }
     }
@@ -315,7 +321,14 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
                 .boxtab_text{color:#fff;line-height:1;font-weight:700;}
             }
         }
-        .boxtab_text{/* position:relative;top:2px; */}
+    }
+    &.skin2{
+        .boxtab_item{
+            &:after{background-image:url("../images/ico_tab_pointer.png");}
+            &.active{
+                background:$primary; 
+            }
+        }
     }
 }
 .boxtab_list{
