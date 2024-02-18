@@ -708,7 +708,10 @@
 					callback() {
 
 					},
-					closeCallback() {}
+					closeCallback() {
+
+						document.querySelector("#props_dban_01").focus();
+					}
 				});
 				let eduFormEndPopup = new DesignPopup({
 					selector: "#eduFormEndPopup",
@@ -728,7 +731,10 @@
 					callback() {
 
 					},
-					closeCallback() {}
+					closeCallback() {
+
+						document.querySelector("#props_dban_02").focus();
+					}
 				});
 				let eduForm02EndPopup = new DesignPopup({
 					selector: "#eduForm02EndPopup",
