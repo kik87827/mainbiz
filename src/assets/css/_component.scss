@@ -9,6 +9,9 @@ select.form_select{color:#333;cursor:pointer;font-size:18px; font-weight:500; bo
     &.size2{height:48px;border-radius:8px;font-size:16px;}
     &.size3{height:36px;border-radius:8px;line-height:36px;font-size:16px;font-weight:500;}
     &.full{width:100%;}
+    &.skin2{
+        background:#fff url("../images/ico_option.svg") no-repeat calc(100% - 20px) 50%/12px auto; padding-right:50px;
+    }
 }
 @media (max-width:$mobile){
     select.form_select{
@@ -31,6 +34,7 @@ input.form_input{
     &:disabled{
         background:#E9E9E9; color:#bbb; border-color:#bbb;
     }
+    &.align2{text-align:center;}
 }
 
 input.form_input_value{

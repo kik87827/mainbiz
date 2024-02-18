@@ -341,7 +341,7 @@
 							</button>
 						</div>
 						<div class="keyform_toggle_wrap">
-							<div class="keyform_toggle_item">
+							<div class="keyform_toggle_item active">
 								<button class="btn_keyform_bar">
 									<i class="ico_keyform"></i>
 									<span class="btn_keyform_bar_text">참석자 1</span>
@@ -589,7 +589,7 @@
 									<label for="visit_form_03" class="grid_form_label">업종</label>
 								</div>
 								<div class="grid_form_value">
-									<select class="form_select" required id="visit_form_03" title="업종 선택">
+									<select class="form_select skin2 full" required id="visit_form_03" title="업종 선택">
 										<option value="">업종 선택</option>
 										<option value="1">전문직</option>
 										<option value="2">교육직</option>
@@ -653,7 +653,7 @@
 									<p class="form_label_copy">일정은 변동될수 있습니다.</p>
 								</div>
 								<div class="grid_form_value">
-									<input type="text" class="form_input size2 calendar_type" id="visit_form_06">
+									<input type="text" class="form_input size2 calendar_type align2" id="visit_form_06">
 								</div>
 							</div>
 						</div>
@@ -740,6 +740,17 @@
 					},
 					closeCallback() {}
 				});
+
+				// event
+				document.querySelector("#props_dban_01").addEventListener("click", () => {
+					eduFormPopup.popupShow(); // show
+				});
+				document.querySelector("#props_dban_02").addEventListener("click", () => {
+					eduForm02Popup.popupShow(); // show
+				});
+
+				//popup action
+				toggleKeyFunc();
 
 				// 퍼블확인용
 				let url = window.location.href.split('?')[1];

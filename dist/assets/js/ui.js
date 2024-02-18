@@ -1397,3 +1397,12 @@ class DesignModal {
     }, 530);
   }
 }
+
+
+function toggleKeyFunc() {
+  addDynamicEventListener(document.body, 'click', '.btn_keyform_bar', function(e) {
+    const thisEvent = e.target;
+    const thisParent = thisEvent.closest(".keyform_toggle_item");
+    thisParent.classList.toggle("active");
+  });
+}
