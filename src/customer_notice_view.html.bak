@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "공지사항 | 경영혁신형 중소기업 인증시스템"
+    })
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_skip.html')
+        @@include('./include/_header.html')
+        <section class="middle_wrap" id="content">
+            <div class="sub_visual_wrap">
+                <div class="sub_visual_copy_group">
+                    <p class="sub_visual_secondary_copy">MAINBiz</p>
+                    <h2 class="sub_visual_primary_copy">고객지원</h2>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="breadcrumb_list_wrap">
+                    <ul class="breadcrumb_list">
+                        <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+                        <li><a href="#" class="breadcrumb_menu_item">고객지원</a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">공지사항</a></li>
+                    </ul>
+                </div>
+                <div class="sub_content_package">
+                    <h3 class="sub_title">공지사항</h3>
+                    <div class="sub_contents">
+                        <div class="view_package">
+                            <div class="view_title_row">
+                                <h4 class="view_title"><span class="view_flag">중요</span>메인비즈 협회 사칭 주의 요망</h4>
+                                <div class="view_util_wrap">
+                                    <ul class="view_util_list">
+                                        <li>
+                                            <span class="view_caption_obj">
+                                                <span class="view_caption_key hdtext">작성일</span>
+                                                <span class="view_caption_value">2023-11-27</span>
+                                             </span>
+                                        </li>
+                                        <li>
+                                            <span class="view_caption_obj type2">
+                                                <span class="view_caption_key">조회수</span>
+                                                <span class="view_caption_value">8</span>
+                                             </span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="view_contents">
+                                <!-- 데이터 연동 -->
+                                최근 메인비즈 협회 또는 유관기관을 사칭해 중소기업을 대상으로 기업정보 및 대표자 개인정보나 인증 컨설팅 제안을
+                                요구하는 사례가 빈번하게 발생하고 있습니다.<br>
+                                중소기업이 ‘메인비즈 확인서’ 취득을 목적으로 메인비즈넷에 기재한 정보는 「개인정보보호법」제30조제1항 및 동법 시행령 제31조제1항에 따라 '개인정보처리방침'에 의해 운영하고 있으며,
+                                협회가 운영하는 '현장방문 맞춤 코칭지원' 외에는 인증을 위한 컨설팅 사업을 운영하거나 별도 비용을 요구하지 않습니다. <br><br>
+
+                                메인비즈 기업께서는 피해가 발생하지 않도록 주의하시기 바랍니다.<br><br>
+
+                                또한 기업 임직원의 개인정보 요구가 있을 경우 즉시 메인비즈 협회로 문의해 주시기 바랍니다.<br><br>
+
+                                ※ 문의처 : 1666-5001 (메인비즈협회 고객지원센터)
+                                <!-- // 데이터 연동 -->
+                            </div>
+                            <div class="attach_file_wrap">
+                                <ul class="attach_file_list">
+                                    <li>
+                                        <div class="attach_file_item">
+                                            <a href="javascript:;" class="attach_file" title="다운로드">
+                                                <span class="attach_file_text">경영혁신형중소기업(2023년10월)_게시용.xlsx</span>
+                                            </a>
+                                            <span class="attach_file_sub">813.4KB</span>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="neighbor_data_wrap">
+                                <div class="neighbor_data_row">
+                                    <div class="neighbor_data_key_cols">
+                                        <span class="neighbor_data_key">다음글</span>
+                                    </div>
+                                    <div class="neighbor_data_link_cols">
+                                        <a href="#" class="neighbor_data_link">중소벤처24 메인비즈인증 확인서 발급 안내</a>
+                                    </div>
+                                </div>
+                                <div class="neighbor_data_row">
+                                    <div class="neighbor_data_key_cols">
+                                        <span class="neighbor_data_key type2">이전글</span>
+                                    </div>
+                                    <div class="neighbor_data_link_cols">
+                                        <a href="#" class="neighbor_data_link">2023년 메인비즈기업 정밀실태조사 관련 협조요청</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn_bottom_wrap">
+                                <a href="#" class="btn_box"><span class="btn_box_text">목록</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>menuRock("[name='gnb_customer']");</script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>

@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "신규 신청 | 경영혁신형 중소기업 인증시스템"
+    })
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_skip.html')
+        @@include('./include/_header.html')
+        <section class="middle_wrap" id="content">
+            <div class="sub_visual_wrap">
+                <div class="sub_visual_copy_group">
+                    <p class="sub_visual_secondary_copy">MAINBiz</p>
+                    <h2 class="sub_visual_primary_copy">인증 신청</h2>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="breadcrumb_list_wrap">
+                    <ul class="breadcrumb_list">
+                        <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+                        <li><a href="#" class="breadcrumb_menu_item">인증 신청</a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">신규 신청</a></li>
+                    </ul>
+                </div>
+                <div class="sub_content_package">
+                    <h3 class="sub_title">신규 신청</h3>
+                    <div class="sub_contents">
+                        <!-- step -->
+                        <div class="step_item_list_wrap">
+                            <ul class="step_item_list">
+                                <li class="end">
+                                    <div class="step_item">
+                                        <div class="step_index_row">
+                                            <span class="step_index_box">
+                                                <span class="step_index_text">1</span>
+                                                <span class="hdtext">단계 완료</span><!-- 접근성 마크업 -->
+                                            </span>
+                                        </div>
+                                        <div class="step_spec_row"><p class="step_spec_para">기업등록</p></div>
+                                    </div>
+                                </li>
+                                <li class="active">
+                                    <div class="step_item">
+                                        <div class="step_index_row">
+                                            <span class="step_index_box">
+                                                <span class="step_index_text">2</span>
+                                                <span class="hdtext">활성화</span><!-- 접근성 마크업 -->
+                                            </span>
+                                        </div>
+                                        <div class="step_spec_row"><p class="step_spec_para">자가진단</p></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="step_item">
+                                        <div class="step_index_row">
+                                            <span class="step_index_box">
+                                                <span class="step_index_text">3</span>
+                                            </span>
+                                        </div>
+                                        <div class="step_spec_row"><p class="step_spec_para">현장평가 신청</p></div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="step_item">
+                                        <div class="step_index_row">
+                                            <span class="step_index_box">
+                                                <span class="step_index_text">4</span>
+                                            </span>
+                                        </div>
+                                        <div class="step_spec_row"><p class="step_spec_para">평가진행</p></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // step -->
+                        <!-- tab -->
+                        <div class="boxtab_list_wrap">
+                            <ul class="boxtab_list">
+                                <li>
+                                    <a href="#" class="boxtab_item">
+                                        <span class="boxtab_text">경영혁신 인프라</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="boxtab_item">
+                                        <span class="boxtab_text">경영혁신 활동</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="boxtab_item active">
+                                        <span class="boxtab_text">경영혁신 성과</span>
+                                        <span class="hdtext">활성화</span><!-- 접근성 마크업 -->
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- // tab  -->
+                        <!-- tab contents -->
+                        <div class="tab_contents_wrap">
+                            <h4 class="hdtext">경영혁신 성과</h4><!-- 접근성 마크업 -->
+                            <div class="panel_template_wrap">
+                                <div class="panel_category_cols">
+                                    <!-- folder tree -->
+                                    <div class="folder_tree_wrap">
+                                        <ul class="folder_tree_list">
+                                            <li>
+                                                <div class="folder_tree_item">
+                                                    <a href="javascript:;" class="ft_bar">
+                                                        <i class="ico_folder"></i>
+                                                        <span class="ft_bar_text">비재무성과</span>
+                                                        <span class="hdtext control_hd">접기</span>
+                                                    </a>
+                                                    <ul class="folder_tree_list">
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">인적자원 성과</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">경영혁신 마일리지 점수</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">복리후생 비율</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">이직률</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">프로세스 성과</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">개발인력 집중도</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">자산 효율</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">고객 성과</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">고객만족도</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">핵심고객 매출액 증가율</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="folder_tree_item">
+                                                    <a href="javascript:;" class="ft_bar">
+                                                        <i class="ico_folder"></i>
+                                                        <span class="ft_bar_text">재무성과</span>
+                                                        <span class="hdtext control_hd">접기</span>
+                                                    </a>
+                                                    <ul class="folder_tree_list">
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">성장성</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">매출액 증가율</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">자산 증가율</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">수익성</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">총자산 영업이익률</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">부가가치율</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">안정성</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">총자산 영업이익률</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">부채비율</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div class="folder_tree_item">
+                                                                <a href="javascript:;" class="ft_bar">
+                                                                    <i class="ico_folder"></i>
+                                                                    <span class="ft_bar_text">활동성</span>
+                                                                    <span class="hdtext control_hd">접기</span>
+                                                                </a>
+                                                                <div class="ft_depth_wrap">
+                                                                    <ul class="ft_depth_list">
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">총자산회전율</a></li>
+                                                                        <li><a href="javascript:;" class="ft_depth_bar">운전자금 회전기간</a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>   
+                                    </div>
+                                    <!-- // folder tree -->
+                                </div>                                
+                                <div class="panel_contents_cols">
+                                    <div class="swiper_form_container_wrap">
+                                        <div class="swiper-container swiper_form_container">
+                                            <div class="swiper-wrapper">    
+                                                <div class="swiper-slide">
+                                                    <div class="swiper_slide_form">
+                                                        <div class="form_qus_box">
+                                                            <p class="form_qus_para">중소벤처기업부에서 시행하는 경영혁신 마일리지 제도에 참여하고 계시며,현재 누적 마일리지는 몇 점입니까?</p>
+                                                        </div>
+                                                        <div class="data_tail_table_wrap">
+                                                            <table class="data_tail_table">
+                                                                <caption><span class="hdtext">자가진단 질문 상세표</span></caption>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">지표정의</span></th>
+                                                                        <td>
+                                                                            <div class="data_tail_value">
+                                                                                <p class="data_tail_value_para">경영혁신 마일리지 제도(`14.7. 시행)에 참여하는 중소기업의 자발적인 경영혁신 활동에 대한 정량적 측정</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">요건</span></th>
+                                                                        <td>
+                                                                            <div class="data_tail_value">
+                                                                                <p class="data_tail_value_para">중소기업이 자체적으로 경영혁신 활동을 추진하거나 지정된 경영혁신 교육과정을 수료하고 누적된 마일리지로 중소기업이 정부 사업에 참여 시 가점 등으로 전환하여 활용함으로 경쟁력 강화에 대한 노력이 필요하다.</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">평가방법</span></th>
+                                                                        <td>
+                                                                            <ul class="data_tail_value_list">
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">경영혁신 마일리지 참여 여부 및 누적 마일리지 확인</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">경영혁신 마일리지넷(mileage.or.kr) 접속을 통한 마일리지 적립 내역 확인</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">메인비즈 인증사로 선정된 기업은 마일리지 점수 140점 자동 부여되므로 재선정(연장) 신청 기업은 최소 140점</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">착안사항</span></th>
+                                                                        <td>
+                                                                            <ul class="data_tail_value_list">
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">누적 마일리지를 통해 임직원이 경영혁신 교육을 받고 있는지 여부</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">혁신 활동을 수행하여 기업이 전사적으로 경영혁신을 실행하고 있는지 여부</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="liquid_formbox_group">
+                                                            <p class="liquid_formbox_copy">아래 항목 중 하나를 선택해주세요.</p>
+                                                            <ul class="liquid_formbox_list">
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form01" id="liquid_form01_01" class="liquid_form">
+                                                                        <label for="liquid_form01_01" class="liquid_formlabel">경영혁신 마일리지(누적) < 100점 미만 (미참여 기업 포함)</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form01" id="liquid_form01_02" class="liquid_form">
+                                                                        <label for="liquid_form01_02" class="liquid_formlabel">100점 ≤ 경영혁신 마일리지(누적) < 300점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form01" id="liquid_form01_03" class="liquid_form">
+                                                                        <label for="liquid_form01_03" class="liquid_formlabel">300점 ≤ 경영혁신 마일리지(누적) < 400점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form01" id="liquid_form01_04" class="liquid_form">
+                                                                        <label for="liquid_form01_04" class="liquid_formlabel">400점 ≤ 경영혁신 마일리지(누적) < 500점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form01" id="liquid_form01_05" class="liquid_form">
+                                                                        <label for="liquid_form01_05" class="liquid_formlabel">누적 마일리지 500점 이상 (정부 사업 참여시 가점으로 활용 가능)</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper_slide_form">
+                                                        <div class="form_qus_box">
+                                                            <p class="form_qus_para">중소벤처기업부에서 시행하는 경영혁신 마일리지 제도에 참여하고 계시며,현재 누적 마일리지는 몇 점입니까?</p>
+                                                        </div>
+                                                        <div class="data_tail_table_wrap">
+                                                            <table class="data_tail_table">
+                                                                <caption><span class="hdtext">자가진단 질문 상세표</span></caption>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">지표정의 02</span></th>
+                                                                        <td>
+                                                                            <div class="data_tail_value">
+                                                                                <p class="data_tail_value_para">경영혁신 마일리지 제도(`14.7. 시행)에 참여하는 중소기업의 자발적인 경영혁신 활동에 대한 정량적 측정</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">요건</span></th>
+                                                                        <td>
+                                                                            <div class="data_tail_value">
+                                                                                <p class="data_tail_value_para">중소기업이 자체적으로 경영혁신 활동을 추진하거나 지정된 경영혁신 교육과정을 수료하고 누적된 마일리지로 중소기업이 정부 사업에 참여 시 가점 등으로 전환하여 활용함으로 경쟁력 강화에 대한 노력이 필요하다.</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">평가방법</span></th>
+                                                                        <td>
+                                                                            <ul class="data_tail_value_list">
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">경영혁신 마일리지 참여 여부 및 누적 마일리지 확인</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">경영혁신 마일리지넷(mileage.or.kr) 접속을 통한 마일리지 적립 내역 확인</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">메인비즈 인증사로 선정된 기업은 마일리지 점수 140점 자동 부여되므로 재선정(연장) 신청 기업은 최소 140점</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">착안사항</span></th>
+                                                                        <td>
+                                                                            <ul class="data_tail_value_list">
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">누적 마일리지를 통해 임직원이 경영혁신 교육을 받고 있는지 여부</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">혁신 활동을 수행하여 기업이 전사적으로 경영혁신을 실행하고 있는지 여부</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="liquid_formbox_group">
+                                                            <p class="liquid_formbox_copy">아래 항목 중 하나를 선택해주세요.</p>
+                                                            <ul class="liquid_formbox_list">
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form02" id="liquid_form02_01" class="liquid_form">
+                                                                        <label for="liquid_form02_01" class="liquid_formlabel">경영혁신 마일리지(누적) < 100점 미만 (미참여 기업 포함)</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form02" id="liquid_form02_02" class="liquid_form">
+                                                                        <label for="liquid_form02_02" class="liquid_formlabel">100점 ≤ 경영혁신 마일리지(누적) < 300점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form02" id="liquid_form02_03" class="liquid_form">
+                                                                        <label for="liquid_form02_03" class="liquid_formlabel">300점 ≤ 경영혁신 마일리지(누적) < 400점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form02" id="liquid_form02_04" class="liquid_form">
+                                                                        <label for="liquid_form02_04" class="liquid_formlabel">400점 ≤ 경영혁신 마일리지(누적) < 500점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form02" id="liquid_form02_05" class="liquid_form">
+                                                                        <label for="liquid_form02_05" class="liquid_formlabel">누적 마일리지 500점 이상 (정부 사업 참여시 가점으로 활용 가능)</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="swiper-slide">
+                                                    <div class="swiper_slide_form">
+                                                        <div class="form_qus_box">
+                                                            <p class="form_qus_para">중소벤처기업부에서 시행하는 경영혁신 마일리지 제도에 참여하고 계시며,현재 누적 마일리지는 몇 점입니까?</p>
+                                                        </div>
+                                                        <div class="data_tail_table_wrap">
+                                                            <table class="data_tail_table">
+                                                                <caption><span class="hdtext">자가진단 질문 상세표</span></caption>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">지표정의 03</span></th>
+                                                                        <td>
+                                                                            <div class="data_tail_value">
+                                                                                <p class="data_tail_value_para">경영혁신 마일리지 제도(`14.7. 시행)에 참여하는 중소기업의 자발적인 경영혁신 활동에 대한 정량적 측정</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">요건</span></th>
+                                                                        <td>
+                                                                            <div class="data_tail_value">
+                                                                                <p class="data_tail_value_para">중소기업이 자체적으로 경영혁신 활동을 추진하거나 지정된 경영혁신 교육과정을 수료하고 누적된 마일리지로 중소기업이 정부 사업에 참여 시 가점 등으로 전환하여 활용함으로 경쟁력 강화에 대한 노력이 필요하다.</p>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">평가방법</span></th>
+                                                                        <td>
+                                                                            <ul class="data_tail_value_list">
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">경영혁신 마일리지 참여 여부 및 누적 마일리지 확인</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">경영혁신 마일리지넷(mileage.or.kr) 접속을 통한 마일리지 적립 내역 확인</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">메인비즈 인증사로 선정된 기업은 마일리지 점수 140점 자동 부여되므로 재선정(연장) 신청 기업은 최소 140점</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th scope="row"><span class="data_tail_key">착안사항</span></th>
+                                                                        <td>
+                                                                            <ul class="data_tail_value_list">
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">누적 마일리지를 통해 임직원이 경영혁신 교육을 받고 있는지 여부</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <div class="data_tail_value">
+                                                                                        <i class="ico_tail"></i>
+                                                                                        <p class="data_tail_value_para">혁신 활동을 수행하여 기업이 전사적으로 경영혁신을 실행하고 있는지 여부</p>
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div class="liquid_formbox_group">
+                                                            <p class="liquid_formbox_copy">아래 항목 중 하나를 선택해주세요.</p>
+                                                            <ul class="liquid_formbox_list">
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form03" id="liquid_form03_01" class="liquid_form">
+                                                                        <label for="liquid_form03_01" class="liquid_formlabel">경영혁신 마일리지(누적) < 100점 미만 (미참여 기업 포함)</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form03" id="liquid_form03_02" class="liquid_form">
+                                                                        <label for="liquid_form03_02" class="liquid_formlabel">100점 ≤ 경영혁신 마일리지(누적) < 300점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form03" id="liquid_form03_03" class="liquid_form">
+                                                                        <label for="liquid_form03_03" class="liquid_formlabel">300점 ≤ 경영혁신 마일리지(누적) < 400점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form03" id="liquid_form03_04" class="liquid_form">
+                                                                        <label for="liquid_form03_04" class="liquid_formlabel">400점 ≤ 경영혁신 마일리지(누적) < 500점</label>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <div class="liquid_formbox">
+                                                                        <input type="radio" name="liquid_form03" id="liquid_form03_05" class="liquid_form">
+                                                                        <label for="liquid_form03_05" class="liquid_formlabel">누적 마일리지 500점 이상 (정부 사업 참여시 가점으로 활용 가능)</label>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper_form_control_wrap">
+                                            <div class="swiper_form_control_short_cols">
+                                                <button type="button" class="btn_box type2 swiper_form_control_prev"><span class="btn_box_text">이전</span></button>
+                                            </div>
+                                            <div class="swiper_form_control_long_cols">
+                                                <div class="swiper_form_fraction">
+                                                   
+                                                </div>
+                                            </div>
+                                            <div class="swiper_form_control_short_cols">
+                                                <button type="button" class="btn_box swiper_form_control_next"><span class="btn_box_text">다음</span></button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                
+                            </div>
+                        </div>
+                        <!-- // tab contents -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            menuRock("[name='gnb_app']");
+            
+            window.addEventListener("load",()=>{
+                folderTreeFunc({
+                    openText : '펼치기',
+                    closeText : '접기'
+                });
+                swiperForm({
+                    loadCallback(){
+                        console.log('init');
+                    },
+                    changeCallback(){
+                        console.log('slideChange');
+                    },
+                    selectText : '선택'
+                });
+            });
+        </script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>

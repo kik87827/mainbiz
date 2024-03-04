@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "인증현황 | 정보 마당 | 경영혁신형 중소기업 인증시스템"
+    })
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_skip.html')
+        @@include('./include/_header.html')
+        <section class="middle_wrap" id="content">
+            <div class="sub_visual_wrap">
+                <div class="sub_visual_copy_group">
+                    <p class="sub_visual_secondary_copy">MAINBiz</p>
+                    <h2 class="sub_visual_primary_copy">정보마당</h2>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="breadcrumb_list_wrap">
+                    <ul class="breadcrumb_list">
+                        <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+                        <li><a href="#" class="breadcrumb_menu_item">정보마당</a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">인증현황</a></li>
+                    </ul>
+                </div>
+                <div class="sub_content_package">
+                    <h3 class="sub_title">인증현황</h3>
+                    <!-- 20231221 3차 수정 - 내용 변경 -->
+                    <div class="sub_contents">
+                        <form>
+                            <div class="sort_item_wrap">
+                                <div class="sort_item_cols">
+                                    <select class="form_select" required title="지역 선택">
+                                        <option value="all">전국</option>
+                                        <option value="1">강원</option>
+                                        <option value="2">경기</option>
+                                        <option value="3">경남</option>
+                                        <option value="4">경북</option>
+                                        <option value="5">광주</option>
+                                        <option value="6">대구</option>
+                                        <option value="7">대전</option>
+                                        <option value="8">부산</option>
+                                        <option value="9">서울</option>
+                                        <option value="10">세종</option>
+                                        <option value="11">울산</option>
+                                        <option value="12">인천</option>
+                                        <option value="13">전남</option>
+                                        <option value="14">전북</option>
+                                        <option value="15">제주</option>
+                                        <option value="16">충남</option>
+                                        <option value="17">충북</option>
+                                    </select>
+                                    <select class="form_select" required title="평가지표 선택">
+                                        <option value="all">평가지표</option>
+                                        <option value="1">제조업</option>
+                                        <option value="2">도소매업</option>
+                                        <option value="3">건설업</option>
+                                        <option value="4">일반서비스업</option>
+                                        <option value="5">지식서비스업</option>
+                                    </select>
+                                    <select class="form_select" required title="종목 선택">
+                                        <option value="all">전체</option>
+                                        <option value="1">종목 1</option>
+                                        <option value="2">종목 2</option>
+                                    </select>
+                                </div>
+                                <div class="sort_item_cols long_type">
+                                    <div class="search_field_container">
+                                        <input type="text" class="form_input search_input" title="검색어 입력" placeholder="검색어를 입력해주세요">
+                                        <a href="#" class="btn_ico_search_submit"><span class="hdtext">검색</span></a>
+                                    </div>
+                                </div>
+                                <div class="sort_item_cols">
+                                    <select class="form_select" title="게시물 리스트 보기 선택">
+                                        <option>10개씩 보기</option>
+                                        <option>20개씩 보기</option>
+                                        <option>30개씩 보기</option>
+                                        <option>40개씩 보기</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="list_board_table_wrap respon_type">
+                            <!-- 20231220 4차 수정 - 항목 변경 -->
+                            <table class="list_board_table">
+                                <caption><span class="hdtext">인증 현황 리스트</span></caption>
+                                <colgroup>
+                                    <col style="width:10%;" class="mb_hidden">
+                                    <col style="width:14%;">
+                                    <col style="width:9%;">
+                                    <col style="width:16%;">
+                                    <col style="width:13%;">
+                                    <col />
+                                    <col style="width:16%;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="mb_hidden"><span class="list_th_text">번호</span></th>
+                                        <th scope="col"><span class="list_th_text">업체명</span></th>
+                                        <th scope="col"><span class="list_th_text">지역</span></th>
+                                        <th scope="col"><span class="list_th_text">대표자명</span></th>
+                                        <th scope="col"><span class="list_th_text">평가지표(업태)</span></th>
+                                        <th scope="col"><span class="list_th_text">종목</span></th>
+                                        <th scope="col"><span class="list_th_text">인증만료일</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="mb_hidden"><span class="list_td_number">22807</span></td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">업체명</span>
+                                                <span class="td_obj_text_value">(주)신안정보통신</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">지역</span>
+                                                <span class="td_obj_text_value">경기</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">대표자명</span>
+                                                <span class="td_obj_text_value">주을목 , 주기철</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">평가지표(업태)</span>
+                                                <span class="td_obj_text_value">건설업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">종목</span>
+                                                <span class="td_obj_text_value">그외 기타 비금속광물 광업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">인증만료일</span>
+                                                <span class="td_obj_text_value list_td_number">2027.02.01</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mb_hidden"><span class="list_td_number">22807</span></td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">업체명</span>
+                                                <span class="td_obj_text_value">주식회사 코루파마</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">지역</span>
+                                                <span class="td_obj_text_value">경기</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">대표자명</span>
+                                                <span class="td_obj_text_value">VERNIDUB ROMAN</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">평가지표(업태)</span>
+                                                <span class="td_obj_text_value">제조업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">종목</span>
+                                                <span class="td_obj_text_value">기타 육류 가공 및 저장처리업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">인증만료일</span>
+                                                <span class="td_obj_text_value list_td_number">2027.02.01</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mb_hidden"><span class="list_td_number">22807</span></td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">업체명</span>
+                                                <span class="td_obj_text_value">(주)신안정보통신</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">지역</span>
+                                                <span class="td_obj_text_value">경기</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">대표자명</span>
+                                                <span class="td_obj_text_value">주을목 , 주기철</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">평가지표(업태)</span>
+                                                <span class="td_obj_text_value">도소매업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">종목</span>
+                                                <span class="td_obj_text_value">수산동물 냉동품 제조업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">인증만료일</span>
+                                                <span class="td_obj_text_value list_td_number">2027.02.01</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mb_hidden"><span class="list_td_number">22807</span></td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">업체명</span>
+                                                <span class="td_obj_text_value">(주)신안정보통신</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">지역</span>
+                                                <span class="td_obj_text_value">경기</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">대표자명</span>
+                                                <span class="td_obj_text_value">주을목 , 주기철</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">평가지표(업태)</span>
+                                                <span class="td_obj_text_value">건설업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">종목</span>
+                                                <span class="td_obj_text_value">그외 기타 비금속광물 광업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">인증만료일</span>
+                                                <span class="td_obj_text_value list_td_number">2027.02.01</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mb_hidden"><span class="list_td_number">22807</span></td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">업체명</span>
+                                                <span class="td_obj_text_value">(주)신안정보통신</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">지역</span>
+                                                <span class="td_obj_text_value">경기</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">대표자명</span>
+                                                <span class="td_obj_text_value">주을목 , 주기철</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">평가지표(업태)</span>
+                                                <span class="td_obj_text_value">제조업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">종목</span>
+                                                <span class="td_obj_text_value">기타 육류 가공 및 저장처리업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">인증만료일</span>
+                                                <span class="td_obj_text_value list_td_number">2027.02.01</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="mb_hidden"><span class="list_td_number">22807</span></td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">업체명</span>
+                                                <span class="td_obj_text_value">(주)신안정보통신</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">지역</span>
+                                                <span class="td_obj_text_value">경기</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">대표자명</span>
+                                                <span class="td_obj_text_value">주을목 , 주기철</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">평가지표(업태)</span>
+                                                <span class="td_obj_text_value">도소매업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">종목</span>
+                                                <span class="td_obj_text_value">수산동물 냉동품 제조업</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="td_obj_text_group">
+                                                <span class="td_obj_text_key">인증만료일</span>
+                                                <span class="td_obj_text_value list_td_number">2027.02.01</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="nodata_tr">
+                                        <td class="nodata_td" colspan="7"><p class="nodata_para">데이터가 없습니다.</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- // 20231220 4차 수정 - 항목 변경 -->
+                        </div>
+                        <!-- paging -->
+                        <div class="paging_wrap">
+                            <a href="#none" class="paging_control first disabled"><span class="hdtext">처음 목록으로 이동</span></a>
+                            <a href="#none" class="paging_control prev"><span class="hdtext">이전 목록으로 이동</span></a>
+                            <div class="paging_number_group">
+                                <a href="#none" class="paging_number active">1</a>
+                                <a href="#none" class="paging_number">2</a>
+                                <a href="#none" class="paging_number">3</a>
+                                <a href="#none" class="paging_number">4</a>
+                                <a href="#none" class="paging_number">5</a>
+                            </div>
+                            <a href="#none" class="paging_control next"><span class="hdtext">다음 목록으로 이동</span></a>
+                            <a href="#none" class="paging_control last"><span class="hdtext">마지막 목록으로 이동</span></a>
+                        </div>
+                        <!-- // paging -->
+                    </div>
+                    <!-- // 20231221 3차 수정 - 내용 변경 -->
+                </div>
+            </div>
+        </section>
+        <script>menuRock("[name='gnb_data']");</script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>

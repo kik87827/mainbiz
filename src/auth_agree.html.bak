@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "회원가입 | 경영혁신형 중소기업 인증시스템"
+    })
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_skip.html')
+        @@include('./include/_header.html')
+        <section class="middle_wrap" id="content">
+            <div class="sub_visual_wrap">
+                <div class="sub_visual_copy_group">
+                    <p class="sub_visual_secondary_copy">MAINBiz</p>
+                    <h2 class="sub_visual_primary_copy">회원가입</h2>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="breadcrumb_list_wrap">
+                    <ul class="breadcrumb_list">
+                        <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">회원가입</a></li>
+                    </ul>
+                </div>
+                <div class="sub_content_package">
+                    <h3 class="sub_title">회원가입</h3>
+                    <div class="sub_contents">
+                        <div class="column_obj_item_wrap">
+                            <div class="column_obj_item">
+                                <div class="column_key">
+                                    <h4 class="column_obj_title">회원가입 이용약관</h4>
+                                    <span class="text_flag">필수</span>
+                                </div>
+                                <div class="column_value">
+                                    <div class="agree_terms_box" tabindex="0">
+                                        <div class="agree_terms_inner">
+                                            <!-- 20231220 변경 -->
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">제 1 장 총칙</p>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 1 조 (목적)</p>
+                                                    <div class="terms_tail_cont">
+                                                        본 약관은 (사)한국경영혁신중소기업협회(이하“협회”)가 운영 및 관리중인 메인비즈넷(www.mainbiz.go.kr) 에서 제공하는 메인비즈 인증 관련 서비스를 포함한 모든 서비스(이하 “서비스”)의 이용조건 및 절차, 이용자와 홈페이지의 권리, 의무, 책임사항과 기타 필요한 사항을 규정함을 목적으로 합니다.
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 2 조 (약관의 효력과 변경)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    귀하(사)가 본 약관 내용에 동의하는 경우, 서비스 제공 행위 및 귀하(사)의 서비스 사용 행위에 본 약관이 우선적으로 적용됩니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 홈페이지에 본 약관을 사전 고지 없이 변경할 수 있으며, 변경된 약관은 메인비즈넷 내에 공지하거나 이메일(E-Mail)을 통해 이용자에게 공지하며, 공지와 동시에 그 효력이 발생됩니다. 다만, 이용자의 권리 또는 의무에 중요한 규정의 변경은 최소한 7일전에 공시합니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 이 약관에 명시되지 않은 사항에 대해서는 관계법령 및 서비스 별 약관의 취지에 따라 적용할 수 있습니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 3 조 (용어의 정의)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="indent_text_para">본 약관에서 사용하는 용어의 정의는 다음과 같습니다.</p>
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자 : 본 약관에 따라 메인비즈넷에 가입하고 제공하는 서비스를 받는 자.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    가입 : 메인비즈넷에서 제공하는 양식에 해당 정보를 기입하고, 본 약관에 동의하여 서비스 이용계약을 완료시키는 행위
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    아이디 : 이용자 식별과 서비스 이용을 위하여 이용자가 등록한 사업자등록번호
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">4.</span>
+                                                                <div class="indent_text_group">
+                                                                    비밀번호 : 이용자와 아이디가 일치하는지를 확인하고 통신상의 자신의 비밀보호를 위하여 이용자 자신이 선정한 문자와 숫자의 조합
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">제 2 장 서비스 제공 및 이용</p>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 4 조 (이용계약의 성립 및 단위)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용계약은 이용자가 온라인으로 메인비즈넷에서 제공하는 양식에 해당 사항을 기록하여 가입을 완료하는 것으로 성립됩니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 다음 각 호에 해당하는 이용계약에 대하여는 가입을 취소할 수 있습니다.
+                                                                    <ul class="indent_text_list">
+                                                                        <li>
+                                                                            <span class="indent_bullet">1)</span>
+                                                                            <div class="indent_text_group">
+                                                                                다른 사람 및 기업의 명의를 사용하여 신청하였을 때
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">2)</span>
+                                                                            <div class="indent_text_group">
+                                                                                이용계약 신청서의 내용을 허위로 기재하였거나 신청하였을 때
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">3)</span>
+                                                                            <div class="indent_text_group">
+                                                                                다른 사람 및 기업의 메인비즈넷 서비스 이용을 방해하거나 그 정보를 도용하는 등의 행위를 하였을 때
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">4)</span>
+                                                                            <div class="indent_text_group">
+                                                                                법령과 본 약관이 금지하는 행위를 하는 경우
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">5)</span>
+                                                                            <div class="indent_text_group">
+                                                                                기타 ‘경영혁신형 중소기업 제도 운영규정’이 정한 신청요건이 미비 되었을 때
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 5 조 (이용자 정보 사용에 대한 동의)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자의 개인정보 및 신용정보는 공공기관의 개인정보보호에 관한 법률에 의해 보호됩니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈넷의 이용자 정보는 다음과 같이 사용, 관리, 보호됩니다.
+                                                                    <ul class="indent_text_list">
+                                                                        <li>
+                                                                            <span class="indent_bullet">1)</span>
+                                                                            <div class="indent_text_group">
+                                                                                개인정보의 사용 : 협회가 제공하는 서비스와 관련하여 수집된 이용자의 신상정보를 본인의 승낙 없이 제3자에게 누설, 배포하지 않습니다. 단, 전기통신기본법 등 법률의 규정에 의해 국가기관의 요구가 있는 경우, 범죄에 대한 수사상의 목적이 있거나 정보통신윤리위원회의 요청이 있는 경우 또는 기타 관계법령에서 정한 절차에 따른 요청이 있는 경우, 귀하(사)가 메인비즈넷에 제공한 개인정보를 스스로 공개한 경우에는 그러하지 않습니다.
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">2)</span>
+                                                                            <div class="indent_text_group">
+                                                                                개인정보 및 신용정보의 관리 : 귀하(사)는 개인 및 기업의 정보보호 및 관리를 위하여 서비스의 정보관리부분에서 수시로 귀하의 개인정보를 수정/삭제할 수 있습니다. 다만, 메인비즈 인증기업으로 확인 된 후에는, ‘메인비즈 인증운영규정’ 제13조(확인서의 재발급)에 따라 일부 정보는 총괄기관의 승인 후에 변경 할 수 있습니다.
+                                                                                <ul class="bullet_list dash gap_type2">
+                                                                                    <li>
+                                                                                        일부 정보 : 상호(기업명), 소재지(주소), 대표자명
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        관련 근거
+                                                                                    </li>
+                                                                                </ul>
+                                                                                <div class="terms_inner_box">
+                                                                                    <ul class="bullet_list dot">
+                                                                                        <li>경영혁신형 중소기업(Main-Biz) 제도 운영규정(개정 2022. 4. 1. 중소벤처기업부 고시 제2022-21호)</li>
+                                                                                    </ul>
+                                                                                    <div class="terms_depth_item_group">
+                                                                                        <div class="terms_depth_item">
+                                                                                            <p class="terms_depth_title">제13조(확인서의 재발급)</p>
+                                                                                            <ul class="indent_text_list">
+                                                                                                <li>
+                                                                                                    <span class="indent_bullet">①</span>
+                                                                                                    <div class="indent_text_group">
+                                                                                                        메인비즈로 지정된 기업 중 다음의 각 호에 해당하는 기업은 별지 제4호 서식에 따라 지방중소벤처기업청장에게 확인서를 재발급하여 줄 것을 신청할 수 있다.<br><개정 2022.4.1.>
+                                                                                                        <ul class="indent_text_list">
+                                                                                                            <li>
+                                                                                                                <span class="indent_bullet">1.</span>
+                                                                                                                <div class="indent_text_group">
+                                                                                                                    상호, 소재지 또는 대표자(개인사업자는 제외)가 변경되는 경우
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <span class="indent_bullet">2.</span>
+                                                                                                                <div class="indent_text_group">
+                                                                                                                    확인서의 분실·훼손 등의 경우
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                            <li>
+                                                                                                                <span class="indent_bullet">3.</span>
+                                                                                                                <div class="indent_text_group">
+                                                                                                                    개인기업의 법인전환, 인수·합병, 통합, 조직변경 등을 사유로 메인비즈 선정을 승계하고자 하는 경우
+                                                                                                                </div>
+                                                                                                            </li>
+                                                                                                        </ul>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <span class="indent_bullet">②</span>
+                                                                                                    <div class="indent_text_group">
+                                                                                                        지방중소벤처기업청장은 제1항에 따라 메인비즈 확인서를 재발급하여 줄 것을 신청 받은 경우, 신청인이 제출한 서류를 확인한 후 신청받은 날로부터 7일 이내에 확인서를 재발급하여야 한다.
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <span class="indent_bullet">③</span>
+                                                                                                    <div class="indent_text_group">
+                                                                                                        제2항에 따라 확인서를 재발급 할 경우 지방중소벤처기업청장은 확인서의 본문 아래 부분에 재발급 사유 및 재발급 일자를 명확하게 적어야 한다.<개정 2021.3.5.>
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                                <li>
+                                                                                                    <span class="indent_bullet">④</span>
+                                                                                                    <div class="indent_text_group">
+                                                                                                        재발급한 확인서의 유효기간은 종전 확인서의 유효기간으로 한다. 단, 합병의 경우에는 지분율이 높은 기업의 유효기간으로 한다.
+                                                                                                    </div>
+                                                                                                </li>
+                                                                                            </ul>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">3)</span>
+                                                                            <div class="indent_text_group">
+                                                                                개인 및 기업정보의 보호 : 타인에게 본인의 아이디와 비밀번호를 알려주어서는 안 되며, 작업 종료 시에는 반드시 로그아웃 해주시기 바랍니다.
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자가 본 약관에 따라 이용신청을 하는 것은, 메인비즈넷에서는 메인비즈 인증 등 관련 서비스를 제공하기 위해 요청한 양식에 기재된 귀하(사) 정보를 수집, 이용하는 것에 동의하는 것으로 간주됩니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 6 조 (사용자의 정보 보안)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자가 메인비즈넷 서비스 가입 절차를 완료하는 순간부터 귀하(사)는 입력한 정보의 비밀을 유지할 책임이 있으며, 이용자의 아이디와 비밀번호를 사용하여 발생하는 모든 결과에 대한 책임은 이용자에게 있습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    아이디와 비밀번호에 관한 모든 관리의 책임은 이용자에게 있으며, 이용자의 아이디나 비밀번호가 부정하게 사용되었다는 사실을 발견한 경우에는 즉시 메인비즈넷 홈페이지 및 운영기관인 협회에 신고하여야 합니다. 신고를 하지 않음으로 인한 모든 책임은 이용자에게 있습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자는 메인비즈넷 서비스의 사용 종료 시마다 정확히 접속을 종료해야 하며, 정확히 종료하지 아니함으로써 제3자가 귀하에 관한 정보를 이용하게 되는 등의 결과로 인해 발생하는 손해 및 손실에 대하여 메인비즈넷 및 운영기관은 책임을 부담하지 아니합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 7 조 (서비스의 중지)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 이용자가 본 약관의 내용에 위배되는 행동을 한 경우, 임의로 메인비즈넷 서비스 사용을 제한 및 중지할 수 있습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회가 메인비즈넷을 통제할 수 없는 사유로 인한 서비스중단의 경우(시스템관리자의 고의, 과실 없는 디스크장애, 시스템다운 등)에 사전통지가 불가능하며 타인(통신회사, 기간통신사업자 등)의 고의, 과실로 인한 시스템중단 등의 경우에는 통지하지 않습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    긴급한 시스템 점검, 증설 및 교체 등 부득이한 사유로 인하여 예고 없이 일시적으로 서비스를 중단할 수 있으며, 새로운 서비스로의 교체 등 당 협회 및 관할기관에서 적절하다고 판단하는 사유에 의하여 현재 제공되는 서비스를 완전히 중단할 수 있습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">4.</span>
+                                                                <div class="indent_text_group">
+                                                                    국가비상사태, 정전, 서비스 설비의 장애 또는 서비스 이용의 폭주 등으로 정상적인 서비스 제공이 불가능할 경우, 서비스의 전부 또는 일부를 제한하거나 중지할 수 있습니다. 다만 이 경우 그 사유 및 기간 등을 이용자에게 사전 또는 사후에 공지합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 8 조 (서비스의 변경 및 해지)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 귀하(사)가 메인비즈넷 서비스를 이용하여 기대하는 손익이나 서비스를 통하여 얻은 자료로 인한 손해에 관하여 책임을 지지 않으며, 이용자가 본 서비스에 게재한 정보, 자료, 사실의 신뢰도, 정확성 등 내용에 관하여는 책임을 지지 않습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 서비스 이용과 관련하여 이용자에게 발생한 손해 중 이용자의 고의, 과실에 의한 손해에 대하여 책임을 부담하지 아니합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 9 조 (게시물의 저작권)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    귀하(사)가 게시한 게시물의 내용에 대한 권리는 귀하(사)에게 있습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 게시된 내용을 사전 통지 없이 편집, 이동할 수 있는 권리를 보유하며, 게시판운영원칙에 따라 사전 통지 없이 삭제할 수 있습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    귀하(사)의 게시물이 타인의 저작권을 침해함으로써 발생하는 민, 형사상의 책임은 전적으로 귀하(사)가 부담하여야 합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">제 3 장 의무 및 책임</p>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 10 조 (협회의 메인비즈넷 관리 의무)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 이용자 개인 신상 정보를 본인의 승낙 없이 타인에게 누설, 배포하지 않습니다. 다만, 전기통신관련법령 등 관계법령에 의하여 관계 국가기관 등의 요구가 있는 경우에는 그러하지 아니합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 11 조 (이용자의 의무)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자는 당 사이트의 사전 승낙 없이 서비스를 이용하여 어떠한 영리행위도 할 수 없습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈넷 가입 시에 요구되는 정보는 정확하게 기입하여야 합니다. 또한 이미 제공된 귀하(사)에 대한 정보가 정확한 정보가 되도록 유지, 갱신하여야 하며, 이용자 자신의 아이디 및 비밀번호를 제3자가 이용하게 해서는 안 됩니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자는 당 사이트 서비스 이용과 관련하여 다음 각 호의 행위를 하여서는 안 됩니다.
+                                                                    <ul class="indent_text_list">
+                                                                        <li>
+                                                                            <span class="indent_bullet">1)</span>
+                                                                            <div class="indent_text_group">
+                                                                                다른 이용자의 비밀번호와 아이디를 도용하여 부정 사용하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">2)</span>
+                                                                            <div class="indent_text_group">
+                                                                                저속, 음란, 모욕적, 위협적이거나 타인의 사생활를 침해할 수 있는 내용을 전송, 게시, 게재, 전자우편 또는 기타의 방법으로 전송하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">3)</span>
+                                                                            <div class="indent_text_group">
+                                                                                서비스를 통하여 전송된 내용의 출처를 위장하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">4)</span>
+                                                                            <div class="indent_text_group">
+                                                                                법률, 계약에 의해 이용할 수 없는 내용을 게시, 게재, 전자우편 또는 기타의 방법으로 전송하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">5)</span>
+                                                                            <div class="indent_text_group">
+                                                                                타인의 특허, 상표, 영업비밀, 저작권, 기타 지적재산권을 침해하는 내용을 게시, 게재, 전자우편 또는 기타의 방법으로 전송하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">6)</span>
+                                                                            <div class="indent_text_group">
+                                                                                당 사이트의 승인을 받지 아니한 광고, 판촉물, 스팸메일, 행운의 편지, 피라미드 조직 기타 다른 형태의 권유를 게시, 게재, 전자우편 또는 기타의 방법으로 전송하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">7)</span>
+                                                                            <div class="indent_text_group">
+                                                                                다른 이용자의 개인정보를 수립 또는 저장하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">8)</span>
+                                                                            <div class="indent_text_group">
+                                                                                범죄행위를 목적으로 하거나 기타 범죄행위와 관련된 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">9)</span>
+                                                                            <div class="indent_text_group">
+                                                                                선량한 풍속, 기타 사회질서를 해하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">10)</span>
+                                                                            <div class="indent_text_group">
+                                                                                타인의 명예를 훼손하거나 모욕하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">11)</span>
+                                                                            <div class="indent_text_group">
+                                                                                타인의 지적재산권 등의 권리를 침해하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">12)</span>
+                                                                            <div class="indent_text_group">
+                                                                                해킹행위 또는 컴퓨터바이러스의 유포행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">13)</span>
+                                                                            <div class="indent_text_group">
+                                                                                타인의 의사에 반하여 광고성 정보 등 일정한 내용을 지속적으로 전송하는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">14)</span>
+                                                                            <div class="indent_text_group">
+                                                                                서비스의 안전적인 운영에 지장을 주거나 줄 우려가 있는 일체의 행위
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">15)</span>
+                                                                            <div class="indent_text_group">
+                                                                                당 사이트에 게시된 정보의 변경
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <span class="indent_bullet">16)</span>
+                                                                            <div class="indent_text_group">
+                                                                                기타 전기통신사업법 제53조 제1항과 전기통신사업법 시행령 16조(불온통신)에 위배되는 행위
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">제 4 장 기타</p>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 12 조 (양도금지)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    이용자는 서비스의 이용권한, 기타 이용계약 상 지위를 타인에게 양도, 증여할 수 없습니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 13 조 (손해배상)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 메인비즈넷에 무료로 제공되는 서비스와 관련하여 이용자에게 어떠한 손해가 발생하더라도 협회가 고의로 행한 범죄행위를 제외하고 이에 대하여 책임을 부담하지 아니합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 14 조 (면책조항)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    당 사이트는 천재지변, 전쟁 및 기타 이에 준하는 불가항력으로 인하여 서비스를 제공할 수 없는 경우에는 서비스 제공에 대한 책임이 면제됩니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2.</span>
+                                                                <div class="indent_text_group">
+                                                                    당 사이트는 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 발생한 손해에 대한 책임이 면제됩니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3.</span>
+                                                                <div class="indent_text_group">
+                                                                    당 사이트는 이용자의 컴퓨터 오류에 의해 손해가 발생한 경우, 또는 이용자가 신상정보 및 전자우편 주소를 부실하게 기재하여 손해가 발생한 경우 책임을 지지 않습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">4.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 이용자나 제3자에 의해 표출된 의견을 승인하거나 반대하거나 수정하지 않습니다. 메인비즈넷은 어떠한 경우라도 이용자가 서비스에 담긴 정보에 의존해 얻은 이득이나 입은 손해에 대해 책임이 없습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">5.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 메인비즈넷 이용자간 또는 이용자와 제3자간에 서비스를 매개로 하여 물품거래 혹은 금전적 거래 등과 관련하여 어떠한 책임도 부담하지 아니하고, 이용자가 서비스의 이용과 관련하여 기대하는 이익에 관하여 책임을 부담하지 않습니다.
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">6.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 메인비즈넷 서비스 이용과 관련하여 귀하(사)에게 발생한 손해 중 귀하(사)의 고의, 과실에 의한 손해에 대하여 책임을 부담하지 아니합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제 15 조 (재판관할)</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1.</span>
+                                                                <div class="indent_text_group">
+                                                                    협회는 메인비즈넷 이용자 간에 발생한 서비스 이용에 관한 분쟁에 대하여는 대한민국 법을 적용하며, 본 분쟁으로 인한 소는 대한민국의 법원에 제기합니다.
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">제 5 장 개인정보처리방침</p>
+                                                <div class="terms_emp_box">
+                                                    <p class="terms_emp_inner_para">중소벤처기업부가 취급하는 모든 개인정보는 관련법령에 근거하거나 정보주체의 동의에 의하여 수집·보유 및 처리되고 있습니다.</p>
+                                                    <p class="terms_emp_inner_para">중소벤처기업부는 개인정보보호법에 따라 이용자의 개인정보 보호 및 권익을 보호하고 개인정보와 관련한 이용자의 고충을 원활하게 처리할 수 있도록 다음과 같은 처리 방침을 두고 있습니다.</p>
+                                                    <p class="terms_emp_inner_para">특히, 개인정보를 처리하는 우리부 소관 홈페이지의 경우 『개인정보 보호법』제30조 제1항 및 동법『시행령』제31조 제1항의 규정에 의하여 해당 홈페이지에 별도의『개인정보처리방침』을 정하여 운영하고 있습니다.</p>
+                                                    <p class="terms_emp_inner_para">중소벤처기업부는 개인정보처리방침을 변경하는 경우에는 시행의 시기, 변경된 내용을 정보주체가 쉽게 확인 할 수 있도록 변경 전·후를 비교하여 공개하도록 할 예정입니다.</p>
+                                                </div>
+                                                <div class="terms_tail_block_group">
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">가.</span>
+                                                            <span class="terms_tail_block_text">개인정보의 처리목적, 개인정보의 처리 및 보유기간, 처리하는 개인정보의 항목</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <p class="terms_tail_para">개인정보보호 종합지원포털(www.privacy.go.kr) ▷ 개인정보민원 ▷ 개인정보의 열람 등 요구 ▷ 개인정보파일 목록 검색 ▷ 기관명에 “중소벤처기업부” 입력 후 조회(중소벤처기업부 개인정보 파일보기)</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">나.</span>
+                                                            <span class="terms_tail_block_text">개인정보의 제3자 제공</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <p class="terms_tail_para">중소벤처기업부는 원칙적으로 정보주체의 개인정보를 수집·이용 목적으로 명시한 범위 내에서 처리하며, 다음의 경우를 제외하고는 정보주체의 사전 동의 없이는 본래의 목적 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다.</p>
+                                                            <ul class="img_bullet_list">
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">정보주체로부터 별도의 동의를 받는 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">법률에 특별한 규정이 있는 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">특별한 규정이 있는 경우 정보주체 또는 법정대리인이 의사표시를 할 수 없는 상태에 있거나 주소불명 등으로 사전 동의를 받을 수 없는 경우로서 명백히 정보주체 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">통계작성 및 학술연구 등의 목적을 위하여 필요한 경우로서 특정 개인을 알아 볼 수 없는 형태로 개인정보를 제공하는 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">개인정보를 목적 외의 용도로 이용하거나 이를 제3자에게 제공하지 아니하면 다른 법률에서 정하는 소관 업무를 수행할 수 없는 경우로서 보호위원회의 심의·의결을 거친 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">보호위원회의 심의·의결을 거친 경우 조약, 그 밖의 국제협정의 이행을 위하여 외국정보 또는 국제기구에 제공하기 위하여 필요한 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">범죄의 수사와 공소의 제기 및 유지를 위하여 필요한 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">법원의 재판업무 수행을 위하여 필요한 경우 및 감호, 보호처분의 집행을 위하여 필요한 경우</div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        개인정보의 열람청구를 접수·처리하는 부서명
+                                                                        <div class="br_div"></div>
+                                                                        우리기관에서는 다음과 같이 개인정보 열람청구 접수·처리부서를 운영하고 있으므로 정보주체는「개인정보보호법」제35조에 따른 개인정보의 열람청구를 아래의 부서에 할 수 있습니다. (14세 미만 아동은 법정대리인의 동의를 통해 가능합니다)
+                                                                        <div class="br_div"></div>
+                                                                        
+                                                                        <p class="terms_emp_para">[개인정보 열람청구 접수부서 현황]</p>
+                                                                        <div class="guide_table_wrap">
+                                                                            <table class="guide_table">
+                                                                                <caption><span class="hdtext">개인정보 열람청구 접수부서 현황표</span></caption>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col"><span class="guide_thtext">접수·처리부서</span></th>
+                                                                                        <th scope="col"><span class="guide_thtext">담당자</span></th>
+                                                                                        <th scope="col"><span class="guide_thtext">연락처</span></th>
+                                                                                        <th scope="col"><span class="guide_thtext">이메일</span></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><span class="guide_tdtext">(수탁자) (사)한국경영혁신중소기업협회 <br>고객지원본부</span></td>
+                                                                                        <td><span class="guide_tdtext">박루디</span></td>
+                                                                                        <td><span class="guide_tdtext">02-2230-2132</span></td>
+                                                                                        <td><span class="guide_tdtext">park@mainbiz.or.kr</span></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">다.</span>
+                                                            <span class="terms_tail_block_text">개인정보 처리 위탁</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <ul class="img_bullet_list">
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        &lt;경영혁신 중소기업 종합정보망&gt;은 원활한 개인정보 업무처리를 위하여 다음과 같이 개인정보 처리업무를 위탁하고 있습니다.
+                                                                        <div class="br_div"></div>
+                                                                        <p class="terms_emp_para">[개인정보처리 위탁 현황]</p>
+                                                                        <div class="guide_table_wrap">
+                                                                            <table class="guide_table">
+                                                                                <caption><span class="hdtext">개인정보처리 위탁 현황표</span></caption>
+                                                                                <thead>
+                                                                                    <tr>
+                                                                                        <th scope="col" rowspan="2"><span class="guide_thtext">위탁하는 본청<br>부서/소속기관</span></th>
+                                                                                        <th scope="col" rowspan="2"><span class="guide_thtext">위탁하는 업무의 내용</span></th>
+                                                                                        <th scope="col" colspan="3"><span class="guide_thtext">수탁자</span></th>
+                                                                                        <th scope="col" rowspan="2"><span class="guide_thtext">관리현황<br>점검결과</span></th>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <th scope="col"><span class="guide_thtext">명칭</span></th>
+                                                                                        <th scope="col"><span class="guide_thtext">담당자</span></th>
+                                                                                        <th scope="col"><span class="guide_thtext">연락처</span></th>
+                                                                                    </tr>
+                                                                                </thead>
+                                                                                <tbody>
+                                                                                    <tr>
+                                                                                        <td><span class="guide_tdtext">중소벤처기업부 <br>기술혁신정책과</span></td>
+                                                                                        <td><span class="guide_tdtext">메인비즈넷 운영</span></td>
+                                                                                        <td><span class="guide_tdtext">(사)한국경영혁신<br>중소기업협회</span></td>
+                                                                                        <td><span class="guide_tdtext">박루디</span></td>
+                                                                                        <td><span class="guide_tdtext">02-2230-2132</span></td>
+                                                                                        <td><span class="guide_tdtext skin2">양호</span></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <ul class="terms_guide_tail_list">
+                                                                            <li>
+                                                                                1) 위탁처리 기관<br>
+                                                                                (사)한국경영혁신중소기업협회<br>
+                                                                                주소 : 서울시 종로구 종로 413, 3층 308호 (숭인동, 동보빌딩)<br>
+                                                                                전화 : 02-2230-2143<br>
+                                                                                근무시간 : (평일) 09:00 ~ 18:00
+                                                                            </li>
+                                                                            <li>
+                                                                                2) 위탁처리 수행업체<br>
+                                                                                주식회사 유큐브<br>
+                                                                                주소 : 서울 강남구 논현로 64길 18 경풍빌딩 3층(역삼동 788-26)<br>
+                                                                                전화 : 02-6925-0445<br>
+                                                                                근무시간 : (평일) 09:00 ~ 18:00
+                                                                            </li>
+                                                                            <li>
+                                                                                3) 위탁내용<br>
+                                                                                시스템 운영 및 유지보수, 데이터 추출 및 가공
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <경영혁신 중소기업 종합정보망>은 개인정보 보호 관련 법규의 준수, 개인정보에 관한 3자 제공 금지 및 책임부담 등을 명확히 규정하여 계약내용을 보관하고 있으며, 업체 변경 시 공지사항 및 개인정보 처리방침을 통해 고지하겠습니다.
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">라.</span>
+                                                            <span class="terms_tail_block_text">정보주체의 권리·의무 및 그 행사 방법</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <p class="terms_tail_para">정보주체는 다음과 같은 권리를 행사 할 수 있으며, 만14세 미만 아동의 법정대리인은 그 아동의 개인정보에 대한 열람, 정정·삭제, 처리정지를 요구할 수 있습니다.</p>
+                                                            <ul class="img_bullet_list">
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">개인정보 열람 요구</div>
+                                                                        <div class="text_block">
+                                                                            <ul class="indent_text_list">
+                                                                                <li>
+                                                                                    <span class="indent_bullet">1)</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        위탁처리 기관<br>중소벤처기업부에서 보유하고 있는 개인정보파일은「개인정보보호법」제35조(개인정보의 열람)에 따라 자신의 개인정보에 대한 열람을 요구할 수 있습니다. 다만, 개인정보 열람 요구는 법 제35조 5항에 의하여 다음과 같이 제한될 수 있습니다.
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="text_block">
+                                                                            <ul class="indent_text_list">
+                                                                                <li>
+                                                                                    <span class="indent_bullet">1.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        법률에 따라 열람이 금지되거나 제한되는 경우
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="indent_bullet">2.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        다른 사람의 생명·신체를 해할 우려가 있거나 다른 사람의 재산과 그 밖의 이익을 부당하게 침해할 우려가 있는 경우
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="indent_bullet">3.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        공공기관이 다음 각 목의 어느 하나에 해당하는 업무를 수행할 때 중대한 지장을 초래하는 경우
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                        <div class="text_block">
+                                                                            <ul class="indent_text_list">
+                                                                                <li>
+                                                                                    <span class="indent_bullet">가.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        조세의 부과·징수 또는 환급에 관한 업무
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="indent_bullet">나.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        「초·중등교육법」및「고등교육법」에 따른 각급 학교,「평생교육법」에 따른 평생교육시설, 그 밖의 다른 법률에 따라 설치 된 고등교육기관에서의 성적 평가 또는 입학자 선발에 관한 업무
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="indent_bullet">다.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        학력·기능 및 채용에 관한 시험, 자격 심사에 관한 업무
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="indent_bullet">라.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        보상금·급부금 산정 등에 대하여 진행 중인 평가 또는 판단에 관한 업무
+                                                                                    </div>
+                                                                                </li>
+                                                                                <li>
+                                                                                    <span class="indent_bullet">마.</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        다른 법률에 따라 진행 중인 감사 및 조사에 관한 업무
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">
+                                                                            개인정보 정정·삭제 요구
+                                                                        </div>
+                                                                        <div class="text_block">
+                                                                            <ul class="indent_text_list">
+                                                                                <li>
+                                                                                    <span class="indent_bullet">1)</span>
+                                                                                    <div class="indent_text_group">
+                                                                                        위탁처리 기관<br>중소벤처기업부에서 보유하고 있는 개인정보파일은「개인정보보호법」 제36조(개인정보의 정정·삭제)에 따라 정정·삭제를 요구할 수 있습니다. 다만, 다른 법령에서 그 개인정보가 수집 대상으로 명시되어 있는 경우에는 그 삭제를 요구할 수 없습니다.
+                                                                                    </div>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">마.</span>
+                                                            <span class="terms_tail_block_text">개인정보의 파기</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <p class="terms_tail_para">중소벤처기업부는 원칙적으로 개인정보 처리목적이 달성된 개인정보는 지체없이 파기합니다. 파기의 절차, 기한 및 방법은 다음과 같습니다.</p>
+                                                            <ul class="img_bullet_list">
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">파기 절차</div>
+                                                                        <div class="text_block">
+                                                                            개인정보는 목적 달성 후 즉시 또는 별도의 공간에 옮겨져 내부 방침 및 기타 관련법령에 따라 일정기간 저장된 후 파기됩니다. 별도의 공간으로 옮겨진 개인정보는 법률에 의한 경우가 아니고서는 다른 목적으로 이용되지 않습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">파기 기한 및 파기 방법</div>
+                                                                        <div class="text_block">
+                                                                            보유기간이 만료되었거나 개인정보의 처리목적달성, 해당 업무의 폐지 등 그 개인정보가 불필요하게 되었을 때에는 지체없이 파기합니다. 전자적 파일형태의 정보는 기록을 재생할 수 없는 기술적 방법을 사용합니다. 종이에 출력된 대인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">바.</span>
+                                                            <span class="terms_tail_block_text">개인정보의 안전성 확보 조치</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <ul class="img_bullet_list">
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">개인정보 취급직원의 최소화 및 교육</div>
+                                                                        <div class="text_block">
+                                                                            개인정보를 취급하는 직원은 반드시 필요한 인원에 한하여 지정 · 관리하고 있으며 취급직원을 대상으로 안전한 관리를 위한 교육을 실시하고 있습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">개인정보에 대한 접근 제한</div>
+                                                                        <div class="text_block">
+                                                                            개인정보를 처리하는 데이터베이스시스템에 대한 접근권한의 부여·변경·말소를 통하여 개인정보에 대한 접근통제를 위한 필요한 조치를 하고 있으며 침입차단시스템을 이용하여 외부로부터의 무단 접근을 통제하고 있습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">접속기록의 보관</div>
+                                                                        <div class="text_block">
+                                                                            개인정보처리시스템에 접속한 기록(웹 로그, 요약정보 등)을 최소 6개월 이상 보관·관리하고 있습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">개인정보의 암호화</div>
+                                                                        <div class="text_block">
+                                                                            개인정보는 암호화 등을 통해 안전하게 저장 및 관리되고 있습니다. 또한 중요한 데이터는 저장 및 전송 시 암호화하여 사용하는 등의 별도 보안기능을 사용하고 있습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">보안프로그램 설치 및 주기적 점검·갱신</div>
+                                                                        <div class="text_block">
+                                                                            해킹이나 컴퓨터 바이러스 등에 의한 개인정보 유출 및 훼손을 막기 위하여 보안프로그램을 설치하고 주기적으로 갱신·점검하고 있습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ico_img_bullet ico_chk"></i>
+                                                                    <div class="img_bullet_para">
+                                                                        <div class="text_block">비인가자에 대한 출입 통제</div>
+                                                                        <div class="text_block">
+                                                                            개인정보를 보관하고 있는 개인정보시스템의 물리적 보관 장소를 별도로 두고 이에 대해 출입통제 절차를 수립, 운영하고 있습니다.
+                                                                        </div>
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">사.</span>
+                                                            <span class="terms_tail_block_text">권익침해 구제 방법</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <ul class="terms_tail_para_list">
+                                                                <li><p class="terms_tail_para">개인정보에 관한 권리 또는 이익을 침해받은 사람은 개인정보침해 신고센터 등으로 침해사실을 신고 할 수 있습니다.</p></li>
+                                                                <li><p class="terms_tail_para">개인정보침해신고센터 : (국번없이) 118 (내선2번)</p></li>
+                                                                <li><p class="terms_tail_para">또한, 개인정보의 열람, 정정·삭제, 처리정지 등에 대한 정보주체자의 요구에 대하여 공공기관의 장이 행한 처분 또는 부작위로 인하여 권리 또는 이익을 침해 받은 자는 행정심판법이 정하는 바에 따라 행정심판을 청구할 수 있습니다.</p></li>
+                                                                <li><p class="terms_tail_para">중앙행정심판위원회(www.simpan.go.kr)의 전화번호 안내 참조</p></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">아.</span>
+                                                            <span class="terms_tail_block_text">개인정보보호 책임자 및 담당자 연락처</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <ul class="terms_tail_para_list type2">
+                                                                <li><p class="terms_tail_para"><strong>담당기관명 : 중소벤처기업부</strong></p></li>
+                                                                <li><p class="terms_tail_para">개인정보보호 책임관 : 기획조정실 오기웅</p></li>
+                                                                <li><p class="terms_tail_para">개인정보보호 분야별 책임관 : 기술정책과장 윤세명</p></li>
+                                                                <li><p class="terms_tail_para">개인정보담당자</p></li>
+                                                                <li><p class="terms_tail_para">부서명 : 기술정책과</p></li>
+                                                                <li><p class="terms_tail_para">담당자 : 최미영</p></li>
+                                                                <li><p class="terms_tail_para">연락처 : 042-204-7746, kannae007@korea.kr</p></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="terms_tail_block">
+                                                        <div class="terms_tail_block_title">
+                                                            <span class="terms_tail_block_bullet">자.</span>
+                                                            <span class="terms_tail_block_text">개인정보 처리방침 변경</span>
+                                                        </div>
+                                                        <div class="terms_tail_contents">
+                                                            <ul class="indent_text_list">
+                                                                <li>
+                                                                    <span class="indent_bullet">1.</span>
+                                                                    <div class="indent_text_group">
+                                                                        이 개인정보 처리방침은 2022년 4월 2일부터 적용됩니다.
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- // 20231220 변경 -->
+                                        </div>
+                                    </div>
+                                    <div class="btn_column_bottom_wrap align_right">
+                                        <div class="box_radio_item_group type2">
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form ok_props" name="props_radio_01" id="props_radio_01_01">
+                                                <label for="props_radio_01_01" class="box_radio_label">동의</label>
+                                            </div>
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form" name="props_radio_01" id="props_radio_01_02" checked>
+                                                <label for="props_radio_01_02" class="box_radio_label">미동의</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column_obj_item">
+                                <div class="column_key">
+                                    <h4 class="column_obj_title">개인정보 수집·이용·제공 동의</h4>
+                                    <span class="text_flag">필수</span>
+                                </div>
+                                <div class="column_value">
+                                    <div class="agree_terms_box" tabindex="0">
+                                        <div class="agree_terms_inner">
+                                            <!-- 20231220 변경 -->
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">1. 제공에 관한 사항</p>
+                                                <p class="terms_tail_sub_copy">메인비즈 진행을 위해 메인비즈넷에서는 귀사에게 아래와 같은 사항을 제공받고 있습니다.</p>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제공받는자</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="bullet_list dot">
+                                                            <li>메인비즈넷 총괄 관리기관 : 중소벤처기업부 (지방중소벤처기업청 포함)</li>
+                                                            <li>메인비즈넷 운영기관 : 사단법인 한국경영혁신중소기업협회</li>
+                                                            <li>메인비즈 인증 평가기관 : 신용보증기금, 한국생산성본부, 기술보증기금</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제공받는항목</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="terms_tail_cpara">업체명, 사업자등록번호, 사업자종류, 설립일자, 법인번호, 지역, 회사전화번호, 회사 팩스번호, 회사를 대표하는 이메일, 주소, 업종코드, 업종명, PMS 인증여부, 연체 및 국세체납 유무, 파산 및 회생신청 및 개시 여부, 기업의 재무현황, 수수료 환불시 기업 계좌번호, 계좌명의, 대표자 성명, 한자성명, 대표자 연락처, 기업(대표)이메일, 담당자 이름, 담당자 부서 및 직책, 담당자 연락처, 담당자 이메일, 담당자성명, 담당자이메일, 공장 및 지점의 사업자등록번호, 주소</p>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제공받는 목적</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈넷 회원가입 및 관리
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 인증 서비스(인증신청, 평가, 승인, 등 메인비즈 승인확인 및 선정취소를 위한 모든 절차) 제공
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 실태조사 등 정부 통계 및 조사와 관련 한 사항에 활용
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">4)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 인증기업을 위한 정부지원제도 안내 등
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">2. 수집ㆍ이용에 관한 사항</p>
+                                                <p class="terms_tail_sub_copy">메인비즈 인증 진행을 위해 신용조회회사를 통해 아래와 같은 항목의 내용을 확인할 수 있습니다.</p>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">수집 및 조회 기관</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="bullet_list dot">
+                                                            <li>신용조회회사(한국기업데이터(주),한국신용정보원, 코리아크레딧뷰로(주), NICE신용평가정보(주), 기술신용보증기금, 신용보증재단중앙회 등)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">수집 및 조회받는 기관</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="bullet_list dot">
+                                                            <li>메인비즈넷 총괄 관리기관 : 중소벤처기업부 (지방중소벤처기업청 포함)</li>
+                                                            <li>메인비즈넷 운영기관 : 사단법인 한국경영혁신중소기업협회</li>
+                                                            <li>메인비즈 인증 평가기관 : 신용보증기금, 한국생산성본부, 기술보증기금</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">수집하려는 개인정보의 항목</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="terms_tail_cpara">업체명, 사업자등록번호, 사업자종류, 설립일자, 법인번호, 지역, 회사전화번호, 회사 팩스번호, 회사를 대표하는 이메일, 주소, 업종코드, 업종명, 연체 및 국세체납 유무, 파산 및 회생신청 및 개시 여부, 기업의 재무현황, 신용관리정보등록, 당좌부도, 대표자 성명, 기타, 공장 및 지점의 사업자등록번호, 주소</p>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">개인정보의 수집ㆍ이용 목적</p>
+                                                    <div class="terms_tail_cont">
+                                                        <ul class="indent_text_list">
+                                                            <li>
+                                                                <span class="indent_bullet">1)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈넷 회원가입 및 관리
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">2)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 인증 서비스(인증신청, 평가, 승인 등 메인비즈 승인확인을 및 선정취소를 위한 모든 절차) 제공
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">3)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 실태조사 등 정부 통계 및 조사와 관련 한 사항에 활용
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">4)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 인증기업의 경영혁신 마일리지 자동 적립을 위한 정보 제공
+                                                                </div>
+                                                            </li>
+                                                            <li>
+                                                                <span class="indent_bullet">5)</span>
+                                                                <div class="indent_text_group">
+                                                                    메인비즈 인증기업을 위한 정부지원제도 안내 등
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">인터넷 접속정보파일 등 개인정보를 자동으로 수집하는 장치의 설치·운영 및 그 거부</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="terms_tail_cpara">우리기관 홈페이지는 홈페이지 운영에 있어 필요 시 고객의 정보를 찾아내고 저장하는 ‘쿠키 (Cookie)'를 운용합니다. 쿠키는 웹사이트를 운영하는데 이용되는 서버가 고객의 브라우저에 보내는 아주 작은 텍스트 파일로서 고객의 컴퓨터 하드디스크에 저장됩니다. 고객께서는 웹브라우저의 보안설정을 통해 쿠키에 텍스트 정보수집의 허용 · 거부 여부를 선택하실 수 있습니다.</p>
+                                                        <ul class="bullet_list dash">
+                                                            <li>웹브라우저의 [도구]메뉴에서 [인터넷옵션]-[보안]-[사용자정의수준]을 선택하여 쿠키에 의한 정보수집 수준을 정할 수 있습니다.</li>
+                                                            <li>위에 제시된 메뉴를 통해 쿠키가 저장될 때마다 확인을 하거나, 아니면 모든 쿠키의 저장을 거부할 수도 있습니다.</li>
+                                                            <li>다만, 쿠키 설치를 거부하였을 경우 콘텐츠 이용에 어려움이 있을 수 있습니다.</li>
+                                                            <li>IP주소, 쿠키, MAC주소, 서비스 이용기록, 방문기록, 불량 이용기록 등</li>
+                                                        </ul>
+
+                                                        <br><br>
+
+                                                        <ul class="bullet_list dot">
+                                                            <li>
+                                                                쿠키(Cookie)에 의해 수집되는 정보 및 이용목적은 다음과 같습니다.
+                                                                <ul class="bullet_list dash">
+                                                                    <li>수집정보 : IP주소, Mac주소, 서비스 이용기록, 방문기록, 불량 이용기록 등</li>
+                                                                    <li>
+                                                                        이용목적 :
+                                                                        <ul class="bullet_list dot">
+                                                                            <li>개인의 관심분야에 따라 차별화된 정보를 제공합니다.</li>
+                                                                            <li>회원과 비회원의 접속빈도 또는 방문시간 등을 분석하여 이용자의 취향과 관심분야를 파악하여 타켓(Target) 마케팅에 활용 및 서비스 개편의 척도로 활용합니다.</li>
+                                                                        </ul>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>
+                                                        </ul>
+
+                                                        <br><br>
+                                                        <p class="terms_tail_cpara">어떤 경우에라도 입력하신 정보를 이용자들에게 사전에 밝힌 목적 이외에 다른 목적으로는 사용하지 않으며 외부로 유출하지 않습니다. 메인비즈넷에 링크되어 있는 웹사이트들이 개인정보를 수집하는 행위에 대해서는 본 메인비즈넷의 개인정보 처리방침이 적용되지 않음을 알려 드립니다.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- // 20231220 변경 -->
+                                        </div>
+                                    </div>
+                                    <div class="btn_column_bottom_wrap align_right">
+                                        <div class="box_radio_item_group type2">
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form ok_props" name="props_radio_02" id="props_radio_02_01">
+                                                <label for="props_radio_02_01" class="box_radio_label">동의</label>
+                                            </div>
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form" name="props_radio_02" id="props_radio_02_02" checked>
+                                                <label for="props_radio_02_02" class="box_radio_label">미동의</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column_obj_item">
+                                <div class="column_key">
+                                    <h4 class="column_obj_title">전자적 제출 동의</h4>
+                                    <span class="text_flag">필수</span>
+                                </div>
+                                <div class="column_value">
+                                    <div class="agree_terms_box" tabindex="0">
+                                        <div class="agree_terms_inner">
+                                            <!-- 20231220 변경 -->
+                                            <div class="terms_tail_sub_zone">
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">제의받은자의 기업(신용)정보보유·이용 기간 및 동의의 효력기간</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="terms_tail_cpara">기업(신용)정보는 제공된 날로부터 동의 철회시 또는 제공된 목적을 달성할 때까지 보유·이용됩니다. 동의 철회 또는 제공된 목적 달성 후에는 위에 기재된 이용 목적과 관련된 금융사고 조사, 분쟁 해결, 민원처리, 법령상 의무이행을 위하여 필요한 범위 내에서만 보유·이용됩니다.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">동의를 거부할 권리 및 동의를 거부할 경우의 불이익</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="terms_tail_cpara">귀하는 위 개인정보의 제3자 제공 동의를 거부할 권리가 있습니다. 단, 개인정보 제3자 제공에 대한 동의를 거부하는 경우 서비스 이용이 제한될 수 있습니다.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="terms_tail_sub_group">
+                                                    <p class="terms_tail_title_sub">개인정보의 보유기간 및 파기</p>
+                                                    <div class="terms_tail_cont">
+                                                        <p class="terms_tail_cpara">회원 이용자의 개인정보는 원칙적으로 보유기간의 경과, 개인정보의 수집 및 이용목적의 달성 등 그 개인정보가 불필요하게 되었을 때에는 지체 없이 파기합니다. 다만, 다른 법령에 따라 보존하여야 하는 경우에는 그러하지 아니합니다.</p>
+                                                        
+                                                        <br>
+                                                        
+                                                        <ul class="bullet_list dash">
+                                                            <li>보유기간 : 기업 회원가입 정보 삭제 요청 시</li>
+                                                            <li>보유근거 : 기술혁신촉진에 관한 법률 및 홈페이지 회원 약관 (개인정보수집 및 이용 약관)</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- // 20231220 변경 -->
+                                        </div>
+                                    </div>
+                                    <div class="btn_column_bottom_wrap align_right">
+                                        <div class="box_radio_item_group type2">
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form ok_props" name="props_radio_03" id="props_radio_03_01">
+                                                <label for="props_radio_03_01" class="box_radio_label">동의</label>
+                                            </div>
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form" name="props_radio_03" id="props_radio_03_02" checked>
+                                                <label for="props_radio_03_02" class="box_radio_label">미동의</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column_obj_item">
+                                <div class="column_key">
+                                    <h4 class="column_obj_title">메인비즈 정보 수신 동의</h4>
+                                    <span class="text_flag type2">선택</span>
+                                </div>
+                                <div class="column_value">
+                                    <div class="agree_terms_box" tabindex="0">
+                                        <div class="agree_terms_inner">
+                                            <!-- 20231220 변경 -->
+                                            <div class="terms_tail_group">
+                                                <p class="terms_tail_title">메인비즈 인증 혜택 및 공지사항 안내등 정보 안내를 SMS나 이메일로 받아보실수 있습니다.</p>
+                                                <div class="terms_tail_cont">
+                                                    선택 약관에 동의하지 않으셔도 회원가입은 가능하며, 회원가입 후 회원정보수정 페이지에서 수신여부를 변경하실 수 있습니다.
+                                                </div>
+                                            </div>
+                                            <!-- // 20231220 변경 -->
+                                        </div>
+                                    </div>
+                                    <div class="btn_column_bottom_wrap align_right">
+                                        <div class="box_radio_item_group type2">
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form ok_props" name="props_radio_04" id="props_radio_04_01">
+                                                <label for="props_radio_04_01" class="box_radio_label">동의</label>
+                                            </div>
+                                            <div class="box_radio_item">
+                                                <input type="radio" class="box_radio_form" name="props_radio_04" id="props_radio_04_02" checked>
+                                                <label for="props_radio_04_02" class="box_radio_label">미동의</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_bottom_wrap">
+                            <a href="#" class="btn_box type2" id="btn_total"><span class="btn_box_text">전체동의</span></a>
+                            <a href="#" class="btn_box"><span class="btn_box_text">다음</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            menuRock("[name='gnb_app']");
+            
+            // 전체동의
+            const btn_total = document.querySelector("#btn_total");
+            const ok_props = document.querySelectorAll(".ok_props");
+            if(!!btn_total){
+                btn_total.addEventListener("click",(e)=>{
+                    e.preventDefault();
+                    if(!!ok_props){
+                        ok_props.forEach((item)=>{
+                            item.checked = true;
+                        });
+                    }
+                });
+            }
+        </script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>

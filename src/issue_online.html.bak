@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "온라인발급 | 경영혁신형 중소기업 인증시스템"
+    })
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_skip.html')
+        @@include('./include/_header.html')
+        <section class="middle_wrap" id="content">
+            <div class="sub_visual_wrap">
+                <div class="sub_visual_copy_group">
+                    <p class="sub_visual_secondary_copy">MAINBiz</p>
+                    <h2 class="sub_visual_primary_copy">확인서 발급</h2>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="breadcrumb_list_wrap">
+                    <ul class="breadcrumb_list">
+                        <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+                        <li><a href="#" class="breadcrumb_menu_item">확인서 발급</a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">온라인발급</a></li>
+                    </ul>
+                </div>
+                <div class="sub_content_package">
+                    <h3 class="sub_title">온라인발급</h3>
+                    <!-- 20231221 3차 수정 - 문구변경 -->
+                    <div class="sub_contents">
+                        <div class="message_column_item_area">
+                            <div class="message_column_item">
+                                <p class="message_emp_box">
+                                    메인비즈 확인서는 중소벤처24를 통해 발급이 가능합니다.
+                                </p>
+                            </div>
+                            <div class="message_column_item">
+                                <p class="message_column_para">
+                                    중소벤처기업 경영활동에 필요한 각종 증명서를 개별 시스템 방문 없이 한번에 출력할 수 있습니다.<br>
+                                    각 증명(확인)서는 해당 시스템과 연계를 통해 중소벤처24에서 출력됩니다.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="guide_obj_item_area">
+                            <div class="guide_obj_item">
+                                <div class="guide_obj_title_row">
+                                    <h4 class="guide_obj_title">신규 · 연장(재선정)기업 확인서 발급절차</h4>
+                                </div>
+                                <div class="guide_obj_contents">
+                                    <div class="system_dia_item_list_wrap">
+                                        <ul class="system_dia_item_list">
+                                            <li>
+                                                <div class="system_dia_item">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_01.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">기업</p>
+                                                        <p class="system_dia_sub_copy">메인비즈넷<br>인증신청</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="system_dia_item type2">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_02.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">평가기관</p>
+                                                        <p class="system_dia_sub_copy">현장 평가</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="system_dia_item type3">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_03.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">지방청</p>
+                                                        <p class="system_dia_sub_copy">
+                                                            지방청 승인<br>
+                                                            <strong class="system_dia_sub_emp">문자알림</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="system_dia_item">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_01.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">기업</p>
+                                                        <p class="system_dia_sub_copy">
+                                                            확인서 발급<br>
+                                                            <strong class="system_dia_sub_emp">중소벤처24</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guide_obj_item">
+                                <div class="guide_obj_title_row">
+                                    <h4 class="guide_obj_title">재발급 신청 시 확인서 발급절차</h4>
+                                </div>
+                                <div class="guide_obj_contents">
+                                    <div class="system_dia_item_list_wrap">
+                                        <ul class="system_dia_item_list">
+                                            <li class="type2">
+                                                <div class="system_dia_item">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_01.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">기업</p>
+                                                        <p class="system_dia_sub_copy">
+                                                            메인비즈넷 재발급 신청<br>
+                                                            정보 변경 시 관련서류 지방청 제출
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="system_dia_item type3">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_03.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">지방청</p>
+                                                        <p class="system_dia_sub_copy">
+                                                            정보확인·승인<br>
+                                                            문자알림
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="system_dia_item">
+                                                    <div class="system_dia_icon_row">
+                                                        <i class="icon_system_dia"><img src="./assets/images/ico_issue_01.png" aria-hidden="true" alt=""></i>
+                                                    </div>
+                                                    <div class="system_dia_copy_row">
+                                                        <p class="system_dia_main_copy">기업</p>
+                                                        <p class="system_dia_sub_copy">
+                                                            확인서 발급<br>
+                                                            <strong class="system_dia_sub_emp">중소벤처24</strong>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="compare_item_wrap">
+                                        <div class="compare_item_cols">
+                                            <div class="compare_img_wrap">
+                                                <img src="./assets/images/img_issue_screen_01.jpg" alt="메인비즈 메인페이지 이미지 - 중소벤처24 이지패스 클릭" />
+                                                <div class="compare_guide_system_box_wrap">
+                                                    <div class="compare_guide_system_box">중소벤처24 이지패스 클릭</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="compare_item_cols">
+                                            <div class="compare_img_wrap">
+                                                <img src="./assets/images/img_issue_screen_02.jpg" alt="중소벤처24 증명서 발급 페이지" />
+                                                <div class="compare_guide_system_box_wrap">
+                                                    <div class="compare_guide_system_box">메인비즈확인서 발급 클릭</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_bottom_wrap">
+                                        <a href="#" class="btn_box"><span class="btn_box_text">중소벤처24 확인서 발급</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // 20231221 3차 수정 - 문구변경 -->
+                </div>
+            </div>
+        </section>
+        <script>menuRock("[name='gnb_issue']");</script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>

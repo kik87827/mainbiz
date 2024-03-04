@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+    @@include('./include/_head.html',{
+        "title" : "진행현황 | 인증 신청 | 경영혁신형 중소기업 인증시스템"
+    })
+<body class="front_body">
+    <div class="page_wrap">
+        @@include('./include/_skip.html')
+        @@include('./include/_header.html')
+        <section class="middle_wrap" id="content">
+            <div class="sub_visual_wrap">
+                <div class="sub_visual_copy_group">
+                    <p class="sub_visual_secondary_copy">MAINBiz</p>
+                    <h2 class="sub_visual_primary_copy">인증 신청</h2>
+                </div>
+            </div>
+            <div class="sub_content_wrap">
+                <div class="breadcrumb_list_wrap">
+                    <ul class="breadcrumb_list">
+                        <li><a href="#" class="ico_maphome"><span class="hdtext">홈으로</span></a></li>
+                        <li><a href="#" class="breadcrumb_menu_item">인증 신청</a></li>
+                        <li><a href="#" class="breadcrumb_menu_item emp">진행 현황</a></li>
+                    </ul>
+                </div>
+                <div class="sub_content_package">
+                    <h3 class="sub_title">진행 현황</h3>
+                    <div class="sub_contents">
+                        <div class="column_obj_item_wrap type2">
+                            <div class="column_obj_item">
+                                <div class="column_key">
+                                    <h5 class="column_obj_title">현재 상태</h5>
+                                </div>
+                                <div class="column_value">
+                                    <div class="grid_form_box_wrap">
+                                        <div class="grid_form_box">
+                                            <div class="grid_form_table">
+                                                <div class="grid_form_tr break_type2">
+                                                    <div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="150">
+                                                        <div class="grid_form_item">
+                                                            <div class="grid_form_key">
+                                                                <span class="grid_form_label">인증 구분</span>
+                                                            </div>
+                                                            <div class="grid_form_value">
+                                                                <div class="data_render_box">신규</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid_form_cols">
+                                                        <div class="grid_form_item">
+                                                            <div class="grid_form_key">
+                                                                <span class="grid_form_label">현재 상태</span>
+                                                            </div>
+                                                            <div class="grid_form_value">
+                                                                <div class="process_bar_wrap">
+                                                                    <ul class="process_bar_list">
+                                                                        <li class="active">
+                                                                            <div class="process_bar">
+                                                                                <span class="process_bar_text">기업 등록</span>
+                                                                                <!-- 접근성 -->
+                                                                                <span class="current_menu_text">활성화</span>
+                                                                                <!-- // 접근성 -->
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="active">
+                                                                            <div class="process_bar">
+                                                                                <span class="process_bar_text">자가 진단</span>
+                                                                                <!-- 접근성 -->
+                                                                                <span class="current_menu_text">활성화</span>
+                                                                                <!-- // 접근성 -->
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="process_bar">
+                                                                                <span class="process_bar_text">현장 평가</span>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li>
+                                                                            <div class="process_bar">
+                                                                                <span class="process_bar_text">인증 승인</span>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid_form_cols pixed_cols" style="flex-basis:292px" name="respon_cols" data-pc="292" data-tablet="150">
+                                                        <div class="grid_form_item">
+                                                            <div class="grid_form_key">
+                                                                <span class="grid_form_label">등록일</span>
+                                                            </div>
+                                                            <div class="grid_form_value">
+                                                                <div class="data_render_box font_type2">2023.11.05</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="column_obj_item">
+                                <div class="column_key">
+                                    <h5 class="column_obj_title">신청 정보</h5>
+                                </div>
+                                <div class="column_value">
+                                    <!-- tab -->
+                                    <div class="boxtab_list_wrap type2">
+                                        <ul class="boxtab_list">
+                                            <li>
+                                                <a href="#" class="boxtab_item">
+                                                    <span class="boxtab_text">기업 등록</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="boxtab_item active">
+                                                    <span class="boxtab_text">자가 진단</span>
+                                                    <span class="hdtext">활성화</span><!-- 접근성 마크업 -->
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="boxtab_item">
+                                                    <span class="boxtab_text">현장 평가</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="boxtab_item">
+                                                    <span class="boxtab_text">인증 승인</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- // tab  -->
+                                    <div class="grid_form_box_wrap">
+                                        <h6 class="hdtext">자가 진단</h6>
+                                        <div class="grid_form_box">
+                                            <div class="grid_form_table">
+                                                <div class="grid_form_tr">
+                                                    <div class="grid_form_cols">
+                                                        <div class="grid_form_item">
+                                                            <div class="grid_form_key">
+                                                                <span class="grid_form_label">최근 수정일</span>
+                                                            </div>
+                                                            <div class="grid_form_value">
+                                                                <div class="data_render_box type2 font_type2">2023.11.05</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid_form_cols">
+                                                        <div class="grid_form_item">
+                                                            <div class="grid_form_key">
+                                                                <span class="grid_form_label">설문항목 수 / 총 항목</span>
+                                                            </div>
+                                                            <div class="grid_form_value">
+                                                                <div class="data_render_box type2 font_type2">50 / 50</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid_form_cols">
+                                                        <div class="grid_form_item">
+                                                            <div class="grid_form_key">
+                                                                <span class="grid_form_label">자가진단 총점</span>
+                                                            </div>
+                                                            <div class="grid_form_value">
+                                                                <div class="data_render_box type2 font_type2">361</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="grid_form_cols align_type2">
+                                                        <a href="#" class="btn_box size2 skin2">
+                                                            <span class="btn_box_text">수정</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            menuRock("[name='gnb_app']");
+        </script>
+        @@include('./include/_footer.html')
+    </div>
+</body>
+</html>
