@@ -6607,14 +6607,14 @@ input.props_form:checked {
 .mv_zone {
   max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
-
-.swiper-container.mv_container .swiper-pagination {
+.mv_zone .swiper-pagination {
   text-align: left;
   bottom: 60px;
   z-index: 5;
 }
-.swiper-container.mv_container .swiper-pagination .swiper-pagination-bullet {
+.mv_zone .swiper-pagination .swiper-pagination-bullet {
   opacity: 0.2;
   width: 12px;
   height: 12px;
@@ -6622,13 +6622,20 @@ input.props_form:checked {
   border-radius: 100%;
   background: #000;
 }
-.swiper-container.mv_container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.mv_zone .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   background: #1454FF;
   width: 60px;
   border-radius: 100px;
 }
 
+.mv_item {
+  display: block;
+}
+.mv_item:focus {
+  outline: 1px dashed #000;
+  outline-offset: -1px;
+}
 .mv_item img {
   vertical-align: top;
 }
@@ -7032,19 +7039,19 @@ input.input_global_search::input-placeholder {
 }
 
 .mc_card_swiper_zone {
-  background: #16978F;
+  /* background: #16978F; */
   border-radius: 32px;
   position: relative;
   overflow: hidden;
 }
-
-.swiper-container.swiper_banner_container .swiper-pagination {
+.mc_card_swiper_zone .swiper-pagination {
   text-align: center;
   bottom: 20px;
   z-index: 5;
   line-height: 0;
+  width: 100%;
 }
-.swiper-container.swiper_banner_container .swiper-pagination .swiper-pagination-bullet {
+.mc_card_swiper_zone .swiper-pagination .swiper-pagination-bullet {
   opacity: 0.2;
   width: 12px;
   height: 12px;
@@ -7052,12 +7059,17 @@ input.input_global_search::input-placeholder {
   border-radius: 100%;
   background: #000;
 }
-.swiper-container.swiper_banner_container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.mc_card_swiper_zone .swiper-pagination .swiper-pagination-bullet:focus {
+  outline: 1px dashed #000;
+  opacity: 0.7;
+}
+.mc_card_swiper_zone .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
   opacity: 1;
   background: #fff;
   width: 60px;
   border-radius: 100px;
 }
+
 .swiper-container .swiper_banner {
   display: block;
   position: relative; /*  height:0; padding-bottom:58.06451612903226%; */
@@ -7065,6 +7077,15 @@ input.input_global_search::input-placeholder {
 
 .swiper_banner {
   /* img{vertical-align: top; @include dataImage2} */
+  position: relative;
+}
+.swiper_banner img {
+  vertical-align: top;
+}
+.swiper_banner:focus {
+  outline: 2px dashed #000;
+  outline-offset: -2px;
+  border-radius: 32px;
 }
 
 .mc_quick_menu_list_wrap {

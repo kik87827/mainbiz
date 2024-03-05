@@ -11,29 +11,31 @@
             <h2 class="hdtext">메인 컨텐츠</h2>
             <div class="mv_zone">
                 <h3 class="hdtext">메인 비쥬얼</h3>
+                <!-- 20240306 접근성수정 -->
                 <div class="swiper-container mv_container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <div class="mv_item">
+                            <a href="#" class="mv_item">
                                 <img src="./assets/images/main/mv_pc_01.jpg" class="pc_mv" alt="[개발연동]접근성대체텍스트">
                                 <img src="./assets/images/main/mv_mb_01.jpg" class="mb_mv" alt="[개발연동]접근성대체텍스트">
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="mv_item">
+                            <a href="#" class="mv_item">
                                 <img src="./assets/images/main/mv_pc_02.jpg" class="pc_mv" alt="[개발연동]접근성대체텍스트">
                                 <img src="./assets/images/main/mv_mb_02.jpg" class="mb_mv" alt="[개발연동]접근성대체텍스트">
-                            </div>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <div class="mv_item">
+                            <a href="#" class="mv_item">
                                 <img src="./assets/images/main/mv_pc_03.jpg" class="pc_mv" alt="[개발연동]접근성대체텍스트">
                                 <img src="./assets/images/main/mv_mb_03.jpg" class="mb_mv" alt="[개발연동]접근성대체텍스트">
-                            </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-pagination"></div>
+                <!-- // 20240306 접근성수정 -->
             </div>
             <div class="global_search_field_zone">
                 <h3 class="hdtext">메인 검색</h3>
@@ -240,6 +242,7 @@
                     <div class="mc_grid_cols">
                         <h3 class="mc_grid_title mb_hidden">알림배너</h3>
                         <div class="mc_grid_content">
+                            <!-- 20240306 접근성수정 -->
                             <div class="mc_card_swiper_zone">
                                 <div class="swiper-container swiper_banner_container">
                                     <div class="swiper-wrapper">
@@ -262,9 +265,10 @@
                                             </a>
                                         </div>
                                     </div>
-                                    <div class="swiper-pagination"></div>
                                 </div>
+                                <div class="swiper-pagination"></div>
                             </div>
+                            <!-- // 20240306 접근성수정 -->
                         </div>
                     </div>
                     <div class="mc_grid_cols">
@@ -418,33 +422,68 @@
                     parent : ".mv_zone",
                     target : ".mv_container",
                     swiper_option : {
-                        loop: true,
+                        // loop: true, /* 20240306 접근성 수정 */
                         speed : 800,
                         autoplay: {
                             delay: 3500,
                             disableOnInteraction: false,
                         },
+                        /* 20240306 접근성 수정 */
                         pagination: {
-                            el: ".mv_container .swiper-pagination",
+                            el: ".mv_zone .swiper-pagination",
                             clickable: true
                         },
-                    }
+                        /* // 20240306 접근성 수정 */
+                        /* 20240306 접근성 추가 */
+                        keyboard: {
+                            enabled: true,
+                        },
+                        /* // 20240306 접근성 추가 */
+                    },
+                    /* slideChangeCallback(swiper,index){
+                        console.log('slidechange',index,document.querySelector(".mv_container .swiper-slide-active").querySelector("a"));
+                        setTimeout(()=>{
+                            document.querySelector(".mv_container .swiper-slide-active").querySelector("a").focus();
+                            swiper.autoplay.stop();
+                            console.log(swiper);
+                        },5);
+                    } */
                 })
+                function mvAccFunc(){
+                    const mv_zone = document.querySelector(".mv_zone");
+                    const mv_container = document.querySelector(".mv_container");
+                    const mv_container_pagination = document.querySelector(".mv_container .swiper-pagination");
+                    // mv_zone.append(mv_container_pagination);
+                    /* mv_container.addEventListener("focusin",()=>{
+                        console.log('focusin');
+                    });
+                    mv_container.addEventListener("focusout",()=>{
+                        console.log('focusout');
+                    }); */
+                }
+
                 // 알림 배너
                 swiperFunc({
                     parent : ".mc_card_swiper_zone",
                     target : ".swiper_banner_container",
                     swiper_option : {
-                        loop: true,
+                        // loop: true, /* 20240306 접근성 수정 */
                         speed : 800,
                         autoplay: {
                             delay: 3500,
                             disableOnInteraction: false,
                         },
+                         /* 20240306 접근성 수정 */
                         pagination: {
-                            el: ".mc_card_swiper_zone .swiper-pagination",
-                            clickable: true
+                             el: ".mc_card_swiper_zone .swiper-pagination",
+                             clickable: true
                         },
+                        /* // 20240306 접근성 수정 */
+                        /* 20240306 접근성 추가 */
+                        keyboard: {
+                            enabled: true,
+                        },
+                        /* // 20240306 접근성 추가 */
                     }
                 })
                 // 로고 배너
@@ -452,7 +491,7 @@
                     parent : ".bottom_guide_swiper_wrap",
                     target : ".swiper-partner",
                     swiper_option : {
-                        loop: true,
+                        // loop: true, /* 20240306 접근성 수정 */
                         speed : 800,
                         slidesPerView: 7,
                         autoplay: {
@@ -470,7 +509,12 @@
                             767 : {
                                 slidesPerView: 2,
                             }
-                        }
+                        },
+                        /* 20240306 접근성 추가 */
+                        keyboard: {
+                            enabled: true,
+                        },
+                        /* // 20240306 접근성 추가 */
                     }
                 })
             });

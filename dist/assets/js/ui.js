@@ -411,6 +411,12 @@ function swiperFunc(option) {
       swiper_obj.update();
     } else {
       swiper_obj = new Swiper(option.target, option.swiper_option);
+      swiper_obj.on("slideChange", function() {
+        // option_swiper_slide[swiper_obj.realIndex].querySelector("a").focus();
+        if (option.slideChangeCallback) {
+          option.slideChangeCallback(swiper_obj, swiper_obj.realIndex);
+        }
+      });
     }
   }
 }
