@@ -2754,14 +2754,17 @@ li.nodata_li{
 
 
 .compare_item_wrap{
-    margin-top:64px; display:flex;gap:40px;
+    margin-top:64px; display:flex;gap:40px; position:relative;
     & + .btn_bottom_wrap{}
 }
 .compare_item_cols{flex:1; position:relative;
-    &:after{display:block;content:'';width:20px;height:20px;border-radius:100%; background:url("../images/ico_allow_circle.png") no-repeat 50% 50%/100% auto; position:absolute;top:50%;right:0;transform: translate(calc(100% + 10px),-50%);}
+    // &:after{display:block;content:'';width:20px;height:20px;border-radius:100%; background:url("../images/ico_allow_circle.png") no-repeat 50% 50%/100% auto; position:absolute;top:50%;right:0;transform: translate(calc(100% + 10px),-50%);}
     &:last-of-type{
         &:after{display:none;}
     }
+}
+.compare_item_ico{
+   display:block;width:20px;height:20px;border-radius:100%; background:url("../images/ico_allow_circle.png") no-repeat 50% 50%/100% auto; position:absolute;top:50%;left:50%;transform: translate(-50%,-50%);
 }
 .compare_img_wrap{
     position:relative;
