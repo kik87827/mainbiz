@@ -23,11 +23,11 @@ select.form_select{color:#333;cursor:pointer;font-size:18px; font-weight:500; bo
 input.form_input{
     border:1px solid #ddd; appearance: none; border-radius:12px;width:100%;height:60px; box-sizing: border-box; padding:0 16px;font-size:18px; font-weight:500; color:#000;
     &.search_input{border:0;height:46px;border-radius:8px;width:100%; padding-right:0;
-        &::-webkit-input-placeholder{color:#bbb;}
-        &::-moz-input-placeholder{color:#bbb;}
-        &:-ms-input-placeholder{color:#bbb;}
-        &::-ms-input-placeholder{color:#bbb;}
-        &::input-placeholder{color:#bbb;}
+        &::-webkit-input-placeholder{color:#6b6b6b;}
+        &::-moz-input-placeholder{color:#6b6b6b;}
+        &:-ms-input-placeholder{color:#6b6b6b;}
+        &::-ms-input-placeholder{color:#6b6b6b;}
+        &::input-placeholder{color:#6b6b6b;}
     }
     &.size2{height:48px;border-radius:8px;}
     &.calendar_type{background:#fff url("../images/ico_calendar_input.png") no-repeat calc(100% - 8px) 50%/32px auto;padding-right:50px;}
@@ -297,7 +297,7 @@ input.props_form{width:20px;height:20px;flex:0 0 20px;appearance: none;border-ra
     }
     .current_menu_text{}
 }
-.tab_menu_text{display:inline-block;color:#999999;font-size:20px;line-height:1;font-weight:500;}
+.tab_menu_text{display:inline-block;color:#6b6b6b;font-size:20px;line-height:1;font-weight:500;}
 .current_menu_text{display:inline-block;opacity:0;position:absolute;color:transparent;top:50%;left:50%;transform: translate(-50%,-50%);}
 .tab_cont_wrap{margin-top:32px;}
 .tab_cont{}

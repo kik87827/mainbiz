@@ -61,11 +61,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 }
 .header_util_logtext{color:#fff; display:inline-block; font-size:14px; font-weight:700;line-height:1; @include clamp(1); max-width:200px;}
 .header_util_menu{
-    display:inline-block; font-size:14px; color:#999999; font-weight:600; line-height:1;
+    display:inline-block; font-size:14px; color:#6B6B6B; font-weight:600; line-height:1;
     &.type2{background:$primary;padding:7px 12px;border-radius:100px;color:#fff;}
 }
 .header_util_text{
-    display:inline-block; font-size:14px; color:#999999; font-weight:600; line-height:1;
+    display:inline-block; font-size:14px; color:#6B6B6B; font-weight:600; line-height:1;
 }
 
 .header_util_ico_menu{
@@ -83,7 +83,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
              display:block;
         }
     } */
-    &.active{background:$primary;
+    &.active{background:#00568B;
         .header_nav_menu{color:#fff;}
     }
 }
@@ -107,8 +107,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     } */
 }
 
-.bg_depth{background:#0077C0; transition:.5s;position:absolute;top:100%;left:0;width:100%;height:0;}
-.nav_depth_menu_list_wrap{position:absolute;top:100%;left:-60px;width:calc(100% + 120px);background:#0077C0;text-align: center; height:0; overflow:hidden; display:block;
+.bg_depth{background:#00568B; transition:.5s;position:absolute;top:100%;left:0;width:100%;height:0;}
+.nav_depth_menu_list_wrap{position:absolute;top:100%;left:-60px;width:calc(100% + 120px);background:#00568B;text-align: center; height:0; overflow:hidden; display:block;
     transition:.5s;
 }
 .nav_depth_menu_list{
@@ -254,7 +254,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 .footer_data_tail_text{
     font-size:18px; color:#fff; font-weight:500; display:inline-block; opacity:.5; line-height:1; word-break: keep-all;
     &.type2{font-family: 'Rubik Medium';}
-    &.copyright{font-family: 'Poppins Regular'; opacity:.3}
+    &.copyright{font-family: 'Poppins Regular'; opacity:.5}
 }
 .footer_data_tail_text_group{display:flex; align-items: center; gap:10px;}
 .footer_data_guide_item{    
@@ -314,8 +314,8 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
 }
 .ico_maphome{display:inline-block;width:15px;height:16px;background:url("../images/ico_map_home.png") no-repeat 50% 50%/100% auto;}
 .breadcrumb_menu_item{
-    font-size:16px;color:#999999; line-height:1; display:inline-block;
-    &.emp{color:#0077C0;font-weight:700;}
+    font-size:16px;color:#6B6B6B; line-height:1; display:inline-block;
+    &.emp{color:#00568B;font-weight:700;}
 }
 
 .sub_content_package{}
