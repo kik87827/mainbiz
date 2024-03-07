@@ -646,6 +646,9 @@ input.input_global_search{font-size:18px;padding:0 24px; appearance: none; line-
     background: #333333 url("../images/main/ico_add.png") no-repeat 50% 50%/24px auto;
     border-radius: 12px;
     position:absolute;bottom:0;right:0;
+    &:focus{
+        outline: 1px dashed #000;outline-offset: 1px; bottom:2px;right:2px;
+    }
 }
 
 .mc_card_swiper_zone{

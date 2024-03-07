@@ -674,7 +674,12 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .page_wrap.main .header_nav_menu {
   color: #fff;
 }
-
+.page_wrap.main .header_nav_menu:hover, .page_wrap.main .header_nav_menu:focus {
+  color: #FFBC00;
+}
+.page_wrap.main .header_nav_list > li:hover .header_nav_menu, .page_wrap.main .header_nav_list > li:focus .header_nav_menu, .page_wrap.main .header_nav_list > li.active .header_nav_menu {
+  color: #FFBC00;
+}
 .header_wrap {
   flex: 0;
   position: relative;
@@ -797,8 +802,11 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
 .header_nav_list_wrap.active {
   background: #00568B !important;
 }
-.header_nav_list_wrap.active .header_nav_menu {
+.header_nav_list_wrap.active .header_nav_list > li .header_nav_menu {
   color: #fff;
+}
+.header_nav_list_wrap.active .header_nav_list > li .header_nav_menu:hover, .header_nav_list_wrap.active .header_nav_list > li .header_nav_menu:focus {
+  color: #FFBC00;
 }
 
 .header_nav_list {
@@ -813,7 +821,10 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   display: flex;
   position: relative;
 }
-.header_nav_list > li:hover .header_nav_menu, .header_nav_list > li:focus .header_nav_menu, .header_nav_list > li.active .header_nav_menu {
+.header_nav_list > li:hover .header_nav_menu {
+  color: #FFBC00 !important;
+}
+.header_nav_list > li.active .header_nav_menu {
   color: #D46C11;
 }
 .header_nav_menu {
@@ -7106,6 +7117,12 @@ input.input_global_search::input-placeholder {
   position: absolute;
   bottom: 0;
   right: 0;
+}
+.btn_mc_more:focus {
+  outline: 1px dashed #000;
+  outline-offset: 1px;
+  bottom: 2px;
+  right: 2px;
 }
 
 .mc_card_swiper_zone {
