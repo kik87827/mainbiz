@@ -34,7 +34,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-control-layer">
+                    <div class="swiper-auto-item-wrap">
+                        <button type="button" class="btn-autoplay"><span class="hdtext" data-hdtext="재생">정지</span></button>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
                 <!-- // 20240306 접근성수정 -->
             </div>
             <div class="global_search_field_zone">
@@ -258,7 +263,7 @@
                                                 <img src="./assets/images/main/notice_banner_mb_02.jpg" class="mb_img" alt="[개발연동]접근성대체텍스트">
                                             </a>
                                         </div>
-                                        <div class="swiper-slide">
+                                       <div class="swiper-slide">
                                             <a href="#" class="swiper_banner">
                                                 <img src="./assets/images/main/notice_banner_03.jpg" class="pc_img" alt="[개발연동]접근성대체텍스트">
                                                 <img src="./assets/images/main/notice_banner_mb_03.jpg" class="mb_img" alt="[개발연동]접근성대체텍스트">
@@ -267,6 +272,9 @@
                                     </div>
                                 </div>
                                 <div class="swiper-pagination"></div>
+                            </div>
+                            <div class="swiper-auto-item-wrap">
+                                <button type="button" class="btn-autoplay mn-autoplay"><span class="hdtext" data-hdtext="재생">정지</span></button>
                             </div>
                             <!-- // 20240306 접근성수정 -->
                         </div>
@@ -381,35 +389,42 @@
         </section>
         <section class="bottom_guide_list_wrap">
             <h3 class="hdtext">협력사 리스트</h3>
+            <!-- 20240307 접근성 수정 -->
             <div class="bottom_guide_swiper_wrap">
                 <a href="#" class="btn_flow_control prev"><span class="hdtext">이전</span></a>
-                <div class="swiper-container swiper-partner">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_01.png" alt="중소베너기업부 Ministry of SMEs and Startups"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_02.png" alt="KODIT 신용보증기금 KOREA CREDIT GUARANTEE FUND"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_03.png" alt="kpc 한국생산성본부 KOREA PRODUCTIVITY CENTER"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_04.png" alt="KIBO 기술보증기금"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_05.png" alt="Your Best Credit Partner SGI서울보증"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_06.png" alt="NH농협은행"></a>
-                        </div>
-                        <div class="swiper-slide">
-                            <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_07.png" alt="KSURE 한국무역보험공사 KOREA TRADE INSURANCE CORPORATION"></a>
+                <div class="swiper-partner-wrap">
+                    <div class="swiper-container swiper-partner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_01.png" alt="중소베너기업부 Ministry of SMEs and Startups"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_02.png" alt="KODIT 신용보증기금 KOREA CREDIT GUARANTEE FUND"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_03.png" alt="kpc 한국생산성본부 KOREA PRODUCTIVITY CENTER"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_04.png" alt="KIBO 기술보증기금"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_05.png" alt="Your Best Credit Partner SGI서울보증"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_06.png" alt="NH농협은행"></a>
+                            </div>
+                            <div class="swiper-slide">
+                                <a href="#" class="swiper_partner_box" target="_blank" title="새창"><img src="./assets/images/flow_logo_07.png" alt="KSURE 한국무역보험공사 KOREA TRADE INSURANCE CORPORATION"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <a href="#" class="btn_flow_control next"><span class="hdtext">다음</span></a>
+                <div class="swiper-auto-item-wrap">
+                    <button type="button" class="btn-autoplay"><span class="hdtext" data-hdtext="재생">정지</span></button>
+                </div>
             </div>
+            <!-- // 20240307 접근성 수정 -->
         </section>
         @@include('./include/_footer.html')
         <script>
@@ -417,106 +432,14 @@
             mcTab();
 
             window.addEventListener("load",()=>{
+                /* 20240307 접근성 수정 */
                 // main visual
-                swiperFunc({
-                    parent : ".mv_zone",
-                    target : ".mv_container",
-                    swiper_option : {
-                        // loop: true, /* 20240306 접근성 수정 */
-                        speed : 800,
-                        autoplay: {
-                            delay: 3500,
-                            disableOnInteraction: false,
-                        },
-                        /* 20240306 접근성 수정 */
-                        pagination: {
-                            el: ".mv_zone .swiper-pagination",
-                            clickable: true
-                        },
-                        /* // 20240306 접근성 수정 */
-                        /* 20240306 접근성 추가 */
-                        keyboard: {
-                            enabled: true,
-                        },
-                        /* // 20240306 접근성 추가 */
-                    },
-                    /* slideChangeCallback(swiper,index){
-                        console.log('slidechange',index,document.querySelector(".mv_container .swiper-slide-active").querySelector("a"));
-                        setTimeout(()=>{
-                            document.querySelector(".mv_container .swiper-slide-active").querySelector("a").focus();
-                            swiper.autoplay.stop();
-                            console.log(swiper);
-                        },5);
-                    } */
-                })
-                function mvAccFunc(){
-                    const mv_zone = document.querySelector(".mv_zone");
-                    const mv_container = document.querySelector(".mv_container");
-                    const mv_container_pagination = document.querySelector(".mv_container .swiper-pagination");
-                    // mv_zone.append(mv_container_pagination);
-                    /* mv_container.addEventListener("focusin",()=>{
-                        console.log('focusin');
-                    });
-                    mv_container.addEventListener("focusout",()=>{
-                        console.log('focusout');
-                    }); */
-                }
-
+                mainVisual();
                 // 알림 배너
-                swiperFunc({
-                    parent : ".mc_card_swiper_zone",
-                    target : ".swiper_banner_container",
-                    swiper_option : {
-                        // loop: true, /* 20240306 접근성 수정 */
-                        speed : 800,
-                        autoplay: {
-                            delay: 3500,
-                            disableOnInteraction: false,
-                        },
-                         /* 20240306 접근성 수정 */
-                        pagination: {
-                             el: ".mc_card_swiper_zone .swiper-pagination",
-                             clickable: true
-                        },
-                        /* // 20240306 접근성 수정 */
-                        /* 20240306 접근성 추가 */
-                        keyboard: {
-                            enabled: true,
-                        },
-                        /* // 20240306 접근성 추가 */
-                    }
-                })
+                mainNoticeBanner();
                 // 로고 배너
-                swiperFunc({
-                    parent : ".bottom_guide_swiper_wrap",
-                    target : ".swiper-partner",
-                    swiper_option : {
-                        // loop: true, /* 20240306 접근성 수정 */
-                        speed : 800,
-                        slidesPerView: 7,
-                        autoplay: {
-                            delay: 3500,
-                            disableOnInteraction: false,
-                        },
-                        navigation: {
-                            nextEl: ".bottom_guide_swiper_wrap .btn_flow_control.prev",
-                            prevEl: ".bottom_guide_swiper_wrap .btn_flow_control.next",
-                        },
-                        breakpoints : {
-                            1024 : {
-                                slidesPerView: 4,
-                            },
-                            767 : {
-                                slidesPerView: 2,
-                            }
-                        },
-                        /* 20240306 접근성 추가 */
-                        keyboard: {
-                            enabled: true,
-                        }
-                        /* // 20240306 접근성 추가 */
-                    }
-                })
+                mainPartnerBanner();
+                /* // 20240307 접근성 추가 */
             });
         </script>
     </div>

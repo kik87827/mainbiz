@@ -1055,3 +1055,19 @@ input.btn_submitbox{}
         & + .column_obj_item_wrap{margin-top:32px;}
     }
 }
+
+
+/* swiper auto */
+.swiper-auto-item-wrap{display:flex; gap:8px; align-items: center; }
+.swiper-control-layer{
+    position:absolute; display:flex; gap:4px; align-items: center; box-sizing: border-box;
+    .swiper-pagination{position:relative;top:auto;left:auto;bottom:auto;
+        .swiper-pagination-bullet{vertical-align: middle;}
+    }
+}
+.btn-autoplay{display:inline-block;width:24px;height:24px;vertical-align: middle;background:url("../images/ico_play_pause.png") no-repeat 0 100%/100% auto; vertical-align: middle;
+    &.active{
+        background-position:0 0;
+    }
+}
+/* // swiper auto */

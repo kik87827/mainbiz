@@ -709,7 +709,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   display: inline-block;
 }
 .header_toplogo_link img {
-  vertical-align: top;
+  vertical-align: middle;
 }
 
 .header_util_item_list_wrap {
@@ -5702,6 +5702,43 @@ input.props_form:checked {
     margin-top: 32px;
   }
 }
+/* swiper auto */
+.swiper-auto-item-wrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.swiper-control-layer {
+  position: absolute;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  box-sizing: border-box;
+}
+.swiper-control-layer .swiper-pagination {
+  position: relative;
+  top: auto;
+  left: auto;
+  bottom: auto;
+}
+.swiper-control-layer .swiper-pagination .swiper-pagination-bullet {
+  vertical-align: middle;
+}
+
+.btn-autoplay {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  background: url("../images/ico_play_pause.png") no-repeat 0 100%/100% auto;
+  vertical-align: middle;
+}
+.btn-autoplay.active {
+  background-position: 0 0;
+}
+
+/* // swiper auto */
 /* contents */
 .pcbr {
   display: block !important;
@@ -6625,6 +6662,15 @@ input.props_form:checked {
   margin: 0 auto;
   position: relative;
 }
+.mv_zone .swiper-control-layer {
+  bottom: 60px;
+  left: 0;
+  z-index: 5;
+  display: none;
+}
+.mv_zone .swiper-control-layer .swiper-pagination {
+  bottom: auto;
+}
 .mv_zone .swiper-pagination {
   text-align: left;
   bottom: 60px;
@@ -6643,6 +6689,9 @@ input.props_form:checked {
   background: #1454FF;
   width: 60px;
   border-radius: 100px;
+}
+.mv_zone.active .swiper-control-layer {
+  display: flex;
 }
 
 .mv_item {
@@ -6839,6 +6888,12 @@ input.input_global_search::input-placeholder {
   min-width: 0;
   display: flex;
   flex-direction: column;
+  position: relative;
+}
+.mc_grid_cols .swiper-auto-item-wrap {
+  position: absolute;
+  top: 13px;
+  right: 12px;
 }
 
 .mc_grid_title_row {
@@ -7226,6 +7281,13 @@ input.input_global_search::input-placeholder {
 .bottom_guide_list_wrap {
   background: #F7F7F7;
 }
+.bottom_guide_list_wrap .swiper-auto-item-wrap {
+  position: absolute;
+  bottom: 13px;
+  right: 0;
+  width: 90px;
+  justify-content: center;
+}
 
 .bottom_guide_swiper_wrap {
   position: relative;
@@ -7248,6 +7310,16 @@ input.input_global_search::input-placeholder {
   right: 0;
   background-image: url("../images/ico_flow_next.png");
 }
+.swiper-partner-wrap {
+  min-height: 130px;
+}
+.swiper-partner-wrap.focusmode .swiper-partner {
+  display: none;
+}
+.swiper-partner-wrap.focusmode .partner_acc_list {
+  display: flex;
+}
+
 .swiper-container.swiper-partner .swiper-slide {
   width: auto;
 }
@@ -7293,8 +7365,18 @@ input.input_global_search::input-placeholder {
   left: -99999px;
 }
 
+.partner_acc_list {
+  display: none;
+}
+.partner_acc_list > li {
+  flex: 1;
+}
+
 @media (max-width: 1299px) {
   .mv_zone {
+    padding: 0 30px;
+  }
+  .mv_zone .swiper-control-layer {
     padding: 0 30px;
   }
   .mc_linkage_menu_cols {
@@ -7336,25 +7418,40 @@ input.input_global_search::input-placeholder {
   .mv_zone {
     padding: 0;
   }
+  .mv_zone .swiper-control-layer {
+    padding: 30px 20px;
+    justify-content: center;
+    width: 100%;
+    position: static;
+  }
+  .mv_zone .swiper-control-layer .swiper-pagination {
+    padding: 0;
+  }
+  .mv_zone .swiper-pagination {
+    text-align: center;
+    position: static;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  }
+  .mv_zone .swiper-pagination .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 2px;
+  }
+  .mv_zone .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 30px;
+  }
   img.pc_mv {
     display: none;
   }
   img.mb_mv {
     display: block;
   }
-  .swiper-container.mv_container .swiper-pagination {
-    text-align: center;
+  .mc_grid_cols .swiper-auto-item-wrap {
     position: static;
-    padding: 30px 20px;
-    box-sizing: border-box;
-  }
-  .swiper-container.mv_container .swiper-pagination .swiper-pagination-bullet {
-    width: 8px;
-    height: 8px;
-    margin: 0 2px;
-  }
-  .swiper-container.mv_container .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
   }
   .global_search_field_zone {
     padding: 20px;
