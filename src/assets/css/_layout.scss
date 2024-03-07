@@ -83,7 +83,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
              display:block;
         }
     } */
-    &.active{background:#00568B;
+    &.active{background:#00568B !important;
         .header_nav_menu{color:#fff;}
     }
 }
@@ -92,7 +92,7 @@ html:not(.touchmode) ::-webkit-scrollbar-track {background-color: transparent;bo
     > li{
         display:flex; position:relative;
         &:hover,&:focus,&.active{
-            .header_nav_menu{color:#FFBC00;}
+            .header_nav_menu{color:#D46C11;}
         }
         &:last-of-type{}
     }

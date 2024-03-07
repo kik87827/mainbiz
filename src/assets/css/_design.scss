@@ -129,11 +129,11 @@
   }
 
   &.gray {
-    color: #999;
+    color: #6b6b6b;;
   }
 
   &.orange {
-    color: #f7943e;
+    color: $sub_color;
   }
 
   &.blue {
@@ -176,12 +176,12 @@
   display: inline-block;
   margin-left: 5px;
   padding: 4.5px 10px;
-  border: 1px solid #f7943e;
+  border: 1px solid $sub_color;
   border-radius: 8px;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.5px;
-  color: #f7943e;
+  color: $sub_color;
 }
 
 @media (max-width:$tablet){
@@ -413,7 +413,7 @@
   margin-bottom: 21px;
   padding: 5px 12px;
   border-radius: 5px;
-  background-color: #f7943e;
+  background-color: $sub_color;
   font-weight: 700;
   color: #fff;
   font-size: 16px;
@@ -453,7 +453,7 @@
 
   &.gray {
     background-image: url("../images/ico_info_list_item_gray.png");
-    color: #999;
+    color: #6b6b6b;;
   }
 }
 
@@ -497,7 +497,7 @@
   font-family: 'Poppins Bold';
   font-size: 64px;
   line-height: 80px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
 }
 
 .overview_history {
@@ -818,7 +818,7 @@
   text-align: center;
   line-height: 20.8px;
   letter-spacing: -0.5px;
-  color: #f7943e;
+  color: $sub_color;
 }
 .step_list_period {
   display: block;
@@ -887,14 +887,14 @@
   display: inline-block;
   margin: -4px 0 -5px 10px;
   padding: 4.5px 32px 4.5px 10px;
-  border: 1px solid #f7943e;
+  border: 1px solid $sub_color;
   border-radius: 8px;
   background: url("../images/ico_step_data.png") no-repeat right 10px top 50%;
   background-size: 16px 16px;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: -0.5px;
-  color: #f7943e;
+  color: $sub_color;
   vertical-align: top;
 }
 
@@ -1142,7 +1142,7 @@
   font-size: 20px;
   line-height: 20px;
   letter-spacing: -0.5px;
-  color: #999;
+  color: #6b6b6b;;
   text-align: center;
 
 
