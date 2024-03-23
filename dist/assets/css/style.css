@@ -7309,6 +7309,13 @@ input.input_global_search::input-placeholder {
   position: relative;
   padding: 0 90px;
 }
+.bottom_guide_swiper_wrap.beactive .btn-autoplay,
+.bottom_guide_swiper_wrap.beactive .btn_flow_control {
+  display: none;
+}
+.bottom_guide_swiper_wrap.beactive .swiper-container.swiper-partner .swiper-slide {
+  flex: 1;
+}
 
 .btn_flow_control {
   width: 90px;
@@ -7326,6 +7333,11 @@ input.input_global_search::input-placeholder {
   right: 0;
   background-image: url("../images/ico_flow_next.png");
 }
+.btn_flow_control.swiper-button-disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
 .swiper-partner-wrap {
   min-height: 130px;
 }
@@ -13385,7 +13397,7 @@ input.props_formbox_origin:checked + .props_formbox_label .props_label_sub {
   font-family: "Poppins Bold";
   font-size: 64px;
   line-height: 80px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
 }
 
 .step_list {

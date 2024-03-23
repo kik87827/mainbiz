@@ -294,6 +294,10 @@ function mainPartnerBanner() {
       nextEl: ".bottom_guide_swiper_wrap .btn_flow_control.next",
       prevEl: ".bottom_guide_swiper_wrap .btn_flow_control.prev",
     },
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
     breakpoints: {
       1024: {
         slidesPerView: 4,
@@ -311,28 +315,28 @@ function mainPartnerBanner() {
       }
     }
   }
-  if (mp_slide.length > 1) {
-    mp_parent.classList.add("active");
+  if (mp_slide.length > 7) {
+    mp_parent.classList.remove("beactive");
     if (!!mp_swiper_obj) {
       mp_swiper_obj.update();
     } else {
-      mp_swiper_obj = new Swiper(".swiper-partner", swiperOption);
+      mp_swiper_obj = new Swiper(".swiper-partner", swiperKeyOption);
     }
 
-    if (!!mp_nav) {
-      mp_nav.forEach((item) => {
-        item.addEventListener("keyup", () => {
-          keyupAction();
+    /* if(!!mp_nav){
+            mp_nav.forEach((item)=>{
+                item.addEventListener("keyup",()=>{
+                    keyupAction();
+                });
+            });
+        }
+        mp_container_wrap.addEventListener("keyup",()=>{
+            keyupAction();
         });
-      });
-    }
-    mp_container_wrap.addEventListener("keyup", () => {
-      keyupAction();
-    });
-
-    mp_auto_control.addEventListener("focusin", () => {
-      defaultAction();
-    });
+ */
+    /*  mp_auto_control.addEventListener("focusin",()=>{
+         defaultAction();
+     }); */
     let accAutoText = mp_auto_control.textContent;
     mp_auto_control.addEventListener("click", (e) => {
       e.preventDefault();
@@ -349,7 +353,7 @@ function mainPartnerBanner() {
       }
     })
   } else {
-    mp_parent.classList.remove("active");
+    mp_parent.classList.add("beactive");
   }
 
   function keyupAction() {
