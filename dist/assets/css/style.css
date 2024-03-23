@@ -1330,7 +1330,6 @@ html:not(.touchmode) ::-webkit-scrollbar-track {
   font-size: 20px;
   line-height: 1;
   font-family: "Poppins Bold";
-  opacity: 0.6;
   color: #fff;
 }
 

@@ -61,7 +61,13 @@ $(function() {
   function layoutFunc() {
 
     function skipMenu(){
+      const skiplist = document.querySelector(".skiplist");
       const skiplist_link = document.querySelectorAll(".skiplist a");
+      const skipcontents_link = document.querySelector(".skiplist [href='#content']");
+      if(!skiplist){return;}
+      if(!!skipcontents_link){
+        skiplist.prepend(skipcontents_link.closest("li.skip"));
+      }
       if(!!skiplist_link){
         skiplist_link.forEach((item)=>{
           item.addEventListener("click",(e)=>{
