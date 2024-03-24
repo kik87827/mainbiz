@@ -6040,7 +6040,7 @@ input.props_form:checked {
   top: 8px;
 }
 .bullet_list.emp {
-  color: #D46C11;
+  color: #D43503;
 }
 .bullet_list.emp > li {
   margin: 0;
@@ -8873,7 +8873,7 @@ td.nodata_td {
 }
 
 .message_note_box {
-  background: rgba(0, 119, 192, 0.1);
+  background: #E6F2F9;
   border-radius: 16px;
   padding: 24px;
   margin-bottom: 20px;
@@ -8953,7 +8953,7 @@ td.nodata_td {
 .grid_note_para_text {
   font-size: 16px;
   line-height: 1.4;
-  color: #808285;
+  color: #6b6b6b;
   padding-top: 2px;
   word-break: keep-all;
 }
@@ -8961,7 +8961,7 @@ td.nodata_td {
   word-break: keep-all;
 }
 .grid_note_para_text .sub_emp {
-  color: #D46C11;
+  color: #D43503;
   font-weight: 500;
 }
 
@@ -9119,7 +9119,7 @@ input.form_each_input {
 }
 
 .message_note_wordbox {
-  background: #D46C11;
+  background: #00568B;
   border-radius: 4px;
   display: inline-block;
   padding: 8px 12px 7px;
@@ -9795,7 +9795,7 @@ input.form_each_input {
   margin-right: 2px;
 }
 .form_value_td_key_sub.emp {
-  color: #D46C11;
+  color: #D43503;
 }
 
 .inline_form_obj_group {
@@ -9923,7 +9923,7 @@ input.form_each_input {
   color: #fff;
   border-radius: 4px;
   padding: 4px 8px 3px;
-  background: #999999;
+  background: #6b6b6b;
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
@@ -12842,7 +12842,7 @@ input.props_formbox_origin:checked + .props_formbox_label .props_label_sub {
   color: #6b6b6b;
 }
 .table_text.orange {
-  color: #D46C11;
+  color: #D43503;
 }
 .table_text.blue {
   color: #0077c0;
@@ -13084,7 +13084,7 @@ input.props_formbox_origin:checked + .props_formbox_label .props_label_sub {
   margin-bottom: 21px;
   padding: 5px 12px;
   border-radius: 5px;
-  background-color: #D46C11;
+  background-color: #00568B;
   font-weight: 700;
   color: #fff;
   font-size: 16px;

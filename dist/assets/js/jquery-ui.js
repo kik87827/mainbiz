@@ -9832,7 +9832,7 @@ $.extend(Datepicker.prototype, {
 				endYear = Math.max(year, determineYear(years[1] || ""));
 				year = (minDate ? Math.max(year, minDate.getFullYear()) : year);
 				endYear = (maxDate ? Math.min(endYear, maxDate.getFullYear()) : endYear);
-				inst.yearshtml += "<label for='year_item' class='hdtext'>년도 선택</label><select id='year_item' class='ui-datepicker-year' data-handler='selectYear' data-event='change' titile='년도 선택'>";
+				inst.yearshtml += "<label for='year_item' class='hdtext'>년도 선택</label><select id='year_item' class='ui-datepicker-year' data-handler='selectYear' data-event='change' title='년도 선택'>";
 				for (; year <= endYear; year++) {
 					inst.yearshtml += "<option value='" + year + "'" +
 						(year === drawYear ? " selected='selected'" : "") +
